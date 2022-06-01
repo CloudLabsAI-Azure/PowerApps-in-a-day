@@ -6,10 +6,6 @@ Module 3 : Power Apps Model-driven App
 
 ### Hands-on Lab Step-by-Step
 
-```
-April 2022
-```
-
 ## Contents
 
 - Power Apps Model-driven App
@@ -18,11 +14,6 @@ April 2022
    - Exercise 2: Business Process Flow
    - Exercise 3: Form and View Modification
    - Exercise 4: Test the application
-   - References
-- Copyright
-
-
-**1 |** P a g e ©20 22 Microsoft Corporation
 
 ## Power Apps Model-driven App
 
@@ -30,10 +21,10 @@ April 2022
 
 This is the third lab in a four-part series covering Power Apps canvas apps, Microsoft Dataverse, Power Apps model-driven
 apps, and Power Automate. The assumption is that you have successfully completed the first two modules, or at least the
-initial part of setting up an environment as described in the overview – “ **00 - AppInADay Lab Overview.pdf** ”.
+initial part of setting up an environment as described in the overview – **(Page 1 of lab guide)** .
 
 If you have not completed the previous two modules, you can use the partially completed version of the lab package in
-the “\Completed\Module2” folder. Follow the instructions in the document “Importing Module 2 Completed” before
+the **C:\PowerApps-in-a-day\Completed\Module2** folder. Follow the instructions in the document **Importing Module 2 Completed** before
 proceeding with this module, which will provision the app, and the Microsoft Dataverse Table into your environment.
 
 ### Model-driven Apps – A brief introduction
@@ -63,9 +54,6 @@ different with the canvas apps which need to choose the Mobile vs. Tablet when d
 In the first lab module, you built a Power Apps Canvas application for an organization where every three years the
 employees go through a hardware refresh cycle. The application let employees place a request for a device using the
 
-
-© 2022 Microsoft Corporation 2 | P a g e
-
 Power Apps app that you built. In the second lab module, using a custom Table you created in the Microsoft Dataverse
 lab, you stored that request for processing.
 
@@ -76,7 +64,9 @@ by the two or three back office staff that manage fulfilling device requests. Us
 advantage of the Business Process feature of Model-driven apps to keep the back-office staff on track for each device
 request.
 
-Model-driven apps are a new style of application you can build directly from PowerApps.com. Model-driven apps make it
+   ![](images/Module3/Deviceorders.png)  
+   
+**Model-driven apps** are a new style of application you can build directly from PowerApps.com. Model-driven apps make it
 easy to build forms over data applications quickly. This style of application brings together forms, views, dashboards and
 charts quickly to provide a productive user experience for working with related data. These components can quickly be
 customized to show only the data that is relevant for the scenario.
@@ -93,78 +83,90 @@ completed and the steps highlight to the user either data to collect or tasks to
 created using a visual designer using drag and drop to compose the flow and establish any branching conditions
 (different paths in the business process) that must be handled.
 
-For more details on Model-driven apps and the differences between Canvas apps and Model-driven apps, see the product
-
-### announcement at [Announcement](https://powerapps.microsoft.com/blog/powerapps-spring-announce/).
+For more details on Model-driven apps and the differences between Canvas apps and Model-driven apps, see the product announcement at this URL (https://powerapps.microsoft.com/blog/powerapps-spring-announce/).
 
 
-**3 |** P a g e ©20 22 Microsoft Corporation
 
-### Exercise 1: Create Application and add Columns to the Device Order Table
+## Exercise 1: Create Application and add Columns to the Device Order Table
 
 In this exercise, you will be creating a standalone Model-driven application that will leverage the same Device Request
 Table you created in the Microsoft Dataverse in Lab 2.
 
-Task 1: Create an application
+### Task 1: Create an application
 
 The first thing you will do is create a Model-driven application. This application will serve as a container to identify all the
 components that make up the application. It also will include a sitemap that defines the custom navigation users will use
 to navigate between the components (Table views, Dashboards and other visual components).
 
-1. Navigate to [Make Power Apps](https://make.powerapps.com/), and select the environment you created.
-2. Select **Home** and click **+ Blank app**.
-3. Click on the **Create** button of the Model-driven app section.
+1. Navigate to Power Apps Portal using this URL (https://make.powerapps.com/) if not already and select the environment that you created earlier.
 
+1. Select **Home** and click **+ Blank app**.
 
-© 2022 Microsoft Corporation 4 | P a g e
+   ![](images/Module3/Model-drivenapp1.png)  
+   
+1. Click on the **Create** button of the Model-driven app section.
 
-4. Select the Classic app designer and click **Create**.
-5. Enter **Device Procurement** for Name and click **Done.** You have now created the app definition and will start
+   ![](images/Module3/Model-drivenapp2.png)  
+   
+1. Select the Classic app designer and click **Create**.
+
+   ![](images/Module3/Model-drivenapp3.png)  
+1. Enter **Device Procurement** for Name and click **Done.** You have now created the app definition and will start
     adding components in to build the app.
+    
+   ![](images/Module3/Model-drivenapp4.png)  
+   
 
-```
-Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
+    > Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
 the user in the list of all their applications.
-```
-```
-Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
-```
 
-**5 |** P a g e ©20 22 Microsoft Corporation
+        Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
 
-6. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.
-7. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for ID**.** If you were
+   ![](images/Module3/Model-drivenapp5.png)  
+1. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.
+
+   ![](images/Module3/Model-drivenapp6.png)  
+   
+1. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for ID**.** If you were
     building a more complex application, you could use Areas to group together related items making it easy for the
     user to navigate between the components.
+    
+   ![](images/Module3/Model-drivenapp7.png)  
 
-```
-Note: The properties panel on the right will only show if you click on the New Area on the left.
-```
-8. Select the **New Group** enter **Orders** for Title, and **nav_ordersgroup** for ID.
+   > Note: The properties panel on the right will only show if you click on the New Area on the left.
 
+1. Select the **New Group** enter **Orders** for Title, and **nav_ordersgroup** for ID.
 
-© 2022 Microsoft Corporation 6 | P a g e
+   ![](images/Module3/Model-drivenapp8.png)  
+   
+   > Note: The properties panel on the right will only show if you click on the New Group on the left.
+   
+1. Select the **New Subarea**.
 
-```
-Note: The properties panel on the right will only show if you click on the New Group on the left.
-```
-9. Select the **New Subarea**.
+   ![](images/Module3/Model-drivenapp9.png)  
 
-```
-Note: The properties panel on the right will only show if you click on the New Subarea on the left.
-```
-10. Set the **Entity** for **Type** , select **Device Order** for **Table** , enter **Device Orders** for **Title** and enter
+   > Note: The properties panel on the right will only show if you click on the New Subarea on the left.
+
+1. Set the **Entity** for **Type** , select **Device Order** for **Table** , enter **Device Orders** for **Title** and enter
     **nav_device_orders** for **ID**.
-11. Click **Save and Close.**
+    
+   ![](images/Module3/Model-drivenapp10.png)  
+   
+1. Click **Save and Close.**
 
+   ![](images/Module3/Model-drivenapp11.png)  
 
-**7 |** P a g e ©20 22 Microsoft Corporation
+1. Click **Save** again, this time in the App Designer.
 
-12. Click **Save** again, this time in the App Designer.
-13. **Publish** the application.
-14. Click **Save and Close**.
+   ![](images/Module3/Model-drivenapp12.png)  
+   
+1. **Publish** the application.
 
-Task 2: Add procurement columns to the Device Orders
+   ![](images/Module3/Model-drivenapp13.png)  
+   
+1. Click **Save and Close**.
+
+### Task 2: Add procurement columns to the Device Orders
 
 In this task, you will add new Columns to the Device Order table. The Columns you are going to add here are Columns
 that support the Business Process Flow, which we are going to build in the next exercise. When you use a Business
@@ -181,32 +183,40 @@ To support our scenario, we are going to add the following Columns to the Table:
 how the user’s ordering experience was, and will manually check this once they send it, but they have a desire in a future
 update to automate sending a survey in a future release.
 
-1. Navigate to [Make Power Apps](https://make.powerapps.com/)
-2. Expand **Dataverse** , select **Tables** , search for **Device Order** and click on it.
+1. Navigate to [Make Power Apps](https://make.powerapps.com/).
 
 
-© 2022 Microsoft Corporation 8 | P a g e
+1. Expand **Dataverse** , select **Tables** , search for **Device Order** and click on it.
 
-3. Make sure you have the **Columns** tab selected and click **Add Column**.
-4. Enter **Capital Approved** for **Display Name** , select **Yes/No** for **Data Type** and click **Done**. We are using a Yes/No
+   ![](imagesModule3Model-drivenapp14.png)  
+   
+  
+1. Make sure you have the **Columns** tab selected and click **Add Column**.
+
+   ![](imagesModule3Model-drivenapp15.png)  
+   
+1. Enter **Capital Approved** for **Display Name** , select **Yes/No** for **Data Type** and click **Done**. We are using a Yes/No
     data type here because when we use it as a Step in the Business Process, we want to be able to simply mark it
     completed. Yes/No are essentially a true or false Column.
-5. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
+    
+   ![](imagesModule3Model-drivenapp16.png)  
+1. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
     **Device Delivered**.
 
-
-**9 |** P a g e ©20 22 Microsoft Corporation
+   ![](imagesModule3Model-drivenapp17.png)  
 
 6. Add another Column, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Done**. Notice
     we are not asking you to make this Column required here, but we will make it a required Column in the
     Business Process later in the lab.
 
+   ![](imagesModule3Model-drivenapp18.png)  
 
-© 2022 Microsoft Corporation 10 | P a g e
 
 7. Click **Save Table**.
 
-### Exercise 2: Business Process Flow
+   ![](imagesModule3Model-drivenapp19.png)  
+
+## Exercise 2: Business Process Flow
 
 In this exercise, we are going to add a Business Process Flow to the Device Order to help guide the back-office worker
 through the task of managing the procurement of the requested device.
@@ -232,81 +242,121 @@ created for a full implementation of the scenario, to save time you may skip the
 The completed Business Process Flow will look like the image below.
 
 
-**11 |** P a g e ©20 22 Microsoft Corporation
+   ![](images/Module3/BusinessProcessFlow.png)  
 
-Task 1: Create business process flow
+
+
+### Task 1: Create business process flow
 
 1. Select **Flows**.
-2. Select the **Business Process Flow** tab and click **New**.
-3. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click **Create**. When you
-    create the Business Process Flow behind the scenes it creates another Table with the same name as the Business
+
+   ![](images/Module3/BusinessProcessFlow1.png)  
+
+1. Select the **Business Process Flow** tab and click **New**.
+
+   ![](images/Module3/BusinessProcessFlow2.png)  
+
+1. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click **Create**. 
+ 
+   ![](images/Module3/BusinessProcessFlow3.png)  
+ 
+   > Info: When you create the Business Process Flow behind the scenes it creates another Table with the same name as the Business
     Process Flow to track the progress of each business process on the Row. Because of this, choose your name
     carefully, for example, you wouldn’t want to use the same name as your Table e.g. Device Order. Here we choose
     Device Procurement Process. Note: After you click OK, a new window will be loaded with the designer. If you
     have popup blockers enabled this might be blocked. The window might also not immediately have focus and you
     might have to manually bring it into focus.
 
+1. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.
 
-© 2022 Microsoft Corporation 12 | P a g e
+   ![](images/Module3/BusinessProcessFlow4.png)  
 
-4. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.
-5. Click **Details.**
-6. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.
-7. Click **Add** and select **Add Data Step**.
+1. Click **Details.**
 
+   ![](images/Module3/BusinessProcessFlow5.png)  
 
-**13 |** P a g e ©20 22 Microsoft Corporation
+1. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.
 
-8. Click on the small + under Data Step #1.
-9. Select **Approval Status** for Data Field and click **Apply**.
-10. Add another Data Step, select **Price** for Data Field and click **Apply**.
+   ![](images/Module3/BusinessProcessFlow6.png)  
 
+1. Click **Add** and select **Add Data Step**.
 
-© 2022 Microsoft Corporation 14 | P a g e
+   ![](images/Module3/BusinessProcessFlow7.png)  
 
-11. Select the **Components** tab.
-12. Drag **Stage** to the canvas and place to the right of the **Device Requested** stage.
-13. Select the new stage, change the Display Name to **Place Order** and click **Apply**.
+1. Click on the **small +** under Data Step #1.
 
+   ![](images/Module3/BusinessProcessFlow8.png)  
 
-**15 |** P a g e ©20 22 Microsoft Corporation
+1. Select **Approval Status** for Data Field and click **Apply**.
 
-14. Click **Details**.
-15. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.
-16. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.
+   ![](images/Module3/BusinessProcessFlow9.png)  
 
+1. Add another Data Step, select **Price** for Data Field and click **Apply**.
 
-© 2022 Microsoft Corporation 16 | P a g e
+   ![](images/Module3/BusinessProcessFlow10.png)  
+
+1. Select the **Components** tab.
+
+   ![](images/Module3/BusinessProcessFlow11.png)  
+
+1. Drag **Stage** to the canvas and place to the right of the **Device Requested** stage.
+
+   ![](images/Module3/BusinessProcessFlow12.png)  
+
+1. Select the new stage, change the Display Name to **Place Order** and click **Apply**.
+
+   ![](images/Module3/BusinessProcessFlow13.png)  
+
+1. Click **Details**.
+
+   ![](images/Module3/BusinessProcessFlow14.png)  
+
+1. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.
+
+   ![](images/Module3/BusinessProcessFlow15.png)  
+
+1. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.
+
+   ![](images/Module3/BusinessProcessFlow16.png)  
+
 
 17. Select **Supplier Order ID** for Data Column, check the **Required** field and click **Apply**. Remember from before this
     Column isn’t required, but by checking this here, we will require it to be filled out before they can advance to the
     next stage. It won’t, however, block saving the Row if there isn’t a data value populated like it would if it was
     marked required on the Column definition.
+    
+   ![](images/Module3/BusinessProcessFlow17.png)  
 
-**NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
+    > **NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
 business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
 condition.**
 
-18. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.
-19. Select the new stage, change the Display name to **Receive Device** and click **Apply**.
+1. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.
 
+   ![](images/Module3/BusinessProcessFlow18.png)  
 
-**17 |** P a g e ©20 22 Microsoft Corporation
+1. Select the new stage, change the Display name to **Receive Device** and click **Apply**.
 
-20. Click **Details**.
-21. Select the existing Data Step and select **Device Received** for Data Column and click **Apply**.
-22. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
+   ![](images/Module3/BusinessProcessFlow19.png)  
+
+1. Click **Details**.
+1. Select the existing Data Step and select **Device Received** for Data Column and click **Apply**.
+
+   ![](images/Module3/BusinessProcessFlow20.png)  
+
+1. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
     step.
-23. Select **Device Configured** for Data Column and click **Apply**.
 
+   ![](images/Module3/BusinessProcessFlow21.png)  
 
-© 2022 Microsoft Corporation 18 | P a g e
+1. Select **Device Configured** for Data Column and click **Apply**.
 
-24. Add another stage and name it **Distribute Device**.
-25. Add two data steps **Device Delivered** and **Send Survey**.
+   ![](images/Module3/BusinessProcessFlow22.png)  
 
+1. Add another stage and name it **Distribute Device**.
+1. Add two data steps **Device Delivered** and **Send Survey**.
 
-**19 |** P a g e ©20 22 Microsoft Corporation
+   ![](images/Module3/BusinessProcessFlow23.png)  
 
 Task 2: Add a branch condition
 
@@ -315,33 +365,57 @@ learned that if the price was greater than $1K there were additional steps in pl
 the order. In this task, you will see how we can modify the flow we built to accommodate this.
 
 1. Select the **Components** tab, drag **Condition** and place it between **Device Requested** and **Place Order**.
-2. Select the **Condition** and change the Display Name to **Check Price.**
-3. In the **Rule 1** section, select **Price** for Column, **is greater than** for Operator, **Value** for Type, **1000** for Value, and
+
+   ![](images/Module3/BusinessProcessFlow24.png)  
+
+1. Select the **Condition** and change the Display Name to **Check Price.**
+
+   ![](images/Module3/BusinessProcessFlow25.png)  
+
+1. In the **Rule 1** section, select **Price** for Column, **is greater than** for Operator, **Value** for Type, **1000** for Value, and
     click **Apply**. It’s important to note that Columns you use in the rules on the condition must be in the prior Stages
     steps. That is one of the reasons we put the price in there previously.
-4. Click **Save**.
+    
+   ![](images/Module3/BusinessProcessFlow26.png)  
+    
+1. Click **Save**.
 
+   ![](images/Module3/BusinessProcessFlow27.png)  
 
-© 2022 Microsoft Corporation 20 | P a g e
+1. A new stage will be added.
 
-5. A new stage will be added.
-6. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.
-7. Click **Details**.
-8. Select the existing Data Step, select **Capital Approved** for Data Column and click **Apply**.
+   ![](images/Module3/BusinessProcessFlow28.png)  
+   
+1. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.
 
+   ![](images/Module3/BusinessProcessFlow29.png)  
+   
+1. Click **Details**.
 
-**21 |** P a g e ©20 22 Microsoft Corporation
+   ![](images/Module3/BusinessProcessFlow30.png)  
+   
+1. Select the existing Data Step, select **Capital Approved** for Data Column and click **Apply**.
 
-9. Click **Save**.
-10. Click **Activate**.
-11. Confirm the activation.
-12. Close the process editor.
-13. Click on the  **Back** button.
-14. **Publish All Customizations**.
+   ![](images/Module3/BusinessProcessFlow31.png)  
+   
+1. Click **Save**.
 
+   ![](images/Module3/BusinessProcessFlow32.png)  
+   
+1. Click **Activate**.
 
-© 2022 Microsoft Corporation 22 | P a g e
+   ![](images/Module3/BusinessProcessFlow33.png)  
+   
+1. Confirm the activation.
 
+   ![](images/Module3/BusinessProcessFlow34.png)  
+
+1. Close the process editor.
+1. Click on the  **Back** button.
+1. **Publish All Customizations**.
+
+   ![](images/Module3/BusinessProcessFlow35.png)  
+   
 ### Exercise 3: Form and View Modification
 
 In this exercise, we are going to modify the Device Order form to add additional Columns. When you create an Table in
@@ -353,55 +427,91 @@ example, you might provide a view to show all device requests that are waiting t
 Task 1: Modify the form
 
 1. Expand **Dataverse** , select **Tables**. Search for **Device Order** Table and click to open.
-2. Select the **Forms** tab.
-3. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
 
-```
-Note: The form designer is being modernized, you can read more here Overview of the model-driven form
+   ![](images/Module3/device_order_form1.png)  
+   
+1. Select the **Forms** tab.
+
+1. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
+
+   ![](images/Module3/device_order_form2.png)  
+   
+   > Note: The form designer is being modernized, you can read more here Overview of the model-driven form
 designer.
-```
-4. If you are required to sign in again, do so.
-5. Search for **Approver** Column and drag it to the form.
 
+1. If you are required to sign in again, do so.
+1. Search for **Approver** Column and drag it to the form.
 
-**23 |** P a g e ©20 22 Microsoft Corporation
+1. Place the **Approver** Column above the Device Name Column.
 
-6. Place the **Approver** Column above the Device Name Column.
-7. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the
+   ![](images/Module3/device_order_form3.png)  
+   
+1. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the
     Device Name and Owner Columns.
-8. The new form designer will let you cut and paste Columns. Select the **Approver** Column and click on the **Cut**
+    
+   ![](images/Module3/device_order_form4.png)  
+   
+1. The new form designer will let you cut and paste Columns. Select the **Approver** Column and click on the **Cut**
     button.
 
+   ![](images/Module3/device_order_form5.png)  
+   
+   
+1. Select the **Owner** Column and click **Paste**.
 
-© 2022 Microsoft Corporation 24 | P a g e
+   ![](images/Module3/device_order_form6.png)  
+   
+1. The **Approval** Column will be moved to the bottom.
 
-9. Select the **Owner** Column and click **Paste**.
-10. The **Approval** Column will be moved to the bottom.
-11. Click **Save**.
-12. Click **Publish**.
-13. Close the **Form Designer** tab.
+   ![](images/Module3/device_order_form7.png)  
+   
+1. Click **Save**.
 
+   ![](images/Module3/device_order_form8.png)  
 
-**25 |** P a g e ©20 22 Microsoft Corporation
+1. Click **Publish**.
+
+   ![](images/Module3/device_order_form9.png)  
+   
+1. Close the **Form Designer** tab.
+
 
 Task 2: Modify the view
 
 1. Select the **Views** tab and click on the **Active Device Orders** view to open it.
-2. Click the **Approval Status** Column once (you do not need to double click).
-3. The new column will be added to the view.
-4. Click on the **+ View Column** button.
-5. Select **Estimated Ship Date.**
 
+   ![](images/Module3/device_order_form10.png)  
+1. Click the **Approval Status** Column once (you do not need to double click).
 
-© 2022 Microsoft Corporation 26 | P a g e
+   ![](images/Module3/device_order_form11.png)  
+   
+1. The new column will be added to the view.
 
-6. Add **Price** and **Status** to the View.
-7. Click **Save.**
-8. **Publish** the View.
-9. Click on the back button.
+   ![](images/Module3/device_order_form12.png)  
 
+1. Click on the **+ View Column** button.
 
-**27 |** P a g e ©20 22 Microsoft Corporation
+   ![](images/Module3/device_order_form13.png)  
+   
+1. Select **Estimated Ship Date.**
+
+   ![](images/Module3/device_order_form14.png)  
+   
+1. Add **Price** and **Status** to the View.
+
+   ![](images/Module3/device_order_form15.png)  
+   
+1. Click **Save.**
+
+   ![](images/Module3/device_order_form16.png)  
+
+1. **Publish** the View.
+
+   ![](images/Module3/device_order_form17.png)  
+
+1. Click on the back button.
+
+   ![](images/Module3/device_order_form18.png)  
 
 ### Exercise 4: Test the application
 
@@ -410,91 +520,55 @@ In this exercise, we are going to test the application you just built.
 Task 1: Test the application
 
 1. Select **Apps** , select the Device Procurement application and click **Play**.
-2. The application should start. The **Active Device Orders** view should load.
-    **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
-3. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.
-4. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.
-5. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.
-_Note: If you are using a Chrome browser, the Manufacturer logos may not load correctly._
 
+   ![](images/Module3/apptest1.png)  
 
-© 2022 Microsoft Corporation 28 | P a g e
+1. The application should start. The **Active Device Orders** view should load.
+    > **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
 
-6. Select the device with the price over $1k and click **Submit**.
-7. Click **OK**. Note that if you did not choose to create the submission success screen in a previous module that this
+      ![](images/Module3/apptest2.png)  
+1. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.
+1. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.
+
+   ![](images/Module3/apptest3.png)  
+1. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.
+   > Note: If you are using a Chrome browser, the Manufacturer logos may not load correctly._
+
+   ![](images/Module3/apptest4.png)  
+1. Select the device with the price over $1k and click **Submit**.
+
+   ![](images/Module3/apptest5.png)  
+1. Click **OK**. Note that if you did not choose to create the submission success screen in a previous module that this
     option will not exist. You will need complete steps 3 and 4 (above) in order to continue.
-8. Select two more devices and click Compare.
+    
+   ![](images/Module3/apptest6.png)      
+1. Select two more devices and click Compare.
 
+   ![](images/Module3/apptest7.png)  
 
-**29 |** P a g e ©20 22 Microsoft Corporation
-
-9. Select a device with a price under $1k, provide approver email (or leave in the auto-populated manager email)
+1. Select a device with a price under $1k, provide approver email (or leave in the auto-populated manager email)
     and click **Submit**.
-10. Go back to the Model-driven application you created and refresh the view. Sort the orders by **Created On** column,
+    
+   ![](images/Module3/apptest8.png)      
+1. Go back to the Model-driven application you created and refresh the view. Sort the orders by **Created On** column,
     and you should see the two devices you ordered using the Power Apps Canvas App.
+    
+   ![](images/Module3/apptest9.png)      
 11. Open the one priced over $1k.
 12. The **Business Process Flow** should now have **5** stages. This is because this order costs more than $1k and needs
 **Capital Approval**.
 
+   ![](images/Module3/apptest10.png)  
 
-© 2022 Microsoft Corporation 30 | P a g e
-
-13. Select **Device Orders**.
-14. Click on the other order you created.
-15. The **Business Process Flow** for this order should have **4** stages; this is because this order does not require **Capital**
+1. Select **Device Orders**.
+1. Click on the other order you created.
+1. The **Business Process Flow** for this order should have **4** stages; this is because this order does not require **Capital**
     **Approval**.
 
-
-**31 |** P a g e ©20 22 Microsoft Corporation
+   ![](images/Module3/apptest11.png)  
 
 ### References
 
 App in a Day introduces some of the key functionalities available in Power Apps, Power Automate, Power BI and the
 Microsoft Dataverse. For an up to date list of learning references, see Power Apps Resources and Power Automate
 Resources.
-
-
-© 2022 Microsoft Corporation 32 | P a g e
-
-## Copyright
-
-**© 2022 Microsoft Corporation. All rights reserved.**
-
-By using this demo/lab, you agree to the following terms:
-
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining
-your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology
-features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not
-modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or
-sell this demo/lab or any portion thereof.
-
-COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR
-LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
-
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY,
-INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT
-COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS
-REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT
-WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH
-FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A
-PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
-
-FEEDBACK. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab
-to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way
-and for any purpose. You also give to third parties, without charge, any patent rights needed for their products,
-technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the
-feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or
-documentation to third parties because we include your feedback in them. These rights survive this agreement.
-
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE
-DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS,
-IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
-MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY
-OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
-CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
-
-DISCLAIMER
-
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power Apps. Some of the features
-might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
-
