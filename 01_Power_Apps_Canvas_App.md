@@ -30,7 +30,7 @@ flows and database entities.
 
 ### Power Apps Canvas Studio Layout
 
-**Power Apps Canvas Studio** is available as a web application [(Make Power Apps)](http://make.powerapps.com/) that you can use in any modern browser.
+**Power Apps Canvas Studio** is available as a web application **Make Power Apps** that you can use in any modern browser. Here is the URL to open the Power Apps portal `http://make.powerapps.com/`.
 
 Power Apps Studio is designed to have a user interface familiar to users of the Office suite. It has three panes and a ribbon
 that make app creation feel **like building a slide deck in PowerPoint.** Formulas are entered within a function bar that
@@ -297,13 +297,13 @@ In this task, you will save an initial version of the app. It is a good practice
    
    > **_Tip:_** _In Power Apps when you save a version of your app the first version is published by default and available to everyone
 you share the app with. Subsequent saves are only visible to the app maker in the studio. You must explicitly publish it for all
-app users to get the update. For more details on saving, publishing and sharing apps, see:_
+app users to get the update. For more details on saving, publishing and sharing apps, you can find the refernces below:
 
-[_Publish App_](https://powerapps.microsoft.com/tutorials/save-publish-app/)
+ Publish App: `https://powerapps.microsoft.com/tutorials/save-publish-app/`
 
-[_Share App_](https://powerapps.microsoft.com/tutorials/share-app/)
+ Share App: `https://powerapps.microsoft.com/tutorials/share-app/`
 
-[_Save and Publish App_](https://powerapps.microsoft.com/blog/saveandpublish/)
+ Save and Publish App: `https://powerapps.microsoft.com/blog/saveandpublish/`
 
 ### Exercise 2: Add Device Gallery and Connect to Data Source
 
@@ -330,7 +330,7 @@ three controls within it – two labels and an image. A data pane will pop up on
 
    ![](images/Module1/powerAppsEx2_4.png)  
 
-5. In the File Open dialog, browse to the location `C:\LabFiles\PowerApps-in-a-day` and select **Device-Order-Data.xlsx** to load it.
+5. In the File Open dialog, browse to the location `C:\LabFiles\PowerApps-in-a-day` inside the LabVM and select **Device-Order-Data.xlsx** to load it.
 
 6. Select both tables, **Devices** and **Manufacturers,** and click the **Connect** button. This will add both these tables as
     static data into the application.
@@ -554,9 +554,9 @@ ManufacturerID.
 **Note:** If you get an error when entering the Filter command, check the name of the manufacturer gallery. The name in
 the filter command must match the name of your gallery.
 
-_More details on the Filter() function is available at [Filter Lookup](https://powerapps.microsoft.com/tutorials/function-filter-lookup/)._
+ You can find more details on the Filter() function here: `https://powerapps.microsoft.com/tutorials/function-filter-lookup/`
 
-_A complete set of expressions is available at [Formula Reference](https://powerapps.microsoft.com/tutorials/formula-reference/)._
+ You can find a complete set of expressions here : `https://powerapps.microsoft.com/tutorials/formula-reference/`
 
 #### Task 7: Configure text labels in the device gallery
 
@@ -620,7 +620,7 @@ We can make it easy to spot devices that cost more than $1,000, by displaying th
 a set of standard colors that you can easily reference in any property that accepts a color value. You can also set specific RGB
 values._
 
-_For a full list of Color functions and colors, see [Function Colors](https://powerapps.microsoft.com/tutorials/function-colors/)_
+    You can find a full list of Color functions and colors here: `https://powerapps.microsoft.com/tutorials/function-colors/`
 
 2. Click **File** and select **Save**.
 
@@ -709,11 +709,11 @@ not just the fields we display in the Devices Gallery.
 
 13. Click on then back arrow.
 
-_For more information on working with Collections in Power Apps, see:_
+    For more information on working with Collections in Power Apps, you can find the refernces below:
 
-[_Create Update Collections](https://powerapps.microsoft.com/tutorials/create-update-collection/) and_
+    - Create Update Collections: `https://powerapps.microsoft.com/tutorials/create-update-collection/` and
 
-[_Clear Collections_](https://powerapps.microsoft.com/tutorials/function-clear-collect-clearcollect)
+    - Clear Collections: `https://powerapps.microsoft.com/tutorials/function-clear-collect-clearcollect/`
 
 ### Task 11: Set the default selection to the first manufacturer and test the app
 
