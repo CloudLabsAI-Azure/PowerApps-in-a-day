@@ -188,33 +188,33 @@ update to automate sending a survey in a future release.
 
 1. Expand **Dataverse** , select **Tables** , search for **Device Order** and click on it.
 
-   ![](imagesModule3Model-drivenapp14.png)  
+   ![](images/Module3/Model-drivenapp14.png)  
    
   
 1. Make sure you have the **Columns** tab selected and click **Add Column**.
 
-   ![](imagesModule3Model-drivenapp15.png)  
+   ![](images/Module3/Model-drivenapp15.png)  
    
 1. Enter **Capital Approved** for **Display Name** , select **Yes/No** for **Data Type** and click **Done**. We are using a Yes/No
     data type here because when we use it as a Step in the Business Process, we want to be able to simply mark it
     completed. Yes/No are essentially a true or false Column.
     
-   ![](imagesModule3Model-drivenapp16.png)  
+   ![](images/Module3/Model-drivenapp16.png)  
 1. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
     **Device Delivered**.
 
-   ![](imagesModule3Model-drivenapp17.png)  
+   ![](images/Module3/Model-drivenapp17.png)  
 
 6. Add another Column, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Done**. Notice
     we are not asking you to make this Column required here, but we will make it a required Column in the
     Business Process later in the lab.
 
-   ![](imagesModule3Model-drivenapp18.png)  
+   ![](images/Module3/Model-drivenapp18.png)  
 
 
 7. Click **Save Table**.
 
-   ![](imagesModule3Model-drivenapp19.png)  
+   ![](images/Module3/Model-drivenapp19.png)  
 
 ## Exercise 2: Business Process Flow
 
