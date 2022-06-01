@@ -320,13 +320,13 @@ and the base currency. For additional information on using the Currency column, 
 
 6. Now repeat the Add Column process and add the following columns
 
-
-Display Name Name Type
-Request Date RequestDate Date Only
-Approver Approver Email
-Comments Comments Multiline Text
-Estimated Ship Date EstimatedShipDate Date Only
-Approved Date ApprovedDate Date Only
+|    Display Name     |       Name        |      Type      |
+| ------------------- | ----------------- | -------------- |
+|    Request Date     |  RequestDate      |    Date Only   |
+|     Approver        |    Approver       |      Email     |
+|     Comments        |    Comments       | Multiline Text |
+| Estimated Ship Date | EstimatedShipDate |    Date Only   |
+|    Approved Date    |   Approved Date   |    Date Only   |
 
 
 7. Now we are going to create the **Approval Choice**. We are adding this as a Choice (as opposed to a two option)
