@@ -249,17 +249,25 @@ requests. You will also create a server-side Business Rule that will default the
 In this task, you will create a custom table to store device order requests.
 
 1. Select **Tables** in the left pane and click **New Table** in the upper left corner of the page.
+
+   ![](./images/Module2/image20.png)
+   
 2. Enter **Device Order** for Display Name. The columns for Name and Plural name display name will automatically
     populate based on your entry. These are editable in case you need to make any changes. The plural name is used
     by the system by default anytime a set of the Rows are shown. Check the **Enable attachments** since this will allow
     creating notes on the device order.
+
 3. Change the **Primary Column Display Name** to **Device Name**. The primary attribute defaults to being named
     Name, for some scenarios that might not be the best label and you can customize it if needed. The primary
     attribute however is always a Text column, that is not changeable.
+
 4. Click **Create**.
 
+   ![](./images/Module2/image21.png)
 
 5. If prompted, approve the option in this dialog.
+
+    ![](./images/Module2/image22.png)
 
 ### Task 2: Create custom columns
 
@@ -267,22 +275,29 @@ In this task, you will create custom columns for the Device Order table. It may 
 Order table to provision. Begin these steps once it has finished.
 
 1. Select the **Columns** tab and click on the **Add column** button to add columns to your custom table.
+   
+   ![](./images/Module2/image23.png)
+
 2. Enter **Price** for **Display Name** , select **Currency** for **Data Type** , make the column **Required** and **Searchable** and
     click **Advanced Options**.
-
 
 Note : Currency is a special data type. For each currency column you add, another currency column is added with
 the prefix “_Base” on the name. This column stores the calculation of the value of the currency column you added
 and the base currency. For additional information on using the Currency column, see here.
 
-
+    ![](./images/Module2/image24.png)
 
 3. Enter **Device Price** for Description, **0** for **Minimum Value** , **5000** for **Maximum Value** , and click **Done**.
 
+   ![](./images/Module2/image25.png)
 
 4. Click **Add Column** again.
+
 5. Enter **Requested By** for **Display Name** , **RequestedBy** for **Name** , **Email** for **Data Type** , make the column
     **Searchable** and click **Done**.
+   
+   ![](./images/Module2/image26.png)
+
 6. Now repeat the Add Column process and add the following columns
 
 
@@ -296,19 +311,29 @@ Approved Date ApprovedDate Date Only
 
 7. Now we are going to create the **Approval Choice**. We are adding this as a Choice (as opposed to a two option)
     because it is likely in the future there will be more than Yes/No for users to choose from. Click **Add Column**.
+
 8. Enter **Approval Status** for **Display Name** , **ApprovalStatus** for **Name** , select **Choice** for **Data Type** , and select
     **New Choice** for **Choice**.
-
-
+  
+   ![](./images/Module2/image27.png)
+ 
 9. Change the **New Choice** label to **Approve**
+
 10. Click **Add new item**.
+
+    ![](./images/Module2/image28.png)
+
 11. Enter **Reject** and click **Save**.
+
+    ![](./images/Module2/image29.png)
+
 12. Click **Done**.
 
-
+    ![](./images/Module2/image30.png)
 
 13. Click **Save Table**.
 
+    ![](./images/Module2/image31.png)
 
 ### Task 3: Create a calculated column
 
