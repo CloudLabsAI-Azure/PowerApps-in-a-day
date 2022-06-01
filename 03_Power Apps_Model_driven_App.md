@@ -36,15 +36,15 @@ The App Designer then composes the app by identifying the UI elements to show. T
 targeted definition of different parts of the app and its behavior.
 
 - App Designer specifies the sitemap, global dashboards, business processes flows, and Table forms, views, and
-    dashboards [learn more](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/design-custom-business-apps-using-app-designer)
-- Sitemap Designer provides the application navigation that is always available [learn more](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-site-map-app)
+    dashboards. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/design-custom-business-apps-using-app-designer`
+- Sitemap Designer provides the application navigation that is always available. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-site-map-app`
 - Business Process Designer provides stages and steps to guide users consistently through common business
-    processes within a form [learn more](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/business-process-flows-overview)
-- Table Designer defines the Columns, relationships, and metadata for a Table [learn more](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro)
-- Business Rule Designer provides no-low business logic for a Table [learn more](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-create-business-rule)
-- View Designer specifies Columns and filter conditions for a Row list [learn more](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-views)
-- Form Designer specifies the Columns and controls along with layout for a single Row [learn more](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-design-forms)
-- Dashboard Designer summaries one or more Tables using charts, lists, etc. [learn more](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-dashboards)
+    processes within a form. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/business-process-flows-overview`
+- Table Designer defines the Columns, relationships, and metadata for a Table. You can find more refernces here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro`
+- Business Rule Designer provides no-low business logic for a Table. You can find more refernces here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-create-business-rule`
+- View Designer specifies Columns and filter conditions for a Row list. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-views`
+- Form Designer specifies the Columns and controls along with layout for a single Row. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-design-forms`
+- Dashboard Designer summaries one or more Tables using charts, lists, etc. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-dashboards`
 
 The model-driven apps are fully responsive, so a single definition works from web to tablet to mobile devices. This is a
 different with the canvas apps which need to choose the Mobile vs. Tablet when defining the app.
@@ -83,7 +83,7 @@ completed and the steps highlight to the user either data to collect or tasks to
 created using a visual designer using drag and drop to compose the flow and establish any branching conditions
 (different paths in the business process) that must be handled.
 
-For more details on Model-driven apps and the differences between Canvas apps and Model-driven apps, see the product announcement at this URL (https://powerapps.microsoft.com/blog/powerapps-spring-announce/).
+For more details on Model-driven apps and the differences between Canvas apps and Model-driven apps, you can see the product announcement here: `https://powerapps.microsoft.com/blog/powerapps-spring-announce/`
 
 
 
@@ -98,8 +98,11 @@ The first thing you will do is create a Model-driven application. This applicati
 components that make up the application. It also will include a sitemap that defines the custom navigation users will use
 to navigate between the components (Table views, Dashboards and other visual components).
 
-1. Navigate to Power Apps Portal using this URL (https://make.powerapps.com/) if not already and select the environment that you created earlier.
-
+1. Navigate to Power Apps Portal using the below URL if not already and select the environment that you created earlier.
+  
+  ```
+   https://make.powerapps.com/
+   ```
 1. Select **Home** and click **+ Blank app**.
 
    ![](images/Module3/Model-drivenapp1.png)  
@@ -120,7 +123,7 @@ to navigate between the components (Table views, Dashboards and other visual com
     > Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
 the user in the list of all their applications.
 
-        Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
+     Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
 
    ![](images/Module3/Model-drivenapp5.png)  
 1. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.
@@ -183,9 +186,11 @@ To support our scenario, we are going to add the following Columns to the Table:
 how the user’s ordering experience was, and will manually check this once they send it, but they have a desire in a future
 update to automate sending a survey in a future release.
 
-1. Navigate to [Make Power Apps](https://make.powerapps.com/).
+1. Navigate to to Power Apps Portal using the below URL  if not already.
 
-
+   ```
+   https://make.powerapps.com/
+   ```
 1. Expand **Dataverse** , select **Tables** , search for **Device Order** and click on it.
 
    ![](images/Module3/Model-drivenapp14.png)  
@@ -325,7 +330,7 @@ The completed Business Process Flow will look like the image below.
     next stage. It won’t, however, block saving the Row if there isn’t a data value populated like it would if it was
     marked required on the Column definition.
     
-   ![](images/Module3/BusinessProcessFlow17.png)  
+    ![](images/Module3/BusinessProcessFlow17.png)  
 
     > **NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
 business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
@@ -358,7 +363,7 @@ condition.**
 
    ![](images/Module3/BusinessProcessFlow23.png)  
 
-Task 2: Add a branch condition
+### Task 2: Add a branch condition
 
 In this task, we are going to add a conditional branch to our Business Process Flow. When we did the discovery, we
 learned that if the price was greater than $1K there were additional steps in place to get capital approval prior to placing
@@ -416,7 +421,7 @@ the order. In this task, you will see how we can modify the flow we built to acc
 
    ![](images/Module3/BusinessProcessFlow35.png)  
    
-### Exercise 3: Form and View Modification
+## Exercise 3: Form and View Modification
 
 In this exercise, we are going to modify the Device Order form to add additional Columns. When you create an Table in
 the Microsoft Dataverse, it also creates a main Form for that Table with a few basic Columns on it. In addition to the form,
@@ -424,7 +429,7 @@ views are created for the Table. Views are used in a Model-Driven app any time a
 would modify the view to add additional Columns or change the placement. You can also create additional views, for
 example, you might provide a view to show all device requests that are waiting to be received.
 
-Task 1: Modify the form
+### Task 1: Modify the form
 
 1. Expand **Dataverse** , select **Tables**. Search for **Device Order** Table and click to open.
 
@@ -476,7 +481,7 @@ designer.
 1. Close the **Form Designer** tab.
 
 
-Task 2: Modify the view
+### Task 2: Modify the view
 
 1. Select the **Views** tab and click on the **Active Device Orders** view to open it.
 
@@ -517,7 +522,7 @@ Task 2: Modify the view
 
 In this exercise, we are going to test the application you just built.
 
-Task 1: Test the application
+### Task 1: Test the application
 
 1. Select **Apps** , select the Device Procurement application and click **Play**.
 
@@ -567,8 +572,3 @@ Task 1: Test the application
 
    ![](images/Module3/apptest11.png)  
 
-### References
-
-App in a Day introduces some of the key functionalities available in Power Apps, Power Automate, Power BI and the
-Microsoft Dataverse. For an up to date list of learning references, see Power Apps Resources and Power Automate
-Resources.
