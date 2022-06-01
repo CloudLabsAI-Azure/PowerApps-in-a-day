@@ -659,7 +659,10 @@ the other actions and data available here [Office 365 users Connector](https://d
 ### Task 6: Configure the Comment Field
 
 1. Expand the **Comments** Field and select the **DataCardValue**
+
 2. Set its **HintText** property to: “Enter justification.”
+
+   ![](./images/Module2/image85.png)
 
 ### Task 7: Configure the Requested By Field
 
@@ -667,49 +670,88 @@ Let’s set the Requested By Field to be the current logged on user’s email an
 change this value.
 
 1. Expand the **Requested By** card.
+
 2. Select the **DataCardValue.**
+
 3. Go to the **Advanced** pane and **Unlock** the card.
+
 4. Change the **DisplayMode** property to: DisplayMode.View
 
+   ![](./images/Module2/image86.png)
 
 5. Set the **Default** value to User().Email
     This is the email of the currently logged in user
+
+   ![](./images/Module2/image87.png)
 
 ### Task 8: Configure the requested date Field
 
 Let’s set the Request Date to be today’s date.
 
 1. Expand the **Request Date** card.
+
 2. Select the **DateValue** card.
+
+   ![](./images/Module2/image88.png)
+
 3. Go to the **Advanced** pane and **Unlock** the card.
+
 4. Change the **DefaultDate** property to Today()
+
+   ![](./images/Module2/image89.png)
 
 Notice that the date in the calendar control will change to today’s date.
 Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of
 the form the Field will get updated as part of the form submit.
 
 5. Select the **Request Date DataCard**
+
+   ![](./images/Module2/image90.png)
+
 6. Go to the **Properties** pane.
+
 7. Set the **Visible** toggle to **Off**.
+
+   ![](./images/Module2/image91.png)
 
 ### Task 9: Add a button to submit the form
 
 1. Select the **MainScreen**.
+
 2. Copy (Ctrl-C) the **Compare button** from the first screen which has the correct color values.
+
+   ![](./images/Module2/image92.png)
+
 3. Go back to the **Compare Screen** and paste (Ctrl-V) the button.
 
+   ![](./images/Module2/image93.png)
+
 4. Position it in the bottom right of the screen, center aligned with the Form.
+
 5. Make sure the button is larger – you can resize to 280x60 using the Properties pane on the right.
+
+   ![](./images/Module2/image94.png)
+
 6. Set the button’s **Text** property to **“Submit device request”**
+   
+   ![](./images/Module2/image95.png)
+   
 7. Rename the button to **Submit Button**.
+
+   ![](./images/Module2/image96.png)
+
 8. The button should be enabled only if a device is selected. To do this, change the button’s **DisplayMode** property
     to: If(!IsBlank('Compare List Gallery'.Selected), DisplayMode.Edit, DisplayMode.Disabled)
-
+   
+   ![](./images/Module2/image97.png)
+   
 Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
 check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.
 
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property
     to SubmitForm(Form1).
+
+   ![](./images/Module2/image98.png)
 
 When the button is pressed, the form data will be submitted to the Microsoft Dataverse.
 
@@ -718,9 +760,16 @@ When the button is pressed, the form data will be submitted to the Microsoft Dat
 ### Task 10: Test the form
 
 1. Select the **Main Screen** in the left side tree navigation and click Play.
+
+   ![](./images/Module2/image99.png)
+
 2. Select a few devices to compare. And click **Compare**.
 
+   ![](./images/Module2/image100.png)
+
 3. Select one of the devices.
+
+   ![](./images/Module2/image101.png)
 
 Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
 
@@ -728,6 +777,7 @@ Notice that the Title, Price, Approver, and Requested By Fields are already fill
 5. Add some **Comments** , such as: “Current laptop does not work, need a new device.”
 6. Click **Submit device request.**
 
+   ![](./images/Module2/image102.png)
 
 The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this
 there is likely an error. Click the X in top right to get back to the design mode.
@@ -735,16 +785,26 @@ If there is an error, you will see a yellow error icon next to the Submit button
 
 
 7. Exit the preview mode (‘X’ in top right).
+
 8. Save the Application and Publish
+
+   ![](./images/Module2/image103.png)
 
 ### Task 11: Verify a new item was added to the Device Order table
 
 1. Open a browser window, go to [Make Power Apps](http://make.powerapps.com/).
+
 2. Click on **Dataverse** - > **Tables**.
+
 3. Select the **Device Order** table.
+
+    ![](./images/Module2/image104.png)
+
 4. Select the **Data** tab.
+
 5. You should see a newly added row with your device order details. This may take a few seconds to load.
 
+   ![](./images/Module2/image105.png)
 
 ### Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
 
@@ -754,103 +814,102 @@ Once the Form has been successfully submitted, it’s a good idea to show a conf
 navigate back to the main screen.
 
 1. Navigate to the Canvas Studio for your powerapp.
+
 2. Select **Home** - > **New screen** - > **Blank**
-3. Rename the screen to **Submit Success Screen**
+
+   ![](./images/Module2/image106.png)
+
+3. Rename the screen to **Submit Success Screen** 
+  
+   ![](./images/Module2/image107.png)
+  
 4. Expand the **Compare Screen**.
+
 5. Select the Form – you can use the tree view on the left to select **Form1**.
 
+   ![](./images/Module2/image108.png)
 
 6. Set the **OnSuccess** property to: Navigate('Submit Success Screen', ScreenTransition.None)
+
+    ![](./images/Module2/image109.png)
+
 7. Copy (Ctrl-C) the **Header** from the Compare Screen.
+
 8. Go to the to the **Submit Success Screen** , paste the header and align Top.
+
+   ![](./images/Module2/image110.png)
+
 9. **Insert** another **label** in the middle of the screen and set the **Text** to: **"Your device request has been successfully**
     **submitted. Thank you."**
+
 10. Increase the font size, the size of the label and center the text.
+
+    ![](./images/Module2/image111.png)
+
 11. Add a **button** and set its **Text** to: **"OK”.**
+
 12. When pressed, the button should remove items from the CompareList collection and navigate to the main screen.
 
 13. Set the **OnSelect** property of the button to:
 
 Clear(CompareList);Navigate('Main Screen',ScreenTransition.None)
 
+    ![](./images/Module2/image112.png)
+
 **Note** : ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as
 a comma-separator, then use a double ‘;’ here (without the single-quotes).
 
 14. Move the label up and add a Display Form: **Insert** - > **Form** - > **Display.**
+
+    ![](./images/Module2/image113.png)
+
 15. Configure its **data source** to point to the **‘Device Orders’** table.
 
+    ![](./images/Module2/image114.png)
 
 16. Select the Fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and
     remove any additional Fields.
+   
+   ![](./images/Module2/image115.png)
+
 17. Change the **Snap to column** value from 3 to 1.
+
+    ![](./images/Module2/image116.png)
+
 18. Change the **Layout** from Vertical to **Horizontal**.
+
+    ![](./images/Module2/image117.png)
+
 19. Set form **Item** property to Form1.LastSubmit
+
+    ![](./images/Module2/image118.png)
 
 20. Reposition/Resize the form until it looks like the image below. The Label will be first on the screen, centered under
     the header. Then, position the view form to be centered under the label. Finally, the “OK” button will be should be
     centered at the bottom of the page under the view form.
+
+   ![](./images/Module2/image119.png)
+
 21. Save your changes and **Publish**.
+
 22. Select the **Main Screen** and click **Play**.
+
 23. Select few more devices and click Compare
 
+    ![](./images/Module2/image120.png)
 
 24. Select one of the new devices, provide a comment and click Submit.
+
+    ![](./images/Module2/image121.png)
+
 25. Verify that the confirmation screen shows the order details. Click **OK**.
+
+    ![](./images/Module2/image122.png)
+
 26. The application will navigate back to the main screen and the compare list will be cleared.
 
-
+    ![](./images/Module2/image123.png)
 
 27. Close the application.
 
-
-
-## References
-
-App in a Day introduces some of the key functionalities available in Power Apps, Power Automate, Power BI and the
-Microsoft Dataverse. For an up to date list of learning references, see Power Apps Resources and Power Automate
-Resources.
-
-
-
-## Copyright
-
-**© 2022 Microsoft Corporation. All rights reserved.**
-
-By using this demo/lab, you agree to the following terms:
-
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining
-your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology
-features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not
-modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or
-sell this demo/lab or any portion thereof.
-
-COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR
-LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
-
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY,
-INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT
-COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS
-REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT
-WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH
-FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A
-PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
-
-FEEDBACK. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab
-to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way
-and for any purpose. You also give to third parties, without charge, any patent rights needed for their products,
-technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the
-feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or
-documentation to third parties because we include your feedback in them. These rights survive this agreement.
-
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE
-DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS,
-IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
-MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY
-OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION
-CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
-
-DISCLAIMER
-
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power Apps. Some of the features
-might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
 
