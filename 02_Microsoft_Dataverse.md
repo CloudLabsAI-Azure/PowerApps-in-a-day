@@ -112,7 +112,7 @@ In this task, you will explore Microsoft Dataverse standard Tables.
 Before beginning the exercises, navigate to [Make Power Apps](http://make.powerapps.com/) and confirm that you are in the desired environment for the
 labs.
 
-   ![](./images/Module2/image5.png)
+     ![](./images/Module2/image5.png)
 
 1. In the left pane, expand **Dataverse** and select **Tables**.
 
@@ -285,7 +285,8 @@ Note : Currency is a special data type. For each currency column you add, anothe
 the prefix “_Base” on the name. This column stores the calculation of the value of the currency column you added
 and the base currency. For additional information on using the Currency column, see here.
 
-    ![](./images/Module2/image24.png)
+
+   ![](./images/Module2/image24.png)
 
 3. Enter **Device Price** for Description, **0** for **Minimum Value** , **5000** for **Maximum Value** , and click **Done**.
 
@@ -367,7 +368,7 @@ the formula used in the calculation.
 
 7. Add *** 0 .1** and click the **Check Mark** button.
 
-  ![](./images/Module2/image37.png)
+   ![](./images/Module2/image37.png)
 
 8. Click **Save and Close.**
 
@@ -383,7 +384,7 @@ the (base) in the name. The (base) value is commonly used in reporting where you
 currencies to allow reporting on them in the base currency value.
 
 
-   ![](./images/Module2/image39.png)
+     ![](./images/Module2/image39.png)
 
 
 ### Task 4: Create a business rule
@@ -413,6 +414,7 @@ In this task, you will create a **Business rule** that will set the Estimated De
 change to the properties otherwise they will revert to the prior value. The Business Rule (Text View) will automatically update
 after you hit apply when you are done modifying the rule._
 
+    
     ![](./images/Module2/image44.png)
 
 6. Click **Add** , select **Add Set Field Value**.
@@ -421,7 +423,7 @@ after you hit apply when you are done modifying the rule._
 
 7. Select the True side of the condition.
 
-   ![](./images/Module2/image46.png)
+    ![](./images/Module2/image46.png)
 
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
     **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
@@ -527,7 +529,7 @@ dragging the field to the desired placement.
 10. Move the form control **Form1** to the right of the screen and resize it using the drag handles such that it fits in the
     empty space. See picture on the right. Make sure there is enough space below the form to add a Submit button.
 
-   ![](./images/Module2/image66.png)
+    ![](./images/Module2/image66.png)
 
 **Note** : You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are
 selecting the correct control. To move it make sure you select the Form and not a control within the form.
@@ -569,7 +571,8 @@ DataCardValue1 : This is the text input control where you can enter the Title. F
 based on the selected device.
 DataCardKey1 : This is the label that displays the title of the Field.
 
-    ![](./images/Module2/image71.png)
+    
+   ![](./images/Module2/image71.png)
 
 2. Select **Device Name DataCardValue** in the tree view. Then, open the **Advanced** tab in the right-hand pane.
 
@@ -586,7 +589,7 @@ perform the same customizations using the property drop-down and formula bar in 
 
 'Compare List Gallery'.Selected.ManufacturerName & " - " & 'Compare List Gallery'.Selected.'Device Name'
 
-   ![](./images/Module2/image74.png)
+     ![](./images/Module2/image74.png)
 
 5. Change the **DisplayMode** to **DisplayMode.View.** This will prevent users from changing the value within the text
     box.
@@ -854,7 +857,7 @@ navigate back to the main screen.
 
 Clear(CompareList);Navigate('Main Screen',ScreenTransition.None)
 
-    ![](./images/Module2/image112.png)
+   ![](./images/Module2/image112.png)
 
 **Note** : ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as
 a comma-separator, then use a double ‘;’ here (without the single-quotes).
@@ -870,7 +873,7 @@ a comma-separator, then use a double ‘;’ here (without the single-quotes).
 16. Select the Fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and
     remove any additional Fields.
    
-   ![](./images/Module2/image115.png)
+    ![](./images/Module2/image115.png)
 
 17. Change the **Snap to column** value from 3 to 1.
 
@@ -888,7 +891,7 @@ a comma-separator, then use a double ‘;’ here (without the single-quotes).
     the header. Then, position the view form to be centered under the label. Finally, the “OK” button will be should be
     centered at the bottom of the page under the view form.
 
-   ![](./images/Module2/image119.png)
+    ![](./images/Module2/image119.png)
 
 21. Save your changes and **Publish**.
 
