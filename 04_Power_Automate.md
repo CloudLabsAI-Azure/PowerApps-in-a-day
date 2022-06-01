@@ -6,10 +6,6 @@ Module 4 : Power Automate
 
 ### Hands-on Lab Step-by-Step
 
-```
-April 2022
-```
-
 ## Contents
 
 - Power Automate
@@ -20,10 +16,6 @@ April 2022
    - Exercise 4: Update the Flow
    - Exercise 4: (Optional) Add a Teams Notification
 - References
-- Copyright
-
-
-**1 |** P a g e ©20 22 Microsoft Corporation
 
 ## Power Automate
 
@@ -31,7 +23,7 @@ April 2022
 
 This is the fourth lab in a five-part series covering Power Apps, Microsoft Dataverse, and Power Automate. The assumption
 is that you have successfully completed the first three modules, or at least the initial part of setting up an environment as
-described in the overview – “ **00 - AppInADay Lab Overview.pdf** ”.
+described in the overview – “ **00_** ”.
 
 If you have not completed the previous modules, you can use the partially completed version of the lab package in the
 “\Completed\Module 3 ” folder. Follow the instructions in the document “Importing Module 3 Completed” before
@@ -44,8 +36,7 @@ an email to the selected approver and take an action based on their response.
 
 You should already have an app with these two screens:
 
-
-©20 20 Microsoft Corporation 2 | P a g e
+![](./images/Maodule4/.png)
 
 ### Exercise 1: Create Approval Request Flow
 
