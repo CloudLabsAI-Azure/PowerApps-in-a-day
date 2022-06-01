@@ -5,13 +5,8 @@
 Module 2: Microsoft Dataverse
 
 ### Hands-on Lab Step-by-Step
-
-
 April 2022
 
-
-
-## 1 | P a g e © 2022 Microsoft Corporation
 
 - Microsoft Dataverse Contents
    - Lab Prerequisites
@@ -39,11 +34,7 @@ April 2022
    - Task 10: Test the form
    - Task 11: Verify a new item was added to the Device Order table
    - Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
-- References
-- Copyright
 
-
-©20 22 Microsoft Corporation 2 | P a g e
 
 Microsoft Dataverse
 
@@ -77,7 +68,6 @@ will be used by the back-office staff to process the device orders. These apps t
 the same technology framework (Microsoft Dataverse) that Microsoft Dynamics 365 apps are built-on.
 
 
-**3 |** P a g e © 2022 Microsoft Corporation
 
 ### Goals for this lab
 
@@ -98,8 +88,6 @@ this lab is [ 60 ]
 minutes.
 
 
-
-©20 22 Microsoft Corporation 4 | P a g e
 
 ## Exercise 1: Exploring Microsoft Dataverse
 
@@ -124,13 +112,16 @@ In this task, you will explore Microsoft Dataverse standard Tables.
 Before beginning the exercises, navigate to [Make Power Apps](http://make.powerapps.com/) and confirm that you are in the desired environment for the
 labs.
 
+   ![](./images/Module2/image5.png)
+
 1. In the left pane, expand **Dataverse** and select **Tables**.
 
-
-**5 |** P a g e © 2022 Microsoft Corporation
+   ![](./images/Module2/image6.png)
 
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
+    
+    ![](./images/Module2/image7.png)
 
 _For detailed documentation on Microsoft Dataverse Tables, see_ https://docs.microsoft.com/en-
 us/powerapps/developer/common-data-service/reference/about-entity-reference
@@ -147,10 +138,10 @@ helps to ensure data consistency and allows for built-in support for multi-langu
 To see all the columns for the table, change the default view in the top right corner to show all, or once you reach the
 bottom of the list you can click Remove Filter.
 
+  ![](./images/Module2/image8.png)
+
 _For a list of supported data types, see [Microsoft Dataverse Supported Data Types](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/types-of-fields)_
 
-
-©20 22 Microsoft Corporation 6 | P a g e
 
 **Relationships:**
 
@@ -162,12 +153,18 @@ so that all child Rows are also deleted or simply remove the reference.
 Note: You will need to click the Relationships tab to see relationships. If you don’t see any relationships, click the Reset the
 Filter button.
 
+  ![](./images/Module2/image9.png)
+
+
 **Business rules:**
 
 Building a Business Rule is like building a flowchart where you can define conditions and actions. You can learn more
 about Business rules in the link below.
 
 _Business Rules Recommendations:_ [Business Rules Recommendations](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+
+   ![](./images/Module2/image10.png)
+
 
 **Views:**
 
@@ -176,8 +173,8 @@ own filtering and sorting criteria. For example, you could create a view to see 
 another one to see Rows that haven’t been updated in a year. Create views to make the application users more
 productive in filtering their data.
 
+  ![](./images/Module2/image11.png)
 
-**7 |** P a g e © 2022 Microsoft Corporation
 
 **Forms:**
 
@@ -186,37 +183,46 @@ the forms people use are designed to allow them to find or enter the information
 different types of forms like Quick Create, Quick View, Card, and a Main form. For some of these forms you can have more
 than one version, to accommodate for different user roles within your organization.
 
+  ![](./images/Module2/image12.png)
+
+
 **Dashboards** :
 
 Dashboards helps you bring your views, charts, and web resources together in one place.
 
+![](./images/Module2/image13.png)
 
-©20 22 Microsoft Corporation 8 | P a g e
 
 **Charts** :
 
 Use Charts to display high-level view of your data in insightful and graphical ways.
+
+  ![](./images/Module2/image14.png)
+
 
 **Keys** :
 
 Allows you to view the lookup keys for the table. Keys can contain multiple columns to define a composite key. Keys
 enforce uniqueness, so they should not be used when there is a need to store duplicate values of columns used.
 
+  ![](./images/Module2/image15.png)
+
+
 **Commands** :
-
-
-**9 |** P a g e © 2022 Microsoft Corporation
 
 Microsoft Dataverse allows you to create your own command bar buttons. The commands added to this table will be listed
 here.
+
+   ![](./images/Module2/image16.png)
+
 
 **Data:**
 
 You can view and search the data in the table. This gives you a quick way to see some of the data for the table without
 having to jump into a specific Canvas or Model-driven app.
 
+   ![](./images/Module2/image17.png)
 
-©20 22 Microsoft Corporation 10 | P a g e
 
 ### Task 2: Explore Standard Choices
 
@@ -224,10 +230,14 @@ Just like standard Tables, the Microsoft Dataverse includes a set of standard **
 Later in this lab, we will create a custom **Choice** called **ApprovalStatus** to set the approval status of a device order.
 
 1. Select **Choices** from underneath the expanded **Dataverse.**
+
+   ![](./images/Module2/image18.png)
+
+
 2. Examine the standard **Choices.**
 
+   ![](./images/Module2/image19.png)
 
-**11 |** P a g e © 2022 Microsoft Corporation
 
 ## Exercise 2: Custom Tables and Columns
 
@@ -249,8 +259,6 @@ In this task, you will create a custom table to store device order requests.
 4. Click **Create**.
 
 
-©20 22 Microsoft Corporation 12 | P a g e
-
 5. If prompted, approve the option in this dialog.
 
 ### Task 2: Create custom columns
@@ -269,12 +277,8 @@ and the base currency. For additional information on using the Currency column, 
 
 
 
-**13 |** P a g e © 2022 Microsoft Corporation
-
 3. Enter **Device Price** for Description, **0** for **Minimum Value** , **5000** for **Maximum Value** , and click **Done**.
 
-
-©20 22 Microsoft Corporation 14 | P a g e
 
 4. Click **Add Column** again.
 5. Enter **Requested By** for **Display Name** , **RequestedBy** for **Name** , **Email** for **Data Type** , make the column
@@ -296,20 +300,15 @@ Approved Date ApprovedDate Date Only
     **New Choice** for **Choice**.
 
 
-**15 |** P a g e © 2022 Microsoft Corporation
-
 9. Change the **New Choice** label to **Approve**
 10. Click **Add new item**.
 11. Enter **Reject** and click **Save**.
 12. Click **Done**.
 
 
-©20 22 Microsoft Corporation 16 | P a g e
 
 13. Click **Save Table**.
 
-
-**17 |** P a g e © 2022 Microsoft Corporation
 
 ### Task 3: Create a calculated column
 
@@ -326,14 +325,9 @@ the formula used in the calculation.
 5. Click **Add Action**.
 
 
-©20 22 Microsoft Corporation 18 | P a g e
-
 6. Type price and select the **Price** column you created.
 7. Add *** 0 .1** and click the **Check Mark** button.
 8. Click **Save and Close.**
-
-
-**19 |** P a g e © 2022 Microsoft Corporation
 
 9. Click **Done**.
 
@@ -354,8 +348,6 @@ In this task, you will create a **Business rule** that will set the Estimated De
 2. Click the arrow to **Show Details**.
 
 
-©20 22 Microsoft Corporation 20 | P a g e
-
 3. Change the **Name** to **Calculate Ship Date** and click the arrow to **Hide Details**.
 4. Select the **Condition** , change the name to **Check Ship Date**.
 5. In the **Rule 1** section select **Entity** for **Source** , **Approved Date** for **Column** , **Contains Data** for **Operator** and click
@@ -365,16 +357,11 @@ In this task, you will create a **Business rule** that will set the Estimated De
 change to the properties otherwise they will revert to the prior value. The Business Rule (Text View) will automatically update
 after you hit apply when you are done modifying the rule._
 
-
-**21 |** P a g e © 2022 Microsoft Corporation
-
 6. Click **Add** , select **Add Set Field Value**.
 7. Select the True side of the condition.
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
     **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-
-©20 22 Microsoft Corporation 22 | P a g e
 
 9. Click **Validate**.
 10. Make sure validation succeeds.
@@ -383,15 +370,10 @@ after you hit apply when you are done modifying the rule._
 13. Confirm activation. Business rules only execute when they are activated. In the future to make changes to rules
     you deactivate them, make the change, and then re-activate the rule.
 
-
-**23 |** P a g e © 2022 Microsoft Corporation
-
 14. Close the process editor browser window or tab.
 15. Click **Done**. The list should refresh showing the Business Rule you just created.
 16. Your Device Order table will have one Business Rule.
 
-
-©20 22 Microsoft Corporation 24 | P a g e
 
 ## Exercise 3: Connect the data from the Canvas App
 
@@ -407,8 +389,6 @@ that has the Microsoft Dataverse database instance.
 2. Select the **Data sources** to display the current sources. Select **Add Data.**
 
 
-**25 |** P a g e © 2022 Microsoft Corporation
-
 3. Click on **Device Orders** from the table list to include it as a data source for our app.
 
 ### Task 2: Create the edit form
@@ -416,14 +396,9 @@ that has the Microsoft Dataverse database instance.
 1. Switch to the **Tree view** and select the **Main Screen**.
 
 
-©20 22 Microsoft Corporation 26 | P a g e
-
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.
 3. Select the **Compare Screen**. You should now have the selected devices.
 4. Select the **Insert** tab, click **Forms** , and select **Edit**.
-
-
-**27 |** P a g e © 2022 Microsoft Corporation
 
 5. Click the **Data Source** drop-down in the Data pane on the right.
 6. Select the **Device Orders** table as the data source.
@@ -438,8 +413,6 @@ dragging the field to the desired placement.
     f. Request Date
 
 
-©20 22 Microsoft Corporation 28 | P a g e
-
 9. Close the **Fields** pane.
 10. Move the form control **Form1** to the right of the screen and resize it using the drag handles such that it fits in the
     empty space. See picture on the right. Make sure there is enough space below the form to add a Submit button.
@@ -449,9 +422,6 @@ selecting the correct control. To move it make sure you select the Form and not 
 
 11. Change the **Snap to columns** setting from 3 to 1. This will modify the layout of the edit form to be single
     column.
-
-
-**29 |** P a g e © 2022 Microsoft Corporation
 
 _For more info on working with multi-column form layouts, see [Working with forms layout](https://powerapps.microsoft.com/tutorials/working-with-form-layout/)._
 
@@ -467,8 +437,6 @@ user selects the Surface Pro device, we want the device order to have the title:
 
 1. Expand the **Device Name**.
 
-
-©20 22 Microsoft Corporation 30 | P a g e
 
 Notice that the default card contains a few controls:
 
@@ -487,8 +455,6 @@ DataCardKey1 : This is the label that displays the title of the Field.
 3. Click **Unlock** so you can customize the card
 
 
-**31 |** P a g e © 2022 Microsoft Corporation
-
 _For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can
 perform the same customizations using the property drop-down and formula bar in the top left of the studio._
 
@@ -506,8 +472,6 @@ In this task, we are going to set the price to the price of the item and then ma
 1. Expand **Price** data card.
 
 
-©20 22 Microsoft Corporation 32 | P a g e
-
 2. Select the **Data Card Value**.
 3. Select the **Advanced** tab and click **Unlock**.
 4. Change the **Default** property in the Data section to: Text('Compare List
@@ -518,9 +482,6 @@ In this task, we are going to set the price to the price of the item and then ma
 
 Let’s set the **default** value for the Approver to be the email address of the **logged in user’s manager**.
 
-
-**33 |** P a g e © 2022 Microsoft Corporation
-
 You will use the **Office 365 graph** to retrieve the manager’s email. You can find more about the Office 365 Users
 Connection provider here [Office 365 Users Connection Provider](https://docs.microsoft.com/connectors/office365users/)
 
@@ -529,8 +490,6 @@ Connection provider here [Office 365 Users Connection Provider](https://docs.mic
 3. Select the **Approver Data Card** from the Tree view.
 4. Go to the **Advanced** pane and **Unlock**.
 
-
-©20 22 Microsoft Corporation 34 | P a g e
 
 5. Set the **Default** value to: User().Email This expression will use your user’s email, so you won’t accidentally e-
     mail your manager to approve your testing.
@@ -563,8 +522,6 @@ change this value.
 4. Change the **DisplayMode** property to: DisplayMode.View
 
 
-**35 |** P a g e © 2022 Microsoft Corporation
-
 5. Set the **Default** value to User().Email
     This is the email of the currently logged in user
 
@@ -576,9 +533,6 @@ Let’s set the Request Date to be today’s date.
 2. Select the **DateValue** card.
 3. Go to the **Advanced** pane and **Unlock** the card.
 4. Change the **DefaultDate** property to Today()
-
-
-©20 22 Microsoft Corporation 36 | P a g e
 
 Notice that the date in the calendar control will change to today’s date.
 Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of
@@ -594,9 +548,6 @@ the form the Field will get updated as part of the form submit.
 2. Copy (Ctrl-C) the **Compare button** from the first screen which has the correct color values.
 3. Go back to the **Compare Screen** and paste (Ctrl-V) the button.
 
-
-**37 |** P a g e © 2022 Microsoft Corporation
-
 4. Position it in the bottom right of the screen, center aligned with the Form.
 5. Make sure the button is larger – you can resize to 280x60 using the Properties pane on the right.
 6. Set the button’s **Text** property to **“Submit device request”**
@@ -606,9 +557,6 @@ the form the Field will get updated as part of the form submit.
 
 Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
 check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.
-
-
-©20 22 Microsoft Corporation 38 | P a g e
 
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property
     to SubmitForm(Form1).
@@ -621,9 +569,6 @@ When the button is pressed, the form data will be submitted to the Microsoft Dat
 
 1. Select the **Main Screen** in the left side tree navigation and click Play.
 2. Select a few devices to compare. And click **Compare**.
-
-
-**39 |** P a g e © 2022 Microsoft Corporation
 
 3. Select one of the devices.
 
@@ -639,8 +584,6 @@ there is likely an error. Click the X in top right to get back to the design mod
 If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.
 
 
-©20 22 Microsoft Corporation 40 | P a g e
-
 7. Exit the preview mode (‘X’ in top right).
 8. Save the Application and Publish
 
@@ -652,8 +595,6 @@ If there is an error, you will see a yellow error icon next to the Submit button
 4. Select the **Data** tab.
 5. You should see a newly added row with your device order details. This may take a few seconds to load.
 
-
-**41 |** P a g e © 2022 Microsoft Corporation
 
 ### Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
 
@@ -669,8 +610,6 @@ navigate back to the main screen.
 5. Select the Form – you can use the tree view on the left to select **Form1**.
 
 
-©20 22 Microsoft Corporation 42 | P a g e
-
 6. Set the **OnSuccess** property to: Navigate('Submit Success Screen', ScreenTransition.None)
 7. Copy (Ctrl-C) the **Header** from the Compare Screen.
 8. Go to the to the **Submit Success Screen** , paste the header and align Top.
@@ -679,9 +618,6 @@ navigate back to the main screen.
 10. Increase the font size, the size of the label and center the text.
 11. Add a **button** and set its **Text** to: **"OK”.**
 12. When pressed, the button should remove items from the CompareList collection and navigate to the main screen.
-
-
-**43 |** P a g e © 2022 Microsoft Corporation
 
 13. Set the **OnSelect** property of the button to:
 
@@ -694,16 +630,11 @@ a comma-separator, then use a double ‘;’ here (without the single-quotes).
 15. Configure its **data source** to point to the **‘Device Orders’** table.
 
 
-©20 22 Microsoft Corporation 44 | P a g e
-
 16. Select the Fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and
     remove any additional Fields.
 17. Change the **Snap to column** value from 3 to 1.
 18. Change the **Layout** from Vertical to **Horizontal**.
 19. Set form **Item** property to Form1.LastSubmit
-
-
-**45 |** P a g e © 2022 Microsoft Corporation
 
 20. Reposition/Resize the form until it looks like the image below. The Label will be first on the screen, centered under
     the header. Then, position the view form to be centered under the label. Finally, the “OK” button will be should be
@@ -713,19 +644,15 @@ a comma-separator, then use a double ‘;’ here (without the single-quotes).
 23. Select few more devices and click Compare
 
 
-©20 22 Microsoft Corporation 46 | P a g e
-
 24. Select one of the new devices, provide a comment and click Submit.
 25. Verify that the confirmation screen shows the order details. Click **OK**.
 26. The application will navigate back to the main screen and the compare list will be cleared.
 
 
-**47 |** P a g e © 2022 Microsoft Corporation
 
 27. Close the application.
 
 
-©20 22 Microsoft Corporation 48 | P a g e
 
 ## References
 
@@ -734,7 +661,6 @@ Microsoft Dataverse. For an up to date list of learning references, see Power Ap
 Resources.
 
 
-**49 |** P a g e © 2022 Microsoft Corporation
 
 ## Copyright
 
