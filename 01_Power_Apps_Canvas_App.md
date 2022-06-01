@@ -18,10 +18,6 @@ Module 1: Power Apps Canvas App
    - Exercise 2: Add Device Gallery and Connect to Data Source
    - Exercise 3: Add Compare Screen
    - References
-- Copyright
-
-
-**1 |** P a g e © 2022 Microsoft Corporation
 
 ## Power Apps Canvas App
 
@@ -51,7 +47,7 @@ is like Excel. Studio components:
 8. **Breadcrumbs** , you can navigate up the tree view.
 
 
-©20 22 Microsoft Corporation 2 | P a g e
+
 
 ### Goals for this lab
 
@@ -102,7 +98,7 @@ This document will walk through creating a Power Apps Canvas Studio basics to en
 When you are done with this first portion of the lab, your app will look like this:
 
 
-**3 |** P a g e © 2022 Microsoft Corporation
+
 
 ### Locale-specific difference in formulas
 
@@ -121,8 +117,6 @@ These localized formats are indicated with the symbol throughout the document. I
 locale, you can ignore any of the formulas indicated by the locale symbol.
 
 
-©20 22 Microsoft Corporation 4 | P a g e
-
 ### Exercise 1: Create the app in Power Apps
 
 **IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
@@ -138,7 +132,7 @@ Task 1: Sign-in to Power Apps web studio
     and logging in again)
 
 
-**5 |** P a g e © 2022 Microsoft Corporation
+
 
 Task 2: Create a new application
 
@@ -149,7 +143,6 @@ Task 2: Create a new application
 5. Click **Skip** if you receive the **Welcome to Power Apps Studio** prompt.
 
 
-©20 22 Microsoft Corporation 6 | P a g e
 
 Task 3: Rename the screen
 
@@ -168,7 +161,6 @@ the others, you may rename them as you please on your own. It is important that 
 as future steps may rely on specific screen names._
 
 
-**7 |** P a g e © 2022 Microsoft Corporation
 
 Task 4: Add a header containing the app name and logged in user’s name
 
@@ -179,7 +171,6 @@ Task 4: Add a header containing the app name and logged in user’s name
     **NOTE** : It is IMPORTANT to rename this label correctly, so subsequent instructions in the lab work as expected.
 
 
-©20 22 Microsoft Corporation 8 | P a g e
 
 5. Select **Text** from the property drop-down list and enter **"Device Ordering App"** in the formula bar. You can also
     type directly in the label.
@@ -187,7 +178,6 @@ Task 4: Add a header containing the app name and logged in user’s name
     can resize the label by either dragging the corners of the label or adjusting the size in the Right Pane.
 
 
-**9 |** P a g e © 2022 Microsoft Corporation
 
 7. Align center the text.
 8. Select the **Home** tab, change the **Fill** to blue and the font **Color** to white.
@@ -199,8 +189,6 @@ or formulas for any property on a control._
 10. Select **+ Insert** button and drag another **Text Label** to the Main Screen. You will use this label to display the
     logged in user’s name.
 
-
-©20 22 Microsoft Corporation 10 | P a g e
 
 11. Drag the label to the far-right side of the screen as shown and center the label vertically to be in line with the
     header text. As you center your label, purple alignment markers will appear.
@@ -222,7 +210,6 @@ in user. App users will always be logged in with their business or school accoun
 so this information will always be available for any Power Apps app.
 
 
-**11 |** P a g e © 2022 Microsoft Corporation
 
 Task 5: Save the Application
 
@@ -240,7 +227,6 @@ In the application settings page, you can:
 - Customize the app icon – choose a background color and icon
 
 
-©20 22 Microsoft Corporation 12 | P a g e
 
 6. Select the **Display** tab to view the available screen orientation and aspect ratio settings. For this app, we will leave
     it at the default setting of Landscape with 16:9 aspect ratio.
@@ -250,7 +236,6 @@ In the application settings page, you can:
 10. After the app is saved, click the **Back** arrow in the top left to get back to the studio.
 
 
-**13 |** P a g e © 2022 Microsoft Corporation
 
 **_Tip:_** _In Power Apps when you save a version of your app the first version is published by default and available to everyone
 you share the app with. Subsequent saves are only visible to the app maker in the studio. You must explicitly publish it for all
@@ -276,13 +261,11 @@ This will add a gallery called **Gallery1** onto the screen. Notice the control 
 three controls within it – two labels and an image. A data pane will pop up on the right.
 
 
-©20 22 Microsoft Corporation 14 | P a g e
 
 3. Expand **Connectors** , then click **Show all connectors**.
 4. Select **Import from Excel.**
 
 
-**15 |** P a g e © 2022 Microsoft Corporation
 
 5. In the File Open dialog, browse to the location where you unzipped the data file (for example
     C:\AIAD\PAHandsOnLabContent\) and select **Device-Order-Data.xlsx** to load it.
@@ -296,7 +279,6 @@ or a Microsoft Dataverse table.
 7. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
 
 
-©20 22 Microsoft Corporation 16 | P a g e
 
 8. Rename the **Gallery1** to **Device Gallery**.
 
@@ -329,7 +311,6 @@ _Don’t worry about making the gallery pixel perfect, the purpose of this exerc
 enough UX. You can always repeat these labs to practice your pixel perfect skills._
 
 
-**17 |** P a g e © 2022 Microsoft Corporation
 
 Task 2: Arrange the device gallery
 
@@ -342,7 +323,7 @@ Task 2: Arrange the device gallery
     the width of the image control is positioned within the template.
 
 
-©20 22 Microsoft Corporation 18 | P a g e
+
 
 5. Notice the gallery control on our screen automatically has scrolling capabilities.
 
@@ -356,7 +337,6 @@ later be used as a filter for the device gallery created above.
 2. Select the **Insert** tab on the ribbon and open the **Gallery** drop-down, then select **Vertical.**
 
 
-**19 |** P a g e © 2022 Microsoft Corporation
 
 3. Select **Manufacturers** for the data source.
 4. Rename the gallery to **Manufacturer Gallery**.
@@ -364,14 +344,12 @@ later be used as a filter for the device gallery created above.
     device gallery. Your two galleries should like the image below.
 
 
-©20 22 Microsoft Corporation 20 | P a g e
-
 6. Select **Manufacturer Gallery** (not just the template cell), in the **Properties** tab on the right, click **Layout**.
 7. Scroll down to the **Gallery** section and select **2 Columns**.
 8. Change the **Wrap Count** from **2** to **1**. This will change it to a single column gallery.
 
 
-**21 |** P a g e © 2022 Microsoft Corporation
+
 
 9. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle
     bottom drag control upwards. If you select the first image, the image size will reduce whereas the template size
@@ -393,7 +371,6 @@ bar.
     table.
 
 
-©20 22 Microsoft Corporation 22 | P a g e
 
 3. Select the image control in the first template cell in the gallery and change the value of **Image** in the formula bar
     from **ThisItem.HQ** to **ThisItem.Logo**. All the gallery items will now display logo images. You can also use the left
@@ -408,7 +385,6 @@ for this formula. This can help guide you to making valid formulas.
     **Fit**.
 
 
-**23 |** P a g e © 2022 Microsoft Corporation
 
 5. Reduce the height of the template cell such that all nine manufacturers fit without a scrollbar. To do this, use the
     drag handles to first reduce the height of the image and subsequently reduce the height of the template cell.
@@ -429,7 +405,7 @@ If(ThisItem.IsSelected,ColorFade ('Header Label'.Fill,75%))
 This approach is recommended so the fill color matches the header label with a 75% fade. If you change the fill
 color of header label, the fill color of the selected item in the gallery will automatically change.
 
-©20 22 Microsoft Corporation 24 | P a g e
+
 
 2. Now try using the preview mode to perform a quick test of this highlighting. You can enable preview mode by
     holding down the Alt key (also known as the Option key) and clicking a few different manufacturers in the gallery,
@@ -456,8 +432,6 @@ This will filter the device gallery to only display items that match the selecte
 ManufacturerID.
 
 
-**25 |** P a g e © 2022 Microsoft Corporation
-
 2. Select a different item in the manufacturer gallery on the left, and you will notice the device gallery will update
     accordingly. Note: In some cases, the first few items won’t show the selection, try selecting the 5th or 6th item if
     that occurs.
@@ -480,8 +454,6 @@ Here are some additional formatting suggestions. These are for cosmetic purposes
 - Expand the width of the label to the template width.
 
 
-©20 22 Microsoft Corporation 26 | P a g e
-
 
 Notice that if you do this with the Title1 label, the subtitle label expands as well. This is because it is X property is set
 to Title1.X, the X coordinate position of the Title1 label. For more on the relative positioning of controls, see [UX
@@ -501,7 +473,6 @@ manually change it to [$-en-US]:
 4. In the property drop-down list, select the **Text** field and change to **ThisItem.Title**.
 
 
-**27 |** P a g e © 2022 Microsoft Corporation
 
 **Optional UI enhancement:**
 
@@ -527,7 +498,6 @@ _For a full list of Color functions and colors, see [Function Colors](https://po
 3. Click the back arrow.
 
 
-©20 22 Microsoft Corporation 28 | P a g e
 
 Task 9: Add a checkbox to add a device to Compare list
 
@@ -538,7 +508,6 @@ We want to allow users to select multiple devices to compare before making a fin
 3. Add a checkbox by clicking **Insert** - > **Input** - > **Checkbox**.
 
 
-**29 |** P a g e © 2022 Microsoft Corporation
 
 4. Move the inserted checkbox below the price.
 5. Change the checkbox text to **“Compare”.** You can do this by setting the **Text** property.
@@ -552,7 +521,6 @@ memory collection of devices that have been selected for comparison.
     formula bar to: Collect(CompareList,ThisItem)
 
 
-©20 22 Microsoft Corporation 30 | P a g e
 
 2. Set the **OnUncheck** value to: Remove(CompareList,ThisItem)
     This is required to make sure the unchecked items are removed from the collection.
@@ -567,7 +535,7 @@ added to the collection since the result will be true, i.e. this item *is* in Co
 5. Close the preview.
 
 
-**31 |** P a g e © 2022 Microsoft Corporation
+
 
 6. Click the **View** tab and select **Collections**.
 7. You will see the **CompareList** collection and the three items you selected.
@@ -580,7 +548,7 @@ not just the fields we display in the Devices Gallery.
 10. Uncheck all the checked items and click on close the preview.
 
 
-©20 22 Microsoft Corporation 32 | P a g e
+©20 
 
 11. Click the **View** tab and select **Collections**.
 12. All items will be removed from the **CompareList** collection.
@@ -602,7 +570,7 @@ the first item.
 
 This will set it to the first item in the table.
 
-**33 |** P a g e © 2022 Microsoft Corporation
+
 
 2. To preview the app, press the Preview button on the upper right of the top menu. Pressing the F5 key will also
     preview the application. **Note** : You can also test your app right on the canvas by holding down the Alt key to
@@ -611,8 +579,6 @@ This will set it to the first item in the table.
 4. To exit preview mode, click the X in the top right corner.
 5. Save the application.
 
-
-©20 22 Microsoft Corporation 34 | P a g e
 
 ### Exercise 3: Add Compare Screen
 
@@ -635,14 +601,14 @@ Task 1: Add screen
     button to the screen.
 
 
-**35 |** P a g e © 2022 Microsoft Corporation
+
 
 4. Place the button in the bottom right corner.
 5. Set the button’s **Text** property to: "Compare " & CountRows(CompareList) & " item(s)"
 6. Resize the button, so the text fits without wrapping.
 
 
-©20 22 Microsoft Corporation 36 | P a g e
+
 
 7. Select the button and set its **DisplayMode** property to Disabled if there are no items in CompareList:
     If(CountRows(CompareList) > 0, DisplayMode.Edit, DisplayMode.Disabled)
@@ -652,7 +618,7 @@ Task 1: Add screen
 11. Position it to the left of the compare button.
 
 
-**37 |** P a g e © 2022 Microsoft Corporation
+
 
 12. Change the **Text** property to "Clear Selection"
 13. Set the **OnSelect** property for this button to: Clear(CompareList). This will remove all the items in the
@@ -660,8 +626,6 @@ Task 1: Add screen
 14. Select the **Compare** button, click on the **Action** tab and select **Navigate.**
 15. Select **Compare Screen** from the drop-down and **ScreenTransition.None** for transition type.
 
-
-©20 22 Microsoft Corporation 38 | P a g e
 
 16. Click **Preview**.
 17. Select a couple of devices and click the **Compare** button and verify that it takes you to the second screen.
@@ -672,8 +636,6 @@ Task 1: Add screen
 22. Click on the ... button of the **Header** and select **Copy**.
 
 
-**39 |** P a g e © 2022 Microsoft Corporation
-
 23. Right click on the **Compare Screen** by and select **Paste**.
 24. The **Header** in the **Compare Screen** should look like the image below.
 25. Copy **Device Gallery** from the **Main Screen** and paste it in the **Compare Screen**.
@@ -683,7 +645,6 @@ Task 1: Add screen
 27. Rename this gallery to **Compare List Gallery**.
 
 
-©20 22 Microsoft Corporation 40 | P a g e
 
 Task 2: Configure the gallery
 
@@ -704,7 +665,6 @@ In the **Compare Screen** we are selecting a given item to get approved, so we d
     Rename these labels as you go for ease of use later.
 
 
-**41 |** P a g e © 2022 Microsoft Corporation
 
 3. Move the new label so that it is just below the price. Set the **Text** property to: ThisItem.ManufacturerName.
 4. Use the ribbon to change the font weight from **Semibold** to **Normal** and change the **Size** property from 20 to 18.
@@ -718,7 +678,6 @@ Note : For this lab, to save time you may add one or two of these additional pro
 additional device properties.
 
 
-©20 22 Microsoft Corporation 42 | P a g e
 
 Task 4: Highlight the selected device
 
@@ -744,7 +703,7 @@ Task 5: Add an icon to navigate to the first screen
 2. Go to **Insert** , then **Icons** and select the **Left** icon. Position it in the upper left corner of the screen.
 
 
-**43 |** P a g e © 2022 Microsoft Corporation
+
 
 3. Select the arrow control, change the **Color** property to **White**. You can change this in the formula bar or through
     the **Properties** pane on the right.
@@ -758,7 +717,7 @@ Right. This will make the icon look smaller but still have a larger hit target f
 for most icons.
 
 
-©20 22 Microsoft Corporation 44 | P a g e
+
 
 Task 6: Test the app
 
@@ -776,7 +735,6 @@ into controls.
 8. Click **Clear Selection**.
 
 
-**45 |** P a g e © 2022 Microsoft Corporation
 
 9. The **CompareList** will clear, and the **Compare** button will become disabled.
 10. Close the preview.
@@ -798,7 +756,6 @@ This action will publish the latest saved version of the app.
              Microsoft Store:
 
 
-©20 22 Microsoft Corporation 46 | P a g e
 
 5. When the app starts, it will prompt for your business or school account credentials. **Log in** with the same account
     that you used to create the Power Apps app. You should see the app you just created in the list of apps. **Run the**
@@ -817,7 +774,6 @@ Distribution Group within the @contoso.com tenant.
     it with a user group.
 
 
-**47 |** P a g e © 2022 Microsoft Corporation
 
 4. Select the user or group; this will add it to the **Shared with** list below. You may provide this user/group either **Can**
     **use** or **Can edit** permissions.
@@ -835,7 +791,6 @@ Features like shading, number of rows, and greying out items not selected can ha
 ### and feels. To learn more, check out the links in the reference section and take the next step in building great apps.
 
 
-©20 22 Microsoft Corporation 48 | P a g e
 
 ### References
 
