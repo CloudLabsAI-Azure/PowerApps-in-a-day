@@ -470,23 +470,47 @@ Open the device ordering app. Make sure you are opening the version of the app t
 that has the Microsoft Dataverse database instance.
 
 1. Select **Apps** , select the **Device Order App** you created in Module 1, and click **Edit.**
+
+   ![](./images/Module2/image55.png)
+
 2. Select the **Data sources** to display the current sources. Select **Add Data.**
 
+   ![](./images/Module2/image56.png)
 
 3. Click on **Device Orders** from the table list to include it as a data source for our app.
+
+   ![](./images/Module2/image57.png)
 
 ### Task 2: Create the edit form
 
 1. Switch to the **Tree view** and select the **Main Screen**.
 
+   ![](./images/Module2/image58.png)
 
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.
+
+   ![](./images/Module2/image59.png)
+
 3. Select the **Compare Screen**. You should now have the selected devices.
+
+   ![](./images/Module2/image60.png)
+
 4. Select the **Insert** tab, click **Forms** , and select **Edit**.
 
+   ![](./images/Module2/image61.png)
+
 5. Click the **Data Source** drop-down in the Data pane on the right.
+
+   ![](./images/Module2/image62.png)
+
 6. Select the **Device Orders** table as the data source.
+ 
+   ![](./images/Module2/image63.png)
+
 7. Click **Edit Fields**.
+
+   ![](./images/Module2/image64.png)
+
 8. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by
 dragging the field to the desired placement.
     a. Device Name
@@ -496,10 +520,14 @@ dragging the field to the desired placement.
     e. Requested By
     f. Request Date
 
+   ![](./images/Module2/image65.png)
 
 9. Close the **Fields** pane.
+
 10. Move the form control **Form1** to the right of the screen and resize it using the drag handles such that it fits in the
     empty space. See picture on the right. Make sure there is enough space below the form to add a Submit button.
+
+   ![](./images/Module2/image66.png)
 
 **Note** : You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are
 selecting the correct control. To move it make sure you select the Form and not a control within the form.
@@ -507,10 +535,17 @@ selecting the correct control. To move it make sure you select the Form and not 
 11. Change the **Snap to columns** setting from 3 to 1. This will modify the layout of the edit form to be single
     column.
 
+    ![](./images/Module2/image67.png)
+
 _For more info on working with multi-column form layouts, see [Working with forms layout](https://powerapps.microsoft.com/tutorials/working-with-form-layout/)._
 
 12. To create a new instance of the form when the screen is loaded. Click **Compare Screen** in left tree view pane.
+
+    ![](./images/Module2/image68.png)
+
 13. Select the **OnVisible** property of the screen, enter: **NewForm(Form1)**
+
+    ![](./images/Module2/image69.png)
 
 ### Task 3: Configure the title column
 
@@ -521,6 +556,7 @@ user selects the Surface Pro device, we want the device order to have the title:
 
 1. Expand the **Device Name**.
 
+   ![](./images/Module2/image70.png)
 
 Notice that the default card contains a few controls:
 
@@ -533,11 +569,15 @@ DataCardValue1 : This is the text input control where you can enter the Title. F
 based on the selected device.
 DataCardKey1 : This is the label that displays the title of the Field.
 
+    ![](./images/Module2/image71.png)
 
 2. Select **Device Name DataCardValue** in the tree view. Then, open the **Advanced** tab in the right-hand pane.
 
+   ![](./images/Module2/image72.png)
+
 3. Click **Unlock** so you can customize the card
 
+   ![](./images/Module2/image73.png)
 
 _For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can
 perform the same customizations using the property drop-down and formula bar in the top left of the studio._
@@ -546,21 +586,37 @@ perform the same customizations using the property drop-down and formula bar in 
 
 'Compare List Gallery'.Selected.ManufacturerName & " - " & 'Compare List Gallery'.Selected.'Device Name'
 
+   ![](./images/Module2/image74.png)
+
 5. Change the **DisplayMode** to **DisplayMode.View.** This will prevent users from changing the value within the text
     box.
+
+   ![](./images/Module2/image75.png)
 
 ### Task 4: Configure the price Field
 
 In this task, we are going to set the price to the price of the item and then make it read-only.
 
 1. Expand **Price** data card.
-
+ 
+   ![](./images/Module2/image76.png)
 
 2. Select the **Data Card Value**.
+  
+   ![](./images/Module2/image77.png)
+
 3. Select the **Advanced** tab and click **Unlock**.
+
+   ![](./images/Module2/image78.png)
+
 4. Change the **Default** property in the Data section to: Text('Compare List
     Gallery'.Selected.Price,"$##,###.00")
+
+   ![](./images/Module2/image79.png)
+
 5. Select the Price Field and change the **DisplayMode** property to DisplayMode.View.
+
+   ![](./images/Module2/image80.png)
 
 ### Task 5: Configure the Approval Field
 
@@ -570,10 +626,20 @@ You will use the **Office 365 graph** to retrieve the manager’s email. You can
 Connection provider here [Office 365 Users Connection Provider](https://docs.microsoft.com/connectors/office365users/)
 
 1. Select **Data sources**. Click **Add data** , then expand Connectors. Select **Office 365 Users**.
+
+   ![](./images/Module2/image81.png)
+
 2. When prompted, click **Connect**
+   
+   ![](./images/Module2/image82.png)
+
 3. Select the **Approver Data Card** from the Tree view.
+   
+   ![](./images/Module2/image83.png)
+
 4. Go to the **Advanced** pane and **Unlock**.
 
+   ![](./images/Module2/image84.png)
 
 5. Set the **Default** value to: User().Email This expression will use your user’s email, so you won’t accidentally e-
     mail your manager to approve your testing.
