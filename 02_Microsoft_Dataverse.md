@@ -112,7 +112,7 @@ In this task, you will explore Microsoft Dataverse standard Tables.
 Before beginning the exercises, navigate to [Make Power Apps](http://make.powerapps.com/) and confirm that you are in the desired environment for the
 labs.
 
-     ![](./images/Module2/image5.png)
+   ![](./images/Module2/image5.png)
 
 1. In the left pane, expand **Dataverse** and select **Tables**.
 
