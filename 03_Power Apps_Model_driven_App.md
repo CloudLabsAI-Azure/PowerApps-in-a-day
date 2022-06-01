@@ -558,7 +558,7 @@ Task 1: Test the application
 12. The **Business Process Flow** should now have **5** stages. This is because this order costs more than $1k and needs
 **Capital Approval**.
 
-   ![](images/Module3/apptest10.png)  
+    ![](images/Module3/apptest10.png)  
 
 1. Select **Device Orders**.
 1. Click on the other order you created.
