@@ -517,7 +517,7 @@ In this optional exercise, you will modify the existing flow to include a Teams 
    
 1. Type **Estimated Ship Date:** and then select **Estimated Ship Date** from under the Dynamics Content **When a**
     **record is created** header.
-   ![](./images/Module4/PowerApps-updateflow7.png)  
+   ![](images/Module4/PowerApps-updateflow6.1.png)  
 
 1. Click on the **... Menu** button of the **Post a message** step and select **Copy to my clipboard**.
    
