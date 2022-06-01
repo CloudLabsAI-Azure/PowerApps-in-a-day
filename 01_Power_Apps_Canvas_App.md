@@ -572,8 +572,7 @@ the filter command must match the name of your gallery.
    - Expand the width of the label to the template width.
 
       Notice that if you do this with the Title1 label, the subtitle label expands as well. This is because it is X property is set
-to Title1.X, the X coordinate position of the Title1 label. For more on the relative positioning of controls, see [UX
-Patterns](https://powerapps.microsoft.com/blog/ux-patterns-control-positioning/)
+to Title1.X, the X coordinate position of the Title1 label. You can find more details on the relative positioning of controls here: `https://powerapps.microsoft.com/blog/ux-patterns-control-positioning/`
 
      - _Change the_ **PaddingLeft** _of the Subtitle from_ **0** _to_ **10**_._
 
@@ -1017,7 +1016,7 @@ Congratulations! You’ve created your Power Apps app. Now let’s publish and t
     that you used to create the Power Apps app. You should see the app you just created in the list of apps. **Run the**
     **app**.
 
-Task 8: [Optional] Share the application with a colleague
+### Task 8: [Optional] Share the application with a colleague
 
 You may optionally share the application with another user within the same organizational tenant as the user who created
 the app. So, if you had logged in as meganb@contoso.com, you may share the app with any other User, Security Group or
