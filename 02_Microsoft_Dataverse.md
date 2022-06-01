@@ -83,10 +83,7 @@ After this lesson you will be able to:
 -^ Implement a server-side business rule
 
 
-The time to complete
-this lab is [ 60 ]
-minutes.
-
+The time to complete this lab is 60 minutes.
 
 
 ## Exercise 1: Exploring Microsoft Dataverse
@@ -102,16 +99,19 @@ configure a custom data model that fits your application.
 
 In addition to allowing for the creation of custom Tables, Microsoft Dataverse contains a Common Data Model (CDM)
 consisting of hundreds of standard table definitions. You can find the current CDM schema at [Github Microsoft CDM](https://github.com/Microsoft/CDM) and
-you can browse the CDM using the CDM Visual Table Navigator located here [Github CDM](https://microsoft.github.io/CDM/). You can read more about the
-CDM here [Common Data Model Overview](https://docs.microsoft.com/powerapps/common-data-model/overview).
+you can browse the CDM using the CDM Visual Table Navigator located here: `https://microsoft.github.io/CDM/`. You can read more about the
+CDM here: `https://docs.microsoft.com/powerapps/common-data-model/overview`.
 
 ### Task 1: Explore standard Tables
 
 In this task, you will explore Microsoft Dataverse standard Tables.
 
-Before beginning the exercises, navigate to [Make Power Apps](http://make.powerapps.com/) and confirm that you are in the desired environment for the
+Before beginning the exercises, navigate to Make Power Apps Portal and confirm that you are in the desired environment for the
 labs.
 
+```
+https://teams.microsoft.com/
+```
    ![](./images/Module2/image5.png)
 
 1. In the left pane, expand **Dataverse** and select **Tables**.
@@ -140,7 +140,7 @@ bottom of the list you can click Remove Filter.
 
   ![](./images/Module2/image8.png)
 
-_For a list of supported data types, see [Microsoft Dataverse Supported Data Types](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/types-of-fields)_
+You can find a list of Microsoft Dataverse supported data types here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/types-of-fields`
 
 
 **Relationships:**
@@ -159,9 +159,7 @@ Filter button.
 **Business rules:**
 
 Building a Business Rule is like building a flowchart where you can define conditions and actions. You can learn more
-about Business rules in the link below.
-
-_Business Rules Recommendations:_ [Business Rules Recommendations](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form)
+about Business rules here: `https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form`
 
    ![](./images/Module2/image10.png)
 
@@ -376,7 +374,7 @@ the formula used in the calculation.
 
 9. Click **Done**.
 
-Note on currency columns: You might notice that there are two Department Contribution columns one with
+   > Note on currency columns: You might notice that there are two Department Contribution columns one with
 (base) next to it. Currency columns in Microsoft Dataverse store the base currency value (this is the configured
 default currency for the environment) and the transaction currency (this can be selected on a Row by Row basis)
 to allow support for multi-currency transactions. Generally, you will want to make sure to pick the column without
@@ -384,7 +382,7 @@ the (base) in the name. The (base) value is commonly used in reporting where you
 currencies to allow reporting on them in the base currency value.
 
 
-     ![](./images/Module2/image39.png)
+    ![](./images/Module2/image39.png)
 
 
 ### Task 4: Create a business rule
@@ -410,7 +408,7 @@ In this task, you will create a **Business rule** that will set the Estimated De
 5. In the **Rule 1** section select **Entity** for **Source** , **Approved Date** for **Column** , **Contains Data** for **Operator** and click
     **Apply**.
 
-**_Note:_** _You may need to scroll down to the bottom of all scroll bars to see the Apply button. You must click Apply after any
+    > **_Note:_** _You may need to scroll down to the bottom of all scroll bars to see the Apply button. You must click Apply after any
 change to the properties otherwise they will revert to the prior value. The Business Rule (Text View) will automatically update
 after you hit apply when you are done modifying the rule._
 
@@ -531,7 +529,7 @@ dragging the field to the desired placement.
 
     ![](./images/Module2/image66.png)
 
-**Note** : You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are
+    > **Note** : You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are
 selecting the correct control. To move it make sure you select the Form and not a control within the form.
 
 11. Change the **Snap to columns** setting from 3 to 1. This will modify the layout of the edit form to be single
@@ -539,7 +537,7 @@ selecting the correct control. To move it make sure you select the Form and not 
 
     ![](./images/Module2/image67.png)
 
-_For more info on working with multi-column form layouts, see [Working with forms layout](https://powerapps.microsoft.com/tutorials/working-with-form-layout/)._
+    You can find more info on working with multi-column form layouts here: `https://powerapps.microsoft.com/tutorials/working-with-form-layout/`
 
 12. To create a new instance of the form when the screen is loaded. Click **Compare Screen** in left tree view pane.
 
@@ -560,10 +558,9 @@ user selects the Surface Pro device, we want the device order to have the title:
 
    ![](./images/Module2/image70.png)
 
-Notice that the default card contains a few controls:
-
-
-StarVisible1 : This is a label control that has an asterisk (*) which has its Visible property set to true or false depending
+   > Notice that the default card contains a few controls:
+   
+   > **StarVisible1** : This is a label control that has an asterisk (*) which has its Visible property set to true or false depending
 on whether the Field is Required or not. Since the Title Field was marked as Required when you configured the table,
 its Required property is set to true.
 ErrorMessage1 : This is a label that is just below the main data entry Field which displays error messages.
@@ -585,11 +582,13 @@ DataCardKey1 : This is the label that displays the title of the Field.
 _For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can
 perform the same customizations using the property drop-down and formula bar in the top left of the studio._
 
-4. Go to the **Data** section and set the **Default** property to
+4. Go to the **Data** section and set the **Default** property to the below value:
 
-'Compare List Gallery'.Selected.ManufacturerName & " - " & 'Compare List Gallery'.Selected.'Device Name'
-
-     ![](./images/Module2/image74.png)
+    ```
+    'Compare List Gallery'.Selected.ManufacturerName & " - " & 'Compare List Gallery'.Selected.'Device Name'
+    ```
+    
+    ![](./images/Module2/image74.png)
 
 5. Change the **DisplayMode** to **DisplayMode.View.** This will prevent users from changing the value within the text
     box.
@@ -626,7 +625,7 @@ In this task, we are going to set the price to the price of the item and then ma
 Let’s set the **default** value for the Approver to be the email address of the **logged in user’s manager**.
 
 You will use the **Office 365 graph** to retrieve the manager’s email. You can find more about the Office 365 Users
-Connection provider here [Office 365 Users Connection Provider](https://docs.microsoft.com/connectors/office365users/)
+Connection provider here: `https://docs.microsoft.com/connectors/office365users/`
 
 1. Select **Data sources**. Click **Add data** , then expand Connectors. Select **Office 365 Users**.
 
@@ -657,7 +656,7 @@ you can simply go back go User().Email.
 
 
 The Office 365 User connector has access to many other valuable types of information you can learn more about
-the other actions and data available here [Office 365 users Connector](https://docs.microsoft.com/en-us/connectors/office365users/)
+the other actions and data available here: `https://docs.microsoft.com/en-us/connectors/office365users/`
 
 ### Task 6: Configure the Comment Field
 
@@ -703,7 +702,7 @@ Let’s set the Request Date to be today’s date.
 
    ![](./images/Module2/image89.png)
 
-Notice that the date in the calendar control will change to today’s date.
+   > Notice that the date in the calendar control will change to today’s date.
 Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of
 the form the Field will get updated as part of the form submit.
 
@@ -748,7 +747,7 @@ the form the Field will get updated as part of the form submit.
    
    ![](./images/Module2/image97.png)
    
-Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
+   > Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
 check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.
 
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property
@@ -756,7 +755,7 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 
    ![](./images/Module2/image98.png)
 
-When the button is pressed, the form data will be submitted to the Microsoft Dataverse.
+    > Info: When the button is pressed, the form data will be submitted to the Microsoft Dataverse.
 
 10. Save your work and return to continue editing the app.
 
@@ -774,7 +773,7 @@ When the button is pressed, the form data will be submitted to the Microsoft Dat
 
    ![](./images/Module2/image101.png)
 
-Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
+   > Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
 
 4. Change the Approver email to your own email for test purposes.
 5. Add some **Comments** , such as: “Current laptop does not work, need a new device.”
@@ -782,7 +781,7 @@ Notice that the Title, Price, Approver, and Requested By Fields are already fill
 
    ![](./images/Module2/image102.png)
 
-The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this
+   > Info: The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this
 there is likely an error. Click the X in top right to get back to the design mode.
 If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.
 
@@ -795,7 +794,11 @@ If there is an error, you will see a yellow error icon next to the Submit button
 
 ### Task 11: Verify a new item was added to the Device Order table
 
-1. Open a browser window, go to [Make Power Apps](http://make.powerapps.com/).
+1. Open a browser window, go to Power Apps portal using the below URL.
+
+   ```
+   http://make.powerapps.com/
+   ```
 
 2. Click on **Dataverse** - > **Tables**.
 
@@ -853,13 +856,15 @@ navigate back to the main screen.
 
 12. When pressed, the button should remove items from the CompareList collection and navigate to the main screen.
 
-13. Set the **OnSelect** property of the button to:
+13. Set the **OnSelect** property of the button to the below value:
 
-Clear(CompareList);Navigate('Main Screen',ScreenTransition.None)
+    ```
+    Clear(CompareList);Navigate('Main Screen',ScreenTransition.None)
+    ```
+    
+    ![](./images/Module2/image112.png)
 
-   ![](./images/Module2/image112.png)
-
-**Note** : ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as
+    > **Note** : ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as
 a comma-separator, then use a double ‘;’ here (without the single-quotes).
 
 14. Move the label up and add a Display Form: **Insert** - > **Form** - > **Display.**
