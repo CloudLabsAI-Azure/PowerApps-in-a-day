@@ -422,7 +422,7 @@ later be used as a filter for the device gallery created above.
 
 3. Select **Manufacturers** for the data source.
 
-   ![](images/Module/1devicegallery7.png) 
+   ![](images/Module1/devicegallery7.png) 
  
 4. Rename the gallery to **Manufacturer Gallery**.
 
@@ -452,7 +452,7 @@ later be used as a filter for the device gallery created above.
 10. Reduce **the height of the template cell** until three or four images occupy the gallery without scrolling. We
     essentially want the image to occupy the entire cell.
 
-   ![](images/Module1/devicegallery13.png) 
+    ![](images/Module1/devicegallery13.png) 
    
 11. Click **File** and **Save** the application.
 
@@ -476,11 +476,12 @@ bar.
     tree view to select the controls, sometimes that is easier!
 
     ![](images/Module1/devicegallery15.png) 
+    
     > Note: Autosuggest offers you valid options for authoring formulas. See in the image below, we want to define the
 image to display from our data. Once we type “ThisItem.” our Autosuggest tells us that we have three valid options
 for this formula. This can help guide you to making valid formulas.
 
-    ![](imagesModule1devicegallery16.png) 
+    ![](images/Module1/devicegallery16.png) 
     
 4. Select the first (top-most) image and using the **Properties** pane on the right, set the **Image position** property to
     **Fit**.
@@ -491,7 +492,7 @@ for this formula. This can help guide you to making valid formulas.
     drag handles to first reduce the height of the image and subsequently reduce the height of the template cell.
     Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.
    
-   ![](images/Module1device/gallery18.png) 
+   ![](images/Module1/devicegallery18.png) 
    
 ####  Task 5: Highlight the selected item in the gallery
 
@@ -507,8 +508,9 @@ item
 
     > Alternately, you could set the TemplateFill property to:
 
-      If(ThisItem.IsSelected,ColorFade ('Header Label'.Fill,75%))
-
+     ```
+     If(ThisItem.IsSelected,ColorFade ('Header Label'.Fill,75%))
+     ```
       This approach is recommended so the fill color matches the header label with a 75% fade. If you change the fill
 color of header label, the fill color of the selected item in the gallery will automatically change.
 
@@ -563,13 +565,13 @@ _A complete set of expressions is available at [Formula Reference](https://power
 
 2. Let us now change the label to display the device price by setting the label’s Text property to: **ThisItem.Price**
 
-   ![](images/Module1/devicegallery22.png) 
+  ![](images/Module1/devicegallery22.png) 
    
    Here are some additional formatting suggestions. These are for cosmetic purposes only, feel free to skip past these:
 
    - Expand the width of the label to the template width.
 
-    Notice that if you do this with the Title1 label, the subtitle label expands as well. This is because it is X property is set
+      Notice that if you do this with the Title1 label, the subtitle label expands as well. This is because it is X property is set
 to Title1.X, the X coordinate position of the Title1 label. For more on the relative positioning of controls, see [UX
 Patterns](https://powerapps.microsoft.com/blog/ux-patterns-control-positioning/)
 
@@ -577,14 +579,14 @@ Patterns](https://powerapps.microsoft.com/blog/ux-patterns-control-positioning/)
 
      - _Change the font of the Subtitle to_ **Segoe UI**_._
 
-     - To add the $ to the Subtitle, use the Text format expression: Text(ThisItem.Price,"$##,###.00") or for
-    alternate/European locales: Text(ThisItem.Price;"$##.###,00")
+     - To add the $ to the Subtitle, use the Text format expression: Text(ThisItem.Price,"$##,###.00") or for alternate/European locales: Text(ThisItem.Price;"$##.###,00")
 
      Note: After you enter the above value in the formula bar, it will automatically resolve to include your locale, e.g. [$-en-
 US]. If you see an error here, it might be because your locale is not yet supported, in which case as a workaround,
 manually change it to [$-en-US]:
 
    ![](images/Module1/devicegallery23.png) 
+   
 3. Select the **Title1**.
 
 4. In the property drop-down list, select the **Text** field and change to **ThisItem.Title**.
@@ -632,7 +634,7 @@ We want to allow users to select multiple devices to compare before making a fin
 
 1. Select the **Device Gallery** , click the Pencil edit icon in the top left of the gallery to select the template cell.
 
-   ![](images/Module1device/gallery27.png) 
+   ![](images/Module1/devicegallery27.png) 
    
 2. Make sure that only the first item in the gallery is selected (not the entire gallery).
  
