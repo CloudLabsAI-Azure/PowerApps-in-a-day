@@ -186,8 +186,8 @@ approval email. In this scenario, for example, you could include a link to view 
 would include the_ **_Item link_** _and_ **_Item link description_**_._
 
 > **_Note_** _: You could also set the_ **_Item link_** _to deep link into a Power Apps app to view more details about the request. In this
-scenario, you might pass an OrderID or a DeviceID as a URL parameter. Power Apps accepts URL parameters, see [Flow URL
-Parameters](https://powerapps.microsoft.com/tutorials/function-param/) for more details._
+scenario, you might pass an OrderID or a DeviceID as a URL parameter. Power Apps accepts URL parameters, you can find more details about Flow 
+Parameters Here: `https://powerapps.microsoft.com/tutorials/function-param/`
 
    
 ## Exercise 2: Conditional Logic
@@ -333,19 +333,19 @@ environment. Run the flow to initiate provisioning the Power Automate Approvals.
    
 1. Select **Apps** and start the **Device Ordering App** by clicking on **Play** button.
 
-   ![](.imagesModule4PowerApps-testflow3.png)  
+   ![](./images/Module4/PowerApps-testflow3.png)  
    
 1. Select a few devices and click Compare.
    
-   ![](.imagesModule4PowerApps-testflow4.png)  
+   ![](./images/Module4/PowerApps-testflow4.png)  
    
 1. Select one of the devices, provide email for Approver.
 
-   ![](.imagesModule4PowerApps-testflow5.png)  
+   ![](./images/Module4/PowerApps-testflow5.png)  
 
 1. Provide a comment and click Submit device request.
    
-   ![](.imagesModule4PowerApps-testflow6.png)  
+   ![](./images/Module4/PowerApps-testflow6.png)  
    
 1. Click **OK**.
 1. The flow will run and send email to the manager email you provided. The request for approval email will look like
@@ -357,29 +357,29 @@ triggered. To ensure the flow runs immediately, see note above - select the Test
 the “I’ll perform the trigger action” option. Then go ahead and submit a device request. The flow should run
 immediately. The email, however, may take a few minutes to appear regardless of when the flow starts.
 
-      ![](.imagesModule4PowerApps-testflow7.png)  
+      ![](./images/Module4/PowerApps-testflow7.png)  
 
 1. Click **Approve**.
    
 1. Add a comment and click **Submit**.
 
-   ![](.imagesModule4PowerApps-testflow8.png)  
+   ![](./images/Module4/PowerApps-testflow8.png)  
 
 1. The flow will continue to run; it will update the row and send an email to the requestor. The email sent to the
     requester will look like the image below.
    
-   ![](.imagesModule4PowerApps-testflow9.png)  
+   ![](./images/Module4/PowerApps-testflow9.png)  
    
 1. Check the flow, you will notice that the flow is now marked as **Succeeded** in the run history.
 
-   ![](.imagesModule4PowerApps-testflow10.png)  
+   ![](./images/Module4/PowerApps-testflow10.png)  
 
    
 ## Exercise 4: Update the Flow
 
 In this exercise, you will add two actions to the “if no” branch.
 
-Task 1: Add actions
+### Task 1: Add actions
 
 1. If you don’t already have the flow open, open it in edit mode by clicking on **Edit button**.
    
@@ -441,8 +441,14 @@ Task 1: Add actions
 ### Task 3: Visit the approval center
 
 1. Use the Device Ordering app to **submit a few more approval requests**.
-1. Navigate to [Power Automate](https://flow.microsoft.com/) and make sure you are in the correct environment. Login with your lab credentials if
+   
+1. Navigate to Power Automate using the below URL and make sure you are in the correct environment. Login with your lab credentials if
     prompted.
+   
+   ```
+   https://flow.microsoft.com/
+   ```
+   
 1. Expand **Action items** and select **Approvals**.
 
    ![](./images/Module4/PowerApps-approvalcenter1.png)  
@@ -549,7 +555,11 @@ Task 2 : Test your modified flow
 Now that the flow has been modified, you are ready to test it.
 
 1. Click **Test** in the top right of the flow editor and select **Manually**
-2. In another tab, navigate to [Microsoft Teams](https://teams.microsoft.com/).
+2. In another tab, navigate to [Microsoft Teams using below URL.
+   
+   ```
+   https://teams.microsoft.com/
+   ```
 3. Open a third tab and run the Device Ordering app -> Select a device and submit an approval request.
 4. You should receive an email with options to Approve or Reject the request. Select **Approve**.
 5. Shortly after hitting submit, you should see a message and a notification in the Chat tab on your app bar –
@@ -557,12 +567,6 @@ Now that the flow has been modified, you are ready to test it.
 6. You should see the approval of the request.
 
    ![](./images/Module4/PowerApps-updateflow12.png)  
-
-## References
-
-App in a Day introduces some of the key functionalities available in Power Apps, Power Automate, Power BI and the
-Microsoft Dataverse. For an up to date list of learning references, see [Power Apps Resources](http://aka.ms/powerapps-resources) and [Power Automate
-Resources](https://flow.microsoft.com/blog/power-automate-learning-resources/).
 
 
 
