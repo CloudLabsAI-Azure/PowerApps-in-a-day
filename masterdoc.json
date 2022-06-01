@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "Microsoft Azure Immersion Workshops : PowerApps-in-a-day",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/00_Prerequisite.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/01_Power_Apps_Canvas_App.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/02_Microsoft_Dataverse.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/03_Power%20Apps_Model_driven_App.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/04_Power_Automate.md",
+        "Order": 5
+      }
+    ]
+  }
+]
