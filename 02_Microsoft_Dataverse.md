@@ -343,19 +343,37 @@ automatically perform the calculation when the data is retrieved. When you creat
 the formula used in the calculation.
 
 1. In the upper left corner of the screen, click on **Add Column** to add columns to your custom table.
+
 2. Enter **Department Contribution** for **Display Name** , **Currency** for **Data Type** , click **Add Calculated or Rollup** ,
     and select **Calculation**.
+
+   ![](./images/Module2/image32.png)
+
 3. Click **Save**.
+
+   ![](./images/Module2/image33.png)
+
 4. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
+
+   ![](./images/Module2/image34.png)
+
 5. Click **Add Action**.
 
+   ![](./images/Module2/image35.png)
 
 6. Type price and select the **Price** column you created.
+
+   ![](./images/Module2/image36.png)
+
 7. Add *** 0 .1** and click the **Check Mark** button.
+
+  ![](./images/Module2/image37.png)
+
 8. Click **Save and Close.**
 
-9. Click **Done**.
+   ![](./images/Module2/image38.png)
 
+9. Click **Done**.
 
 Note on currency columns: You might notice that there are two Department Contribution columns one with
 (base) next to it. Currency columns in Microsoft Dataverse store the base currency value (this is the configured
@@ -365,16 +383,29 @@ the (base) in the name. The (base) value is commonly used in reporting where you
 currencies to allow reporting on them in the base currency value.
 
 
+   ![](./images/Module2/image39.png)
+
+
 ### Task 4: Create a business rule
 
 In this task, you will create a **Business rule** that will set the Estimated Delivery Date to 14 days after approval of the order.
 
 1. Select the **Business rules** tab and click **Add business rule.**
+
+   ![](./images/Module2/image40.png)
+
 2. Click the arrow to **Show Details**.
 
+   ![](./images/Module2/image41.png)
 
 3. Change the **Name** to **Calculate Ship Date** and click the arrow to **Hide Details**.
+
+   ![](./images/Module2/image42.png)
+
 4. Select the **Condition** , change the name to **Check Ship Date**.
+
+   ![](./images/Module2/image43.png)
+
 5. In the **Rule 1** section select **Entity** for **Source** , **Approved Date** for **Column** , **Contains Data** for **Operator** and click
     **Apply**.
 
@@ -382,24 +413,52 @@ In this task, you will create a **Business rule** that will set the Estimated De
 change to the properties otherwise they will revert to the prior value. The Business Rule (Text View) will automatically update
 after you hit apply when you are done modifying the rule._
 
+    ![](./images/Module2/image44.png)
+
 6. Click **Add** , select **Add Set Field Value**.
+
+   ![](./images/Module2/image45.png)
+
 7. Select the True side of the condition.
+
+   ![](./images/Module2/image46.png)
+
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
     **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
+    ![](./images/Module2/image47.png)
 
 9. Click **Validate**.
+
+   ![](./images/Module2/image48.png)
+
 10. Make sure validation succeeds.
+
+    ![](./images/Module2/image49.png)
+
 11. Click **Save**.
+
+    ![](./images/Module2/image50.png)
+
 12. Click **Activate**.
+
+    ![](./images/Module2/image51.png)
+
 13. Confirm activation. Business rules only execute when they are activated. In the future to make changes to rules
     you deactivate them, make the change, and then re-activate the rule.
 
+    ![](./images/Module2/image52.png)
+
 14. Close the process editor browser window or tab.
+
 15. Click **Done**. The list should refresh showing the Business Rule you just created.
+
+    ![](./images/Module2/image53.png)
+
 16. Your Device Order table will have one Business Rule.
 
-
+    ![](./images/Module2/image54.png)
+ 
 ## Exercise 3: Connect the data from the Canvas App
 
 Now that you have created the table to store device order requests let’s connect your Device Ordering Canvas app to this
