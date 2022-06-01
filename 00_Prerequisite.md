@@ -38,17 +38,36 @@ and provision the database instance.
    ```
    http://admin.powerapps.com/
    ```
-   
+1. Sign in to thr admin center using the below credentails.
+
+    * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
+    * Azure Password: <inject key="AzureAdUserPassword"></inject>
+      
 1. In the Admin center, select **Environments** and click **+New**.
+
+   ![](images/Module0/environment1.png)
+   
 1. Provide a name for the environment. A common practice is to use your name followed by “Test” so it is clear this
     is a test environment.
 1. Select **Trial** , select your **Region** , make sure **Create a database** is set to **Yes** , and click **Next**.
-1. Select your **Language** and your **Currency**. Check **Yes** for Deploy sample apps and data, and then click **Save**.
+
+   ![](images/Module0/environment2.png)
+   
+1. Select your **Language** and your **Currency**. Check **Yes** for **Deploy sample apps and data**, and then click **Save**.
+  
+   ![](images/Module0/environment3.png)
+   
    > Note : You can choose your local language and currency. However, the lab manuals were created using US dollars and
 English language configurations.
 1. You will see a screen listing all environments that will show the newly created environment.
+
+   ![](images/Module0/environment4.png)
+   
 1. **IMPORANT** : You need to wait for the database to finish provisioning before trying to create an application. The
     **Status** will change to Ready when done. 
+
+   ![](images/Module0/environment5.png)
+   
 1. This may take few minutes to complete. Wait for it to complete before proceeding with creating an app. If it has
     been over two minutes, try refreshing the browser. Once the database has been created you should no longer see
     this “Preparing Instance” message. You can then proceed with the lab.
