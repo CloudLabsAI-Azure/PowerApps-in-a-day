@@ -111,14 +111,18 @@ to navigate between the components (Table views, Dashboards and other visual com
 
    ![](images/Module3/Model-drivenapp2.png)  
    
-1. Select the Classic app designer and click **Create**.
-
-   ![](images/Module3/Model-drivenapp3.png)  
-1. Enter **Device Procurement** for Name and click **Done.** You have now created the app definition and will start
+1. Enter the below value for **Name** and click **Create**. You have now created the app definition and will start
     adding components in to build the app.
-    
-   ![](images/Module3/Model-drivenapp4.png)  
+
+   ```
+   Device Procurement
+   ```
    
+   ![](images/Module3/Model-drivenapp3.1.png)  
+   
+1. Click the **Switch to classic** button to switch to the classic designer of the app. 
+    
+   ![](images/Module3/Model-drivenapp4.1.png)     
 
     > Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
 the user in the list of all their applications.
@@ -126,6 +130,11 @@ the user in the list of all their applications.
      Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
 
    ![](images/Module3/Model-drivenapp5.png)  
+   
+1. Click on **Publish and continue** then **Save** to save the app. The classic designer of the app will be opened in a new browser tab.   
+
+   ![](images/Module3/Model-drivenapp5.1.png)  
+   
 1. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.
 
    ![](images/Module3/Model-drivenapp6.png)  
@@ -134,19 +143,19 @@ the user in the list of all their applications.
     building a more complex application, you could use Areas to group together related items making it easy for the
     user to navigate between the components.
     
-   ![](images/Module3/Model-drivenapp7.png)  
+   ![](images/Module3/Model-drivenapp7.1.png)  
 
    > Note: The properties panel on the right will only show if you click on the New Area on the left.
 
 1. Select the **New Group** enter **Orders** for Title, and **nav_ordersgroup** for ID.
 
-   ![](images/Module3/Model-drivenapp8.png)  
+   ![](images/Module3/Model-drivenapp8.1.png)  
    
    > Note: The properties panel on the right will only show if you click on the New Group on the left.
    
-1. Select the **New Subarea**.
+1. Select the **Subarea1**.
 
-   ![](images/Module3/Model-drivenapp9.png)  
+   ![](images/Module3/Model-drivenapp9.1.png)  
 
    > Note: The properties panel on the right will only show if you click on the New Subarea on the left.
 
@@ -196,26 +205,40 @@ update to automate sending a survey in a future release.
    ![](images/Module3/Model-drivenapp14.png)  
    
   
-1. Make sure you have the **Columns** tab selected and click **Add Column**.
+1. Click on **Columns** under **Schema**, to select the **Columns** tab and click **Add Column**.
 
-   ![](images/Module3/Model-drivenapp15.png)  
+   ![](images/Module3/Model-drivenapp15.1.png)  
    
-1. Enter **Capital Approved** for **Display Name** , select **Yes/No** for **Data Type** and click **Done**. We are using a Yes/No
+1. Enter **Capital Approved** for **Display Name** , select **Yes/No** for **Data Type** and click **Save**. We are using a Yes/No
     data type here because when we use it as a Step in the Business Process, we want to be able to simply mark it
     completed. Yes/No are essentially a true or false Column.
     
    ![](images/Module3/Model-drivenapp16.png)  
+   
 1. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
     **Device Delivered**.
 
-   ![](images/Module3/Model-drivenapp17.png)  
+   > **Device Received**:
+   
+   ![](images/Module3/Model-drivenapp17.1.png)  
 
-6. Add another Column, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Done**. Notice
+   > **Device Configured:**
+   
+   ![](images/Module3/Model-drivenapp17.2.png)  
+   
+   > **Send Survey:**
+   
+   ![](images/Module3/Model-drivenapp17.3.png)     
+   
+   > **Device Delivered:**
+
+   ![](images/Module3/Model-drivenapp17.4.png)  
+   
+6. Add another Column, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Save**. Notice
     we are not asking you to make this Column required here, but we will make it a required Column in the
     Business Process later in the lab.
 
-   ![](images/Module3/Model-drivenapp18.png)  
-
+   ![](images/Module3/Model-drivenapp18.1.png)  
 
 7. Click **Save Table**.
 
@@ -416,10 +439,10 @@ the order. In this task, you will see how we can modify the flow we built to acc
    ![](images/Module3/BusinessProcessFlow34.png)  
 
 1. Close the process editor.
-1. Click on the  **Back** button.
-1. **Publish All Customizations**.
 
-   ![](images/Module3/BusinessProcessFlow35.png)  
+1. Now, click on **Publish** button that is present at the top right corner of the window..
+
+   ![](images/Module3/BusinessProcessFlow35.1.png)  
    
 ## Exercise 3: Form and View Modification
 
@@ -435,11 +458,11 @@ example, you might provide a view to show all device requests that are waiting t
 
    ![](images/Module3/device_order_form1.png)  
    
-1. Select the **Forms** tab.
+1. Select the **Forms** that is present under **Data Experiences**.
 
 1. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
 
-   ![](images/Module3/device_order_form2.png)  
+   ![](images/Module3/device_order_form2.1.png)  
    
    > Note: The form designer is being modernized, you can read more here Overview of the model-driven form
 designer.
@@ -483,9 +506,10 @@ designer.
 
 ### Task 2: Modify the view
 
-1. Select the **Views** tab and click on the **Active Device Orders** view to open it.
+1. Select the **Views** tab under **Data experiences** and click on the **Active Device Orders** view to open it.
 
-   ![](images/Module3/device_order_form10.png)  
+   ![](images/Module3/device_order_form10.1.png)  
+   
 1. Click the **Approval Status** Column once (you do not need to double click).
 
    ![](images/Module3/device_order_form11.png)  
