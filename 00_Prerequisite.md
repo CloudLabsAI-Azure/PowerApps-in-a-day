@@ -38,7 +38,7 @@ and provision the database instance.
    ```
    http://admin.powerapps.com/
    ```
-1. Sign in to thr admin center using the below credentails.
+1. Sign in to the admin center using the below credentails.
 
     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
     * Azure Password: <inject key="AzureAdUserPassword"></inject>
@@ -57,8 +57,18 @@ and provision the database instance.
   
    ![](images/Module0/environment3.png)
    
+   > **Note:** If  **Deploy sample apps and data** option is disabled for you, this is due to unpredicted behavior of Power Apps, follow the below steps to enable the option. 
+
+
+      1. In the Admin center, select **Environments** and click **+New**.
+      2. Select **Sandbox/Production** , select your **Region** , make sure **Create a database** is set to **Yes** , and click **Next**.
+      3. Select your **Language** and your **Currency**. Notice that **Deploy sample apps and data** is enaled now, and then click **cancel**.
+      4. Repeat the steps 2-5 to create a **Trial** environment.
+
+
    > Note : You can choose your local language and currency. However, the lab manuals were created using US dollars and
 English language configurations.
+
 1. You will see a screen listing all environments that will show the newly created environment.
 
    ![](images/Module0/environment4.png)
