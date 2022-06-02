@@ -133,12 +133,18 @@ In this scenario, we will configure the flow to trigger when a **new item is add
 
 1. Select **Device Name** from the **Dynamic content** pane.
 
-   ![](./images/Module4/PowerApps-flow12.png)
+   ![](./images/Module4/PowerApps-flow12.png)  
    
-   > **_Note_** _: If the Dynamic content box is not visible, click the Add dynamic content button - 
-   
-   ![](./images/Module4/PowerApps-flow13.png)
+    > **Note**: 
 
+      1. If you are not able to find the dynamic content list tab. You can click on the **Split Window** button in the bottom right corner to open the Lab Guide in a new window.
+   
+         ![](./images/Module4/PowerApps-flow13.1.png)
+      
+      2. You can get the Lab Guide back in the environment by clicking on the **Join Windows** button in the bottom right corner.
+
+           ![](./images/Module4/PowerApps-flow13.2.png)
+           
 1. Select the **Assigned to** field, select click **Approver**. Click on the **Add dynamic content** button to show/hide the
     dynamic content pane.
 
@@ -367,12 +373,15 @@ environment. Run the flow to initiate provisioning the Power Automate Approvals.
     the image below; it will include **Device information** , **Price** , **Department Contribution (the calculated field),** and
     the **Requester Comment**.
 
-   > REMINDER : If the flow does not run immediately, please wait, it may take up to ten minutes for the flow to be
+    > REMINDER : If the flow does not run immediately, please wait, it may take up to ten minutes for the flow to be
 triggered. To ensure the flow runs immediately, see note above - select the Test option in the top right and select
 the “I’ll perform the trigger action” option. Then go ahead and submit a device request. The flow should run
 immediately. The email, however, may take a few minutes to appear regardless of when the flow starts.
 
       ![](./images/Module4/PowerApps-testflow7.png)  
+
+   > Note: If the workflow failed with timeout error as it might take up to ten minutes for the flow to be
+triggered for the first time. Select **Test** that is present at the top right corner, then **Manually** and click **Test** again to test flow. Now, submit a device request from **Device Ordering App** to trigger the workflow.
 
 1. Click **Approve**.
    
