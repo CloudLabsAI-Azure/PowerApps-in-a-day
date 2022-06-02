@@ -408,7 +408,7 @@ In this exercise, you will add two actions to the “if no” branch.
 
     ![](./images/Module4/PowerApps-flow43.png)  
    
-1. Select **Device Orders** for **Table Name** , select **Device Order** for **Item ID** , and click **Show advanced options**.
+1. Select **Device Orders** for **Table Name** , select **Device Order** for **Row ID** , and click **Show advanced options**.
    
     ![](./images/Module4/PowerApps-flow44.png)  
    
@@ -565,7 +565,7 @@ In this optional exercise, you will modify the existing flow to include a Teams 
    
 1. Click **Save** to save your changes.
 
-Task 2 : Test your modified flow
+### Task 2 : Test your modified flow
 
 Now that the flow has been modified, you are ready to test it.
 
