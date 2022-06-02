@@ -74,12 +74,12 @@ the same technology framework (Microsoft Dataverse) that Microsoft Dynamics 365 
 After this lesson you will be able to:
 
 
--^ Provision a Microsoft Dataverse^ database^
+- Provision a Microsoft Dataverse^ database
 - Create a custom table and add custom columns to it
 - Use the Power Apps Form control to populate the table
--^ View the table^ data^
--^ Create a calculated column^
--^ Implement a server-side business rule
+- View the table^ data^
+- Create a calculated column^
+- Implement a server-side business rule
 
 
 The time to complete this lab is 60 minutes.
@@ -97,7 +97,7 @@ Microsoft Dataverse abstracts a lot of the typical low-level database management
 configure a custom data model that fits your application.
 
 In addition to allowing for the creation of custom Tables, Microsoft Dataverse contains a Common Data Model (CDM)
-consisting of hundreds of standard table definitions. You can find the current CDM schema at [Github Microsoft CDM](https://github.com/Microsoft/CDM) and
+consisting of hundreds of standard table definitions. You can find the current CDM schema here: `https://github.com/Microsoft/CDM` and
 you can browse the CDM using the CDM Visual Table Navigator located here: `https://microsoft.github.io/CDM/`. You can read more about the
 CDM here: `https://docs.microsoft.com/powerapps/common-data-model/overview`.
 
@@ -122,8 +122,8 @@ https://teams.microsoft.com/
     
     ![](./images/Module2/image7.png)
 
-_For detailed documentation on Microsoft Dataverse Tables, see_ https://docs.microsoft.com/en-
-us/powerapps/developer/common-data-service/reference/about-entity-reference
+    > For detailed documentation on Microsoft Dataverse Tables, visit `https://docs.microsoft.com/en-
+us/powerapps/developer/common-data-service/reference/about-entity-reference`
 
 **Columns** :
 
@@ -134,8 +134,7 @@ application runs. For example, a Choice allows you to have a pre-defined list of
 this column is used on a form in a model-driven application the visual presentation is a drop-down control. The column
 helps to ensure data consistency and allows for built-in support for multi-language applications.
 
-To see all the columns for the table, change the default view in the top right corner to show all, or once you reach the
-bottom of the list you can click Remove Filter.
+To have a detailed view of all the available columns for the table, select **Columns** under **Schema**.
 
   ![](./images/Module2/m2s1.png)
   
@@ -151,8 +150,7 @@ to One (N:1) and Many to Many (N:N). Relationships also define the behavior that
 primary Row in a 1:N relationship. For example, if the parent Row is deleted you can configure the relationship behavior
 so that all child Rows are also deleted or simply remove the reference.
 
-Note: You will need to select the Relationships tab to see relationships. If you don’t see any relationships, click the Reset the
-Filter button.
+Note: You will need to select the **Relationships** option from the **Columns** dropdown to view available relationships.
 
   ![](./images/Module2/m2s2.png)
   
@@ -163,6 +161,8 @@ Filter button.
 
 Building a Business Rule is like building a flowchart where you can define conditions and actions. You can learn more
 about Business rules here: `https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form`
+
+ Note: You will need to select the **Business rules** option from the **Columns** dropdown to view available Business rules. 
 
    ![](./images/Module2/m2s4.png)
    
@@ -176,6 +176,8 @@ own filtering and sorting criteria. For example, you could create a view to see 
 another one to see Rows that haven’t been updated in a year. Create views to make the application users more
 productive in filtering their data.
 
+ Note: You will need to select the **Views** option from the **Columns** dropdown to see available views. 
+ 
   ![](./images/Module2/m2s6.png)
   
   ![](./images/Module2/m2s7.png)
@@ -188,6 +190,8 @@ the forms people use are designed to allow them to find or enter the information
 different types of forms like Quick Create, Quick View, Card, and a Main form. For some of these forms you can have more
 than one version, to accommodate for different user roles within your organization.
 
+ Note: You will need to select the **Forms** option from the **Columns** dropdown to view available Forms. 
+ 
   ![](./images/Module2/m2s8.png)
   
   ![](./images/Module2/m2s9.png)
@@ -197,6 +201,8 @@ than one version, to accommodate for different user roles within your organizati
 
 Dashboards helps you bring your views, charts, and web resources together in one place.
 
+ Note: You will need to select the **Dashboards** option from the **Columns** dropdown to view available dashboards. 
+ 
   ![](./images/Module2/m2s10.png)
 
   ![](./images/Module2/m2s11.png)
@@ -206,6 +212,8 @@ Dashboards helps you bring your views, charts, and web resources together in one
 
 Use Charts to display high-level view of your data in insightful and graphical ways.
 
+ Note: You will need to select the **Charts** option from the **Columns** dropdown to view available charts. 
+ 
   ![](./images/Module2/m2s12.png)
   
   ![](./images/Module2/m2s13.png)
@@ -216,6 +224,8 @@ Use Charts to display high-level view of your data in insightful and graphical w
 Allows you to view the lookup keys for the table. Keys can contain multiple columns to define a composite key. Keys
 enforce uniqueness, so they should not be used when there is a need to store duplicate values of columns used.
 
+ Note: You will need to select the **Keys** option from the **Columns** dropdown to view available keys. 
+ 
   ![](./images/Module2/m2s14.png)
   
   ![](./images/Module2/m2s15.png)
@@ -226,6 +236,8 @@ enforce uniqueness, so they should not be used when there is a need to store dup
 Microsoft Dataverse allows you to create your own command bar buttons. The commands added to this table will be listed
 here.
 
+ Note: You will need to select the **Commands** option from the **Columns** dropdown to view available commands. 
+ 
    ![](./images/Module2/m2s16.png)
    
    ![](./images/Module2/m2s17.png)
@@ -237,7 +249,7 @@ here.
 You can view and search the data in the table. This gives you a quick way to see some of the data for the table without
 having to jump into a specific Canvas or Model-driven app.
 
-   ![](./images/Module2/image17.png)
+   ![](./images/Module2/image17.1.png)
 
 
 ### Task 2: Explore Standard Choices
@@ -277,7 +289,7 @@ In this task, you will create a custom table to store device order requests.
     Name, for some scenarios that might not be the best label and you can customize it if needed. The primary
     attribute however is always a Text column, that is not changeable.
     
-  ![](./images/Module2/m2s18.png)
+   ![](./images/Module2/m2s18.png)
 
 4. Click on **Save**.
 
@@ -285,7 +297,7 @@ In this task, you will create a custom table to store device order requests.
 
 5. If prompted, approve the option in this dialog.
 
-    ![](./images/Module2/image22.png)
+   ![](./images/Module2/image22.png)
 
 ### Task 2: Create custom columns
 
@@ -299,7 +311,7 @@ Order table to provision. Begin these steps once it has finished.
 2. Enter **Price** for **Display Name** , enter **Device Price** for Description, select **Currency** for **Data Type** , make the column **Required** and **Searchable** and
     click **Advanced Options**.
 
-Note : Currency is a special data type. For each currency column you add, another currency column is added with
+   > Note : Currency is a special data type. For each currency column you add, another currency column is added with
 the prefix “_Base” on the name. This column stores the calculation of the value of the currency column you added
 and the base currency. For additional information on using the Currency column, see here.
 
@@ -319,14 +331,13 @@ and the base currency. For additional information on using the Currency column, 
 
 6. Now repeat the Add Column process and add the following columns
 
-|    Display Name     |       Name        |      Type      |
-| ------------------- | ----------------- | -------------- |
-|    Request Date     |  RequestDate      |    Date Only   |
-|     Approver        |    Approver       |      Email     |
-|     Comments        |    Comments       | Multiline Text |
-| Estimated Ship Date | EstimatedShipDate |    Date Only   |
-|    Approved Date    |   Approved Date   |    Date Only   |
-
+    |    Display Name     |       Name        |      Type      |
+    | ------------------- | ----------------- | -------------- |
+    |    Request Date     |  RequestDate      |    Date Only   |
+    |     Approver        |    Approver       |      Email     |
+    |     Comments        |    Comments       | Multiline Text |
+    | Estimated Ship Date | EstimatedShipDate |    Date Only   |
+    |    Approved Date    |   Approved Date   |    Date Only   |
 
 7. Now we are going to create the **Approval Choice**. We are adding this as a Choice (as opposed to a two option)
     because it is likely in the future there will be more than Yes/No for users to choose from. Click **Add Column**.
@@ -363,36 +374,39 @@ the formula used in the calculation.
 
 1. In the upper left corner of the screen, click on **Add Column** to add columns to your custom table.
 
-2. Enter **Department Contribution** for **Display Name** , **Currency** for **Data Type** , click **Add Calculated or Rollup** ,
-    and select **Calculation**.
+1. Enter **Department Contribution** for **Display Name** , **Currency** for **Data Type** , select **Calculation** for **Behaviour** field.
 
-   ![](./images/Module2/image32.png)
+   ![](./images/Module2/image32.1.png)
 
-3. Click **Save**.
+1. Click **Save**.
 
-   ![](./images/Module2/image33.png)
+   ![](./images/Module2/image32.2.png)
 
-4. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
+1. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
 
    ![](./images/Module2/image34.png)
 
-5. Click **Add Action**.
+1. Once the **Department Contribution** has been created, select it and click on **Edit** that is present under **Behaviour**.
+
+   ![](./images/Module2/image34.1.png)
+   
+1. You will bepresented with a new pop-up to add actions and conditions. Now, click **Add Action**.
 
    ![](./images/Module2/image35.png)
 
-6. Type price and select the **Price** column you created.
+1. Type price and select the **Price** column you created.
 
    ![](./images/Module2/image36.png)
 
-7. Add *** 0 .1** and click the **Check Mark** button.
+1. Add `*0.1` and click the **Check Mark** button.
 
    ![](./images/Module2/image37.png)
 
-8. Click **Save and Close.**
+1. Click **Save and Close.**
 
    ![](./images/Module2/image38.png)
 
-9. Click **Done**.
+1. Click **Done**.
 
    > Note on currency columns: You might notice that there are two Department Contribution columns one with
 (base) next to it. Currency columns in Microsoft Dataverse store the base currency value (this is the configured
@@ -826,11 +840,9 @@ If there is an error, you will see a yellow error icon next to the Submit button
 
     ![](./images/Module2/image104.png)
 
-4. Select the **Data** tab.
+4. On the **Device Order** table overview blade, you should see a newly added row with your device order details under **Device Order columns and data**. This may take a few seconds to load.
 
-5. You should see a newly added row with your device order details. This may take a few seconds to load.
-
-   ![](./images/Module2/image105.png)
+   ![](./images/Module2/image105.1.png)
 
 ### Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
 
