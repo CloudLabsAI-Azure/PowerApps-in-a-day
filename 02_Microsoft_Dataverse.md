@@ -138,7 +138,9 @@ helps to ensure data consistency and allows for built-in support for multi-langu
 To see all the columns for the table, change the default view in the top right corner to show all, or once you reach the
 bottom of the list you can click Remove Filter.
 
-  ![](./images/Module2/image8.png)
+  ![](./images/Module2/m2s1.png)
+  
+  ![](./images/Module2/m2s26.png)
 
 You can find a list of Microsoft Dataverse supported data types here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/types-of-fields`
 
@@ -150,10 +152,12 @@ to One (N:1) and Many to Many (N:N). Relationships also define the behavior that
 primary Row in a 1:N relationship. For example, if the parent Row is deleted you can configure the relationship behavior
 so that all child Rows are also deleted or simply remove the reference.
 
-Note: You will need to click the Relationships tab to see relationships. If you don’t see any relationships, click the Reset the
+Note: You will need to select the Relationships tab to see relationships. If you don’t see any relationships, click the Reset the
 Filter button.
 
-  ![](./images/Module2/image9.png)
+  ![](./images/Module2/m2s2.png)
+  
+  ![](./images/Module2/m2s3.png)
 
 
 **Business rules:**
@@ -161,7 +165,9 @@ Filter button.
 Building a Business Rule is like building a flowchart where you can define conditions and actions. You can learn more
 about Business rules here: `https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-business-rules-recommendations-apply-logic-form`
 
-   ![](./images/Module2/image10.png)
+   ![](./images/Module2/m2s4.png)
+   
+  ![](./images/Module2/m2s5.png)
 
 
 **Views:**
@@ -171,7 +177,9 @@ own filtering and sorting criteria. For example, you could create a view to see 
 another one to see Rows that haven’t been updated in a year. Create views to make the application users more
 productive in filtering their data.
 
-  ![](./images/Module2/image11.png)
+  ![](./images/Module2/m2s6.png)
+  
+  ![](./images/Module2/m2s7.png)
 
 
 **Forms:**
@@ -181,21 +189,27 @@ the forms people use are designed to allow them to find or enter the information
 different types of forms like Quick Create, Quick View, Card, and a Main form. For some of these forms you can have more
 than one version, to accommodate for different user roles within your organization.
 
-  ![](./images/Module2/image12.png)
+  ![](./images/Module2/m2s8.png)
+  
+  ![](./images/Module2/m2s9.png)
 
 
 **Dashboards** :
 
 Dashboards helps you bring your views, charts, and web resources together in one place.
 
-![](./images/Module2/image13.png)
+  ![](./images/Module2/m2s10.png)
+
+  ![](./images/Module2/m2s11.png)
 
 
 **Charts** :
 
 Use Charts to display high-level view of your data in insightful and graphical ways.
 
-  ![](./images/Module2/image14.png)
+  ![](./images/Module2/m2s12.png)
+  
+  ![](./images/Module2/m2s13.png)
 
 
 **Keys** :
@@ -203,7 +217,9 @@ Use Charts to display high-level view of your data in insightful and graphical w
 Allows you to view the lookup keys for the table. Keys can contain multiple columns to define a composite key. Keys
 enforce uniqueness, so they should not be used when there is a need to store duplicate values of columns used.
 
-  ![](./images/Module2/image15.png)
+  ![](./images/Module2/m2s14.png)
+  
+  ![](./images/Module2/m2s15.png)
 
 
 **Commands** :
@@ -211,7 +227,10 @@ enforce uniqueness, so they should not be used when there is a need to store dup
 Microsoft Dataverse allows you to create your own command bar buttons. The commands added to this table will be listed
 here.
 
-   ![](./images/Module2/image16.png)
+   ![](./images/Module2/m2s16.png)
+   
+   ![](./images/Module2/m2s17.png)
+   
 
 
 **Data:**
@@ -255,13 +274,15 @@ In this task, you will create a custom table to store device order requests.
     by the system by default anytime a set of the Rows are shown. Check the **Enable attachments** since this will allow
     creating notes on the device order.
 
-3. Change the **Primary Column Display Name** to **Device Name**. The primary attribute defaults to being named
+3. Click on Primary column and Change the **Primary Column Display Name** to **Device Name**. The primary attribute defaults to being named
     Name, for some scenarios that might not be the best label and you can customize it if needed. The primary
     attribute however is always a Text column, that is not changeable.
+    
+  ![](./images/Module2/m2s18.png)
 
-4. Click **Create**.
+4. Click on **Save**.
 
-   ![](./images/Module2/image21.png)
+   ![](./images/Module2/m2s19.png)
 
 5. If prompted, approve the option in this dialog.
 
@@ -272,11 +293,11 @@ In this task, you will create a custom table to store device order requests.
 In this task, you will create custom columns for the Device Order table. It may take a few minutes for your new Device
 Order table to provision. Begin these steps once it has finished.
 
-1. Select the **Columns** tab and click on the **Add column** button to add columns to your custom table.
+1. Click on **+ New** and select the **Columns** to add columns to your custom table.
    
-   ![](./images/Module2/image23.png)
+   ![](./images/Module2/m2s20.png)
 
-2. Enter **Price** for **Display Name** , select **Currency** for **Data Type** , make the column **Required** and **Searchable** and
+2. Enter **Price** for **Display Name** , enter **Device Price** for Description, select **Currency** for **Data Type** , make the column **Required** and **Searchable** and
     click **Advanced Options**.
 
 Note : Currency is a special data type. For each currency column you add, another currency column is added with
@@ -284,28 +305,28 @@ the prefix “_Base” on the name. This column stores the calculation of the va
 and the base currency. For additional information on using the Currency column, see here.
 
 
-   ![](./images/Module2/image24.png)
+   ![](./images/Module2/m2s21.png)
 
-3. Enter **Device Price** for Description, **0** for **Minimum Value** , **5000** for **Maximum Value** , and click **Done**.
+3. Enter **0** for **Minimum Value** , **5000** for **Maximum Value** , and click on **Save**.
 
-   ![](./images/Module2/image25.png)
+   ![](./images/Module2/m2s22.png)
 
 4. Click **Add Column** again.
 
-5. Enter **Requested By** for **Display Name** , **RequestedBy** for **Name** , **Email** for **Data Type** , make the column
-    **Searchable** and click **Done**.
+5. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
+    **Searchable** and click on **Save**.
    
-   ![](./images/Module2/image26.png)
+   ![](./images/Module2/m2s23.png)
 
 6. Now repeat the Add Column process and add the following columns
 
-
-Display Name Name Type
-Request Date RequestDate Date Only
-Approver Approver Email
-Comments Comments Multiline Text
-Estimated Ship Date EstimatedShipDate Date Only
-Approved Date ApprovedDate Date Only
+|    Display Name     |       Name        |      Type      |
+| ------------------- | ----------------- | -------------- |
+|    Request Date     |  RequestDate      |    Date Only   |
+|     Approver        |    Approver       |      Email     |
+|     Comments        |    Comments       | Multiline Text |
+| Estimated Ship Date | EstimatedShipDate |    Date Only   |
+|    Approved Date    |   Approved Date   |    Date Only   |
 
 
 7. Now we are going to create the **Approval Choice**. We are adding this as a Choice (as opposed to a two option)
