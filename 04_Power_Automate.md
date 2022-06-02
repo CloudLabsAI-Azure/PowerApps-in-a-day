@@ -23,7 +23,7 @@ Module 4 : Power Automate
 
 This is the fourth lab in a five-part series covering Power Apps, Microsoft Dataverse, and Power Automate. The assumption
 is that you have successfully completed the first three modules, or at least the initial part of setting up an environment as
-described in the overview **(Page 1 of lab guide)**.
+described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
 
 If you have not completed the previous modules, you can use the partially completed version of the lab package in the
 **C:\PowerApps-in-a-day\Completed\Module 3** folder. Follow the instructions in the document **Importing Module 3 Completed** before
