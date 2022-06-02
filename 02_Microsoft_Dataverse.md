@@ -5,7 +5,6 @@
 Module 2: Microsoft Dataverse
 
 ### Hands-on Lab Step-by-Step
-April 2022
 
 
 - Microsoft Dataverse Contents
