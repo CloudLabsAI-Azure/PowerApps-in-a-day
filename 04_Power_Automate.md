@@ -113,7 +113,7 @@ In this scenario, we will configure the flow to trigger when a **new item is add
 
    ![](./images/Module4/PowerApps-flow8.png)
    
-1. Search for **Approvals** and select **Start and wait for an approval**.
+1. Search for **Approvals** and select **Start and wait for an approval** under **Actions**.
 
    ![](./images/Module4/PowerApps-flow9.png)
 
@@ -124,15 +124,20 @@ In this scenario, we will configure the flow to trigger when a **new item is add
    ![](./images/Module4/PowerApps-flow10.png)
    
 1. For the Title, we will add some text and one variable. This variable will contain the Device Name of the device
-    order request. Enter **_New device request for_** in the **Title** text box.
+    order request. Enter the below value in the **Title** text box.
 
+   ```
+   New device request for
+   ```
    ![](./images/Module4/PowerApps-flow11.png)
 
-1. Select **Device Name** for the **Dynamic content.**
+1. Select **Device Name** from the **Dynamic content** pane.
 
    ![](./images/Module4/PowerApps-flow12.png)
    
-   > **_Note_** _: if the Dynamic content box is not visible, click the Add dynamic content button - ![](./images/Maodule4/PowerApps-flow13.png)
+   > **_Note_** _: If the Dynamic content box is not visible, click the Add dynamic content button - 
+   
+   ![](./images/Module4/PowerApps-flow13.png)
 
 1. Select the **Assigned to** field, select click **Approver**. Click on the **Add dynamic content** button to show/hide the
     dynamic content pane.
@@ -151,8 +156,12 @@ In this scenario, we will configure the flow to trigger when a **new item is add
 
    ![](./images/Module4/PowerApps-flow16.png)
    
-1. In the **Details** field, type **_A new device has been requested_** and hit <Enter>.
+1. In the **Details** field, enter the below value and hit **Enter**.
 
+   ```
+   A new device has been requested
+   ```
+   
    ![](./images/Module4/PowerApps-flow17.png)
    
 1. Select **Device Name** from the Dynamic content pane.
@@ -164,7 +173,11 @@ In this scenario, we will configure the flow to trigger when a **new item is add
    
    ![](./images/Module4/PowerApps-flow19.png)
    
-1. Hit Enter and type **_Department Contribution: $_** .
+1. Hit Enter and insert the below value.
+
+   ```
+   Department Contribution: $
+   ```
    
 1. Select **Department Contribution**.
 
@@ -208,7 +221,7 @@ was approved or rejected.
 1. Click in the left edit box that says, “Choose a value” and select **Outcome** from the dynamic content pane. You may
     need to press the “+” icon below the edit box to hide the dynamic content pane.
    
-       ![](./images/Module4/PowerApps-flow25.png)  
+    ![](./images/Module4/PowerApps-flow25.png)  
 
 4. Select **is equal to** for condition and type **Approve** for **Value**.
 
@@ -219,10 +232,10 @@ was approved or rejected.
 
 We will now configure what actions to perform if the response is approved or not – YES branch vs. NO branch.
 
-We will add two actions:
+ - We will add two actions:
 
-   1. Update the record in the Device Order table
-   1. Send an email to the employee who requested the device
+    1. Update the record in the Device Order table
+    1. Send an email to the employee who requested the device
 
    
 1. In the left **If yes** box, click **Add an action**.
@@ -251,9 +264,11 @@ We will add two actions:
    
    ![](./images/Module4/PowerApps-flow31.png)  
    
-1. Type **utcNow()** and click **OK**.
-   
-    ![](./images/Module4/PowerApps-flow32.png)  
+1. From the Dynamic content pane, select the **expression** tab and enter the below value. Then, click **OK**.
+   ```
+   utcNow()
+   ```
+   ![](./images/Module4/PowerApps-flow32.png)  
 
 1. **Save** the flow.
 
@@ -273,7 +288,7 @@ You will now add the send email action to the If Yes branch.
 
     ![](./images/Module4/PowerApps-flow35.png)  
 
-1. Click **Accept**.
+1. Click **Accept** if prompted.
    
     ![](./images/Module4/PowerApps-flow36.png)  
   
@@ -285,24 +300,24 @@ You will now add the send email action to the If Yes branch.
    
     ![](./images/Module4/PowerApps-flow38.png)  
    
-1. Type **_Your device order has been approved!_** for **Subject**.
-
+1. Enter the below value in the **Subject** field.
+   ```
+   Your device order has been approved!
+   ``` 
 1. Click on the **Code View** button.
    
    ![](./images/Module4/PowerApps-flow39.png)  
    
-8. Set the **Body** value as shown below:
+1. Set the **Body** value as shown below:
 
-    ```
-    Select Device Name and Estimated Ship Date from the When a record is added action.
-    ```
+    - Select Device Name and Estimated Ship Date from the When a record is added action.
    
    ![](./images/Module4/PowerApps-flow40.png)  
    
    > **_Note_** _: If you do not have an Office 365 mailbox setup, you can use one of the other connectors to send the email, such as
 Outlook.com, Gmail or SendGrid._
 
-9. Click **Save**.
+1. Click **Save**.
 
 
 ### Exercise 3: Test the cloud flow
@@ -325,7 +340,7 @@ environment. Run the flow to initiate provisioning the Power Automate Approvals.
 
    ![](./images/Module4/PowerApps-testflow1.png)  
 
-1. Select **Manually** and click **Test.**
+1. Select **Test** that is present at the top right corner, then **Manually** and click **Test**
    
    ![](./images/Module4/PowerApps-testflow2.png)  
    
