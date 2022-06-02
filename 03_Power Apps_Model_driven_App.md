@@ -583,11 +583,10 @@ In this exercise, we are going to test the application you just built.
     and you should see the two devices you ordered using the Power Apps Canvas App.
     
    ![](images/Module3/apptest9.png)      
-11. Open the one priced over $1k.
-12. The **Business Process Flow** should now have **5** stages. This is because this order costs more than $1k and needs
-**Capital Approval**.
+1. Open the one priced over $1k.
+1. The **Business Process Flow** should now have **5** stages. This is because this order costs more than $1k and needs **Capital Approval**.
 
-    ![](images/Module3/apptest10.png)  
+   ![](images/Module3/apptest10.png)  
 
 1. Select **Device Orders**.
 1. Click on the other order you created.
