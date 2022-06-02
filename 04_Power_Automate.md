@@ -26,7 +26,7 @@ is that you have successfully completed the first three modules, or at least the
 described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
 
 If you have not completed the previous modules, you can use the partially completed version of the lab package in the
-**C:\PowerApps-in-a-day\Completed\Module 3** folder. Follow the instructions in the document **Importing Module 3 Completed** before
+**C:\PowerApps-in-a-day\Completed for students\Module 3** folder. Follow the instructions in the document **Importing Module 3 Completed** before
 proceeding with this module, which will provision the app and the Microsoft Dataverse Table into your environment.
 
 ### Integrating a Power Apps App with Power Automate
