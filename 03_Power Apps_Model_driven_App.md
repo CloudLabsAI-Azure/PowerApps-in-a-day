@@ -21,10 +21,10 @@ Module 3 : Power Apps Model-driven App
 
 This is the third lab in a four-part series covering Power Apps canvas apps, Microsoft Dataverse, Power Apps model-driven
 apps, and Power Automate. The assumption is that you have successfully completed the first two modules, or at least the
-initial part of setting up an environment as described in the overview – **(Page 1 of lab guide)** .
+initial part of setting up an environment as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
 
 If you have not completed the previous two modules, you can use the partially completed version of the lab package in
-the **C:\PowerApps-in-a-day\Completed\Module2** folder. Follow the instructions in the document **Importing Module 2 Completed** before
+the **C:\PowerApps-in-a-day\Completed\Module 2** folder. Follow the instructions in the document **Importing Module 2 Completed** before
 proceeding with this module, which will provision the app, and the Microsoft Dataverse Table into your environment.
 
 ### Model-driven Apps – A brief introduction
