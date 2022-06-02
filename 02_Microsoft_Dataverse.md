@@ -41,11 +41,11 @@ Microsoft Dataverse
 
 This is the second lab in a series covering Power Apps Canvas Apps, Microsoft Dataverse, Power Apps Model-driven Apps,
 and Power Automate. The assumption is that you have successfully completed the initial part of setting up an environment
-as described in the overview document – “ **00 - AppInADay Lab Overview.pdf** ”.
+as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
 
 If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version
-of the lab package in the “\Completed\Module1” folder. Follow the instructions in the document “Importing Module 1
-Completed” before proceeding with this module.
+of the lab package in the **C:\LabFiles\PowerApps-in-a-day\Completed for students\Module 1** folder. Follow the instructions in the document **Importing Module 1
+Completed** before proceeding with this module.
 
 ### Before you begin
 
@@ -56,7 +56,7 @@ You must be connected to the internet.
     gone through the steps to create a new environment using the Admin center. In this lab, you will create a
     database in this environment, if you haven’t already created one.
 2. **Sign-in to Power Apps:** Go to Power Apps and **sign in** with the same account you used to complete the first
-    lab**.** Make sure you switch to the environment where you created the app.
+    lab. Make sure you switch to the environment where you created the app.
 
 ### Overview
 
