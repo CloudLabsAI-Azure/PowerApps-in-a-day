@@ -1027,7 +1027,7 @@ Distribution Group within the @contoso.com tenant.
 
    ![](images/Module1/devicegallery80.png)   
    
-3. In the share screen, enter the name of the user **Lab admin01** to share the app. You may also share
+3. In the share screen, enter the name of the user **Lab admin01** or **Lab admin02** to share the app. You may also share
     it with a user group.
 
    ![](images/Module1/devicegallery81.png)   
