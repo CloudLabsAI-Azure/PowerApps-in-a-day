@@ -22,9 +22,7 @@ Module 1: Power Apps Canvas App
 
 ### Lab Prerequisites
 
-Follow the pre-requisite steps described in the document: **00 - AppInADay Lab Overview.pdf** , that is included in the lab
-package. Before beginning this lab, confirm that you have provisioned an environment where you will save your apps,
-flows and database entities.
+Follow the pre-requisite steps described in the **Lab Overview and Pre-requisites** (Page 1 of lab guide). Before beginning this lab, confirm that you have provisioned an environment where you will save your apps, flows and database entities.
 
 **IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
 
