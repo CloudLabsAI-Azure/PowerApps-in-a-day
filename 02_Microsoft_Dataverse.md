@@ -109,7 +109,7 @@ Before beginning the exercises, navigate to Make Power Apps Portal and confirm t
 labs.
 
 ```
-https://teams.microsoft.com/
+https://make.powerapps.com/
 ```
    ![](./images/Module2/image5.png)
 
