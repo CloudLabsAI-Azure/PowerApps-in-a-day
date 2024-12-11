@@ -113,7 +113,7 @@ When you are done with this first portion of the lab, your app will look like th
 
 ## Exercise 1: Create the app in Power Apps
 
-**IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
+**IMPORTANT:** Do not proceed before going through the lab pre-requisite steps.
 
 
 ### Task 1: Sign-in to Power Apps web studio
@@ -124,32 +124,35 @@ When you are done with this first portion of the lab, your app will look like th
    http://powerapps.microsoft.com/
    ```
    ![](images/Module1/powerAppsCanvasApp4.png)     
+
 2. Login to the account using the below credentials.
 
     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
     * Azure Password: <inject key="AzureAdUserPassword"></inject>
     
-3. Before creating an app, let’s switch to the correct environment. Click the Environment drop-down in the top
-right of the screen to switch to the new environment. (If your environment doesn't show up, try logging out
-and logging in again)
+3. Click on the **Environment** drop down and select the **Contoso Test** environment whihch we created in the previous task.
+
+      > **Note:** If your environment doesn't show up, try logging out and logging in again
 
    ![](images/Module1/powerAppsCanvasApp5.png)  
+
 ### Task 2: Create a new application
 
-1. Select **Home** from navigation and click **Blank app**.
+1. In the home page, click on the search bar and search for canvas app and select **Canvas app from blank** from the dropdown.
 
-   ![](images/Module1/powerAppsCanvasApp6.png)  
+      ![](images/Module1/powerAppsCanvasApp6.png)  
    
-1. From the **Blank canvas app** section, click **Create**.
+1. Click on **Create**.
  
-1. Input **Device Ordering App** in the App Name field. Select **Tablet** for Format. Click **Create**.
+1. Input **Device Ordering App (1)** in the App Name field, Select **Tablet (2)** for the Format and click on **Create (3)**.
 
    ![](images/Module1/powerAppsCanvasApp7.png)
    
-1. If prompted, select your region, then click **Get started**.
- 
-1. Click **Skip** if you receive the **Welcome to Power Apps Studio** prompt.
+      > **Note:** If prompted, select your region, then click **Get started**.
 
+      > **Note:** It takes few minutes to complete. Refresh the page after few minutes.
+ 
+1. Click on **Skip** if you receive the **Welcome to Power Apps Studio** prompt.
 
 ### Task 3: Rename the screen
 
@@ -160,6 +163,7 @@ In this task, you will rename Screen1 to Main Screen.
 2. Click **“...”** next to **Screen1** (or right click **Screen1** ) and select the **Rename** option.
 
    ![](images/Module1/powerAppsCanvasApp8.png)  
+
 3. Change the name to **Main Screen.**
 
    ![](images/Module1/powerAppsCanvasApp9.png)  
@@ -167,14 +171,10 @@ In this task, you will rename Screen1 to Main Screen.
    > Note : You can also rename the screen by clicking on the screen name in the right pane and selecting the edit icon, or
 double clicking on it.
 
-**_Tip_** _: It is a good practice to rename screens and controls as you create them, so they are easier to locate as you work with
-formulas that reference different controls. In this lab, you will be prompted to rename screens and some of the controls. For
-the others, you may rename them as you please on your own. It is important that you rename screens as prompted in this lab
-as future steps may rely on specific screen names._
+      **_Tip_** _: It is a good practice to rename screens and controls as you create them, so they are easier to locate as you work with formulas that reference different controls. In this lab, you will be prompted to rename screens and some of the controls. For
+the others, you may rename them as you please on your own. It is important that you rename screens as prompted in this lab as future steps may rely on specific screen names._
 
-
-
-#### Task 4: Add a header containing the app name and logged in user’s name
+### Task 4: Add a header containing the app name and logged in user’s name
 
 1. With Main Screen selected, click on the **+ Insert** button.
 
@@ -208,11 +208,11 @@ as future steps may rely on specific screen names._
 
    ![](images/Module1/powerAppsCanvasApp16.png)  
    
-8. Select the **Home** tab, change the **Fill** to blue and the font **Color** to white.
+8. From the top, select the more options icon ,change the **Color** to White and the **Background Color** to Blue.
 
    ![](images/Module1/powerAppsCanvasApp17.png)  
    
-9. Select the **Home** tab and change the **Font Size** to 24.
+9. Change the **Font Size** to 24.
 
    ![](images/Module1/powerAppsCanvasApp18.png)  
  
@@ -264,11 +264,9 @@ In this task, you will save an initial version of the app. It is a good practice
 
 3. Close the **App Checker** pane.
 
-4. Click **File**.
-
    ![](images/Module1/powerAppsCanvasApp24.png)  
    
-5. Select **Settings**.
+4. Click on **Settings**.
 
     In the application settings page, you can:
 
@@ -277,21 +275,14 @@ In this task, you will save an initial version of the app. It is a good practice
 
    ![](images/Module1/powerAppsCanvasApp25.png)  
 
-6. Select the **Display** tab to view the available screen orientation and aspect ratio settings. For this app, we will leave
+5. Select the **Display** tab to view the available screen orientation and aspect ratio settings. For this app, we will leave
     it at the default setting of Landscape with 16:9 aspect ratio.
 
    ![](images/Module1/powerAppsCanvasApp26.png)  
    
-7. Close the **Settings**.
+6. Close the **Settings**.
 
-8. Click **File** again and select **Save** in the left navigation.
-
-9. Select **The cloud** and click **Save**.
-
-   ![](images/Module1/powerAppsCanvasApp27.png)  
-10. After the app is saved, click the **Back** arrow in the top left to get back to the studio.
-
-   ![](images/Module1/powerAppsCanvasApp28.png)  
+7. Click on **Save** from the top right.
    
    > **_Tip:_** _In Power Apps when you save a version of your app the first version is published by default and available to everyone
 you share the app with. Subsequent saves are only visible to the app maker in the studio. You must explicitly publish it for all
@@ -310,16 +301,14 @@ overview of the devices available.
 
 #### Task 1: Add device gallery
 
-1. With Main Screen selected, select the **Insert** tab.
+1. With Main Screen selected, select the **+ Insert** tab.
 
-2. Click **Gallery** and select **Horizontal**.
+2. Type **Horizontal** and select **Horizontal Gallery**.
 
    ![](images/Module1/powerAppsEx2_1.png)  
    
    > This will add a gallery called **Gallery1** onto the screen. Notice the control tree view on the left displays this gallery with
-three controls within it – two labels and an image. A data pane will pop up on the right.
-
-      ![](images/Module1/powerAppsEx2_2.png)  
+three controls within it – two labels and an image. A data pane will pop up on the right.  
       
 3. Expand **Connectors** , then click **Show all connectors**.
 
