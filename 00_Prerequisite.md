@@ -77,9 +77,6 @@ and provision the database instance.
 
    ![](images/Module0/environment4.png)
    
-1. **IMPORANT** : You need to wait for the database to finish provisioning before trying to create an application. The
-    **Status** will change to Ready when done. 
+      > **IMPORANT:** You need to wait for the database to finish provisioning before trying to create an application. The **Status** will change to Ready when done. 
 
-   ![](images/Module0/environment5.png)
-   
-1. This may take few minutes to complete. Wait for it to complete before proceeding with creating an app. If it has been over two minutes, try refreshing the browser. Once the database has been created you should no longer seethis “Preparing Instance” message. You can then proceed with the lab.
+   > **Note:** This may take few minutes to complete.
