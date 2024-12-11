@@ -113,9 +113,7 @@ https://make.powerapps.com/
 ```
    ![](./images/Module2/image5.png)
 
-1. In the left pane, expand **Dataverse** and select **Tables**.
-
-   ![](./images/Module2/image6.png)
+1. Select **Tables** from the left pane.
 
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
@@ -257,10 +255,7 @@ having to jump into a specific Canvas or Model-driven app.
 Just like standard Tables, the Microsoft Dataverse includes a set of standard **Choices**. You can also create custom **Choices**.
 Later in this lab, we will create a custom **Choice** called **ApprovalStatus** to set the approval status of a device order.
 
-1. Select **Choices** from underneath the expanded **Dataverse.**
-
-   ![](./images/Module2/image18.png)
-
+1. Click on **... More** abd select **Choices**.
 
 2. Examine the standard **Choices.**
 
@@ -276,94 +271,71 @@ requests. You will also create a server-side Business Rule that will default the
 
 In this task, you will create a custom table to store device order requests.
 
-1. Select **Tables** in the left pane and click **New Table** in the upper left corner of the page.
-
-   ![](./images/Module2/image20.png)
+1. Select **Tables** in the left pane and click on **New Table**. Select **Table (advanced properties)** from the dropdown.
    
-2. Enter **Device Order** for Display Name. The columns for Name and Plural name display name will automatically
-    populate based on your entry. These are editable in case you need to make any changes. The plural name is used
-    by the system by default anytime a set of the Rows are shown. Check the **Enable attachments** since this will allow
-    creating notes on the device order.
+2. Enter **Device Order** for Display Name.
 
-3. Click on Primary column and Change the **Primary Column Display Name** to **Device Name**. The primary attribute defaults to being named
-    Name, for some scenarios that might not be the best label and you can customize it if needed. The primary
-    attribute however is always a Text column, that is not changeable.
+3. Click on Primary column and Change the **Primary Column Display Name** to **Device Name**.
     
    ![](./images/Module2/m2s18.png)
 
 4. Click on **Save**.
-
-   ![](./images/Module2/m2s19.png)
-
-5. If prompted, approve the option in this dialog.
-
-   ![](./images/Module2/image22.png)
 
 ### Task 2: Create custom columns
 
 In this task, you will create custom columns for the Device Order table. It may take a few minutes for your new Device
 Order table to provision. Begin these steps once it has finished.
 
-1. Click on **+ New** and select the **Columns** to add columns to your custom table.
-   
-   ![](./images/Module2/m2s20.png)
+1. Click on **+ New** and select **Columns**.
 
-2. Enter **Price** for **Display Name** , enter **Device Price** for Description, select **Currency** for **Data Type** , make the column **Required** and **Searchable** and
-    click **Advanced Options**.
-
-   > Note : Currency is a special data type. For each currency column you add, another currency column is added with
-the prefix “_Base” on the name. This column stores the calculation of the value of the currency column you added
-and the base currency. For additional information on using the Currency column, see here.
-
+2. Provide the following details and click on **Save**:
+   - Display Name: **Price**
+   - Description: **Device Price** 
+   - Data Type: **Currency** 
+   - Required: **Business Required**
+   - Ensure the checkbox for **Searchable** is checked
+   - Click on **Advanced Options**
+   - Minimum Value: **0**
+   - Maximum value: **5000**
 
    ![](./images/Module2/m2s21.png)
 
-3. Enter **0** for **Minimum Value** , **5000** for **Maximum Value** , and click on **Save**.
-
    ![](./images/Module2/m2s22.png)
 
-4. Click **Add Column** again.
+5. Click **Add Column** again.
 
-5. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
+6. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
     **Searchable** and click on **Save**.
    
    ![](./images/Module2/m2s23.png)
 
-6. Now repeat the Add Column process and add the following columns
+7. Now repeat the Add Column process and add the following columns
 
-    |    Display Name     |       Name        |      Type      |
-    | ------------------- | ----------------- | -------------- |
-    |    Request Date     |  RequestDate      |    Date Only   |
-    |     Approver        |    Approver       |      Email     |
-    |     Comments        |    Comments       | Multiline Text |
-    | Estimated Ship Date | EstimatedShipDate |    Date Only   |
-    |    Approved Date    |   Approved Date   |    Date Only   |
+    |    Display Name     |       Type      |
+    | ------------------- | ----------------- |
+    |    Request Date     |   Date Only   |
+    |     Approver        |   Email       |
+    |     Comments        |   Plain Text  |
+    | Estimated Ship Date |   Date Only   |
+    |    Approved Date    |   Date Only   |
 
-7. Now we are going to create the **Approval Choice**. We are adding this as a Choice (as opposed to a two option)
-    because it is likely in the future there will be more than Yes/No for users to choose from. Click **Add Column**.
+8. Click on **Add Column** again.
 
-8. Enter **Approval Status** for **Display Name** , **ApprovalStatus** for **Name** , select **Choice** for **Data Type** , and select
-    **New Choice** for **Choice**.
+9. Enter **Approval Status** for **Display Name** , select **Choice** for **Data Type** , and select **New Choice** under **Sync this choice with**.
   
    ![](./images/Module2/image27.png)
  
-9. Change the **New Choice** label to **Approve**
+10. Provide the name as **Approval Status**
 
-10. Click **Add new item**.
+11. Enter two choices, provide the names as Approve and Reject. 
 
-    ![](./images/Module2/image28.png)
-
-11. Enter **Reject** and click **Save**.
+12. Click on **Save**.
 
     ![](./images/Module2/image29.png)
 
-12. Click **Done**.
+13. Click on **Save**.
 
     ![](./images/Module2/image30.png)
-
-13. Click **Save Table**.
-
-    ![](./images/Module2/image31.png)
 
 ### Task 3: Create a calculated column
 
