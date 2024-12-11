@@ -43,17 +43,27 @@ and provision the database instance.
     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
     * Azure Password: <inject key="AzureAdUserPassword"></inject>
       
-1. In the Admin center, select **Environments** and click **+New**.
+1. In the Admin center, select **Environments (1)** and click **+New (2)**.
 
    ![](images/Module0/environment1.png)
    
-1. Provide a name for the environment. A common practice is to use your name followed by “Test” so it is clear this
-    is a test environment.
-1. Select **Trial** , select your **Region** , make sure **Create a database** is set to **Yes** , and click **Next**.
+1. Provide the following details:
+
+   - Name: **Contoso Test (1)**
+   - Region: **United States (2)**
+   - Type: **Trial (3)**
+   - Add a Dataverse data store? Check the box to **Yes (4)**
+
+1. Click on **Next**.
 
    ![](images/Module0/environment2.png)
    
-1. Select your **Language** and your **Currency**. Check **Yes** for **Deploy sample apps and data**, and then click **Save**.
+1. Provide the following details and then click **Save**:
+
+   - Language: **English (1)**
+   - Currency: **USD ($) (2)**
+   - Click on **Security Group** and select **None** under Open Access and click on **Done**.
+   - Check **Yes (3)** for **Deploy sample apps and data**
   
    ![](images/Module0/environment3.png)
    
@@ -62,10 +72,6 @@ and provision the database instance.
     2. Select **Sandbox/Production** , select your **Region** , make sure **Create a database** is set to **Yes** , and click **Next**.
     3. Select your **Language** and your **Currency**. Notice that **Deploy sample apps and data** is enaled now, and then click **cancel**.
     4. Repeat the steps 2-5 to create a **Trial** environment.
-
-
-   > Note : You can choose your local language and currency. However, the lab manuals were created using US dollars and
-English language configurations.
 
 1. You will see a screen listing all environments that will show the newly created environment.
 
@@ -76,6 +82,4 @@ English language configurations.
 
    ![](images/Module0/environment5.png)
    
-1. This may take few minutes to complete. Wait for it to complete before proceeding with creating an app. If it has
-    been over two minutes, try refreshing the browser. Once the database has been created you should no longer see
-    this “Preparing Instance” message. You can then proceed with the lab.
+1. This may take few minutes to complete. Wait for it to complete before proceeding with creating an app. If it has been over two minutes, try refreshing the browser. Once the database has been created you should no longer seethis “Preparing Instance” message. You can then proceed with the lab.
