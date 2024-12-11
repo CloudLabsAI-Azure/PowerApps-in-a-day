@@ -136,8 +136,6 @@ When you are done with this first portion of the lab, your app will look like th
 
       > **Note:** If your environment doesn't show up, try logging out and logging in again
 
-   ![](images/Module1/powerAppsCanvasApp5.png)  
-
 ### Task 2: Create a new application
 
 1. In the home page, click on the search bar and search for canvas app and select **Canvas app from blank** from the dropdown.
@@ -260,8 +258,6 @@ In this task, you will save an initial version of the app. It is a good practice
 2. The **App Checker** pane will come to view. Errors will be displayed here if there are any.
 
 3. Close the **App Checker** pane.
-
-   ![](images/Module1/powerAppsCanvasApp24.png)  
    
 4. Click on **Settings**.
 
@@ -324,16 +320,17 @@ three controls within it – two labels and an image. A data pane will pop up on
 6. Select both tables, **Devices** and **Manufacturers,** and click the **Connect** button. This will add both these tables as
     static data into the application.
     
-   ![](images/Module1/powerAppsEx2_6.png)  
-    > **Note** : In this lab, you will work with tables imported from a static data file and embedded as resources in the app. If you
+      ![](images/pp27.png)
+
+   > **Note** : In this lab, you will work with tables imported from a static data file and embedded as resources in the app. If you
 were building a real solution, the same tables would likely be stored in the cloud, such as in a SharePoint list, a SQL table,
 or a Microsoft Dataverse table.
 
-7. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
+8. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
 
    ![](images/Module1/powerAppsEx2_7.png)  
 
-8. Rename the **Gallery1** to **Device Gallery**.
+9. Rename the **Gallery1** to **Device Gallery**.
 
    ![](images/Module1/powerAppsEx2_11.png)  
    
