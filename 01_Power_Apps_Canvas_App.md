@@ -123,7 +123,7 @@ When you are done with this first portion of the lab, your app will look like th
    ```
    http://powerapps.microsoft.com/
    ```
-   ![](images/Module1/powerAppsCanvasApp4.png)     
+      ![](images/pp6.png)     
 
 2. Login to the account using the below credentials.
 
@@ -131,6 +131,8 @@ When you are done with this first portion of the lab, your app will look like th
     * Azure Password: <inject key="AzureAdUserPassword"></inject>
     
 3. Click on the **Environment** drop down and select the **Contoso Test** environment whihch we created in the previous task.
+
+      ![](images/pp7.png)
 
       > **Note:** If your environment doesn't show up, try logging out and logging in again
 
@@ -140,13 +142,13 @@ When you are done with this first portion of the lab, your app will look like th
 
 1. In the home page, click on the search bar and search for canvas app and select **Canvas app from blank** from the dropdown.
 
-      ![](images/Module1/powerAppsCanvasApp6.png)  
+      ![](images/pp8.png)
    
 1. Click on **Create**.
  
 1. Input **Device Ordering App (1)** in the App Name field, Select **Tablet (2)** for the Format and click on **Create (3)**.
 
-   ![](images/Module1/powerAppsCanvasApp7.png)
+      ![](images/pp9.png)
    
       > **Note:** If prompted, select your region, then click **Get started**.
 
@@ -160,16 +162,11 @@ In this task, you will rename Screen1 to Main Screen.
 
 1. Select the screen by clicking the **Screen1** tile in the **Tree view**.
 
-2. Click **“...”** next to **Screen1** (or right click **Screen1** ) and select the **Rename** option.
+2. Click on the **Ellipsis (...)** beside the **Screen1** and select the **Rename** option.
 
-   ![](images/Module1/powerAppsCanvasApp8.png)  
+      ![](images/pp10.png)
 
 3. Change the name to **Main Screen.**
-
-   ![](images/Module1/powerAppsCanvasApp9.png)  
-   
-   > Note : You can also rename the screen by clicking on the screen name in the right pane and selecting the edit icon, or
-double clicking on it.
 
       **_Tip_** _: It is a good practice to rename screens and controls as you create them, so they are easier to locate as you work with formulas that reference different controls. In this lab, you will be prompted to rename screens and some of the controls. For
 the others, you may rename them as you please on your own. It is important that you rename screens as prompted in this lab as future steps may rely on specific screen names._
@@ -178,7 +175,7 @@ the others, you may rename them as you please on your own. It is important that 
 
 1. With Main Screen selected, click on the **+ Insert** button.
 
-   ![](images/Module1/powerAppsCanvasApp10.png)  
+      ![](images/pp11.png)
    
 2. Drag **Text Label** from the Insert pane and drop it on the Main Screen.
 
@@ -210,11 +207,11 @@ the others, you may rename them as you please on your own. It is important that 
    
 8. From the top, select the more options icon ,change the **Color** to White and the **Background Color** to Blue.
 
-   ![](images/Module1/powerAppsCanvasApp17.png)  
+      ![](images/pp15.png)
    
 9. Change the **Font Size** to 24.
 
-   ![](images/Module1/powerAppsCanvasApp18.png)  
+      ![](images/pp16.png)
  
     > **_Tip_** _: You can also use the formula bar above or the Advanced tab on the far right of the screen to enter specific values
 or formulas for any property on a control._
@@ -222,7 +219,7 @@ or formulas for any property on a control._
 10. Select **+ Insert** button and drag another **Text Label** to the Main Screen. You will use this label to display the
     logged in user’s name.
 
-    ![](images/Module1/powerAppsCanvasApp19.png)  
+      ![](images/pp17.png)
    
 11. Drag the label to the far-right side of the screen as shown and center the label vertically to be in line with the
     header text. As you center your label, purple alignment markers will appear.
@@ -233,7 +230,7 @@ or formulas for any property on a control._
 
 13. Change the value of the Text field to: "Hello, " & User().FullName
 
-    ![](images/Module1/powerAppsCanvasApp21.png)  
+      ![](images/pp18.png)
     > **_Note_** _: All functions in Power Apps are case sensitive. As you start typing “User” you will see a drop-down of available choices.
 It is a good idea to pick from the autocomplete options. You will also notice help text at the top showing the required
 parameters, in this case, it requires no input parameters._
@@ -258,7 +255,7 @@ In this task, you will save an initial version of the app. It is a good practice
 
 1. First, you will check if there are any errors. Click on then **App Checker** icon.
 
-   ![](images/Module1/powerAppsCanvasApp23.png)  
+      ![](images/pp19.png) 
    
 2. The **App Checker** pane will come to view. Errors will be displayed here if there are any.
 
@@ -268,22 +265,26 @@ In this task, you will save an initial version of the app. It is a good practice
    
 4. Click on **Settings**.
 
-    In the application settings page, you can:
+      ![](images/pp20.png)
+
+5. In the application settings page, you can:
 
      - Change your app name
      - Customize the app icon – choose a background color and icon
 
-   ![](images/Module1/powerAppsCanvasApp25.png)  
+      ![](images/pp21.png)
 
-5. Select the **Display** tab to view the available screen orientation and aspect ratio settings. For this app, we will leave
+6. Select the **Display** tab to view the available screen orientation and aspect ratio settings. For this app, we will leave
     it at the default setting of Landscape with 16:9 aspect ratio.
 
-   ![](images/Module1/powerAppsCanvasApp26.png)  
+      ![](images/pp22.png)
    
-6. Close the **Settings**.
+7. Close the **Settings**.
 
-7. Click on **Save** from the top right.
-   
+8. Click on **Save** from the top right.
+
+      ![](images/pp23.png)
+
    > **_Tip:_** _In Power Apps when you save a version of your app the first version is published by default and available to everyone
 you share the app with. Subsequent saves are only visible to the app maker in the studio. You must explicitly publish it for all
 app users to get the update. For more details on saving, publishing and sharing apps, you can find the refernces below:
@@ -305,17 +306,18 @@ overview of the devices available.
 
 2. Type **Horizontal** and select **Horizontal Gallery**.
 
-   ![](images/Module1/powerAppsEx2_1.png)  
+      ![](images/pp24.png)
    
    > This will add a gallery called **Gallery1** onto the screen. Notice the control tree view on the left displays this gallery with
 three controls within it – two labels and an image. A data pane will pop up on the right.  
       
 3. Expand **Connectors** , then click **Show all connectors**.
 
-   ![](images/Module1/powerAppsEx2_3.png)  
+      ![](images/pp25.png)
+
 4. Select **Import from Excel.**
 
-   ![](images/Module1/powerAppsEx2_4.png)  
+      ![](images/pp26.png)
 
 5. In the File Open dialog, browse to the location `C:\LabFiles\PowerApps-in-a-day` inside the LabVM and select **Device-Order-Data.xlsx** to load it.
 
