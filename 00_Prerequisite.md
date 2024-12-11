@@ -43,9 +43,9 @@ and provision the database instance.
     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
     * Azure Password: <inject key="AzureAdUserPassword"></inject>
       
-1. In the Admin center, select **Environments (1)** and click **+New (2)**.
+1. In the Admin center, select **Environments** and click **+New**.
 
-   ![](images/Module0/environment1.png)
+   ![](images/pp1.png)
    
 1. Provide the following details:
 
@@ -54,10 +54,10 @@ and provision the database instance.
    - Type: **Trial (3)**
    - Add a Dataverse data store? Check the box to **Yes (4)**
 
+      ![](images/pp2.png)
+
 1. Click on **Next**.
 
-   ![](images/Module0/environment2.png)
-   
 1. Provide the following details and then click **Save**:
 
    - Language: **English (1)**
@@ -65,7 +65,9 @@ and provision the database instance.
    - Click on **Security Group** and select **None** under Open Access and click on **Done**.
    - Check **Yes (3)** for **Deploy sample apps and data**
   
-   ![](images/Module0/environment3.png)
+      ![](images/pp4.png)
+
+      ![](images/pp3.png)
    
    > **Note:** If  **Deploy sample apps and data** option is disabled for you, this is due to unpredicted behavior of Power Apps, follow the below steps to enable the option. 
     1. In the Admin center, select **Environments** and click **+New**.
@@ -75,7 +77,7 @@ and provision the database instance.
 
 1. You will see a screen listing all environments that will show the newly created environment.
 
-   ![](images/Module0/environment4.png)
+   ![](images/pp5.png)
    
       > **IMPORANT:** You need to wait for the database to finish provisioning before trying to create an application. The **Status** will change to Ready when done. 
 
