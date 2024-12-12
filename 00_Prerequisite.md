@@ -4,7 +4,14 @@
 
 This beginner-level lab provides hands-on experience with Microsoft Power Platform technologies—Power Apps, Power Automate, and Microsoft Dataverse. Designed for those new to the platform, the lab guides you step-by-step to build a device ordering solution in a day. You will explore Power Apps to create Canvas and Model-driven apps, use Power Automate to design intuitive automated workflows, and leverage Microsoft Dataverse for compliant, scalable data management. Complete all pre-requisites before starting, as the cloud-based Power Platform allows you to complete the lab remotely. 
 
-### Task 1 : Install the Power Apps and Power Automate mobile applications (optional)
+## Lab objectives
+
+In this lab, you will complete the following tasks:
+
+- Task 1: Install the Power Apps and Power Automate mobile applications (Optional)
+- Task 2: Create a new environment and Microsoft Dataverse database instance
+
+### Task 1: Install the Power Apps and Power Automate mobile applications (Optional)
 
 1. **Install the Power Apps mobile application** : Go to the app store on your mobile device. Search for “ **Power**
     **Apps** ” and install the Power Apps mobile application. If prompted, keep push notifications enabled.
@@ -66,3 +73,9 @@ and provision the database instance.
       > **IMPORANT:** You need to wait for the database to finish provisioning before trying to create an application. The **Status** will change to Ready when done. 
 
    > **Note:** This may take few minutes to complete.
+
+### Summary
+
+In this exercise, you have created a new environment and Microsoft Dataverse database instance.
+
+### You have successfully completed the lab
