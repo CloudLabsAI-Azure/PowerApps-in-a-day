@@ -1,10 +1,6 @@
-# Power Platform
+# Power Platform - App in a Day
 
-# App in a Day
-
-## Lab Overview and Pre-requisites
-
-#### Abstract
+## Overview
 
 This is a beginner level lab for you to get hands on experience with the Microsoft Power Platform technologies – Power Apps, Power Automate, and Microsoft Dataverse. The lab includes step-by-step instructions for someone new to these technologies to build a device ordering solution within a day. Technologies covered are:
 
