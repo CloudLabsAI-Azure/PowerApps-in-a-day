@@ -1,38 +1,20 @@
-# Power Platform
+# Module 2: Microsoft Dataverse
 
-# App in a Day
+## Overview
 
-Module 2: Microsoft Dataverse
+The Microsoft Dataverse adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision.
+In this module, you will be using Microsoft Dataverse to model and store the data from the device ordering canvas app
+that you built in module 1. In the next module, you will be building a model-driven application using the same data that
+will be used by the back-office staff to process the device orders. These apps that you build on Microsoft Dataverse use
+the same technology framework (Microsoft Dataverse) that Microsoft Dynamics 365 apps are built-on.
 
-### Hands-on Lab Step-by-Step
+## Lab objectives
 
-- Microsoft Dataverse Contents
-   - Lab Prerequisites
-   - Before you begin
-   - Overview
-   - Goals for this lab
+In this lab, you will complete the following tasks:
+
 - Exercise 1: Exploring Microsoft Dataverse
-   - Task 1: Explore standard Tables
-   - Task 2: Explore Standard Choices
 - Exercise 2: Custom Tables and Columns
-   - Task 1: Create a custom table
-   - Task 2: Create custom columns
-   - Task 3: Create a calculated column
-   - Task 4: Create a business rule
 - Exercise 3: Connect the data from the Canvas App
-   - Task 1: Add Microsoft Dataverse table as a data source to the app
-   - Task 2: Create the edit form
-   - Task 3: Configure the title column
-   - Task 4: Configure the price Field
-   - Task 5: Configure the Approval Field
-   - Task 6: Configure the Comment Field
-   - Task 7: Configure the Requested By Field
-   - Task 8: Configure the requested date Field
-   - Task 9: Add a button to submit the form
-   - Task 10: Test the form
-   - Task 11: Verify a new item was added to the Device Order table
-   - Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
-
 
 Microsoft Dataverse
 
@@ -45,44 +27,6 @@ as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)*
 If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version
 of the lab package in the **C:\LabFiles\PowerApps-in-a-day\Completed for students\Module 1** folder. Follow the instructions in the document **Importing Module 1
 Completed** before proceeding with this module.
-
-### Before you begin
-
-You must be connected to the internet.
-
-
-1. **Have a Test Environment with permission to create a Microsoft Dataverse database:** You should have
-    gone through the steps to create a new environment using the Admin center. In this lab, you will create a
-    database in this environment, if you haven’t already created one.
-2. **Sign-in to Power Apps:** Go to Power Apps and **sign in** with the same account you used to complete the first
-    lab. Make sure you switch to the environment where you created the app.
-
-### Overview
-
-The Microsoft Dataverse adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision.
-In this module, you will be using Microsoft Dataverse to model and store the data from the device ordering canvas app
-that you built in module 1. In the next module, you will be building a model-driven application using the same data that
-will be used by the back-office staff to process the device orders. These apps that you build on Microsoft Dataverse use
-the same technology framework (Microsoft Dataverse) that Microsoft Dynamics 365 apps are built-on.
-
-
-
-### Goals for this lab
-
-
-After this lesson you will be able to:
-
-
-- Provision a Microsoft Dataverse^ database
-- Create a custom table and add custom columns to it
-- Use the Power Apps Form control to populate the table
-- View the table^ data^
-- Create a calculated column^
-- Implement a server-side business rule
-
-
-The time to complete this lab is 60 minutes.
-
 
 ## Exercise 1: Exploring Microsoft Dataverse
 
