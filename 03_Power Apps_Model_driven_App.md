@@ -1,21 +1,13 @@
-# Power Platform
+# Module 3 : Power Apps Model-driven App
 
-# App in a Day
+## Lab objectives
 
-Module 3 : Power Apps Model-driven App
+In this lab, you will complete the following tasks:
 
-### Hands-on Lab Step-by-Step
-
-## Contents
-
-- Power Apps Model-driven App
-   - Lab Prerequisites
-   - Exercise 1: Create Application and add Columns to the Device Order Table
-   - Exercise 2: Business Process Flow
-   - Exercise 3: Form and View Modification
-   - Exercise 4: Test the application
-
-## Power Apps Model-driven App
+- Exercise 1: Create Application and add Columns to the Device Order Table
+- Exercise 2: Business Process Flow
+- Exercise 3: Form and View Modification
+- Exercise 4: Test the application
 
 ### Lab Prerequisites
 
