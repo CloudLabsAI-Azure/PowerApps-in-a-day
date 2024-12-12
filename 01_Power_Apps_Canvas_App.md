@@ -237,56 +237,14 @@ or a Microsoft Dataverse table.
 
 8. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
 
-   ![](images/Module1/powerAppsEx2_7.png)  
-
 9. Rename the **Gallery1** to **Device Gallery**.
 
-   ![](images/Module1/powerAppsEx2_11.png)  
-   
-**Tips on working with galleries:**
-
-
-Galleries provide a powerful way to visualize tabular data in Power Apps. It is important to become familiar with
-customizing a gallery. Key components of a gallery: the gallery control, the template cell (first cell), and controls within the
-template cell.
-
-
-To select the **entire gallery** – click on the gallery in the tree view on the left or click on the second or third cell. Clicking
-any cell that is not the first cell of the gallery will select the entire gallery. Now you can specify properties that apply to the
-entire gallery, such as the Items property which is the data source, the gallery fill color, borders, etc.
-
-
-To customize how each item is displayed in the gallery, you will customize the template cell. Select the template by
-
-
-clicking in the first cell of the gallery or click on the pencil icon in the top left corner when the entire gallery is
-selected.
-
-
-You can now add, remove and customize the controls within the template cell. These changes will then repeat across each
-item or row in the table.
-
-
-Go ahead and select the device image in the template cell and **change its size**. Notice how the size of the image changes
-in all the cells.
-
-You can also test your gallery right on the canvas by holding down the Alt key to activate.
-
-You will customize the device gallery in subsequent steps.
-
-_Don’t worry about making the gallery pixel perfect, the purpose of this exercise is to get your app working with a good
-enough UX. You can always repeat these labs to practice your pixel perfect skills._
-
-
-#### Task 2: Arrange the device gallery
+### Task 2: Arrange the device gallery
 
 1. Resize and reposition the gallery. You can drag and drop the gallery or use the gallery properties pane on the
     right.
-
-   ![](images/Module1/devicegallery1.png)  
+ 
 2. Select the **Device Gallery** and click the **Edit (pencil) icon** in the top left to edit the template cell.
-
-   ![](images/Module1/devicegallery2.png) 
  
 3. Using the right drag control, resize the first box to be narrower. Notice that all the items get narrower and more
     devices are visible on the screen.
@@ -349,11 +307,9 @@ later be used as a filter for the device gallery created above.
 
     ![](images/Module1/devicegallery13.png) 
    
-11. Click **File** and **Save** the application.
-
-12. Click on the **Back** arrow.
-
-#### Task 4: Connect Manufacturer Gallery to manufacturers table
+11. Click on **Save** from the top right.
+    
+### Task 4: Connect Manufacturer Gallery to manufacturers table
 
 Earlier you connected the data source using the Data tab in the right pane. You can also connect to data via the formula
 bar.
@@ -375,8 +331,6 @@ bar.
     > Note: Autosuggest offers you valid options for authoring formulas. See in the image below, we want to define the
 image to display from our data. Once we type “ThisItem.” our Autosuggest tells us that we have three valid options
 for this formula. This can help guide you to making valid formulas.
-
-    ![](images/Module1/devicegallery16.png) 
     
 4. Select the first (top-most) image and using the **Properties** pane on the right, set the **Image position** property to
     **Fit**.
@@ -387,9 +341,8 @@ for this formula. This can help guide you to making valid formulas.
     drag handles to first reduce the height of the image and subsequently reduce the height of the template cell.
     Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.
    
-   ![](images/Module1/devicegallery18.png) 
    
-####  Task 5: Highlight the selected item in the gallery
+###  Task 5: Highlight the selected item in the gallery
 
 In this task, you will use the **TemplateFill** property of the manufacturer gallery to specify a highlight color for the selected
 item
@@ -420,40 +373,8 @@ color of header label, the fill color of the selected item in the gallery will a
 Alternatively, you could click the Play ( ) button to enter preview mode, and to exit this you would hit the X in
 the upper right corner or use the Esc key.
 
-#### Task 6: Filter the devices based on selected manufacturer
 
-In this task, you will use the Filter() function to filter the items in the **Device Gallery** to only display devices that match the
-selected item in the **Manufacturer Gallery**.
-
-1. Select the **Device Gallery**. With the **Items** property selected, enter the following expression in the formula bar:
-
-   ```
-   Filter(Devices, ManufacturerID = 'Manufacturer Gallery'.Selected.ManufacturerID)
-   ```
-   **for alternate/European locales:**
-   ```
-   Filter(Devices; ManufacturerID = ‘Manufacturer Gallery’.Selected.ManufacturerID)
-   ```
-
-   This will filter the device gallery to only display items that match the selected manufacturer based on
-ManufacturerID.
-
-   ![](images/Module1/devicegallery20.png) 
-   
-2. Select a different item in the manufacturer gallery on the left, and you will notice the device gallery will update
-    accordingly. Note: In some cases, the first few items won’t show the selection, try selecting the 5th or 6th item if
-    that occurs.
-
-   ![](images/Module1/devicegallery21.png) 
-   
-**Note:** If you get an error when entering the Filter command, check the name of the manufacturer gallery. The name in
-the filter command must match the name of your gallery.
-
- You can find more details on the Filter() function here: `https://powerapps.microsoft.com/tutorials/function-filter-lookup/`
-
- You can find a complete set of expressions here : `https://powerapps.microsoft.com/tutorials/formula-reference/`
-
-#### Task 7: Configure text labels in the device gallery
+### Task 6: Configure text labels in the device gallery
 
 1. Select the subtitle in the **Device Gallery**. It may already have the default value set to the **DeviceType** property
     (e.g. Tablet).
@@ -494,7 +415,7 @@ manually change it to [$-en-US]:
 
 - Change font to **Segoe UI**.
 
-#### Task 8: Conditional formation to highlight devices above $1,000
+### Task 8: Conditional formation to highlight devices above $1,000
 
 We can make it easy to spot devices that cost more than $1,000, by displaying the price in Red.
 
