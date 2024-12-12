@@ -2,6 +2,10 @@
 
 ### Estimated Duration: 60 Minutes
 
+## Overview
+
+This lab showcases how Microsoft Business Application Platform technologies enable citizen developers to build a customized device ordering solution. Using Power Apps, participants will design an interface to browse, filter, compare devices, and submit orders with custom forms. Power Automate will streamline approval workflows, sending automated requests to managers and allowing approvals directly via email. Microsoft Dataverse will securely store order data and enable admins to manage and view all orders. The solution ensures a seamless user experience with notifications for approvals/rejections and supports a tailored procurement process for device purchases.
+
 ## Lab objectives
 
 In this lab, you will complete the following tasks:
@@ -15,78 +19,6 @@ In this lab, you will complete the following tasks:
 Follow the pre-requisite steps described in the **Lab Overview and Pre-requisites** (Page 1 of lab guide). Before beginning this lab, confirm that you have provisioned an environment where you will save your apps, flows and database entities.
 
 **IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
-
-### Power Apps Canvas Studio Layout
-
-**Power Apps Canvas Studio** is available as a web application **Make Power Apps** that you can use in any modern browser. Here is the URL to open the Power Apps portal `http://make.powerapps.com/`.
-
-Power Apps Studio is designed to have a user interface familiar to users of the Office suite. It has three panes and a ribbon
-that make app creation feel **like building a slide deck in PowerPoint.** Formulas are entered within a function bar that
-is like Excel. Studio components:
-
-1. **Left navigation pane** , which shows all the screens, data sources, and controls in your app
-2. **Middle pane** , which contains the app screen you are working on
-3. **Right-hand pane** , where you configure properties for controls, bind to data, create rules, and set additional advanced settings
-4. **Property** drop-down list, where you select the property for the selected control that you want to configure
-5. **Formula bar** , where you add formulas (like in Excel) that define the behavior of a selected control
-6. **Ribbon** , where you perform common actions including customizing design elements
-7. **Additional items,** here you will find your environment selection, app checker, and the preview app functionality.
-8. **Breadcrumbs** , you can navigate up the tree view.
-
-   ![](images/Module1/powerAppsCanvasApp1.png)  
-
-### Introduction: Device Ordering Scenario
-
-Imagine an organization where every three years the employees go through a hardware refresh cycle. The organization
-would like to build a customized app that runs on the web and mobile devices, which will help streamline the device order
-and approval process. Moreover, they do not have traditional development resources available, such as a .NET, Xamarin or
-custom website developer, to create this application.
-
-### Solution overview
-
-The Microsoft business application platform technologies enable tech-savvy business users (aka “citizen developers”) to
-build a customized device ordering solution. The application user interface and interaction logic are built in Power Apps,
-the approval workflow is automated using Power Automate, and the device order data is stored in the Microsoft
-Dataverse.
-
-Key features of the solution:
-
-a. Ability to browse through a selection of devices and filter the list by manufacturer
-
-b. Select devices to compare
-
-c. View detailed specs for the selected devices on a second comparison screen
-
-d. Select a device to order
-
-e. Enter order details into a customized form, including an optional coupon image
-
-f. By default, have the approver set to the logged in user’s manager
-
-g. Capture additional default properties, such as the date of the request
-
-h. Store device orders in a secure and scalable database
-
-i. Enable an admin to view all device orders
-
-j. Follow a customized procurement process to place purchase orders for devices
-
-k. Send an automated approval request email when the order is placed
-
-l. Allow the approver to approve or reject an order and add comments without leaving their email inbox
-
-m. View all sent and received approval requests on the web and mobile
-
-n. Notify the user via email when their order is approved or rejected
-
-
-This document will walk through creating a Power Apps Canvas Studio basics to enable features (a) thru (d).
-
-When you are done with this first portion of the lab, your app will look like this:
-
-   ![](images/Module1/powerAppsCanvasApp2.png)  
-
-   ![](images/Module1/powerAppsCanvasApp3.png)  
 
 ## Exercise 1: Create the app in Power Apps
 
