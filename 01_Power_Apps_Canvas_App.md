@@ -1,24 +1,14 @@
-## Power Platform App in a Day
+# Module 1: Power Apps Canvas App
 
-Module 1: Power Apps Canvas App
+### Estimated Duration: 60 Minutes
 
-### Hands-on Lab Step-by-Step
+## Lab objectives
 
+In this lab, you will complete the following tasks:
 
-## Contents
-
-- Power Apps Canvas App
-   - Lab Prerequisites
-   - Power Apps Canvas Studio Layout
-   - Goals for this lab
-   - Introduction: Device Ordering Scenario
-   - Solution overview
-   - Locale-specific difference in formulas
-   - Exercise 1: Create the app in Power Apps
-   - Exercise 2: Add Device Gallery and Connect to Data Source
-   - Exercise 3: Add Compare Screen
-
-## Power Apps Canvas App
+- Exercise 1: Create the app in Power Apps
+- Exercise 2: Add Device Gallery and Connect to Data Source
+- Exercise 3: Add Compare Screen
 
 ### Lab Prerequisites
 
@@ -44,19 +34,6 @@ is like Excel. Studio components:
 8. **Breadcrumbs** , you can navigate up the tree view.
 
    ![](images/Module1/powerAppsCanvasApp1.png)  
-   
-### Goals for this lab
-
-After this lesson you will be able to: 
-
-- Create a Canvas App
-- Add screens to your app
-- Use formulas in your app
-- Navigate between screens
-- Customize galleries on your screens
-- Capture a collection from your app
-
-- The time to completethis lab is [60]minutes.
 
 ### Introduction: Device Ordering Scenario
 
