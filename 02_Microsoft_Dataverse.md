@@ -6,7 +6,6 @@ Module 2: Microsoft Dataverse
 
 ### Hands-on Lab Step-by-Step
 
-
 - Microsoft Dataverse Contents
    - Lab Prerequisites
    - Before you begin
@@ -111,14 +110,13 @@ labs.
 ```
 https://make.powerapps.com/
 ```
-   ![](./images/Module2/image5.png)
 
 1. Select **Tables** from the left pane.
 
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
     
-    ![](./images/Module2/image7.png)
+    ![](./images/pp27.png)
 
     > For detailed documentation on Microsoft Dataverse Tables, visit `https://docs.microsoft.com/en-
 us/powerapps/developer/common-data-service/reference/about-entity-reference`
@@ -134,7 +132,7 @@ helps to ensure data consistency and allows for built-in support for multi-langu
 
 To have a detailed view of all the available columns for the table, select **Columns** under **Schema**.
 
-  ![](./images/Module2/m2s1.png)
+   ![](./images/pp40.png)
   
   ![](./images/Module2/m2s26.png)
 
@@ -255,7 +253,9 @@ having to jump into a specific Canvas or Model-driven app.
 Just like standard Tables, the Microsoft Dataverse includes a set of standard **Choices**. You can also create custom **Choices**.
 Later in this lab, we will create a custom **Choice** called **ApprovalStatus** to set the approval status of a device order.
 
-1. Click on **... More** abd select **Choices**.
+1. From the left navigation pane, click on **... More** and select **Choices**.
+
+    ![](./images/pp29.png)
 
 2. Examine the standard **Choices.**
 
@@ -272,6 +272,8 @@ requests. You will also create a server-side Business Rule that will default the
 In this task, you will create a custom table to store device order requests.
 
 1. Select **Tables** in the left pane and click on **New Table**. Select **Table (advanced properties)** from the dropdown.
+
+    ![](./images/pp30.png)
    
 2. Enter **Device Order** for Display Name.
 
@@ -302,7 +304,7 @@ Order table to provision. Begin these steps once it has finished.
 
    ![](./images/Module2/m2s22.png)
 
-5. Click **Add Column** again.
+5. Click on **Add Column** again.
 
 6. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
     **Searchable** and click on **Save**.
@@ -321,21 +323,17 @@ Order table to provision. Begin these steps once it has finished.
 
 8. Click on **Add Column** again.
 
-9. Enter **Approval Status** for **Display Name** , select **Choice** for **Data Type** , and select **New Choice** under **Sync this choice with**.
+9. Enter **Approval Status (1)** for **Display Name** , select **Choice (2)** for **Data Type** , scroll down and select **New Choice** under **Sync this choice with**.
   
-   ![](./images/Module2/image27.png)
+    ![](./images/pp34.png)
  
-10. Provide the name as **Approval Status**
+10. Inside the New Choice, provide the name as **Approval Status (1)**. Enter two choices, provide the names as **Approve and Reject (2)** and click on **Save (3)**. 
 
-11. Enter two choices, provide the names as Approve and Reject. 
+    ![](./images/pp36.png)
 
-12. Click on **Save**.
+11. Back in the New Column tab, the new choice **Approval Status (3)** will be selected under **Sync this choice with** and click on **Save (4)**.
 
-    ![](./images/Module2/image29.png)
-
-13. Click on **Save**.
-
-    ![](./images/Module2/image30.png)
+    ![](./images/pp35.png)
 
 ### Task 3: Create a calculated column
 
@@ -346,13 +344,9 @@ the formula used in the calculation.
 
 1. In the upper left corner of the screen, click on **Add Column** to add columns to your custom table.
 
-1. Enter **Department Contribution** for **Display Name** , **Currency** for **Data Type** , select **Calculation** for **Behaviour** field.
+1. Enter **Department Contribution (1)** for **Display Name** , **Currency (2)** for **Data Type** , select **Calculated (3)** for **Behaviour** field and click on **Save (4)**.
 
-   ![](./images/Module2/image32.1.png)
-
-1. Click **Save**.
-
-   ![](./images/Module2/image32.2.png)
+    ![](./images/pp37.png)
 
 1. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
 
@@ -362,7 +356,7 @@ the formula used in the calculation.
 
    ![](./images/Module2/image34.1.png)
    
-1. You will bepresented with a new pop-up to add actions and conditions. Now, click **Add Action**.
+1. You will be presented with a new pop-up to add actions and conditions. Now, click **Add Action**.
 
    ![](./images/Module2/image35.png)
 
@@ -380,16 +374,7 @@ the formula used in the calculation.
 
 1. Click **Done**.
 
-   > Note on currency columns: You might notice that there are two Department Contribution columns one with
-(base) next to it. Currency columns in Microsoft Dataverse store the base currency value (this is the configured
-default currency for the environment) and the transaction currency (this can be selected on a Row by Row basis)
-to allow support for multi-currency transactions. Generally, you will want to make sure to pick the column without
-the (base) in the name. The (base) value is commonly used in reporting where you want to normalize multiple
-currencies to allow reporting on them in the base currency value.
-
-
     ![](./images/Module2/image39.png)
-
 
 ### Task 4: Create a business rule
 
