@@ -18,18 +18,6 @@ In this lab, you will complete the following tasks:
 - Exercise 2: Custom Tables and Columns
 - Exercise 3: Connect the data from the Canvas App
 
-Microsoft Dataverse
-
-### Lab Prerequisites
-
-This is the second lab in a series covering Power Apps Canvas Apps, Microsoft Dataverse, Power Apps Model-driven Apps,
-and Power Automate. The assumption is that you have successfully completed the initial part of setting up an environment
-as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
-
-If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version
-of the lab package in the **C:\LabFiles\PowerApps-in-a-day\Completed for students\Module 1** folder. Follow the instructions in the document **Importing Module 1
-Completed** before proceeding with this module.
-
 ## Exercise 1: Exploring Microsoft Dataverse
 
 In this exercise, you will explore Microsoft Dataverse standard Tables. Tables in Microsoft Dataverse are like tables in a
@@ -48,11 +36,6 @@ CDM here: `https://docs.microsoft.com/powerapps/common-data-model/overview`.
 
 ### Task 1: Explore standard Tables
 
-In this task, you will explore Microsoft Dataverse standard Tables.
-
-Before beginning the exercises, navigate to Make Power Apps Portal and confirm that you are in the desired environment for the
-labs.
-
 ```
 https://make.powerapps.com/
 ```
@@ -62,10 +45,7 @@ https://make.powerapps.com/
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
     
-    ![](./images/pp27.png)
-
-    > For detailed documentation on Microsoft Dataverse Tables, visit `https://docs.microsoft.com/en-
-us/powerapps/developer/common-data-service/reference/about-entity-reference`
+    ![](./images/pp600.png)
 
 **Columns** :
 
@@ -83,7 +63,6 @@ To have a detailed view of all the available columns for the table, select **Col
   ![](./images/Module2/m2s26.png)
 
 You can find a list of Microsoft Dataverse supported data types here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/types-of-fields`
-
 
 **Relationships:**
 
@@ -250,7 +229,7 @@ Order table to provision. Begin these steps once it has finished.
 
    ![](./images/Module2/m2s22.png)
 
-5. Click on **Add Column** again.
+5. Click on **New Column** again.
 
 6. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
     **Searchable** and click on **Save**.
