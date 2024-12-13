@@ -89,12 +89,8 @@ the others, you may rename them as you please on your own. It is important that 
    ![](images/Module1/powerAppsCanvasApp11.png)  
    
 3. Select the **Tree View** tab.
-
-   ![](images/Module1/powerAppsCanvasApp12.png)  
    
 4. Rename Label1 to **Header Label** , see the previous task on renaming controls.
-
-   > **NOTE** : It is IMPORTANT to rename this label correctly, so subsequent instructions in the lab work as expected.
 
    ![](images/Module1/powerAppsCanvasApp13.png)  
    
