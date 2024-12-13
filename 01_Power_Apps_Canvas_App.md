@@ -415,33 +415,7 @@ manually change it to [$-en-US]:
 
 - Change font to **Segoe UI**.
 
-### Task 8: Conditional formation to highlight devices above $1,000
-
-We can make it easy to spot devices that cost more than $1,000, by displaying the price in Red.
-
-1. Select the label in the template cell that displays the price and set the **Color** to
-
-   ```
-   If(ThisItem.Price>1000,OrangeRed,Gray)
-   ```
-   **or for alternate/European locales:** 
-   ```
-   If(ThisItem.Price>1000;OrangeRed;Gray)
-   ```
- 
-    ![](images/Module1/devicegallery25.png) 
-    
-    > **_Note_** _: As you are typing this formula notice that the autosuggest shows a choice of matching colors. Power Apps comes with
-a set of standard colors that you can easily reference in any property that accepts a color value. You can also set specific RGB
-values._
-
-    You can find a full list of Color functions and colors here: `https://powerapps.microsoft.com/tutorials/function-colors/`
-
-2. Click **File** and select **Save**.
-
-3. Click the **back arrow**.
-
-   ![](images/Module1/devicegallery26.png) 
+5. Click on **Save**.
 
 #### Task 9: Add a checkbox to add a device to Compare list
 
