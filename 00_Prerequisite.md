@@ -1,6 +1,6 @@
 # Pre- Requisites
 
-### Estimated Duration: 10 mins
+### Estimated Duration: 10 minutes
 
 ## Overview
 
