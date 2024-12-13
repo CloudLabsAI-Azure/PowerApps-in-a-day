@@ -1,5 +1,9 @@
 # Module 3 : Power Apps Model-driven App
 
+## Overview
+
+In this lab, you will explore the process of building model-driven apps by leveraging various focused designers to create a robust and user-friendly application. Key activities include using the View Designer, Form Designer, and Dashboard Designer to define page types; employing the Sitemap Designer and Business Process Flow Designer for visual components and workflows; and utilizing the Table Designer for data modeling and logic. Finally, participants will use the App Designer to compose the app, integrating UI elements to craft a seamless user experience. This hands-on exercise demonstrates how these tools collectively enable the creation of rich, targeted app solutions.
+
 ## Lab objectives
 
 In this lab, you will complete the following tasks:
@@ -9,86 +13,12 @@ In this lab, you will complete the following tasks:
 - Exercise 3: Form and View Modification
 - Exercise 4: Test the application
 
-### Lab Prerequisites
-
-This is the third lab in a four-part series covering Power Apps canvas apps, Microsoft Dataverse, Power Apps model-driven
-apps, and Power Automate. The assumption is that you have successfully completed the first two modules, or at least the
-initial part of setting up an environment as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
-
-If you have not completed the previous two modules, you can use the partially completed version of the lab package in
-the **C:\PowerApps-in-a-day\Completed for students\Module 2** folder. Follow the instructions in the document **Importing Module 2 Completed** before
-proceeding with this module, which will provision the app, and the Microsoft Dataverse Table into your environment.
-
-### Model-driven Apps – A brief introduction
-
-The model-driven apps are built by composing multiple page types and components using several focused designers.
-Additionally, there are designers for the Table and business logic. The page types come from the View Designer, Form
-Designer, and Dashboard Designer. Visual components include the Sitemap Designer and Business Process Flow Designer.
-The App Designer then composes the app by identifying the UI elements to show. The multiple designers allow rich
-targeted definition of different parts of the app and its behavior.
-
-- App Designer specifies the sitemap, global dashboards, business processes flows, and Table forms, views, and
-    dashboards. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/design-custom-business-apps-using-app-designer`
-- Sitemap Designer provides the application navigation that is always available. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-site-map-app`
-- Business Process Designer provides stages and steps to guide users consistently through common business
-    processes within a form. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/business-process-flows-overview`
-- Table Designer defines the Columns, relationships, and metadata for a Table. You can find more refernces here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro`
-- Business Rule Designer provides no-low business logic for a Table. You can find more refernces here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-create-business-rule`
-- View Designer specifies Columns and filter conditions for a Row list. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-views`
-- Form Designer specifies the Columns and controls along with layout for a single Row. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-design-forms`
-- Dashboard Designer summaries one or more Tables using charts, lists, etc. You can find more refernces here: `https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/create-edit-dashboards`
-
-The model-driven apps are fully responsive, so a single definition works from web to tablet to mobile devices. This is a
-different with the canvas apps which need to choose the Mobile vs. Tablet when defining the app.
-
-### Scenario for building a Model-driven app
-
-In the first lab module, you built a Power Apps Canvas application for an organization where every three years the
-employees go through a hardware refresh cycle. The application let employees place a request for a device using the
-
-Power Apps app that you built. In the second lab module, using a custom Table you created in the Microsoft Dataverse
-lab, you stored that request for processing.
-
-From the requesting employee's point of view, after they place the order, the new device just magically shows up. But
-there is a back-office process that needs to happen to manage the procurement, setup of the device, and distribution of
-the device to that requesting employee. In this lab you will be building a Power Apps Model-driven app that will be used
-by the two or three back office staff that manage fulfilling device requests. Using the Model-driven app style, you can take
-advantage of the Business Process feature of Model-driven apps to keep the back-office staff on track for each device
-request.
-
-   ![](images/Module3/Deviceorders.png)  
-   
-**Model-driven apps** are a new style of application you can build directly from PowerApps.com. Model-driven apps make it
-easy to build forms over data applications quickly. This style of application brings together forms, views, dashboards and
-charts quickly to provide a productive user experience for working with related data. These components can quickly be
-customized to show only the data that is relevant for the scenario.
-
-**Table views** : Views are what users see when they look at a list of Rows from the Microsoft Dataverse. Views define the
-columns that are visible as well as the criteria for inclusion of the Rows in the display.
-
-**Table forms** : Forms are used when users drill down into a Row from an Table View. Forms are created using a visual drag-
-and-drop designer to place Columns into the form that is structured into tabs and sections.
-
-**Business process flows** : These flows are interactive visual guides to help the user through a business process. Business
-process flows use the concept of stages that contain steps. Stages are milestones in the process that need to be
-completed and the steps highlight to the user either data to collect or tasks to complete the stage to progress. Flows are
-created using a visual designer using drag and drop to compose the flow and establish any branching conditions
-(different paths in the business process) that must be handled.
-
-For more details on Model-driven apps and the differences between Canvas apps and Model-driven apps, you can see the product announcement here: `https://powerapps.microsoft.com/blog/powerapps-spring-announce/`
-
-
-
 ## Exercise 1: Create Application and add Columns to the Device Order Table
 
 In this exercise, you will be creating a standalone Model-driven application that will leverage the same Device Request
 Table you created in the Microsoft Dataverse in Lab 2.
 
 ### Task 1: Create an application
-
-The first thing you will do is create a Model-driven application. This application will serve as a container to identify all the
-components that make up the application. It also will include a sitemap that defines the custom navigation users will use
-to navigate between the components (Table views, Dashboards and other visual components).
 
 1. Navigate to Power Apps Portal using the below URL if not already and select the environment that you created earlier.
   
@@ -158,21 +88,6 @@ to navigate between the components (Table views, Dashboards and other visual com
 1. Click **Save and Close**.
 
 ### Task 2: Add procurement columns to the Device Orders
-
-In this task, you will add new Columns to the Device Order table. The Columns you are going to add here are Columns
-that support the Business Process Flow, which we are going to build in the next exercise. When you use a Business
-Process, it consists of Stages which you can think of as major milestones in completing the work. Each Stage has one or
-more Steps. Steps help users keep track of what they need to do before advancing to the next Stage. Steps are just
-Columns on the Table. To make it quicker when we create the Business Process in this task, we are going to first create
-the Columns that we need.
-
-To support our scenario, we are going to add the following Columns to the Table:
-
-**Capital Approved** : This Column will be used in the flow to capture that the device order has received capital approval.
-
-**Send Survey** : This Column will be used in the final stage. Right now, the team plans on manually sending a survey to see
-how the user’s ordering experience was, and will manually check this once they send it, but they have a desire in a future
-update to automate sending a survey in a future release.
 
 1. Navigate to to Power Apps Portal using the below URL  if not already.
 
