@@ -26,7 +26,9 @@ starting with a blank flow.
    
 ### Task 1 : Configure the trigger
 
-1. Select **Flows** and click on **Automated – cloud flow**.
+1. Select **Flows (1)** from the left navigation pane, click on **+ New Flow (2)** and click on **Automated – cloud flow (3)**.
+
+   ![](./images/Module4/pp300.png)
 
 1. Enter the below name for your flow.
  
@@ -48,25 +50,21 @@ starting with a blank flow.
    
 1. Click the **Table Name** drop-down and select **Device Orders**. You can type “device orders” to search for it.
    
-1. Click the **Scope** drop-down and select **Organization**. Scope allows you to limit when your flow will run, for
-    example you could choose User and it would only run for orders you create. In this case you are choosing
-    organization because you want this flow to run for records created by anyone in your entire organization.
+1. Click the **Scope** drop-down and select **Organization**. 
   
-   ![](./images/Module4/PowerApps-flow7.png)
+   ![](./images/Module4/pp301.png)
    
 ### Task 2 : Add action to send an approval request
 
-1. Click **+ New step**.
+1. Click on **+ New step**.
 
-   ![](./images/Module4/PowerApps-flow8.png)
+   ![](./images/Module4/pp302.png)
    
 1. Search for **Approvals** and select **Start and wait for an approval** under **Actions**.
 
    ![](./images/Module4/PowerApps-flow9.png)
 
-   > This will use the modern approval service. For more information see the blog post at Flow Modern Approvals by navigating to this URL `https://flow.microsoft.com/blog/introducing-modern-approvals/`
-
-1. In the **Approval type** dropdown select **Approve/Reject - First to Respond**.
+1. In the **Approval type** dropdown, select **Approve/Reject - First to Respond**.
 
    ![](./images/Module4/PowerApps-flow10.png)
    
@@ -85,15 +83,13 @@ starting with a blank flow.
 1. Select the **Assigned to** field, select click **Approver**. Click on the **Add dynamic content** button to show/hide the
     dynamic content pane.
 
-   ![](./images/Module4/PowerApps-flow14.png)
+   ![](./images/Module4/pp303.png)
    
-     - You might get a warning message about this field being optional. Ignore it and ignore similar warnings in future.
+   > **Note:** If you get a warning message about this field being optional. Ignore it and ignore similar warnings in future.
 
-     > **_Note_** _: Recall from the earlier lab that this will be the approver’s email address_.
+1. Click on **Show Advanced Options**.
 
-1. Click **Show Advanced Options**.
-
-   ![](./images/Module4/PowerApps-flow15.png)
+   ![](./images/Module4/pp304.png)
    
 1. Select the **Requestor** field and select **Requested By**.
 
@@ -132,6 +128,8 @@ starting with a blank flow.
    
 1. **Save** your flow.
 
+   ![](./images/Module4/pp305.png)
+
 
 > **_Note_** _: When creating your own approval flows, you may additionally include a clickable link that will be displayed in the
 approval email. In this scenario, for example, you could include a link to view device details in an online catalogue. You
@@ -149,34 +147,25 @@ was approved or rejected.
 
 ### Task 1: Add conditional logic to flow
 
-1. Click **+ New step**.
+1. Click on **+ New step**.
    
-    ![](./images/Module4/PowerApps-flow23.png)  
+     ![](./images/Module4/PowerApps-flow23.png)  
    
 1. Search for **Condition** and select it.
    
-    ![](./images/Module4/PowerApps-flow24.png)  
+     ![](./images/Module4/PowerApps-flow24.png)  
 
-1. Click in the left edit box that says, “Choose a value” and select **Outcome** from the dynamic content pane. You may
-    need to press the “+” icon below the edit box to hide the dynamic content pane.
-   
-    ![](./images/Module4/PowerApps-flow25.png)  
+1. Click on the box that says `Choose a value` and you will get a list of values. Select **Outcome**.
 
-4. Select **is equal to** for condition and type **Approve** for **Value**.
+     ![](./images/Module4/pp306.png)
 
-    ![](./images/Module4/PowerApps-flow26.png)  
+1. Select **is equal to** for condition and type **Approve** for **Value**.
+
+     ![](./images/Module4/PowerApps-flow26.png)  
 
    
 ### Task 2: Add conditional logic to flow
 
-We will now configure what actions to perform if the response is approved or not – YES branch vs. NO branch.
-
- - We will add two actions:
-
-    1. Update the record in the Device Order table
-    1. Send an email to the employee who requested the device
-
-   
 1. In the left **If yes** box, click **Add an action**.
 
    ![](./images/Module4/PowerApps-flow27.png)  
@@ -192,8 +181,6 @@ We will now configure what actions to perform if the response is approved or not
     ![](./images/Module4/PowerApps-flow29.png)  
 
    > This is the unique lookup ID for the record (or row) that was created.
-
-1. Click **Show advanced options**.
    
 1. Select **Approve** from the **Approval Status** drop-down.
 
@@ -209,6 +196,28 @@ We will now configure what actions to perform if the response is approved or not
    ```
    ![](./images/Module4/PowerApps-flow32.png)  
 
+    > **Note:** If you are unable to get the Expressions tab, please follow the below steps:
+
+      - Click on the nine dots from the top left and click on **Power Automate**.
+
+           ![](./images/Module4/pp307.png)
+
+      - Click on **My flows (1)** and click on Edit on the **flow (2)** that we have created.
+
+         ![](./images/Module4/pp308.png)      
+      
+      - Navigate to the **Update a row** in the Condition action and click on **Show All**.
+
+         ![](./images/Module4/pp309.png)           
+      
+      - Select the **Approved Date** field and select the **Expression** tab.
+   
+           ![](./images/Module4/PowerApps-flow31.png)
+
+           ![](./images/Module4/pp310.png)                  
+ 
+      - Once done, **save** the flow and navigate back to the Power Platform.
+
 1. **Save** the flow.
 
 ### Task 3: Add another action
@@ -217,24 +226,24 @@ You will now add the send email action to the If Yes branch.
 
 1. From within the yes branch, Click **Add an Action**.
    
-   ![](./images/Module4/PowerApps-flow33.png)  
+     ![](./images/Module4/pp311.png)  
 
-1. Search for **send email** and select **Send an email (V2) – Office 365 Outlook**.
+1. Search for **send email (v2) (1)** and select **Send an email (V2) – Office 365 Outlook (2)**.
    
-    ![](./images/Module4/PowerApps-flow34.png)  
+     ![](./images/Module4/pp312.png)  
    
-1. Click **Sign in** if prompted.
+1. Click on **Sign in** if prompted.
 
     ![](./images/Module4/PowerApps-flow35.png)  
 
-1. Click **Accept** if prompted.
+1. Click on **Accept** if prompted.
    
     ![](./images/Module4/PowerApps-flow36.png)  
   
-4. Click on the **To** field and click **Switch to Advanced Mode**.
+1. Click on the **To** field and click on **Switch to Advanced Mode**.
    
-    ![](./images/Module4/PowerApps-flow37.png)  
-   
+     ![](./images/Module4/pp329.png)  
+
 1. Select **Requested By** for **To.** Select from under the **When a record is added** action.
    
     ![](./images/Module4/PowerApps-flow38.png)  
@@ -245,18 +254,15 @@ You will now add the send email action to the If Yes branch.
    ``` 
 1. Click on the **Code View** button.
    
-   ![](./images/Module4/PowerApps-flow39.png)  
+     ![](./images/Module4/pp314.png)  
    
 1. Set the **Body** value as shown below:
 
-    - Select Device Name and Estimated Ship Date from the When a record is added action.
+    - Select **Device Name** and **Estimated Ship Date** from the **When a row is added** action.
    
-   ![](./images/Module4/PowerApps-flow40.png)  
-   
-   > **_Note_** _: If you do not have an Office 365 mailbox setup, you can use one of the other connectors to send the email, such as
-Outlook.com, Gmail or SendGrid._
+       ![](./images/Module4/PowerApps-flow40.png)  
 
-1. Click **Save**.
+1. Click on **Save**.
 
 ## Exercise 3: Test the cloud flow
 
@@ -277,48 +283,41 @@ To test the flow, you will:
    
 1. Select **Apps** and start the **Device Ordering App** by clicking on **Play** button.
 
-   ![](./images/Module4/PowerApps-testflow3.png)  
+     ![](./images/Module4/pp315.png)  
    
-1. Select a few devices and click Compare.
+1. Select a few devices and click on **Compare (1)** and **Compare 1 item(s)**.
    
-   ![](./images/Module4/PowerApps-testflow4.png)  
+     ![](./images/Module4/pp323.png) 
    
-1. Select one of the devices, provide email for Approver.
-
-   ![](./images/Module4/PowerApps-testflow5.png)  
-
-1. Provide a comment and click Submit device request.
+1. Select one of the devices, provide **email** for Approver, provide a comment and click on **Submit device request**.
    
-   ![](./images/Module4/PowerApps-testflow6.png)  
+   ![](./images/Module4/pp324.png)  
    
 1. Click **OK**.
-1. The flow will run and send email to the ODL user email you have provided. The request for approval email will look like
-    the image below; it will include **Device information** , **Price** , **Department Contribution (the calculated field),** and
-    the **Requester Comment**.
 
-    > REMINDER : If the flow does not run immediately, please wait, it may take up to ten minutes for the flow to be
+1. The flow will run and send email to the ODL user email you have provided. The request for approval email will look like the image below; it will include **Device information** , **Price** , **Department Contribution (the calculated field),** and the **Requester Comment**.
+
+   ![](./images/Module4/pp316.png)  
+
+    > **REMINDER :** If the flow does not run immediately, please wait, it may take up to ten minutes for the flow to be
 triggered. To ensure the flow runs immediately, see note above - select the Test option in the top right and select
 the “I’ll perform the trigger action” option. Then go ahead and submit a device request. The flow should run
 immediately. The email, however, may take a few minutes to appear regardless of when the flow starts.
 
-   > Note: If the workflow failed with timeout error as it might take up to ten minutes for the flow to be
+   > **Note:** If the workflow failed with timeout error as it might take up to ten minutes for the flow to be
 triggered for the first time. Select **Test** that is present at the top right corner, then **Manually** and click **Test** again to test flow. Now, submit a device request from **Device Ordering App** to trigger the workflow.
 
-1. Click **Approve**.
+1. Click on **Approve**. Add a comment and click on **Submit**.
+
+   ![](./images/Module4/pp317.png)  
+
+1. The flow will continue to run; it will update the row and send an email to the requestor. The email sent to the requester will look like the image below.
    
-1. Add a comment and click **Submit**.
-
-   ![](./images/Module4/PowerApps-testflow8.png)  
-
-1. The flow will continue to run; it will update the row and send an email to the requestor. The email sent to the
-    requester will look like the image below.
+   ![](./images/Module4/pp319.png)  
    
-   ![](./images/Module4/PowerApps-testflow9.png)  
-   
-1. Check the flow, you will notice that the flow is now marked as **Succeeded** in the run history.
+1. Check the flow, you will notice that the flow is now marked as **Succeeded**.
 
-   ![](./images/Module4/PowerApps-testflow10.png)  
-
+   ![](./images/Module4/pp318.png)  
    
 ## Exercise 4: Update the Flow
 
@@ -328,25 +327,23 @@ In this exercise, you will add two actions to the “if no” branch.
 
 1. If you don’t already have the flow open, open it in edit mode by clicking on **Edit button**.
    
-    ![](./images/Module4/PowerApps-flow41.png)  
+1. In the **If no** branch, click on **Add an action**.
    
-1. In the If no branch, click **Add an action**.
-   
-    ![](./images/Module4/PowerApps-flow42.png)  
+      ![](./images/Module4/pp320.png)  
    
 1. Search for **Update a Row** and select **Update a Row (Dataverse)**
 
-    ![](./images/Module4/PowerApps-flow43.png)  
+      ![](./images/Module4/PowerApps-flow43.png)  
    
 1. Select **Device Orders** for **Table Name** , select **Device Order** for **Row ID** , and click **Show advanced options**.
    
-    ![](./images/Module4/PowerApps-flow44.png)  
+      ![](./images/Module4/pp321.png)  
    
 1. Select **Reject** for **Approval Status**.
  
-    ![](./images/Module4/PowerApps-flow45.png)  
+      ![](./images/Module4/PowerApps-flow45.png)  
    
-1. Click **Add an action**.
+1. Click on **Add an action**.
    
 1. Search for **_send email_** and select **Send an email (v2) - Office 365 Outlook**.
 
@@ -377,11 +374,11 @@ In this exercise, you will add two actions to the “if no” branch.
 
 1. Navigate to [Make Power Apps](https://make.powerapps.com/) select **Apps** and start the **Device Procurement** application.
 
-    ![](./images/Module4/PowerApps-flow50.png)  
+      ![](./images/Module4/pp325.png)  
    
 1. Device Orders will now have the Approval Status.
 
-    ![](./images/Module4/PowerApps-flow51.png)  
+      ![](./images/Module4/pp326.png)   
    
 ### Task 3: Visit the approval center
 
@@ -394,18 +391,13 @@ In this exercise, you will add two actions to the “if no” branch.
    https://flow.microsoft.com/
    ```
    
-1. Expand **Action items** and select **Approvals**.
+1. Expand **Action items** and select **Approvals**.Click on the pending approval request.
 
-   ![](./images/Module4/PowerApps-approvalcenter1.png)  
+      ![](./images/Module4/pp327.png)  
    
-1. Notice that all pending approval requests are visible.
+1. Go ahead and approve or reject a request from this screen. The details are displayed in the right pane where you can **enter comments** and **Confirm**.
    
-   ![](./images/Module4/PowerApps-approvalcenter2.png)  
-   
-1. Go ahead and approve or reject a request from this screen. The details are displayed in the right pane where you
-    can **enter comments** and **Confirm**.
-   
-   ![](./images/Module4/PowerApps-approvalcenter3.png)  
+      ![](./images/Module4/pp328.png) 
    
 1. The request will no longer be visible as it has been processed.
 
