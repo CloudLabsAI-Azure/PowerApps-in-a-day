@@ -4,7 +4,7 @@
 
 ## Overview
 
-This lab offers hands-on experience with Microsoft Power Platform technologies—Power Apps, Power Automate, and Microsoft Dataverse—to build a customized device ordering solution. Participants will create Canvas and Model-driven apps for browsing, comparing, and managing orders, design automated workflows for approvals using Power Automate, and securely store data with Microsoft Dataverse. The lab highlights practical application through step-by-step guidance, enabling participants to streamline procurement processes and craft robust, no-code solutions while exploring intuitive app design, workflow automation, and data management.
+This lab offers hands-on experience with Microsoft Power Platform technologies—Power Apps, Power Automate, and Microsoft Dataverse—to build a customized device ordering solution. You will create Canvas and Model-driven apps for browsing, comparing, and managing orders, design automated workflows for approvals using Power Automate, and securely store data with Microsoft Dataverse. The lab highlights practical application through step-by-step guidance, enabling participants to streamline procurement processes and craft robust, no-code solutions while exploring intuitive app design, workflow automation, and data management.
 
 ## Objective
 
