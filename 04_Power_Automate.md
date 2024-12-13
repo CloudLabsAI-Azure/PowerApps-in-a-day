@@ -68,8 +68,7 @@ starting with a blank flow.
 
    ![](./images/Module4/PowerApps-flow10.png)
    
-1. For the Title, we will add some text and one variable. This variable will contain the Device Name of the device
-    order request. Enter the below value in the **Title** text box.
+1. For the Title, we will add some text and one variable. This variable will contain the Device Name of the device order request. Enter the below value in the **Title** text box.
 
    ```
    New device request for
@@ -259,6 +258,7 @@ You will now add the send email action to the If Yes branch.
 1. Set the **Body** value as shown below:
 
     - Select **Device Name** and **Estimated Ship Date** from the **When a row is added** action.
+    - Body: Your device has been approved <b> `Device Name` </b> </br> Estimated Ship Date: `Estimated Ship Date` </br> `Response Summary`.
    
        ![](./images/Module4/PowerApps-flow40.png)  
 
