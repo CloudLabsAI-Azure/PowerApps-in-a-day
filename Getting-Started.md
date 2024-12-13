@@ -28,7 +28,7 @@ Welcome to your Power Platform - App in a Day! We've prepared a seamless environ
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-  ![](media/labguide01.png)
+   ![](images/pp500.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -38,19 +38,19 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![](media/env-01.png)
+   ![](images/pp501.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by clicking on the **Split Window** button in the top right corner.
  
-  ![](media/split-01.png)
+   ![](images/pp502.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-  ![](media/resourses.png)
+   ![](images/pp503.png)
 
 ## Support Contact
 
