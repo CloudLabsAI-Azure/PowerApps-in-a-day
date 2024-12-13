@@ -1,6 +1,6 @@
 # Module 1: Power Apps Canvas App
 
-### Estimated Duration: 60 Minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 
