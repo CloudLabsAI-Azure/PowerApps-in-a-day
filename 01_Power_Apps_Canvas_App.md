@@ -237,41 +237,39 @@ or a Microsoft Dataverse table.
 
 8. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
 
+      ![](images/pp50.png)
+
+      > **Note:** The name of the device can differ.
+
 9. Rename the **Gallery1** to **Device Gallery**.
+
+      ![](images/pp51.png)
 
 ### Task 2: Arrange the device gallery
 
-1. Resize and reposition the gallery. You can drag and drop the gallery or use the gallery properties pane on the
-    right.
+1. Resize and reposition the gallery. You can drag and drop the gallery or use the gallery properties pane on the right.
+
+      ![](images/pp52.png)
  
 2. Select the **Device Gallery** and click the **Edit (pencil) icon** in the top left to edit the template cell.
- 
-3. Using the right drag control, resize the first box to be narrower. Notice that all the items get narrower and more
-    devices are visible on the screen.
-    
-   ![](images/Module1/devicegallery3.png) 
-   
-4. Narrow the image as well by **clicking on the image control and resizing it using the drag handles**. Make sure
-    the width of the image control is positioned within the template.
 
-   ![](images/Module1/devicegallery4.png) 
+      ![](images/pp53.png)
+ 
+3. Using the right drag control, resize the first box to be narrower. Notice that all the items get narrower and more devices are visible on the screen.
+       
+4. Narrow the image as well by **clicking on the image control and resizing it using the drag handles**. Make sure the width of the image control is positioned within the template. 
 
 5. Notice the gallery control on our screen automatically has scrolling capabilities.
 
-   ![](images/Module1/devicegallery5.png) 
+      ![](images/pp54.png)
    
 ### Task 3: Add gallery to show manufacturers
 
-
-In this task, you will add a second gallery that will list the various device manufacturers. This will be a single column
-vertical gallery down the left side of the screen, with each cell displaying the manufacturer’s logo image. This gallery will
-later be used as a filter for the device gallery created above.
-
 1. Select the **Main Screen**.
 
-2. Select the **Insert** tab on the ribbon and open the **Gallery** drop-down, then select **Vertical.**
+2. Select the **Insert (1)** tab, **search (2)** for Vertical and click on **Vertical Gallery (3)**
 
-   ![](images/Module1/devicegallery6.png) 
+      ![](images/pp55.png)
 
 3. Select **Manufacturers** for the data source.
 
@@ -281,33 +279,28 @@ later be used as a filter for the device gallery created above.
 
    ![](images/Module1/devicegallery8.png) 
  
-5. Move this new gallery so that it is left aligned with the left edge of the screen and top aligned with the top of the
-    device gallery. Your two galleries should like the image below.
+5. Move this new gallery so that it is left aligned with the left edge of the screen and top aligned with the top of the device gallery. Your two galleries should like the image below.
 
-   ![](images/Module1/devicegallery9.png) 
+      ![](images/pp56.png)
 
-6. Select **Manufacturer Gallery** (not just the template cell), in the **Properties** tab on the right, click **Layout**.
+6. Select **Manufacturer Gallery (1)** (not just the template cell), in the **Properties** tab on the right, click **Layout (2)**. Scroll down to the **Gallery** section and select **2 Columns (3)**.
    
-   ![](images/Module1/devicegallery10.png) 
-   
-7. Scroll down to the **Gallery** section and select **2 Columns**.
-
-    ![](images/Module1/devicegallery11.png) 
+      ![](images/pp57.png)
  
-8. Change the **Wrap Count** from **2** to **1**. This will change it to a single column gallery.
+7. Change the **Wrap Count** from **2** to **1**. This will change it to a single column gallery.
 
    ![](images/Module1/devicegallery12.png) 
 
-9. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle
+8. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle
     bottom drag control upwards. If you select the first image, the image size will reduce whereas the template size
     will still be expanded.
 
-10. Reduce **the height of the template cell** until three or four images occupy the gallery without scrolling. We
+9. Reduce **the height of the template cell** until three or four images occupy the gallery without scrolling. We
     essentially want the image to occupy the entire cell.
 
     ![](images/Module1/devicegallery13.png) 
    
-11. Click on **Save** from the top right.
+10. Click on **Save** from the top right.
     
 ### Task 4: Connect Manufacturer Gallery to manufacturers table
 
