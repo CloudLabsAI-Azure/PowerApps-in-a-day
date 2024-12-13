@@ -57,14 +57,7 @@ starting with a blank flow.
 
    ![](./images/Module4/PowerApps-flow1.png)
    
-1. Select **Flows**.
-
-   ![](./images/Module4/PowerApps-flow2.png)
-   
-1. Click **New** and select **Automated – cloud flow**.
-
-   ![](./images/Module4/PowerApps-flow3.png)
-
+1. Select **Flows** and click on **Automated – cloud flow**.
 
 ### Task 2 : Configure the trigger
 
@@ -93,7 +86,7 @@ In this scenario, we will configure the flow to trigger when a **new item is add
     
    ![](./images/Module4/PowerApps-flow5.png)
 
-1. Click **Create**.
+1. Click on **Create**.
 1. Select **Added** for Change type.
 
    ![](./images/Module4/PowerApps-flow6.png)
@@ -192,10 +185,6 @@ In this scenario, we will configure the flow to trigger when a **new item is add
 1. Hit Enter, type **_Comments:_** and select **Comments**.
  
    ![](./images/Module4/PowerApps-flow21.png)
-   
-1. Your **Flow** will now look like the image below.
-   
-   ![](./images/Module4/PowerApps-flow22.png)
    
 1. **Save** your flow.
 
