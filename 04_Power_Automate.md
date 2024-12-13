@@ -258,7 +258,6 @@ You will now add the send email action to the If Yes branch.
 1. Set the **Body** value as shown below:
 
     - Select **Device Name** and **Estimated Ship Date** from the **When a row is added** action.
-    - Body: Your device has been approved <b> `Device Name` </b> </br> Estimated Ship Date: `Estimated Ship Date` </br> `Response Summary`.
    
        ![](./images/Module4/PowerApps-flow40.png)  
 
