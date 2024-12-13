@@ -291,14 +291,12 @@ or a Microsoft Dataverse table.
 
    ![](images/Module1/devicegallery12.png) 
 
-8. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle
-    bottom drag control upwards. If you select the first image, the image size will reduce whereas the template size
-    will still be expanded.
+8. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle bottom drag control upwards. If you select the first image, the image size will reduce whereas the template size will still be expanded.
 
 9. Reduce **the height of the template cell** until three or four images occupy the gallery without scrolling. We
     essentially want the image to occupy the entire cell.
 
-    ![](images/Module1/devicegallery13.png) 
+      ![](images/pp58.png)
    
 10. Click on **Save** from the top right.
     
@@ -309,39 +307,26 @@ bar.
 
 1. Select the **Manufacturer Gallery**. Make sure the whole gallery is selected and not just the first cell.
 
-2. Select **Items** from the property drop-down next to the formula bar. Notice that the gallery is populated with
-    images of buildings. This is because Power Apps picked a default binding which mapped to the HQ column in the
-    table.
+2. Select **Items** from the property drop-down next to the formula bar. Notice that the gallery is populated with images of buildings. This is because Power Apps picked a default binding which mapped to the HQ column in the table.
   
-   ![](images/Module1/devicegallery14.png) 
+      ![](images/pp59.png)
    
-3. Select the image control in the first template cell in the gallery and change the value of **Image** in the formula bar
-    from **ThisItem.HQ** to **ThisItem.Logo**. All the gallery items will now display logo images. You can also use the left
-    tree view to select the controls, sometimes that is easier!
+3. Select the image control in the first template cell in the gallery and change the value of **Image** in the formula bar from **ThisItem.HQ** to **ThisItem.Logo**. All the gallery items will now display logo images. You can also use the left tree view to select the controls, sometimes that is easier!
 
-    ![](images/Module1/devicegallery15.png) 
+      ![](images/pp60.png)
     
-    > Note: Autosuggest offers you valid options for authoring formulas. See in the image below, we want to define the
-image to display from our data. Once we type “ThisItem.” our Autosuggest tells us that we have three valid options
-for this formula. This can help guide you to making valid formulas.
-    
-4. Select the first (top-most) image and using the **Properties** pane on the right, set the **Image position** property to
-    **Fit**.
+4. Select the first (top-most) image and using the **Properties** pane on the right, set the **Image position** property to **Fit**.
 
-   ![](images/Module1/devicegallery17.png) 
+      ![](images/pp61.png)
 
-5. Reduce the height of the template cell such that all nine manufacturers fit without a scrollbar. To do this, use the
-    drag handles to first reduce the height of the image and subsequently reduce the height of the template cell.
-    Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.
-   
+5. Reduce the height of the template cell such that all nine manufacturers fit without a scrollbar. To do this, use the drag handles to first reduce the height of the image and subsequently reduce the height of the template cell. Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.
    
 ###  Task 5: Highlight the selected item in the gallery
 
 In this task, you will use the **TemplateFill** property of the manufacturer gallery to specify a highlight color for the selected
 item
 
-1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to
-    conditionally set the fill color of the selected cell to light blue:
+1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to conditionally set the fill color of the selected cell to light blue:
    
     ```
     If(ThisItem.IsSelected,LightBlue)
@@ -355,17 +340,9 @@ item
       This approach is recommended so the fill color matches the header label with a 75% fade. If you change the fill
 color of header label, the fill color of the selected item in the gallery will automatically change.
 
-   ![](images/Module1/devicegallery19.png) 
+      ![](images/pp64.png)
 
-2. Now try using the preview mode to perform a quick test of this highlighting. You can enable preview mode by
-    holding down the Alt key (also known as the Option key) and clicking a few different manufacturers in the gallery,
-    notice the selected item in the manufacturer gallery is highlighted in a light blue color. The preview mode ends
-    when you stop holding the key.
-
-
-Alternatively, you could click the Play ( ) button to enter preview mode, and to exit this you would hit the X in
-the upper right corner or use the Esc key.
-
+2. Now try using the preview mode to perform a quick test of this highlighting. You can enable preview mode by holding down the Alt key (also known as the Option key) and clicking a few different manufacturers in the gallery, notice the selected item in the manufacturer gallery is highlighted in a light blue color. The preview mode ends when you stop holding the key.
 
 ### Task 6: Configure text labels in the device gallery
 
@@ -374,155 +351,87 @@ the upper right corner or use the Esc key.
 
 2. Let us now change the label to display the device price by setting the label’s Text property to: **ThisItem.Price**
 
-  ![](images/Module1/devicegallery22.png) 
+      ![](images/pp65.png) 
    
-   Here are some additional formatting suggestions. These are for cosmetic purposes only, feel free to skip past these:
+1. To add the $ to the Subtitle, use the Text format expression: Text(ThisItem.Price,"$##,###.00") or for alternate/European locales: **Text(ThisItem.Price;"$##.###,00")**.
 
-   - Expand the width of the label to the template width.
+     > **Note:** After you enter the above value in the formula bar, it will automatically resolve to include your locale, e.g. [$-en-
+US]. If you see an error here, it might be because your locale is not yet supported, in which case as a workaround, manually change it to [$-en-US]:
 
-      Notice that if you do this with the Title1 label, the subtitle label expands as well. This is because it is X property is set
-to Title1.X, the X coordinate position of the Title1 label. You can find more details on the relative positioning of controls here: `https://powerapps.microsoft.com/blog/ux-patterns-control-positioning/`
-
-     - _Change the_ **PaddingLeft** _of the Subtitle from_ **0** _to_ **10**_._
-
-     - _Change the font of the Subtitle to_ **Segoe UI**_._
-
-     - To add the $ to the Subtitle, use the Text format expression: Text(ThisItem.Price,"$##,###.00") or for alternate/European locales: Text(ThisItem.Price;"$##.###,00")
-
-     Note: After you enter the above value in the formula bar, it will automatically resolve to include your locale, e.g. [$-en-
-US]. If you see an error here, it might be because your locale is not yet supported, in which case as a workaround,
-manually change it to [$-en-US]:
-
-   ![](images/Module1/devicegallery23.png) 
+      ![](images/pp66.png)
    
 3. Select the **Title1**.
 
 4. In the property drop-down list, select the **Text** field and change to **ThisItem.Title**.
 
-   ![](images/Module1/devicegallery24.png) 
+      ![](images/pp67.png)
 
-**Optional UI enhancement:**
-
-- Like above, expand the width of the label to the template width and change the value of the **PaddingLeft**
-    property of the Title1 label from **0 to 10**. Or set it to Title1.PaddingLeft.
-
-- Change font to **Segoe UI**.
-
-5. Click on **Save**.
-
-#### Task 9: Add a checkbox to add a device to Compare list
-
-We want to allow users to select multiple devices to compare before making a final selection on the next screen.
+### Task 7: Add a checkbox to add a device to Compare list
 
 1. Select the **Device Gallery** , click the Pencil edit icon in the top left of the gallery to select the template cell.
-
-   ![](images/Module1/devicegallery27.png) 
    
 2. Make sure that only the first item in the gallery is selected (not the entire gallery).
  
-   ![](images/Module1/devicegallery28.png) 
-3. Add a checkbox by clicking **Insert** - > **Input** - > **Checkbox**.
+3. Add a checkbox by clicking **Insert (1)**, search for **check (2)** and click on **Checkbox (3)**.
 
-   ![](images/Module1/devicegallery29.png) 
+      ![](images/pp68.png)
 
 4. Move the inserted checkbox below the price.
-
-   ![](images/Module1/devicegallery30.png) 
    
 5. Change the checkbox text to **“Compare”.** You can do this by setting the **Text** property.
 
-   ![](images/Module1/devicegallery31.png) 
+      ![](images/pp69.png)
    
-### Task 10: Create a collection for the selected devices
+### Task 8: Create a collection for the selected devices
 
-When a user selects a device to compare, we will add it to a collection called **CompareList**. You can think of this as an in-
-memory collection of devices that have been selected for comparison.
+1. Select the **Checkbox** control and click on the **Action** tab in the ribbon, click **OnCheck** and set the value in the formula bar to: Collect(CompareList,ThisItem)
 
-1. Select the **Checkbox** control and click on the **Action** tab in the ribbon, click **OnCheck** and set the value in the
-    formula bar to: Collect(CompareList,ThisItem)
-
-   ![](images/Module1/devicegallery32.png) 
+      ![](images/pp70.png)
    
-2. Set the **OnUncheck** value to: Remove(CompareList,ThisItem)
-    This is required to make sure the unchecked items are removed from the collection.
-  
-  ![](images/Module1/devicegallery33.png) 
+2. Set the **OnUncheck** value to: Remove(CompareList,ThisItem).This is required to make sure the unchecked items are removed from the collection.
   
 3. Set the **Default** property of the checkbox to the formula: ThisItem in CompareList
-
-   ![](images/Module1/devicegallery34.png) 
-   
-   > The **Default** setting of the checkbox is a Boolean true or false value that determines if the checkbox should be checked or
-not by default. Setting it to this formula will ensure that the checkbox is checked by default if the item has already been
-added to the collection since the result will be true, i.e. this item *is* in CompareList.
 
 4. Let’s test out adding items to a collection by running the app in Preview (F5) or by clicking the Preview button on
     the top right. Click on the checkboxes of three devices.
 
-   ![](images/Module1/devicegallery35.png) 
+      ![](images/pp71.png)
    
 5. Close the preview.
 
-6. Click the **View** tab and select **Collections**.
+6. Click on **Variables (1)** from the left navigation pane, click on **CompareList (Table: 3 rows) (2)** and select on **View Table (3)**.
 
-   ![](images/Module1/devicegallery36.png) 
+      ![](images/pp72.png)
    
 7. You will see the **CompareList** collection and the three items you selected.
 
-   ![](images/Module1/devicegallery37.png) 
+      ![](images/pp73.png)
    
-   > Note that each item in the collection has all the information for each machine that we get from the **Machines** data source,
-not just the fields we display in the Devices Gallery.
-
-
 8. Click the back arrow on the top left to get back to the main view.
 
 9. Click **Preview** again.
 
 10. Uncheck all the checked items and click on close the preview.
 
-   ![](images/Module1/devicegallery38.png) 
-
-11. Click the **View** tab and select **Collections**.
-
-   ![](images/Module1/devicegallery39.png) 
+11. Click on **Variables** from the left navigation pane, click on **CompareList** again.
    
-12. All items will be removed from the **CompareList** collection.
+11. All items will be removed from the **CompareList** collection.
 
-13. Click on then back arrow.
+12. Click on then back arrow.
 
-    For more information on working with Collections in Power Apps, you can find the refernces below:
+### Task 9: Set the default selection to the first manufacturer and test the app
 
-    - Create Update Collections: `https://powerapps.microsoft.com/tutorials/create-update-collection/` and
+1. Select the entire gallery (by clicking **Manufacturer Gallery** in the tree view on the left) and set the **Default** property of the gallery in the formula bar to: First(Manufacturers). This will set it to the first item in the table.
 
-    - Clear Collections: `https://powerapps.microsoft.com/tutorials/function-clear-collect-clearcollect/`
+      ![](images/pp74.png)
 
-### Task 11: Set the default selection to the first manufacturer and test the app
-
-To avoid getting a blank list of devices when the app starts, set the default selected item in the Manufacturer gallery to be
-the first item.
-
-1. Select the entire gallery (by clicking **Manufacturer Gallery** in the tree view on the left) and set the **Default**
-    property of the gallery in the formula bar to: First(Manufacturers)
-
-    This will set it to the first item in the table.
-
-   ![](images/Module1/devicegallery40.png) 
-
-2. To preview the app, press the Preview button on the upper right of the top menu. Pressing the F5 key will also
-    preview the application. **Note** : You can also test your app right on the canvas by holding down the Alt key to
-    activate buttons and other controls, as well as double-clicking to type into controls.
-
-3. Your app should look like the image below.
-
-   ![](images/Module1/devicegallery41.png) 
+2. To preview the app, press the Preview button on the upper right of the top menu. Pressing the F5 key will also preview the application. 
    
-4. To exit preview mode, click the X in the top right corner.
+3. To exit preview mode, click the X in the top right corner.
 
    ![](images/Module1/devicegallery42.png) 
    
-5. Save the application.
-
+4. **Save** the application.
 
 ### Exercise 3: Add Compare Screen
 
@@ -542,160 +451,119 @@ This screen will include:
 In a subsequent lab, you will create the database entities to store the device orders and add an edit form to this screen to
 enter additional information and submit the request.
 
-#### Task 1: Add screen
+### Task 1: Add screen
 
+1. From the tree view, click on **New Screen (1)** and choose **Blank (2)**.
 
-1. From the ribbon click **Home** and **New Screen** and choose **Blank**.
-
-   ![](images/Module1/devicegallery43.png) 
+      ![](images/pp75.png)
    
 2. Rename the screen to **Compare Screen**.
-
-   ![](images/Module1/devicegallery44.png) 
    
-3. In the left tree view, select the **Main Screen** , click on the **Insert** tab on the ribbon and select **Button** to add a
-    button to the screen.
+3. Click on the **Insert (1)** tab from the top select the **Main Screen** , **search (2)** and **select (3)** Button.
 
-   ![](images/Module1/devicegallery45.png) 
+      ![](images/pp76.png)
 
 4. Place the button in the bottom right corner.
 
-   ![](images/Module1/devicegallery46.png) 
+      ![](images/pp77.png)
 
 5. Set the button’s **Text** property to: "Compare " & CountRows(CompareList) & " item(s)"
 
-   ![](images/Module1/devicegallery47.png) 
+      ![](images/pp78.png)
    
 6. Resize the button, so the text fits without wrapping.
 
    ![](images/Module1/devicegallery48.png) 
 
-7. Select the button and set its **DisplayMode** property to Disabled if there are no items in CompareList:
-    If(CountRows(CompareList) > 0, DisplayMode.Edit, DisplayMode.Disabled)
+7. Select the button and set its **DisplayMode** property to Disabled if there are no items in CompareList: If(CountRows(CompareList) > 0, DisplayMode.Edit, DisplayMode.Disabled). Unselect all devices – notice the button is grayed.
 
-   ![](images/Module1/devicegallery49.png) 
+      ![](images/pp79.png)
    
-8. Unselect all devices – notice the button is grayed.
+8. Select the **compare button** and **copy (Ctrl-C)** this button.
+   
+9. **Paste (Ctrl-V)** the button on the same screen.
 
-   ![](images/Module1/devicegallery50.png) 
-   
-9. Select the **compare button** and **copy (Ctrl-C)** this button.
-   
-10. **Paste (Ctrl-V)** the button on the same screen.
-
-11. Position it to the left of the compare button.
+10. Position it to the left of the compare button.
 
    ![](images/Module1/devicegallery51.png) 
 
-12. Change the **Text** property to "Clear Selection"
+11. Change the **Text** property to "Clear Selection"
 
-13. Set the **OnSelect** property for this button to: Clear(CompareList). This will remove all the items in the
-    CompareList collection.
+12. Set the **OnSelect** property for this button to: Clear(CompareList). This will remove all the items in the CompareList collection.
 
-   ![](images/Module1/devicegallery52.png) 
+      ![](images/pp80.png)
+
+13. Select the **Button1** from the left navigation pane, Change the **On Select** property to **Navigate ('Compare Screen)**.
+
+      ![](images/pp92.png)
+
+14. Click **Preview**.
+
+15. Select a couple of devices and click the **Compare** button and verify that it takes you to the second screen.
+
+      ![](images/pp81.png)
    
-14. Select the **Compare** button, click on the **Action** tab and select **Navigate.**
-
-   ![](images/Module1/devicegallery53.png) 
-   
-15. Select **Compare Screen** from the drop-down and **ScreenTransition.None** for transition type.
-
-   ![](images/Module1/devicegallery54.png) 
-
-16. Click **Preview**.
-
-17. Select a couple of devices and click the **Compare** button and verify that it takes you to the second screen.
-
-   ![](images/Module1/devicegallery55.png) 
-   
-18. You should navigate to the new empty screen. Close the preview.
+16. You should navigate to the new empty screen. Close the preview.
 
    ![](images/Module1/devicegallery56.png) 
    
-19. Go to the **Main Screen** in the tree view.
+17. Go to the **Main Screen** in the tree view.
 
-20. Select both the **User Label** and **Header Label** , right click and select **Group**.
+18. Select both the **User Label and Header Label (1)** , right click and select **Group (2)**.
 
-   ![](images/Module1/devicegallery57.png) 
+      ![](images/pp82.png)
    
-21. Rename the group **Header**.
+19. Rename the group **Header**.
 
-22. Click on the ... button of the **Header** and select **Copy**.
+20. Click on the ... button of the **Header** and select **Copy**.
 
-   ![](images/Module1/devicegallery58.png) 
-
-23. Right click on the **Compare Screen** by and select **Paste**.
-
-   ![](images/Module1/devicegallery59.png) 
+21. Right click on the **Compare Screen** by and select **Paste**.
    
-24. The **Header** in the **Compare Screen** should look like the image below.
+22. The **Header** in the **Compare Screen** should look like the image below.
 
    ![](images/Module1/devicegallery60.png) 
    
-25. Copy **Device Gallery** from the **Main Screen** and paste it in the **Compare Screen**.
+23. Copy **Device Gallery** from the **Main Screen** and paste it in the **Compare Screen**.
 
-26. Move the gallery to the left edge of the screen. Align the top of the gallery to be just under the header banner. Use the right drag handle to reduce the width of the gallery and create space for a data entry form on the right of
-    the screen. You will insert a Form control here and configure it in a subsequent lab.
-    
-   ![](images/Module1/devicegallery61.png)     
+26. Move the gallery to the left edge of the screen. Align the top of the gallery to be just under the header banner. Use the right drag handle to reduce the width of the gallery and create space for a data entry form on the right of the screen. You will insert a Form control here and configure it in a subsequent lab.
    
 27. Rename this gallery to **Compare List Gallery**.
 
    ![](images/Module1/devicegallery62.png) 
 
-#### Task 2: Configure the gallery
-
-In this task, you will configure the gallery to show devices that were selected from the comparison gallery on the Main
-Screen.
-
+### Task 2: Configure the gallery
 
 1. Select the new **Compare List Gallery**.
 
 2. Select **Items** in the property drop-down list and change the data source in the formula bar to CompareList.
 
-   ![](images/Module1/devicegallery63.png) 
+      ![](images/pp84.png)
    
 3. The gallery will now show the selected items from the Main Screen.
-
-   ![](images/Module1/devicegallery64.png) 
    
-#### Task 3: Remove and add controls to the gallery
-
-In the **Compare Screen** we are selecting a given item to get approved, so we do not need a Compare checkbox.
+### Task 3: Remove and add controls to the gallery
 
 1. Select the **Compare checkbox** on the left most template cell and press the **Delete** key to delete the checkbox.
 
-2. Now let’s add a few labels to display additional attributes about the device. A good way to do this is to copy
-    paste. Select the first label in the gallery that is displaying the device name. Copy it (Ctrl-C) and paste it (Ctrl-V).
-    Rename these labels as you go for ease of use later.
+2. Now let’s add a few labels to display additional attributes about the device. A good way to do this is to copy paste. Select the **first label** in the gallery that is displaying the device name. Copy it **(Ctrl-C)** and paste it **(Ctrl-V)**. Rename these labels as you go for ease of use later.
 
+      ![](images/pp85.png)
 
 3. Move the new label so that it is just below the price. Set the **Text** property to: ThisItem.ManufacturerName.
 
-   ![](images/Module1/devicegallery65.png) 
+      ![](images/pp86.png)
    
 4. Use the ribbon to change the font weight from **Semibold** to **Normal** and change the **Size** property from 20 to 18.
 
    ![](images/Module1/devicegallery66.png) 
    
-5. Copy and paste this label and move the new fourth label below the third label. Set its **Text** property to:
-    ThisItem.Memory
+5. Copy and paste this label and move the new fourth label below the third label. Set its **Text** property to: ThisItem.Memory
 
-   ![](images/Module1/devicegallery67.png) 
+      ![](images/pp87.png)
    
 6. Repeat this and add text boxes to display the additional device properties – Processor, Storage, ScreenSize, etc.
-    Feel free to customize the labels by changing their Size, Color, Fill and Font Weight properties.
 
-
-Note : For this lab, to save time you may add one or two of these additional properties and skip adding all the
-additional device properties.
-
-
-
-#### Task 4: Highlight the selected device
-
-Like the behavior in the manufacturer gallery in the first screen, use the **TemplateFill** property to specify a highlight color
-for the selected item.
+### Task 4: Highlight the selected device
 
 1. Select the **Compare List Gallery.**
 
@@ -705,26 +573,21 @@ for the selected item.
    If(ThisItem.IsSelected,ColorFade('Header Label'.Fill, 75%))
    ```
    
-   ![](images/Module1/devicegallery68.png)   
-   
-   This is conditionally setting a Fill color if the cell is selected. You could have set a specific color or RGB value, but we recommend using the ColorFade function, so it matches the header label with a 75% fade. If you change the fill color of header label, this template fill color will      automatically change.
+      ![](images/pp88.png)
 
+3. Holding down **Alt** , click a few different items in the gallery, notice the selected item is highlighted in a light blue color.
 
-3. Holding down **Alt** , click a few different items in the gallery, notice the selected item is highlighted in a light blue
-    color.
-
-#### Task 5: Add an icon to navigate to the first screen
+### Task 5: Add an icon to navigate to the first screen
 
 1. Select the **Compare Screen**.
 
-2. Go to **Insert** , then **Icons** and select the **Left** icon. Position it in the upper left corner of the screen.
+2. Go to **Insert (1)** , **Search (2)** for **Left** and **select (3)** it. Position it in the upper left corner of the screen.
 
-   ![](images/Module1/devicegallery69.png)  
+      ![](images/pp89.png)
 
-3. Select the arrow control, change the **Color** property to **White**. You can change this in the formula bar or through
-    the **Properties** pane on the right.
+3. Select the arrow control, change the **Color** property to **White**. You can change this in the formula bar or through the **Properties** pane on the right.
 
-   ![](images/Module1/devicegallery70.png)   
+      ![](images/pp90.png)
    
 4. Move the arrow to the top-left corner.
 
@@ -732,109 +595,42 @@ for the selected item.
    
 5. Set the **OnSelect** action for the icon to Back(). This will cause navigation back to the previous screen.
 
-   ![](images/Module1/devicegallery72.png)   
-   
-**Optional UI enhancement:**
+      ![](images/pp91.png)
 
- - Add **padding around the icon** using the Properties pane. Set the padding values to 10 each for Top, Bottom, Left, and
-Right. This will make the icon look smaller but still have a larger hit target for the click action. This is a good pattern to use
-for most icons.
-
-
-####  Task 6: Test the app
-
-Let’s save the app by selecting **File** - > **Save**. It is a good idea to save your app regularly. **Note** : You can also test your app
-right on the canvas by holding down the Alt key to activate buttons and other controls, as well as double-clicking to type
-into controls.
+###  Task 6: Test the app
 
 1. Go to the **Main Screen** and **Preview** the app by hitting the **Play** button in the top right.
-
-   ![](images/Module1/devicegallery73.png)   
    
-2. Uncheck if there are any checked devices.
+1. Uncheck if there are any checked devices.
 
-3. Select **Microsoft** on the left to show a filtered set of devices.
+1. Select the checkbox for the laptop that you would like to compare. Click the **Compare** button to navigate to the compare screen.
 
-4. Check the compare box on a few devices on the main screen from a few different manufacturers.
+      ![](images/pp93.png)
 
-5. Click the **Compare** button to navigate to the compare screen.
+1. Click the **Back** button and confirm you get back to the main screen.
 
-6. Tap or click on different devices in the gallery and verify that the selection highlight works.
-
-7. Click the **Back** button and confirm you get back to the main screen.
-
-   ![](images/Module1/devicegallery74.png)   
+      ![](images/pp4.png)
    
-8. Click **Clear Selection**.
+1. Click on **Clear Selection**. 
 
-   ![](images/Module1/devicegallery75.png)   
-
-9. The **CompareList** will clear, and the **Compare** button will become disabled.
-
-   ![](images/Module1/devicegallery76.png)   
+1. The **CompareList** will clear, and the **Compare** button will become disabled.
    
-10. Close the preview.
+1. Close the preview.
 
-#### Task 7: Test the app on a mobile device
+### Task 7: Test the app on a mobile device
 
-Congratulations! You’ve created your Power Apps app. Now let’s publish and test it on a mobile device.
+1. Click on **Save** from the top righr.
 
-1. **File** - > **Save**.
+2. **Click** on the **Publish** button.
 
-2. **C** lick the **Publish** button.
+      ![](images/pp95.png)
 
 3. Click **Publish this version** on the confirmation prompt.
 
-   ![](images/Module1/devicegallery77.png)   
-   
-   This action will publish the latest saved version of the app.
+      ![](images/pp96.png)
 
-4. Go to your device’s app store application. Search for “ **Power Apps** ” and install the Power Apps application.
-    Launch the app.
-   
-   ![](images/Module1/devicegallery78.png)   
+## Summary
 
 
-5. When the app starts, it will prompt for your business or school account credentials. **Log in** with the same account
-    that you used to create the Power Apps app. You should see the app you just created in the list of apps. **Run the**
-    **app**.
 
-### Task 8: [Optional] Share the application with a colleague
-
-You may optionally share the application with another user within the same organizational tenant as the user who created
-the app. So, if you had logged in as meganb@contoso.com, you may share the app with any other User, Security Group or
-Distribution Group within the @contoso.com tenant.
-
-1. To share the app, go to Make Power Apps. Log in if prompted for credentials.
-
-2. Select **Apps** in the left pane, look for your Device Ordering app in the app list, click the three dots (...) next to the
-    app to bring up the context menu. Click the **Share** option.
-
-   ![](images/Module1/devicegallery80.png)   
-   
-3. In the share screen, enter the name of the user **Lab admin01** or **Lab admin02** to share the app. You may also share
-    it with a user group.
-
-   ![](images/Module1/devicegallery81.png)   
-
-4. Select the user or group; this will add it to the **Shared with** list below. You may provide this user/group either **Can**
-    **use** or **Can edit** permissions.
-
-   ![](images/Module1/devicegallery82.png)   
-   
-5. If the **Send an email invitation** is checked, when you hit **Save** , the user or all users in the group will receive an
-    email letting them know that the app has been shared with them, along with a link to open the app.
-
-   ![](images/Module1/devicegallery83.png)  
-   
-**Next steps**
-
-Now that you have learned the basics of creating an app, take a little time to think about what you would like to create
-next. What made you most excited about the device ordering app? What would you have done differently? Here’s an
-example of some changes you can make to the UI:
-
-   ![](images/Module1/devicegallery84.png)   
-   
-Features like shading, number of rows, and greying out items not selected can have a big impact on how your app looks and feels. To learn more, check out the links in the reference section and take the next step in building great apps.
-
-
+### You have successfully completed the lab!
