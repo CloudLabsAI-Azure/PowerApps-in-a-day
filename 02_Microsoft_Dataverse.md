@@ -829,4 +829,8 @@ a comma-separator, then use a double ‘;’ here (without the single-quotes).
 
 27. Close the application.
 
+## Summary
 
+In this exercise, you have explored Microsoft Dataverse, created custom Tables and Columns and connected the data from the Canvas App.
+
+### You have successfully completed the lab!
