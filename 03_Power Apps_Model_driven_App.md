@@ -24,12 +24,12 @@ Table you created in the Microsoft Dataverse in Lab 2.
 
 1. Navigate to Power Apps Portal using the below URL if not already and select the environment that you created earlier.
   
-  ```
-   https://make.powerapps.com/
-   ```
+    ```
+     https://make.powerapps.com/
+     ```
 1. In the **Home** page, search for model and select **Model-driven app from blank**.
 
-   ![](images/Module3/Model-drivenapp1.png)  
+      ![](images/pp200.png)
    
 1. Enter the below value for **Name** and click **Create**. You have now created the app definition and will start
     adding components in to build the app.
@@ -40,17 +40,23 @@ Table you created in the Microsoft Dataverse in Lab 2.
    
    ![](images/Module3/Model-drivenapp3.1.png)  
    
+1. Click on **New** and select **Web resource**.
+
+      ![](images/pp201.png)
+
+1. Select **browserPreviewFrame.html** and click on **Add**.
+
+      ![](images/pp202.png)
+
 1. Click the **Switch to classic** button to switch to the classic designer of the app. 
     
    ![](images/Module3/Model-drivenapp4.1.png)     
    
-1. Click on **Publish and continue** then **Save** to save the app. The classic designer of the app will be opened in a new browser tab.   
-
-   ![](images/Module3/Model-drivenapp5.1.png)  
+1. Click on **Publish and Save** to save the app. The classic designer of the app will be opened in a new browser tab.   
    
-1. Click **Edit Site Map**. This will launch the designer that will let you modify the App navigation.
+1. Click on the Edit button next to **Site Map**. This will launch the designer that will let you modify the App navigation.
 
-   ![](images/Module3/Model-drivenapp6.png)  
+      ![](images/pp203.png)
    
 1. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for **ID** If you were
     building a more complex application, you could use Areas to group together related items making it easy for the
@@ -67,6 +73,8 @@ Table you created in the Microsoft Dataverse in Lab 2.
    > Note: The properties panel on the right will only show if you click on the New Group on the left.
    
 1. Select the **New Subarea**.
+
+      ![](images/pp204.png)
 
    > Note: The properties panel on the right will only show if you click on the New Subarea on the left.
 
@@ -100,16 +108,13 @@ Table you created in the Microsoft Dataverse in Lab 2.
 
    ![](images/Module3/Model-drivenapp14.png)  
    
-  
 1. Click on **Columns** under **Schema**, to select the **Columns** tab and click on **+ New Column**.
 
    ![](images/Module3/Model-drivenapp15.1.png)  
    
-1. Enter **Capital Approved** for **Display Name** , select **Yes/No** for **Data Type** and click **Save**. We are using a Yes/No
-    data type here because when we use it as a Step in the Business Process, we want to be able to simply mark it
-    completed. Yes/No are essentially a true or false Column.
+1. Enter **Capital Approved (1)** for **Display Name** , select **Yes/No (2)** for **Data Type** and click on **Save (3)**.
     
-   ![](images/Module3/Model-drivenapp16.png)  
+      ![](images/pp206.png)
    
 1. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
     **Device Delivered**. 
@@ -149,27 +154,19 @@ The completed Business Process Flow will look like the image below.
 
    ![](images/Module3/BusinessProcessFlow.png)  
 
-
-
 ### Task 1: Create business process flow
 
 1. Select **Solutions** from the left navigation pane and click on **Default Solution**.
 
+      ![](images/pp207.png)
 
-1. Click on New > Automation > Process > **Business Process Flow** tab and click **New**.
+1. Click on **+ New (1)** > **Automation (2)** > **Process (3)** > **Business Process Flow (4)** .
 
-   ![](images/Module3/BusinessProcessFlow2.png)  
+      ![](images/pp208.png)
 
-1. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click on **Create**. 
+1. Enter **Device Procurement Process (1)** for Flow Name, select **Device Order (2)** for Table, and click on **Create (3)**. 
  
-   ![](images/Module3/BusinessProcessFlow3.png)  
- 
-   > Info: When you create the Business Process Flow behind the scenes it creates another Table with the same name as the Business
-    Process Flow to track the progress of each business process on the Row. Because of this, choose your name
-    carefully, for example, you wouldn’t want to use the same name as your Table e.g. Device Order. Here we choose
-    Device Procurement Process. Note: After you click OK, a new window will be loaded with the designer. If you
-    have popup blockers enabled this might be blocked. The window might also not immediately have focus and you
-    might have to manually bring it into focus.
+      ![](images/pp209.png)
 
 1. Select the **New Stage** and change the Display Name to **Device Requested** and click **Apply**.
 
@@ -177,11 +174,11 @@ The completed Business Process Flow will look like the image below.
 
 1. Click **Details.**
 
-   ![](images/Module3/BusinessProcessFlow5.png)  
+      ![](images/pp212.png) 
 
 1. Select the **Data Step** , select **Request Date** for Data Field and click **Apply**. The Step Name will auto-filled for you.
 
-   ![](images/Module3/BusinessProcessFlow6.png)  
+      ![](images/pp213.png) 
 
 1. Click **Add** and select **Add Data Step**.
 
@@ -193,11 +190,11 @@ The completed Business Process Flow will look like the image below.
 
 1. Select **Approval Status** for Data Field and click **Apply**.
 
-   ![](images/Module3/BusinessProcessFlow9.png)  
+      ![](images/pp214.png) 
 
 1. Add another Data Step, select **Price** for Data Field and click **Apply**.
 
-   ![](images/Module3/BusinessProcessFlow10.png)  
+      ![](images/pp215.png) 
 
 1. Select the **Components** tab.
 
@@ -209,22 +206,22 @@ The completed Business Process Flow will look like the image below.
 
 1. Select the new stage, change the Display Name to **Place Order** and click **Apply**.
 
-   ![](images/Module3/BusinessProcessFlow13.png)  
+      ![](images/pp216.png) 
 
 1. Click **Details**.
 
-   ![](images/Module3/BusinessProcessFlow14.png)  
+      ![](images/pp217.png) 
 
 1. Select the existing Data Step, select **Estimated Ship Date** for Data Field, and click **Apply**.
 
-   ![](images/Module3/BusinessProcessFlow15.png)  
+      ![](images/pp218.png) 
 
 1. Select the **Components** tab, drag **Data Step** to the canvas and place is under the **Estimated Ship Date** step.
 
    ![](images/Module3/BusinessProcessFlow16.png)  
 
 
-17. Select **Supplier Order ID** for Data Column, check the **Required** field and click **Apply**. Remember from before this
+1. Select **Supplier Order ID** for Data Column, check the **Required** field and click **Apply**. Remember from before this
     Column isn’t required, but by checking this here, we will require it to be filled out before they can advance to the
     next stage. It won’t, however, block saving the Row if there isn’t a data value populated like it would if it was
     marked required on the Column definition.
@@ -249,7 +246,7 @@ the order. In this task, you will see how we can modify the flow we built to acc
     click **Apply**. It’s important to note that Columns you use in the rules on the condition must be in the prior Stages
     steps. That is one of the reasons we put the price in there previously.
     
-   ![](images/Module3/BusinessProcessFlow26.png)  
+      ![](images/pp219.png) 
     
 1. Click on **Save**.
 
@@ -259,21 +256,21 @@ the order. In this task, you will see how we can modify the flow we built to acc
    
 1. Select the new stage, change the Display Name to **Capital Approval** and click **Apply**.
 
-   ![](images/Module3/BusinessProcessFlow29.png)  
+      ![](images/pp220.png) 
    
 1. Click **Details**.
 
-   ![](images/Module3/BusinessProcessFlow30.png)  
+      ![](images/pp221.png) 
    
 1. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.
 
-   ![](images/Module3/BusinessProcessFlow31.png)  
+      ![](images/pp222.png)  
    
 1. Click on **Save**.
    
 1. Click on **Activate**.
 
-   ![](images/Module3/BusinessProcessFlow33.png)  
+      ![](images/pp223.png) 
    
 1. Confirm the activation.
 
@@ -299,17 +296,16 @@ example, you might provide a view to show all device requests that are waiting t
 
 1. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
 
-   ![](images/Module3/device_order_form2.1.png)  
+      ![](images/pp224.png) 
    
-   > Note: The form designer is being modernized, you can read more here Overview of the model-driven form
-designer.
+     > **Note:** The form designer is being modernized, you can read more here Overview of the model-driven form designer.
 
 1. If you are required to sign in again, do so.
+
 1. Search for **Approver** Column and drag it to the form.
 
 1. Place the **Approver** Column above the Device Name Column.
-
-   
+ 
 1. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the
     Device Name and Owner Columns.
     
@@ -319,8 +315,7 @@ designer.
     button.
 
    ![](images/Module3/device_order_form5.png)  
-   
-   
+      
 1. Select the **Owner** Column and click **Paste**.
 
    ![](images/Module3/device_order_form6.png)  
@@ -330,6 +325,8 @@ designer.
    ![](images/Module3/device_order_form7.png)  
    
 1. Click on **Save and Publish**.
+
+      ![](images/pp226.png) 
    
 1. Close the **Form Designer** tab.
 
@@ -338,7 +335,9 @@ designer.
 
 1. Select the **Views** tab under **Data experiences** and click on the **Active Device Orders** view to open it.
 
-   ![](images/Module3/device_order_form10.1.png)  
+      ![](images/pp227.png)
+
+      ![](images/pp228.png) 
    
 1. Click the **Approval Status** Column once (you do not need to double click).
 
@@ -348,13 +347,9 @@ designer.
 
    ![](images/Module3/device_order_form12.png)  
 
-1. Click on the **+ View Column** button.
+1. Click on the **+ View Column** button and select **Estimated Ship Date.**
 
-   ![](images/Module3/device_order_form13.png)  
-   
-1. Select **Estimated Ship Date.**
-
-   ![](images/Module3/device_order_form14.png)  
+      ![](images/pp229.png) 
    
 1. Add **Price** and **Status** to the View.
 
@@ -374,7 +369,7 @@ In this exercise, we are going to test the application you just built.
 
 1. Select **Apps** , select the Device Procurement application and click **Play**.
 
-   ![](images/Module3/apptest1.png)  
+      ![](images/pp230.png) 
 
 1. The application should start. The **Active Device Orders** view should load.
     > **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
