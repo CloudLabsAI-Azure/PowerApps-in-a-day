@@ -4,24 +4,28 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/00_Prerequisite.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/Getting-Started.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/01_Power_Apps_Canvas_App.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/00_Prerequisite.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/02_Microsoft_Dataverse.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/01_Power_Apps_Canvas_App.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/03_Power%20Apps_Model_driven_App.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/02_Microsoft_Dataverse.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/04_Power_Automate.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/03_Power%20Apps_Model_driven_App.md",
         "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-in-a-day/main/04_Power_Automate.md",
+        "Order": 6
       }
     ]
   }
