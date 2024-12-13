@@ -1,5 +1,7 @@
 # Module 2: Microsoft Dataverse
 
+### Estimated Duration: 120 minutes
+
 ## Overview
 
 The Microsoft Dataverse adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision.
