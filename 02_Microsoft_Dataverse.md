@@ -45,7 +45,7 @@ https://make.powerapps.com/
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
     
-    ![](./images/pp600.png)
+    ![](./images/pp700.png)
 
 **Columns** :
 
@@ -307,7 +307,7 @@ In this task, you will create a **Business rule** that will set the Estimated De
 
 1. Select the **Business rules** tab and click **Add business rule.**
 
-   ![](./images/Module2/image40.png)
+   ![](images/pp39.png)
 
 2. Click the arrow to **Show Details**.
 
@@ -342,38 +342,38 @@ after you hit apply when you are done modifying the rule._
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
     **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-    ![](./images/Module2/image47.png)
+   ![](images/pp100.png)
 
-9. Click **Validate**.
+9. Click on **Validate** from the top right.
 
-   ![](./images/Module2/image48.png)
+      ![](./images/pp701.png)
 
 10. Make sure validation succeeds.
 
     ![](./images/Module2/image49.png)
 
-11. Click **Save**.
+11. Click on **Save**.
 
-    ![](./images/Module2/image50.png)
+   ![](images/pp702.png)
 
-12. Click **Activate**.
+12. Click on **Activate**.
 
-    ![](./images/Module2/image51.png)
+      ![](images/pp703.png)
 
 13. Confirm activation. Business rules only execute when they are activated. In the future to make changes to rules
     you deactivate them, make the change, and then re-activate the rule.
 
-    ![](./images/Module2/image52.png)
+      ![](images/pp704.png)
 
 14. Close the process editor browser window or tab.
 
 15. Click **Done**. The list should refresh showing the Business Rule you just created.
 
-    ![](./images/Module2/image53.png)
+       ![](./images/Module2/image53.png)
 
 16. Your Device Order table will have one Business Rule.
 
-    ![](./images/Module2/image54.png)
+      ![](images/pp101.png)
  
 ## Exercise 3: Connect the data from the Canvas App
 
@@ -382,20 +382,17 @@ table and add a form to submit device approval requests.
 
 ### Task 1: Add Microsoft Dataverse table as a data source to the app
 
-Open the device ordering app. Make sure you are opening the version of the app that is in the newly created environment
-that has the Microsoft Dataverse database instance.
+1. Select **Apps** , select the **Device Order App (1)** you created in Module 1, and click **Edit (2)**.
 
-1. Select **Apps** , select the **Device Order App** you created in Module 1, and click **Edit.**
+      ![](images/pp102.png)
 
-   ![](./images/Module2/image55.png)
+1. Click on Override.
 
-2. Select the **Data sources** to display the current sources. Select **Add Data.**
+      ![](images/pp103.png)
 
-   ![](./images/Module2/image56.png)
+1. Select the **Data(1)** from the left navigation pane to display the current sources. Select **Add Data (2)**. Search for **device (3)** and click on **Device Orders (4)**
 
-3. Click on **Device Orders** from the table list to include it as a data source for our app.
-
-   ![](./images/Module2/image57.png)
+      ![](images/pp104.png)
 
 ### Task 2: Create the edit form
 
@@ -405,23 +402,21 @@ that has the Microsoft Dataverse database instance.
 
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.
 
-   ![](./images/Module2/image59.png)
+      ![](images/pp105.png)
 
 3. Select the **Compare Screen**. You should now have the selected devices.
 
-   ![](./images/Module2/image60.png)
+      ![](images/pp106.png)
 
-4. Select the **Insert** tab, click **Forms** , and select **Edit**.
+4. Select the **Insert** tab, search for **forms (1)** and select **Edit form (2)**.
 
-   ![](./images/Module2/image61.png)
+      ![](images/pp107.png)
 
 5. Click the **Data Source** drop-down in the Data pane on the right.
 
-   ![](./images/Module2/image62.png)
-
 6. Select the **Device Orders** table as the data source.
  
-   ![](./images/Module2/image63.png)
+      ![](images/pp108.png)
 
 7. Click **Edit Fields**.
 
