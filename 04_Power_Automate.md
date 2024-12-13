@@ -1,42 +1,16 @@
-# Power Platform
+# Module 4 : Power Automate
 
-# App in a Day
+## Overview
 
-Module 4 : Power Automate
+This lab provides an in-depth exploration of how Microsoft Business Application Platform technologies empower citizen developers to design and implement a customized device ordering solution. Participants will leverage Power Apps to build intuitive and responsive interfaces, use Power Automate to streamline and automate workflows, and integrate Microsoft Dataverse to manage and centralize data effectively. Through hands-on exercises, the lab emphasizes practical application and collaboration, showcasing how these tools enable rapid and efficient solution development without requiring extensive coding expertise.
 
-### Hands-on Lab Step-by-Step
+## Lab Objectives
 
-## Contents
-
-- Power Automate
-   - Lab Prerequisites
-   - Exercise 1: Create Approval Request Flow
-   - Exercise 2: Conditional Logic
-   - Exercise 3: Test the cloud flow
-   - Exercise 4: Update the Flow
-   - Exercise 4: (Optional) Add a Teams Notification
-- References
-
-## Power Automate
-
-### Lab Prerequisites
-
-This is the fourth lab in a five-part series covering Power Apps, Microsoft Dataverse, and Power Automate. The assumption
-is that you have successfully completed the first three modules, or at least the initial part of setting up an environment as
-described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
-
-If you have not completed the previous modules, you can use the partially completed version of the lab package in the
-**C:\PowerApps-in-a-day\Completed for students\Module 3** folder. Follow the instructions in the document **Importing Module 3 Completed** before
-proceeding with this module, which will provision the app and the Microsoft Dataverse Table into your environment.
-
-### Integrating a Power Apps App with Power Automate
-
-In this lab, you will create a flow that uses the Modern Approvals service to automate the approval workflow – it will send
-an email to the selected approver and take an action based on their response.
-
-You should already have an app with these two screens:
-
-![](./images/Module4/Device_ordering_app.png)
+- Exercise 1: Create Approval Request Flow
+- Exercise 2: Conditional Logic
+- Exercise 3: Test the cloud flow
+- Exercise 4: Update the Flow
+- Exercise 4: (Optional) Add a Teams Notification
 
 ## Exercise 1: Create Approval Request Flow
 
@@ -50,16 +24,8 @@ The flow will trigger when a new item is added to the **Device Order** Table in 
 
    > There are two ways to create a flow – from blank or from a template. In this lab, we will create the approval flow
 starting with a blank flow.
-
-### Task 1 : Login on Power Apps website and create a flow
-
-1. Navigate to Make Power Apps Portal and make sure you are in the correct environment.
-
-   ![](./images/Module4/PowerApps-flow1.png)
    
-1. Select **Flows** and click on **Automated – cloud flow**.
-
-### Task 2 : Configure the trigger
+### Task 1 : Configure the trigger
 
 The first thing you will need to configure is the trigger, i.e. when should this flow run. A flow can be triggered:
 
@@ -69,9 +35,10 @@ The first thing you will need to configure is the trigger, i.e. when should this
    1. when an event occurs, such as a new item being added to a table, a new email arriving in a user’s inbox, a
 new tweet being posted that meets certain conditions, etc.
 
-
 In this scenario, we will configure the flow to trigger when a **new item is added** to the **Device Order Table** table in the
 **Microsoft Dataverse**
+
+1. Select **Flows** and click on **Automated – cloud flow**.
 
 1. Enter the below name for your flow.
  
@@ -99,8 +66,7 @@ In this scenario, we will configure the flow to trigger when a **new item is add
   
    ![](./images/Module4/PowerApps-flow7.png)
    
-### Task 3 : Add action to send an approval request
-
+### Task 2 : Add action to send an approval request
 
 1. Click **+ New step**.
 
