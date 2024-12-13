@@ -314,37 +314,6 @@ The completed Business Process Flow will look like the image below.
     
     ![](images/Module3/BusinessProcessFlow17.png)  
 
-    > **NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
-business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
-condition.**
-
-1. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.
-
-   ![](images/Module3/BusinessProcessFlow18.png)  
-
-1. Select the new stage, change the Display name to **Receive Device** and click **Apply**.
-
-   ![](images/Module3/BusinessProcessFlow19.png)  
-
-1. Click **Details**.
-1. Select the existing Data Step and select **Device Received** for Data Column and click **Apply**.
-
-   ![](images/Module3/BusinessProcessFlow20.png)  
-
-1. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
-    step.
-
-   ![](images/Module3/BusinessProcessFlow21.png)  
-
-1. Select **Device Configured** for Data Column and click **Apply**.
-
-   ![](images/Module3/BusinessProcessFlow22.png)  
-
-1. Add another stage and name it **Distribute Device**.
-1. Add two data steps **Device Delivered** and **Send Survey**.
-
-   ![](images/Module3/BusinessProcessFlow23.png)  
-
 ### Task 2: Add a branch condition
 
 In this task, we are going to add a conditional branch to our Business Process Flow. When we did the discovery, we
@@ -359,15 +328,13 @@ the order. In this task, you will see how we can modify the flow we built to acc
 
    ![](images/Module3/BusinessProcessFlow25.png)  
 
-1. In the **Rule 1** section, select **Price** for Column, **is greater than** for Operator, **Value** for Type, **1000** for Value, and
+1. In the **Rule 1** section, select **Price** for Field, **is greater than** for Operator, **Value** for Type, **1000** for Value, and
     click **Apply**. It’s important to note that Columns you use in the rules on the condition must be in the prior Stages
     steps. That is one of the reasons we put the price in there previously.
     
    ![](images/Module3/BusinessProcessFlow26.png)  
     
-1. Click **Save**.
-
-   ![](images/Module3/BusinessProcessFlow27.png)  
+1. Click on **Save**.
 
 1. A new stage will be added.
 
@@ -381,25 +348,21 @@ the order. In this task, you will see how we can modify the flow we built to acc
 
    ![](images/Module3/BusinessProcessFlow30.png)  
    
-1. Select the existing Data Step, select **Capital Approved** for Data Column and click **Apply**.
+1. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.
 
    ![](images/Module3/BusinessProcessFlow31.png)  
    
-1. Click **Save**.
-
-   ![](images/Module3/BusinessProcessFlow32.png)  
+1. Click on **Save**.
    
-1. Click **Activate**.
+1. Click on **Activate**.
 
    ![](images/Module3/BusinessProcessFlow33.png)  
    
 1. Confirm the activation.
 
-   ![](images/Module3/BusinessProcessFlow34.png)  
-
 1. Close the process editor.
 
-1. Now, click on **Publish** button that is present at the top right corner of the window..
+1. Navigate back to the Device Procurement we created in the first task and click on **Save and Publish** button that is present at the top right corner of the window.
 
    ![](images/Module3/BusinessProcessFlow35.1.png)  
    
@@ -413,10 +376,8 @@ example, you might provide a view to show all device requests that are waiting t
 
 ### Task 1: Modify the form
 
-1. Expand **Dataverse** , select **Tables**. Search for **Device Order** Table and click to open.
+1. Select **Tables** from the left navigation pane and select **Device Order** Table.
 
-   ![](images/Module3/device_order_form1.png)  
-   
 1. Select the **Forms** that is present under **Data Experiences**.
 
 1. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
@@ -431,7 +392,6 @@ designer.
 
 1. Place the **Approver** Column above the Device Name Column.
 
-   ![](images/Module3/device_order_form3.png)  
    
 1. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the
     Device Name and Owner Columns.
@@ -452,13 +412,7 @@ designer.
 
    ![](images/Module3/device_order_form7.png)  
    
-1. Click **Save**.
-
-   ![](images/Module3/device_order_form8.png)  
-
-1. Click **Publish**.
-
-   ![](images/Module3/device_order_form9.png)  
+1. Click on **Save and Publish**.
    
 1. Close the **Form Designer** tab.
 
@@ -489,13 +443,7 @@ designer.
 
    ![](images/Module3/device_order_form15.png)  
    
-1. Click **Save.**
-
-   ![](images/Module3/device_order_form16.png)  
-
-1. **Publish** the View.
-
-   ![](images/Module3/device_order_form17.png)  
+1. Click **Save and Publish**.
 
 1. Click on the back button.
 
