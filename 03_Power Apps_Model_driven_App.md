@@ -414,3 +414,8 @@ In this exercise, we are going to test the application you just built.
 
    ![](images/Module3/apptest11.png)  
 
+## Summary
+
+In this exercise, you have created an Application and add Columns to the Device Order Table, explored Business Process Flow,Form and View Modification and tested the application.
+
+### You have successfully completed the lab!
