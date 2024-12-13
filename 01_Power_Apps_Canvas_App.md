@@ -591,6 +591,6 @@ enter additional information and submit the request.
 
 ## Summary
 
-
+In this exercise, you have created the app in Power Apps, added Device Gallery and Connect to Data Source and added Compare Screen.
 
 ### You have successfully completed the lab!
