@@ -10,7 +10,6 @@ This lab provides an in-depth exploration of how Microsoft Business Application 
 - Exercise 2: Conditional Logic
 - Exercise 3: Test the cloud flow
 - Exercise 4: Update the Flow
-- Exercise 4: (Optional) Add a Teams Notification
 
 ## Exercise 1: Create Approval Request Flow
 
