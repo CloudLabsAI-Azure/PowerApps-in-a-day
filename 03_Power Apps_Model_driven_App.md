@@ -95,13 +95,9 @@ to navigate between the components (Table views, Dashboards and other visual com
   ```
    https://make.powerapps.com/
    ```
-1. Select **Home** and click **+ Blank app**.
+1. In the **Home** page, search for model and select **Model-driven app from blank**.
 
    ![](images/Module3/Model-drivenapp1.png)  
-   
-1. Click on the **Create** button of the Model-driven app section.
-
-   ![](images/Module3/Model-drivenapp2.png)  
    
 1. Enter the below value for **Name** and click **Create**. You have now created the app definition and will start
     adding components in to build the app.
@@ -115,13 +111,6 @@ to navigate between the components (Table views, Dashboards and other visual com
 1. Click the **Switch to classic** button to switch to the classic designer of the app. 
     
    ![](images/Module3/Model-drivenapp4.1.png)     
-
-    > Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
-the user in the list of all their applications.
-
-     Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
-
-   ![](images/Module3/Model-drivenapp5.png)  
    
 1. Click on **Publish and continue** then **Save** to save the app. The classic designer of the app will be opened in a new browser tab.   
 
@@ -131,7 +120,7 @@ the user in the list of all their applications.
 
    ![](images/Module3/Model-drivenapp6.png)  
    
-1. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for ID**.** If you were
+1. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for **ID** If you were
     building a more complex application, you could use Areas to group together related items making it easy for the
     user to navigate between the components.
     
@@ -145,13 +134,11 @@ the user in the list of all their applications.
    
    > Note: The properties panel on the right will only show if you click on the New Group on the left.
    
-1. Select the **Subarea1**.
-
-   ![](images/Module3/Model-drivenapp9.1.png)  
+1. Select the **New Subarea**.
 
    > Note: The properties panel on the right will only show if you click on the New Subarea on the left.
 
-1. Set the **Entity** for **Type** , select **Device Order** for **Table** , enter **Device Orders** for **Title** and enter
+1. Set the **Entity** for **Type** , select **Device Order** for **Entity** , enter **Device Orders** for **Title** and enter
     **nav_device_orders** for **ID**.
     
    ![](images/Module3/Model-drivenapp10.png)  
@@ -192,12 +179,12 @@ update to automate sending a survey in a future release.
    ```
    https://make.powerapps.com/
    ```
-1. Expand **Dataverse** , select **Tables** , search for **Device Order** and click on it.
+1. Select **Tables**, select **Device Order** and click on it.
 
    ![](images/Module3/Model-drivenapp14.png)  
    
   
-1. Click on **Columns** under **Schema**, to select the **Columns** tab and click **Add Column**.
+1. Click on **Columns** under **Schema**, to select the **Columns** tab and click on **+ New Column**.
 
    ![](images/Module3/Model-drivenapp15.1.png)  
    
@@ -208,33 +195,14 @@ update to automate sending a survey in a future release.
    ![](images/Module3/Model-drivenapp16.png)  
    
 1. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
-    **Device Delivered**.
-
-   > **Device Received**:
-   
-   ![](images/Module3/Model-drivenapp17.1.png)  
-
-   > **Device Configured:**
-   
-   ![](images/Module3/Model-drivenapp17.2.png)  
-   
-   > **Send Survey:**
-   
-   ![](images/Module3/Model-drivenapp17.3.png)     
-   
-   > **Device Delivered:**
-
-   ![](images/Module3/Model-drivenapp17.4.png)  
+    **Device Delivered**. 
    
 6. Add another Column, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Save**. Notice
     we are not asking you to make this Column required here, but we will make it a required Column in the
     Business Process later in the lab.
 
    ![](images/Module3/Model-drivenapp18.1.png)  
-
-7. Click **Save Table**.
-
-   ![](images/Module3/Model-drivenapp19.png)  
+ 
 
 ## Exercise 2: Business Process Flow
 
@@ -268,15 +236,14 @@ The completed Business Process Flow will look like the image below.
 
 ### Task 1: Create business process flow
 
-1. Select **Flows**.
+1. Select **Solutions** from the left navigation pane and click on **Default Solution**.
 
-   ![](images/Module3/BusinessProcessFlow1.png)  
 
-1. Select the **Business Process Flow** tab and click **New**.
+1. Click on New > Automation > Process > **Business Process Flow** tab and click **New**.
 
    ![](images/Module3/BusinessProcessFlow2.png)  
 
-1. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click **Create**. 
+1. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click on **Create**. 
  
    ![](images/Module3/BusinessProcessFlow3.png)  
  
