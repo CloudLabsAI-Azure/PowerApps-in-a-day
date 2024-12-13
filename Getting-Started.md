@@ -44,13 +44,13 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by clicking on the **Split Window** button in the top right corner.
  
-   ![](images/pp502.png)
+   ![](images/pp503.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![](images/pp503.png)
+   ![](images/pp504.png)
 
 ## Support Contact
 
