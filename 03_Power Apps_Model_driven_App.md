@@ -1,21 +1,13 @@
-# Power Platform
+# Module 3 : Power Apps Model-driven App
 
-# App in a Day
+## Lab objectives
 
-Module 3 : Power Apps Model-driven App
+In this lab, you will complete the following tasks:
 
-### Hands-on Lab Step-by-Step
-
-## Contents
-
-- Power Apps Model-driven App
-   - Lab Prerequisites
-   - Exercise 1: Create Application and add Columns to the Device Order Table
-   - Exercise 2: Business Process Flow
-   - Exercise 3: Form and View Modification
-   - Exercise 4: Test the application
-
-## Power Apps Model-driven App
+- Exercise 1: Create Application and add Columns to the Device Order Table
+- Exercise 2: Business Process Flow
+- Exercise 3: Form and View Modification
+- Exercise 4: Test the application
 
 ### Lab Prerequisites
 
@@ -103,13 +95,9 @@ to navigate between the components (Table views, Dashboards and other visual com
   ```
    https://make.powerapps.com/
    ```
-1. Select **Home** and click **+ Blank app**.
+1. In the **Home** page, search for model and select **Model-driven app from blank**.
 
    ![](images/Module3/Model-drivenapp1.png)  
-   
-1. Click on the **Create** button of the Model-driven app section.
-
-   ![](images/Module3/Model-drivenapp2.png)  
    
 1. Enter the below value for **Name** and click **Create**. You have now created the app definition and will start
     adding components in to build the app.
@@ -123,13 +111,6 @@ to navigate between the components (Table views, Dashboards and other visual com
 1. Click the **Switch to classic** button to switch to the classic designer of the app. 
     
    ![](images/Module3/Model-drivenapp4.1.png)     
-
-    > Note : When building a real app, you would also upload an image to be used as the App Tile. The App Tile is seen by
-the user in the list of all their applications.
-
-     Next, you will build a Site Map for the application, the completed Site Map will look like the image below.
-
-   ![](images/Module3/Model-drivenapp5.png)  
    
 1. Click on **Publish and continue** then **Save** to save the app. The classic designer of the app will be opened in a new browser tab.   
 
@@ -139,7 +120,7 @@ the user in the list of all their applications.
 
    ![](images/Module3/Model-drivenapp6.png)  
    
-1. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for ID**.** If you were
+1. Select the **New Area** label, in the properties rename it **Back Office** and enter **nav_backoffice** for **ID** If you were
     building a more complex application, you could use Areas to group together related items making it easy for the
     user to navigate between the components.
     
@@ -153,13 +134,11 @@ the user in the list of all their applications.
    
    > Note: The properties panel on the right will only show if you click on the New Group on the left.
    
-1. Select the **Subarea1**.
-
-   ![](images/Module3/Model-drivenapp9.1.png)  
+1. Select the **New Subarea**.
 
    > Note: The properties panel on the right will only show if you click on the New Subarea on the left.
 
-1. Set the **Entity** for **Type** , select **Device Order** for **Table** , enter **Device Orders** for **Title** and enter
+1. Set the **Entity** for **Type** , select **Device Order** for **Entity** , enter **Device Orders** for **Title** and enter
     **nav_device_orders** for **ID**.
     
    ![](images/Module3/Model-drivenapp10.png)  
@@ -200,12 +179,12 @@ update to automate sending a survey in a future release.
    ```
    https://make.powerapps.com/
    ```
-1. Expand **Dataverse** , select **Tables** , search for **Device Order** and click on it.
+1. Select **Tables**, select **Device Order** and click on it.
 
    ![](images/Module3/Model-drivenapp14.png)  
    
   
-1. Click on **Columns** under **Schema**, to select the **Columns** tab and click **Add Column**.
+1. Click on **Columns** under **Schema**, to select the **Columns** tab and click on **+ New Column**.
 
    ![](images/Module3/Model-drivenapp15.1.png)  
    
@@ -216,33 +195,14 @@ update to automate sending a survey in a future release.
    ![](images/Module3/Model-drivenapp16.png)  
    
 1. Create 4 more **Yes/No** Columns and name them **Device Received, Device Configured, Send Survey** , and
-    **Device Delivered**.
-
-   > **Device Received**:
-   
-   ![](images/Module3/Model-drivenapp17.1.png)  
-
-   > **Device Configured:**
-   
-   ![](images/Module3/Model-drivenapp17.2.png)  
-   
-   > **Send Survey:**
-   
-   ![](images/Module3/Model-drivenapp17.3.png)     
-   
-   > **Device Delivered:**
-
-   ![](images/Module3/Model-drivenapp17.4.png)  
+    **Device Delivered**. 
    
 6. Add another Column, with the name **Supplier Order ID** , select **Text** for **Data Type** and click **Save**. Notice
     we are not asking you to make this Column required here, but we will make it a required Column in the
     Business Process later in the lab.
 
    ![](images/Module3/Model-drivenapp18.1.png)  
-
-7. Click **Save Table**.
-
-   ![](images/Module3/Model-drivenapp19.png)  
+ 
 
 ## Exercise 2: Business Process Flow
 
@@ -276,15 +236,14 @@ The completed Business Process Flow will look like the image below.
 
 ### Task 1: Create business process flow
 
-1. Select **Flows**.
+1. Select **Solutions** from the left navigation pane and click on **Default Solution**.
 
-   ![](images/Module3/BusinessProcessFlow1.png)  
 
-1. Select the **Business Process Flow** tab and click **New**.
+1. Click on New > Automation > Process > **Business Process Flow** tab and click **New**.
 
    ![](images/Module3/BusinessProcessFlow2.png)  
 
-1. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click **Create**. 
+1. Enter **Device Procurement Process** for Flow Name, select **Device Order** for Table, and click on **Create**. 
  
    ![](images/Module3/BusinessProcessFlow3.png)  
  
@@ -355,37 +314,6 @@ The completed Business Process Flow will look like the image below.
     
     ![](images/Module3/BusinessProcessFlow17.png)  
 
-    > **NOTE: All steps from here onwards until you reach Task 2 are OPTIONAL. These steps add two more stages to the
-business process using the same technique you learned above. You may skip ahead to Task 2 to add a branch
-condition.**
-
-1. Select the **Components** tab and drag **Stage** to the right side of the **Place Order** stage.
-
-   ![](images/Module3/BusinessProcessFlow18.png)  
-
-1. Select the new stage, change the Display name to **Receive Device** and click **Apply**.
-
-   ![](images/Module3/BusinessProcessFlow19.png)  
-
-1. Click **Details**.
-1. Select the existing Data Step and select **Device Received** for Data Column and click **Apply**.
-
-   ![](images/Module3/BusinessProcessFlow20.png)  
-
-1. Select the **Components** tab, drag **Data Step** to the **Receive Device** stage and place it under the **Device Received**
-    step.
-
-   ![](images/Module3/BusinessProcessFlow21.png)  
-
-1. Select **Device Configured** for Data Column and click **Apply**.
-
-   ![](images/Module3/BusinessProcessFlow22.png)  
-
-1. Add another stage and name it **Distribute Device**.
-1. Add two data steps **Device Delivered** and **Send Survey**.
-
-   ![](images/Module3/BusinessProcessFlow23.png)  
-
 ### Task 2: Add a branch condition
 
 In this task, we are going to add a conditional branch to our Business Process Flow. When we did the discovery, we
@@ -400,15 +328,13 @@ the order. In this task, you will see how we can modify the flow we built to acc
 
    ![](images/Module3/BusinessProcessFlow25.png)  
 
-1. In the **Rule 1** section, select **Price** for Column, **is greater than** for Operator, **Value** for Type, **1000** for Value, and
+1. In the **Rule 1** section, select **Price** for Field, **is greater than** for Operator, **Value** for Type, **1000** for Value, and
     click **Apply**. It’s important to note that Columns you use in the rules on the condition must be in the prior Stages
     steps. That is one of the reasons we put the price in there previously.
     
    ![](images/Module3/BusinessProcessFlow26.png)  
     
-1. Click **Save**.
-
-   ![](images/Module3/BusinessProcessFlow27.png)  
+1. Click on **Save**.
 
 1. A new stage will be added.
 
@@ -422,25 +348,21 @@ the order. In this task, you will see how we can modify the flow we built to acc
 
    ![](images/Module3/BusinessProcessFlow30.png)  
    
-1. Select the existing Data Step, select **Capital Approved** for Data Column and click **Apply**.
+1. Select the existing Data Step, select **Capital Approved** for Data Field and click **Apply**.
 
    ![](images/Module3/BusinessProcessFlow31.png)  
    
-1. Click **Save**.
-
-   ![](images/Module3/BusinessProcessFlow32.png)  
+1. Click on **Save**.
    
-1. Click **Activate**.
+1. Click on **Activate**.
 
    ![](images/Module3/BusinessProcessFlow33.png)  
    
 1. Confirm the activation.
 
-   ![](images/Module3/BusinessProcessFlow34.png)  
-
 1. Close the process editor.
 
-1. Now, click on **Publish** button that is present at the top right corner of the window..
+1. Navigate back to the Device Procurement we created in the first task and click on **Save and Publish** button that is present at the top right corner of the window.
 
    ![](images/Module3/BusinessProcessFlow35.1.png)  
    
@@ -454,10 +376,8 @@ example, you might provide a view to show all device requests that are waiting t
 
 ### Task 1: Modify the form
 
-1. Expand **Dataverse** , select **Tables**. Search for **Device Order** Table and click to open.
+1. Select **Tables** from the left navigation pane and select **Device Order** Table.
 
-   ![](images/Module3/device_order_form1.png)  
-   
 1. Select the **Forms** that is present under **Data Experiences**.
 
 1. Select the **Information Main** form and click **Edit Form** > **Edit form in new tab.**
@@ -472,7 +392,6 @@ designer.
 
 1. Place the **Approver** Column above the Device Name Column.
 
-   ![](images/Module3/device_order_form3.png)  
    
 1. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the
     Device Name and Owner Columns.
@@ -493,13 +412,7 @@ designer.
 
    ![](images/Module3/device_order_form7.png)  
    
-1. Click **Save**.
-
-   ![](images/Module3/device_order_form8.png)  
-
-1. Click **Publish**.
-
-   ![](images/Module3/device_order_form9.png)  
+1. Click on **Save and Publish**.
    
 1. Close the **Form Designer** tab.
 
@@ -530,13 +443,7 @@ designer.
 
    ![](images/Module3/device_order_form15.png)  
    
-1. Click **Save.**
-
-   ![](images/Module3/device_order_form16.png)  
-
-1. **Publish** the View.
-
-   ![](images/Module3/device_order_form17.png)  
+1. Click **Save and Publish**.
 
 1. Click on the back button.
 

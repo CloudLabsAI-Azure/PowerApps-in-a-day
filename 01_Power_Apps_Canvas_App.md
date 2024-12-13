@@ -1,24 +1,18 @@
-## Power Platform App in a Day
+# Module 1: Power Apps Canvas App
 
-Module 1: Power Apps Canvas App
+### Estimated Duration: 60 Minutes
 
-### Hands-on Lab Step-by-Step
+## Overview
 
+This lab showcases how Microsoft Business Application Platform technologies enable citizen developers to build a customized device ordering solution. Using Power Apps, participants will design an interface to browse, filter, compare devices, and submit orders with custom forms. Power Automate will streamline approval workflows, sending automated requests to managers and allowing approvals directly via email. Microsoft Dataverse will securely store order data and enable admins to manage and view all orders. The solution ensures a seamless user experience with notifications for approvals/rejections and supports a tailored procurement process for device purchases.
 
-## Contents
+## Lab objectives
 
-- Power Apps Canvas App
-   - Lab Prerequisites
-   - Power Apps Canvas Studio Layout
-   - Goals for this lab
-   - Introduction: Device Ordering Scenario
-   - Solution overview
-   - Locale-specific difference in formulas
-   - Exercise 1: Create the app in Power Apps
-   - Exercise 2: Add Device Gallery and Connect to Data Source
-   - Exercise 3: Add Compare Screen
+In this lab, you will complete the following tasks:
 
-## Power Apps Canvas App
+- Exercise 1: Create the app in Power Apps
+- Exercise 2: Add Device Gallery and Connect to Data Source
+- Exercise 3: Add Compare Screen
 
 ### Lab Prerequisites
 
@@ -26,94 +20,9 @@ Follow the pre-requisite steps described in the **Lab Overview and Pre-requisite
 
 **IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
 
-### Power Apps Canvas Studio Layout
-
-**Power Apps Canvas Studio** is available as a web application **Make Power Apps** that you can use in any modern browser. Here is the URL to open the Power Apps portal `http://make.powerapps.com/`.
-
-Power Apps Studio is designed to have a user interface familiar to users of the Office suite. It has three panes and a ribbon
-that make app creation feel **like building a slide deck in PowerPoint.** Formulas are entered within a function bar that
-is like Excel. Studio components:
-
-1. **Left navigation pane** , which shows all the screens, data sources, and controls in your app
-2. **Middle pane** , which contains the app screen you are working on
-3. **Right-hand pane** , where you configure properties for controls, bind to data, create rules, and set additional advanced settings
-4. **Property** drop-down list, where you select the property for the selected control that you want to configure
-5. **Formula bar** , where you add formulas (like in Excel) that define the behavior of a selected control
-6. **Ribbon** , where you perform common actions including customizing design elements
-7. **Additional items,** here you will find your environment selection, app checker, and the preview app functionality.
-8. **Breadcrumbs** , you can navigate up the tree view.
-
-   ![](images/Module1/powerAppsCanvasApp1.png)  
-   
-### Goals for this lab
-
-After this lesson you will be able to: 
-
-- Create a Canvas App
-- Add screens to your app
-- Use formulas in your app
-- Navigate between screens
-- Customize galleries on your screens
-- Capture a collection from your app
-
-- The time to completethis lab is [60]minutes.
-
-### Introduction: Device Ordering Scenario
-
-Imagine an organization where every three years the employees go through a hardware refresh cycle. The organization
-would like to build a customized app that runs on the web and mobile devices, which will help streamline the device order
-and approval process. Moreover, they do not have traditional development resources available, such as a .NET, Xamarin or
-custom website developer, to create this application.
-
-### Solution overview
-
-The Microsoft business application platform technologies enable tech-savvy business users (aka “citizen developers”) to
-build a customized device ordering solution. The application user interface and interaction logic are built in Power Apps,
-the approval workflow is automated using Power Automate, and the device order data is stored in the Microsoft
-Dataverse.
-
-Key features of the solution:
-
-a. Ability to browse through a selection of devices and filter the list by manufacturer
-
-b. Select devices to compare
-
-c. View detailed specs for the selected devices on a second comparison screen
-
-d. Select a device to order
-
-e. Enter order details into a customized form, including an optional coupon image
-
-f. By default, have the approver set to the logged in user’s manager
-
-g. Capture additional default properties, such as the date of the request
-
-h. Store device orders in a secure and scalable database
-
-i. Enable an admin to view all device orders
-
-j. Follow a customized procurement process to place purchase orders for devices
-
-k. Send an automated approval request email when the order is placed
-
-l. Allow the approver to approve or reject an order and add comments without leaving their email inbox
-
-m. View all sent and received approval requests on the web and mobile
-
-n. Notify the user via email when their order is approved or rejected
-
-
-This document will walk through creating a Power Apps Canvas Studio basics to enable features (a) thru (d).
-
-When you are done with this first portion of the lab, your app will look like this:
-
-   ![](images/Module1/powerAppsCanvasApp2.png)  
-
-   ![](images/Module1/powerAppsCanvasApp3.png)  
-
 ## Exercise 1: Create the app in Power Apps
 
-**IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
+**IMPORTANT:** Do not proceed before going through the lab pre-requisite steps.
 
 
 ### Task 1: Sign-in to Power Apps web studio
@@ -123,33 +32,36 @@ When you are done with this first portion of the lab, your app will look like th
    ```
    http://powerapps.microsoft.com/
    ```
-   ![](images/Module1/powerAppsCanvasApp4.png)     
+      ![](images/pp6.png)     
+
 2. Login to the account using the below credentials.
 
     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
     * Azure Password: <inject key="AzureAdUserPassword"></inject>
     
-3. Before creating an app, let’s switch to the correct environment. Click the Environment drop-down in the top
-right of the screen to switch to the new environment. (If your environment doesn't show up, try logging out
-and logging in again)
+3. Click on the **Environment** drop down and select the **Contoso Test** environment whihch we created in the previous task.
 
-   ![](images/Module1/powerAppsCanvasApp5.png)  
+      ![](images/pp7.png)
+
+      > **Note:** If your environment doesn't show up, try logging out and logging in again
+
 ### Task 2: Create a new application
 
-1. Select **Home** from navigation and click **Blank app**.
+1. In the home page, click on the search bar and search for canvas app and select **Canvas app from blank** from the dropdown.
 
-   ![](images/Module1/powerAppsCanvasApp6.png)  
+      ![](images/pp8.png)
    
-1. From the **Blank canvas app** section, click **Create**.
+1. Click on **Create**.
  
-1. Input **Device Ordering App** in the App Name field. Select **Tablet** for Format. Click **Create**.
+1. Input **Device Ordering App (1)** in the App Name field, Select **Tablet (2)** for the Format and click on **Create (3)**.
 
-   ![](images/Module1/powerAppsCanvasApp7.png)
+      ![](images/pp9.png)
    
-1. If prompted, select your region, then click **Get started**.
- 
-1. Click **Skip** if you receive the **Welcome to Power Apps Studio** prompt.
+      > **Note:** If prompted, select your region, then click **Get started**.
 
+      > **Note:** It takes few minutes to complete. Refresh the page after few minutes.
+ 
+1. Click on **Skip** if you receive the **Welcome to Power Apps Studio** prompt.
 
 ### Task 3: Rename the screen
 
@@ -157,28 +69,20 @@ In this task, you will rename Screen1 to Main Screen.
 
 1. Select the screen by clicking the **Screen1** tile in the **Tree view**.
 
-2. Click **“...”** next to **Screen1** (or right click **Screen1** ) and select the **Rename** option.
+2. Click on the **Ellipsis (...)** beside the **Screen1** and select the **Rename** option.
 
-   ![](images/Module1/powerAppsCanvasApp8.png)  
+      ![](images/pp10.png)
+
 3. Change the name to **Main Screen.**
 
-   ![](images/Module1/powerAppsCanvasApp9.png)  
-   
-   > Note : You can also rename the screen by clicking on the screen name in the right pane and selecting the edit icon, or
-double clicking on it.
+      **_Tip_** _: It is a good practice to rename screens and controls as you create them, so they are easier to locate as you work with formulas that reference different controls. In this lab, you will be prompted to rename screens and some of the controls. For
+the others, you may rename them as you please on your own. It is important that you rename screens as prompted in this lab as future steps may rely on specific screen names._
 
-**_Tip_** _: It is a good practice to rename screens and controls as you create them, so they are easier to locate as you work with
-formulas that reference different controls. In this lab, you will be prompted to rename screens and some of the controls. For
-the others, you may rename them as you please on your own. It is important that you rename screens as prompted in this lab
-as future steps may rely on specific screen names._
-
-
-
-#### Task 4: Add a header containing the app name and logged in user’s name
+### Task 4: Add a header containing the app name and logged in user’s name
 
 1. With Main Screen selected, click on the **+ Insert** button.
 
-   ![](images/Module1/powerAppsCanvasApp10.png)  
+      ![](images/pp11.png)
    
 2. Drag **Text Label** from the Insert pane and drop it on the Main Screen.
 
@@ -208,13 +112,13 @@ as future steps may rely on specific screen names._
 
    ![](images/Module1/powerAppsCanvasApp16.png)  
    
-8. Select the **Home** tab, change the **Fill** to blue and the font **Color** to white.
+8. From the top, select the more options icon ,change the **Color** to White and the **Background Color** to Blue.
 
-   ![](images/Module1/powerAppsCanvasApp17.png)  
+      ![](images/pp15.png)
    
-9. Select the **Home** tab and change the **Font Size** to 24.
+9. Change the **Font Size** to 24.
 
-   ![](images/Module1/powerAppsCanvasApp18.png)  
+      ![](images/pp16.png)
  
     > **_Tip_** _: You can also use the formula bar above or the Advanced tab on the far right of the screen to enter specific values
 or formulas for any property on a control._
@@ -222,7 +126,7 @@ or formulas for any property on a control._
 10. Select **+ Insert** button and drag another **Text Label** to the Main Screen. You will use this label to display the
     logged in user’s name.
 
-    ![](images/Module1/powerAppsCanvasApp19.png)  
+      ![](images/pp17.png)
    
 11. Drag the label to the far-right side of the screen as shown and center the label vertically to be in line with the
     header text. As you center your label, purple alignment markers will appear.
@@ -233,7 +137,7 @@ or formulas for any property on a control._
 
 13. Change the value of the Text field to: "Hello, " & User().FullName
 
-    ![](images/Module1/powerAppsCanvasApp21.png)  
+      ![](images/pp18.png)
     > **_Note_** _: All functions in Power Apps are case sensitive. As you start typing “User” you will see a drop-down of available choices.
 It is a good idea to pick from the autocomplete options. You will also notice help text at the top showing the required
 parameters, in this case, it requires no input parameters._
@@ -258,41 +162,34 @@ In this task, you will save an initial version of the app. It is a good practice
 
 1. First, you will check if there are any errors. Click on then **App Checker** icon.
 
-   ![](images/Module1/powerAppsCanvasApp23.png)  
+      ![](images/pp19.png) 
    
 2. The **App Checker** pane will come to view. Errors will be displayed here if there are any.
 
 3. Close the **App Checker** pane.
-
-4. Click **File**.
-
-   ![](images/Module1/powerAppsCanvasApp24.png)  
    
-5. Select **Settings**.
+4. Click on **Settings**.
 
-    In the application settings page, you can:
+      ![](images/pp20.png)
+
+5. In the application settings page, you can:
 
      - Change your app name
      - Customize the app icon – choose a background color and icon
 
-   ![](images/Module1/powerAppsCanvasApp25.png)  
+      ![](images/pp21.png)
 
 6. Select the **Display** tab to view the available screen orientation and aspect ratio settings. For this app, we will leave
     it at the default setting of Landscape with 16:9 aspect ratio.
 
-   ![](images/Module1/powerAppsCanvasApp26.png)  
+      ![](images/pp22.png)
    
 7. Close the **Settings**.
 
-8. Click **File** again and select **Save** in the left navigation.
+8. Click on **Save** from the top right.
 
-9. Select **The cloud** and click **Save**.
+      ![](images/pp23.png)
 
-   ![](images/Module1/powerAppsCanvasApp27.png)  
-10. After the app is saved, click the **Back** arrow in the top left to get back to the studio.
-
-   ![](images/Module1/powerAppsCanvasApp28.png)  
-   
    > **_Tip:_** _In Power Apps when you save a version of your app the first version is published by default and available to everyone
 you share the app with. Subsequent saves are only visible to the app maker in the studio. You must explicitly publish it for all
 app users to get the update. For more details on saving, publishing and sharing apps, you can find the refernces below:
@@ -310,113 +207,69 @@ overview of the devices available.
 
 #### Task 1: Add device gallery
 
-1. With Main Screen selected, select the **Insert** tab.
+1. With Main Screen selected, select the **+ Insert** tab.
 
-2. Click **Gallery** and select **Horizontal**.
+2. Type **Horizontal** and select **Horizontal Gallery**.
 
-   ![](images/Module1/powerAppsEx2_1.png)  
+      ![](images/pp24.png)
    
    > This will add a gallery called **Gallery1** onto the screen. Notice the control tree view on the left displays this gallery with
-three controls within it – two labels and an image. A data pane will pop up on the right.
-
-      ![](images/Module1/powerAppsEx2_2.png)  
+three controls within it – two labels and an image. A data pane will pop up on the right.  
       
 3. Expand **Connectors** , then click **Show all connectors**.
 
-   ![](images/Module1/powerAppsEx2_3.png)  
+      ![](images/pp25.png)
+
 4. Select **Import from Excel.**
 
-   ![](images/Module1/powerAppsEx2_4.png)  
+      ![](images/pp26.png)
 
 5. In the File Open dialog, browse to the location `C:\LabFiles\PowerApps-in-a-day` inside the LabVM and select **Device-Order-Data.xlsx** to load it.
 
 6. Select both tables, **Devices** and **Manufacturers,** and click the **Connect** button. This will add both these tables as
     static data into the application.
     
-   ![](images/Module1/powerAppsEx2_6.png)  
-    > **Note** : In this lab, you will work with tables imported from a static data file and embedded as resources in the app. If you
+      ![](images/pp27.png)
+
+   > **Note** : In this lab, you will work with tables imported from a static data file and embedded as resources in the app. If you
 were building a real solution, the same tables would likely be stored in the cloud, such as in a SharePoint list, a SQL table,
 or a Microsoft Dataverse table.
 
-7. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
+8. Select **Gallery1** and notice the **Items** property is set to **Devices**. Notice the gallery is populated with data.
 
-   ![](images/Module1/powerAppsEx2_7.png)  
+      ![](images/pp50.png)
 
-8. Rename the **Gallery1** to **Device Gallery**.
+      > **Note:** The name of the device can differ.
 
-   ![](images/Module1/powerAppsEx2_11.png)  
-   
-**Tips on working with galleries:**
+9. Rename the **Gallery1** to **Device Gallery**.
 
+      ![](images/pp51.png)
 
-Galleries provide a powerful way to visualize tabular data in Power Apps. It is important to become familiar with
-customizing a gallery. Key components of a gallery: the gallery control, the template cell (first cell), and controls within the
-template cell.
+### Task 2: Arrange the device gallery
 
+1. Resize and reposition the gallery. You can drag and drop the gallery or use the gallery properties pane on the right.
 
-To select the **entire gallery** – click on the gallery in the tree view on the left or click on the second or third cell. Clicking
-any cell that is not the first cell of the gallery will select the entire gallery. Now you can specify properties that apply to the
-entire gallery, such as the Items property which is the data source, the gallery fill color, borders, etc.
-
-
-To customize how each item is displayed in the gallery, you will customize the template cell. Select the template by
-
-
-clicking in the first cell of the gallery or click on the pencil icon in the top left corner when the entire gallery is
-selected.
-
-
-You can now add, remove and customize the controls within the template cell. These changes will then repeat across each
-item or row in the table.
-
-
-Go ahead and select the device image in the template cell and **change its size**. Notice how the size of the image changes
-in all the cells.
-
-You can also test your gallery right on the canvas by holding down the Alt key to activate.
-
-You will customize the device gallery in subsequent steps.
-
-_Don’t worry about making the gallery pixel perfect, the purpose of this exercise is to get your app working with a good
-enough UX. You can always repeat these labs to practice your pixel perfect skills._
-
-
-#### Task 2: Arrange the device gallery
-
-1. Resize and reposition the gallery. You can drag and drop the gallery or use the gallery properties pane on the
-    right.
-
-   ![](images/Module1/devicegallery1.png)  
+      ![](images/pp52.png)
+ 
 2. Select the **Device Gallery** and click the **Edit (pencil) icon** in the top left to edit the template cell.
 
-   ![](images/Module1/devicegallery2.png) 
+      ![](images/pp53.png)
  
-3. Using the right drag control, resize the first box to be narrower. Notice that all the items get narrower and more
-    devices are visible on the screen.
-    
-   ![](images/Module1/devicegallery3.png) 
-   
-4. Narrow the image as well by **clicking on the image control and resizing it using the drag handles**. Make sure
-    the width of the image control is positioned within the template.
-
-   ![](images/Module1/devicegallery4.png) 
+3. Using the right drag control, resize the first box to be narrower. Notice that all the items get narrower and more devices are visible on the screen.
+       
+4. Narrow the image as well by **clicking on the image control and resizing it using the drag handles**. Make sure the width of the image control is positioned within the template. 
 
 5. Notice the gallery control on our screen automatically has scrolling capabilities.
 
-   ![](images/Module1/devicegallery5.png) 
+      ![](images/pp54.png)
    
 ### Task 3: Add gallery to show manufacturers
 
-
-In this task, you will add a second gallery that will list the various device manufacturers. This will be a single column
-vertical gallery down the left side of the screen, with each cell displaying the manufacturer’s logo image. This gallery will
-later be used as a filter for the device gallery created above.
-
 1. Select the **Main Screen**.
 
-2. Select the **Insert** tab on the ribbon and open the **Gallery** drop-down, then select **Vertical.**
+2. Select the **Insert (1)** tab, **search (2)** for Vertical and click on **Vertical Gallery (3)**
 
-   ![](images/Module1/devicegallery6.png) 
+      ![](images/pp55.png)
 
 3. Select **Manufacturers** for the data source.
 
@@ -426,37 +279,30 @@ later be used as a filter for the device gallery created above.
 
    ![](images/Module1/devicegallery8.png) 
  
-5. Move this new gallery so that it is left aligned with the left edge of the screen and top aligned with the top of the
-    device gallery. Your two galleries should like the image below.
+5. Move this new gallery so that it is left aligned with the left edge of the screen and top aligned with the top of the device gallery. Your two galleries should like the image below.
 
-   ![](images/Module1/devicegallery9.png) 
+      ![](images/pp56.png)
 
-6. Select **Manufacturer Gallery** (not just the template cell), in the **Properties** tab on the right, click **Layout**.
+6. Select **Manufacturer Gallery (1)** (not just the template cell), in the **Properties** tab on the right, click **Layout (2)**. Scroll down to the **Gallery** section and select **2 Columns (3)**.
    
-   ![](images/Module1/devicegallery10.png) 
-   
-7. Scroll down to the **Gallery** section and select **2 Columns**.
-
-    ![](images/Module1/devicegallery11.png) 
+      ![](images/pp57.png)
  
-8. Change the **Wrap Count** from **2** to **1**. This will change it to a single column gallery.
+7. Change the **Wrap Count** from **2** to **1**. This will change it to a single column gallery.
 
    ![](images/Module1/devicegallery12.png) 
 
-9. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle
+8. Select the **image control** within the gallery (the Edit Pencil icon) and **reduce its height** by dragging the middle
     bottom drag control upwards. If you select the first image, the image size will reduce whereas the template size
     will still be expanded.
 
-10. Reduce **the height of the template cell** until three or four images occupy the gallery without scrolling. We
+9. Reduce **the height of the template cell** until three or four images occupy the gallery without scrolling. We
     essentially want the image to occupy the entire cell.
 
     ![](images/Module1/devicegallery13.png) 
    
-11. Click **File** and **Save** the application.
-
-12. Click on the **Back** arrow.
-
-#### Task 4: Connect Manufacturer Gallery to manufacturers table
+10. Click on **Save** from the top right.
+    
+### Task 4: Connect Manufacturer Gallery to manufacturers table
 
 Earlier you connected the data source using the Data tab in the right pane. You can also connect to data via the formula
 bar.
@@ -478,8 +324,6 @@ bar.
     > Note: Autosuggest offers you valid options for authoring formulas. See in the image below, we want to define the
 image to display from our data. Once we type “ThisItem.” our Autosuggest tells us that we have three valid options
 for this formula. This can help guide you to making valid formulas.
-
-    ![](images/Module1/devicegallery16.png) 
     
 4. Select the first (top-most) image and using the **Properties** pane on the right, set the **Image position** property to
     **Fit**.
@@ -490,9 +334,8 @@ for this formula. This can help guide you to making valid formulas.
     drag handles to first reduce the height of the image and subsequently reduce the height of the template cell.
     Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.
    
-   ![](images/Module1/devicegallery18.png) 
    
-####  Task 5: Highlight the selected item in the gallery
+###  Task 5: Highlight the selected item in the gallery
 
 In this task, you will use the **TemplateFill** property of the manufacturer gallery to specify a highlight color for the selected
 item
@@ -523,40 +366,8 @@ color of header label, the fill color of the selected item in the gallery will a
 Alternatively, you could click the Play ( ) button to enter preview mode, and to exit this you would hit the X in
 the upper right corner or use the Esc key.
 
-#### Task 6: Filter the devices based on selected manufacturer
 
-In this task, you will use the Filter() function to filter the items in the **Device Gallery** to only display devices that match the
-selected item in the **Manufacturer Gallery**.
-
-1. Select the **Device Gallery**. With the **Items** property selected, enter the following expression in the formula bar:
-
-   ```
-   Filter(Devices, ManufacturerID = 'Manufacturer Gallery'.Selected.ManufacturerID)
-   ```
-   **for alternate/European locales:**
-   ```
-   Filter(Devices; ManufacturerID = ‘Manufacturer Gallery’.Selected.ManufacturerID)
-   ```
-
-   This will filter the device gallery to only display items that match the selected manufacturer based on
-ManufacturerID.
-
-   ![](images/Module1/devicegallery20.png) 
-   
-2. Select a different item in the manufacturer gallery on the left, and you will notice the device gallery will update
-    accordingly. Note: In some cases, the first few items won’t show the selection, try selecting the 5th or 6th item if
-    that occurs.
-
-   ![](images/Module1/devicegallery21.png) 
-   
-**Note:** If you get an error when entering the Filter command, check the name of the manufacturer gallery. The name in
-the filter command must match the name of your gallery.
-
- You can find more details on the Filter() function here: `https://powerapps.microsoft.com/tutorials/function-filter-lookup/`
-
- You can find a complete set of expressions here : `https://powerapps.microsoft.com/tutorials/formula-reference/`
-
-#### Task 7: Configure text labels in the device gallery
+### Task 6: Configure text labels in the device gallery
 
 1. Select the subtitle in the **Device Gallery**. It may already have the default value set to the **DeviceType** property
     (e.g. Tablet).
@@ -597,33 +408,7 @@ manually change it to [$-en-US]:
 
 - Change font to **Segoe UI**.
 
-#### Task 8: Conditional formation to highlight devices above $1,000
-
-We can make it easy to spot devices that cost more than $1,000, by displaying the price in Red.
-
-1. Select the label in the template cell that displays the price and set the **Color** to
-
-   ```
-   If(ThisItem.Price>1000,OrangeRed,Gray)
-   ```
-   **or for alternate/European locales:** 
-   ```
-   If(ThisItem.Price>1000;OrangeRed;Gray)
-   ```
- 
-    ![](images/Module1/devicegallery25.png) 
-    
-    > **_Note_** _: As you are typing this formula notice that the autosuggest shows a choice of matching colors. Power Apps comes with
-a set of standard colors that you can easily reference in any property that accepts a color value. You can also set specific RGB
-values._
-
-    You can find a full list of Color functions and colors here: `https://powerapps.microsoft.com/tutorials/function-colors/`
-
-2. Click **File** and select **Save**.
-
-3. Click the **back arrow**.
-
-   ![](images/Module1/devicegallery26.png) 
+5. Click on **Save**.
 
 #### Task 9: Add a checkbox to add a device to Compare list
 

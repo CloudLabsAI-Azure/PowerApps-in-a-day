@@ -1,39 +1,20 @@
-# Power Platform
+# Module 2: Microsoft Dataverse
 
-# App in a Day
+## Overview
 
-Module 2: Microsoft Dataverse
+The Microsoft Dataverse adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision.
+In this module, you will be using Microsoft Dataverse to model and store the data from the device ordering canvas app
+that you built in module 1. In the next module, you will be building a model-driven application using the same data that
+will be used by the back-office staff to process the device orders. These apps that you build on Microsoft Dataverse use
+the same technology framework (Microsoft Dataverse) that Microsoft Dynamics 365 apps are built-on.
 
-### Hands-on Lab Step-by-Step
+## Lab objectives
 
+In this lab, you will complete the following tasks:
 
-- Microsoft Dataverse Contents
-   - Lab Prerequisites
-   - Before you begin
-   - Overview
-   - Goals for this lab
 - Exercise 1: Exploring Microsoft Dataverse
-   - Task 1: Explore standard Tables
-   - Task 2: Explore Standard Choices
 - Exercise 2: Custom Tables and Columns
-   - Task 1: Create a custom table
-   - Task 2: Create custom columns
-   - Task 3: Create a calculated column
-   - Task 4: Create a business rule
 - Exercise 3: Connect the data from the Canvas App
-   - Task 1: Add Microsoft Dataverse table as a data source to the app
-   - Task 2: Create the edit form
-   - Task 3: Configure the title column
-   - Task 4: Configure the price Field
-   - Task 5: Configure the Approval Field
-   - Task 6: Configure the Comment Field
-   - Task 7: Configure the Requested By Field
-   - Task 8: Configure the requested date Field
-   - Task 9: Add a button to submit the form
-   - Task 10: Test the form
-   - Task 11: Verify a new item was added to the Device Order table
-   - Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
-
 
 Microsoft Dataverse
 
@@ -46,44 +27,6 @@ as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)*
 If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version
 of the lab package in the **C:\LabFiles\PowerApps-in-a-day\Completed for students\Module 1** folder. Follow the instructions in the document **Importing Module 1
 Completed** before proceeding with this module.
-
-### Before you begin
-
-You must be connected to the internet.
-
-
-1. **Have a Test Environment with permission to create a Microsoft Dataverse database:** You should have
-    gone through the steps to create a new environment using the Admin center. In this lab, you will create a
-    database in this environment, if you haven’t already created one.
-2. **Sign-in to Power Apps:** Go to Power Apps and **sign in** with the same account you used to complete the first
-    lab. Make sure you switch to the environment where you created the app.
-
-### Overview
-
-The Microsoft Dataverse adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision.
-In this module, you will be using Microsoft Dataverse to model and store the data from the device ordering canvas app
-that you built in module 1. In the next module, you will be building a model-driven application using the same data that
-will be used by the back-office staff to process the device orders. These apps that you build on Microsoft Dataverse use
-the same technology framework (Microsoft Dataverse) that Microsoft Dynamics 365 apps are built-on.
-
-
-
-### Goals for this lab
-
-
-After this lesson you will be able to:
-
-
-- Provision a Microsoft Dataverse^ database
-- Create a custom table and add custom columns to it
-- Use the Power Apps Form control to populate the table
-- View the table^ data^
-- Create a calculated column^
-- Implement a server-side business rule
-
-
-The time to complete this lab is 60 minutes.
-
 
 ## Exercise 1: Exploring Microsoft Dataverse
 
@@ -111,16 +54,13 @@ labs.
 ```
 https://make.powerapps.com/
 ```
-   ![](./images/Module2/image5.png)
 
-1. In the left pane, expand **Dataverse** and select **Tables**.
-
-   ![](./images/Module2/image6.png)
+1. Select **Tables** from the left pane.
 
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
     
-    ![](./images/Module2/image7.png)
+    ![](./images/pp27.png)
 
     > For detailed documentation on Microsoft Dataverse Tables, visit `https://docs.microsoft.com/en-
 us/powerapps/developer/common-data-service/reference/about-entity-reference`
@@ -136,7 +76,7 @@ helps to ensure data consistency and allows for built-in support for multi-langu
 
 To have a detailed view of all the available columns for the table, select **Columns** under **Schema**.
 
-  ![](./images/Module2/m2s1.png)
+   ![](./images/pp40.png)
   
   ![](./images/Module2/m2s26.png)
 
@@ -257,10 +197,9 @@ having to jump into a specific Canvas or Model-driven app.
 Just like standard Tables, the Microsoft Dataverse includes a set of standard **Choices**. You can also create custom **Choices**.
 Later in this lab, we will create a custom **Choice** called **ApprovalStatus** to set the approval status of a device order.
 
-1. Select **Choices** from underneath the expanded **Dataverse.**
+1. From the left navigation pane, click on **... More** and select **Choices**.
 
-   ![](./images/Module2/image18.png)
-
+    ![](./images/pp29.png)
 
 2. Examine the standard **Choices.**
 
@@ -276,94 +215,69 @@ requests. You will also create a server-side Business Rule that will default the
 
 In this task, you will create a custom table to store device order requests.
 
-1. Select **Tables** in the left pane and click **New Table** in the upper left corner of the page.
+1. Select **Tables** in the left pane and click on **New Table**. Select **Table (advanced properties)** from the dropdown.
 
-   ![](./images/Module2/image20.png)
+    ![](./images/pp30.png)
    
-2. Enter **Device Order** for Display Name. The columns for Name and Plural name display name will automatically
-    populate based on your entry. These are editable in case you need to make any changes. The plural name is used
-    by the system by default anytime a set of the Rows are shown. Check the **Enable attachments** since this will allow
-    creating notes on the device order.
+2. Enter **Device Order** for Display Name.
 
-3. Click on Primary column and Change the **Primary Column Display Name** to **Device Name**. The primary attribute defaults to being named
-    Name, for some scenarios that might not be the best label and you can customize it if needed. The primary
-    attribute however is always a Text column, that is not changeable.
+3. Click on Primary column and Change the **Primary Column Display Name** to **Device Name**.
     
    ![](./images/Module2/m2s18.png)
 
 4. Click on **Save**.
-
-   ![](./images/Module2/m2s19.png)
-
-5. If prompted, approve the option in this dialog.
-
-   ![](./images/Module2/image22.png)
 
 ### Task 2: Create custom columns
 
 In this task, you will create custom columns for the Device Order table. It may take a few minutes for your new Device
 Order table to provision. Begin these steps once it has finished.
 
-1. Click on **+ New** and select the **Columns** to add columns to your custom table.
-   
-   ![](./images/Module2/m2s20.png)
+1. Click on **+ New** and select **Columns**.
 
-2. Enter **Price** for **Display Name** , enter **Device Price** for Description, select **Currency** for **Data Type** , make the column **Required** and **Searchable** and
-    click **Advanced Options**.
-
-   > Note : Currency is a special data type. For each currency column you add, another currency column is added with
-the prefix “_Base” on the name. This column stores the calculation of the value of the currency column you added
-and the base currency. For additional information on using the Currency column, see here.
-
+2. Provide the following details and click on **Save**:
+   - Display Name: **Price**
+   - Description: **Device Price** 
+   - Data Type: **Currency** 
+   - Required: **Business Required**
+   - Ensure the checkbox for **Searchable** is checked
+   - Click on **Advanced Options**
+   - Minimum Value: **0**
+   - Maximum value: **5000**
 
    ![](./images/Module2/m2s21.png)
 
-3. Enter **0** for **Minimum Value** , **5000** for **Maximum Value** , and click on **Save**.
-
    ![](./images/Module2/m2s22.png)
 
-4. Click **Add Column** again.
+5. Click on **Add Column** again.
 
-5. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
+6. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
     **Searchable** and click on **Save**.
    
    ![](./images/Module2/m2s23.png)
 
-6. Now repeat the Add Column process and add the following columns
+7. Now repeat the Add Column process and add the following columns
 
-    |    Display Name     |       Name        |      Type      |
-    | ------------------- | ----------------- | -------------- |
-    |    Request Date     |  RequestDate      |    Date Only   |
-    |     Approver        |    Approver       |      Email     |
-    |     Comments        |    Comments       | Multiline Text |
-    | Estimated Ship Date | EstimatedShipDate |    Date Only   |
-    |    Approved Date    |   Approved Date   |    Date Only   |
+    |    Display Name     |       Type      |
+    | ------------------- | ----------------- |
+    |    Request Date     |   Date Only   |
+    |     Approver        |   Email       |
+    |     Comments        |   Plain Text  |
+    | Estimated Ship Date |   Date Only   |
+    |    Approved Date    |   Date Only   |
 
-7. Now we are going to create the **Approval Choice**. We are adding this as a Choice (as opposed to a two option)
-    because it is likely in the future there will be more than Yes/No for users to choose from. Click **Add Column**.
+8. Click on **Add Column** again.
 
-8. Enter **Approval Status** for **Display Name** , **ApprovalStatus** for **Name** , select **Choice** for **Data Type** , and select
-    **New Choice** for **Choice**.
+9. Enter **Approval Status (1)** for **Display Name** , select **Choice (2)** for **Data Type** , scroll down and select **New Choice** under **Sync this choice with**.
   
-   ![](./images/Module2/image27.png)
+    ![](./images/pp34.png)
  
-9. Change the **New Choice** label to **Approve**
+10. Inside the New Choice, provide the name as **Approval Status (1)**. Enter two choices, provide the names as **Approve and Reject (2)** and click on **Save (3)**. 
 
-10. Click **Add new item**.
+    ![](./images/pp36.png)
 
-    ![](./images/Module2/image28.png)
+11. Back in the New Column tab, the new choice **Approval Status (3)** will be selected under **Sync this choice with** and click on **Save (4)**.
 
-11. Enter **Reject** and click **Save**.
-
-    ![](./images/Module2/image29.png)
-
-12. Click **Done**.
-
-    ![](./images/Module2/image30.png)
-
-13. Click **Save Table**.
-
-    ![](./images/Module2/image31.png)
+    ![](./images/pp35.png)
 
 ### Task 3: Create a calculated column
 
@@ -374,13 +288,9 @@ the formula used in the calculation.
 
 1. In the upper left corner of the screen, click on **Add Column** to add columns to your custom table.
 
-1. Enter **Department Contribution** for **Display Name** , **Currency** for **Data Type** , select **Calculation** for **Behaviour** field.
+1. Enter **Department Contribution (1)** for **Display Name** , **Currency (2)** for **Data Type** , select **Calculated (3)** for **Behaviour** field and click on **Save (4)**.
 
-   ![](./images/Module2/image32.1.png)
-
-1. Click **Save**.
-
-   ![](./images/Module2/image32.2.png)
+    ![](./images/pp37.png)
 
 1. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
 
@@ -390,7 +300,7 @@ the formula used in the calculation.
 
    ![](./images/Module2/image34.1.png)
    
-1. You will bepresented with a new pop-up to add actions and conditions. Now, click **Add Action**.
+1. You will be presented with a new pop-up to add actions and conditions. Now, click **Add Action**.
 
    ![](./images/Module2/image35.png)
 
@@ -408,16 +318,7 @@ the formula used in the calculation.
 
 1. Click **Done**.
 
-   > Note on currency columns: You might notice that there are two Department Contribution columns one with
-(base) next to it. Currency columns in Microsoft Dataverse store the base currency value (this is the configured
-default currency for the environment) and the transaction currency (this can be selected on a Row by Row basis)
-to allow support for multi-currency transactions. Generally, you will want to make sure to pick the column without
-the (base) in the name. The (base) value is commonly used in reporting where you want to normalize multiple
-currencies to allow reporting on them in the base currency value.
-
-
     ![](./images/Module2/image39.png)
-
 
 ### Task 4: Create a business rule
 
