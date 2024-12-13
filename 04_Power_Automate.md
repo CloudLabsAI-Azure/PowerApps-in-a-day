@@ -407,5 +407,9 @@ sent from any app or flow._
 
 1. You can also use the Approvals Center to view all requests that you have sent and are **Awaiting response** from
     the approver. Select the **Sent requests** tab at the top to view all requests that you have sent.
+
+## Summary
+
+In this exercise, you have create an Approval Request Flow, created conditional Logic, tested the cloud flow ,updated the Flow and ran it.
    
 ### You have successfully completed the lab
