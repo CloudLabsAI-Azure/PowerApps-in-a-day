@@ -14,16 +14,9 @@ In this lab, you will complete the following tasks:
 - Exercise 2: Add Device Gallery and Connect to Data Source
 - Exercise 3: Add Compare Screen
 
-### Lab Prerequisites
-
-Follow the pre-requisite steps described in the **Lab Overview and Pre-requisites** (Page 1 of lab guide). Before beginning this lab, confirm that you have provisioned an environment where you will save your apps, flows and database entities.
-
-**IMPORTANT:** Do not proceed before going through the lab pre-requisite steps
-
 ## Exercise 1: Create the app in Power Apps
 
 **IMPORTANT:** Do not proceed before going through the lab pre-requisite steps.
-
 
 ### Task 1: Sign-in to Power Apps web studio
 
@@ -75,9 +68,6 @@ In this task, you will rename Screen1 to Main Screen.
 
 3. Change the name to **Main Screen.**
 
-      **_Tip_** _: It is a good practice to rename screens and controls as you create them, so they are easier to locate as you work with formulas that reference different controls. In this lab, you will be prompted to rename screens and some of the controls. For
-the others, you may rename them as you please on your own. It is important that you rename screens as prompted in this lab as future steps may rely on specific screen names._
-
 ### Task 4: Add a header containing the app name and logged in user’s name
 
 1. With Main Screen selected, click on the **+ Insert** button.
@@ -115,9 +105,6 @@ the others, you may rename them as you please on your own. It is important that 
 9. Change the **Font Size** to 24.
 
       ![](images/pp16.png)
- 
-    > **_Tip_** _: You can also use the formula bar above or the Advanced tab on the far right of the screen to enter specific values
-or formulas for any property on a control._
 
 10. Select **+ Insert** button and drag another **Text Label** to the Main Screen. You will use this label to display the
     logged in user’s name.
@@ -134,9 +121,6 @@ or formulas for any property on a control._
 13. Change the value of the Text field to: "Hello, " & User().FullName
 
       ![](images/pp18.png)
-    > **_Note_** _: All functions in Power Apps are case sensitive. As you start typing “User” you will see a drop-down of available choices.
-It is a good idea to pick from the autocomplete options. You will also notice help text at the top showing the required
-parameters, in this case, it requires no input parameters._
 
 14. Right-align the text in the label by selecting the **Align** and **Align Right** option in the **Home** tab on the ribbon.
 
@@ -148,11 +132,8 @@ parameters, in this case, it requires no input parameters._
     side.
 
     ![](images/Module1/powerAppsCanvasApp22.png)  
-    > **Note:** The **User()** function in Power Apps allows you to retrieve the Email, Full Name, and Picture for the currently logged
-in user. App users will always be logged in with their business or school account (Azure Active Directory (AAD) credentials),
-so this information will always be available for any Power Apps app.
 
-#### Task 5: Save the Application
+### Task 5: Save the Application
 
 In this task, you will save an initial version of the app. It is a good practice to keep saving app updates at regular intervals.
 
@@ -186,22 +167,12 @@ In this task, you will save an initial version of the app. It is a good practice
 
       ![](images/pp23.png)
 
-   > **_Tip:_** _In Power Apps when you save a version of your app the first version is published by default and available to everyone
-you share the app with. Subsequent saves are only visible to the app maker in the studio. You must explicitly publish it for all
-app users to get the update. For more details on saving, publishing and sharing apps, you can find the refernces below:
-
- Publish App: `https://powerapps.microsoft.com/tutorials/save-publish-app/`
-
- Share App: `https://powerapps.microsoft.com/tutorials/share-app/`
-
- Save and Publish App: `https://powerapps.microsoft.com/blog/saveandpublish/`
-
-### Exercise 2: Add Device Gallery and Connect to Data Source
+## Exercise 2: Add Device Gallery and Connect to Data Source
 
 In this exercise, you will add a gallery of all available devices making it easy for users to browse the list and get a quick
 overview of the devices available.
 
-#### Task 1: Add device gallery
+### Task 1: Add device gallery
 
 1. With Main Screen selected, select the **+ Insert** tab.
 
@@ -209,9 +180,6 @@ overview of the devices available.
 
       ![](images/pp24.png)
    
-   > This will add a gallery called **Gallery1** onto the screen. Notice the control tree view on the left displays this gallery with
-three controls within it – two labels and an image. A data pane will pop up on the right.  
-      
 3. Expand **Connectors** , then click **Show all connectors**.
 
       ![](images/pp25.png)
@@ -223,7 +191,7 @@ three controls within it – two labels and an image. A data pane will pop up on
 5. In the File Open dialog, browse to the location `C:\LabFiles\PowerApps-in-a-day` inside the LabVM and select **Device-Order-Data.xlsx** to load it.
 
 6. Select both tables, **Devices** and **Manufacturers,** and click the **Connect** button. This will add both these tables as
-    static data into the application.
+static data into the application.
     
       ![](images/pp27.png)
 
@@ -318,9 +286,6 @@ bar.
 5. Reduce the height of the template cell such that all nine manufacturers fit without a scrollbar. To do this, use the drag handles to first reduce the height of the image and subsequently reduce the height of the template cell. Note again that to select the template cell, select the entire gallery and click on the pencil icon in the top left.
    
 ###  Task 5: Highlight the selected item in the gallery
-
-In this task, you will use the **TemplateFill** property of the manufacturer gallery to specify a highlight color for the selected
-item
 
 1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to conditionally set the fill color of the selected cell to light blue:
    
@@ -434,7 +399,6 @@ US]. If you see an error here, it might be because your locale is not yet suppor
 The second screen is where users compare the selected devices and then choose the one they wish to submit for approval.
 
 This screen will include:
-
 
 - A back button for navigation back to the main screen.
 
