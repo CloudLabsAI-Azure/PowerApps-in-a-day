@@ -1,5 +1,7 @@
 # Pre- Requisites
 
+### Estimated Duration: 10 mins
+
 ## Overview
 
 This beginner-level lab provides hands-on experience with Microsoft Power Platform technologies—Power Apps, Power Automate, and Microsoft Dataverse. Designed for those new to the platform, the lab guides you step-by-step to build a device ordering solution in a day. You will explore Power Apps to create Canvas and Model-driven apps, use Power Automate to design intuitive automated workflows, and leverage Microsoft Dataverse for compliant, scalable data management. Complete all pre-requisites before starting, as the cloud-based Power Platform allows you to complete the lab remotely. 
