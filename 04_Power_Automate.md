@@ -27,17 +27,6 @@ starting with a blank flow.
    
 ### Task 1 : Configure the trigger
 
-The first thing you will need to configure is the trigger, i.e. when should this flow run. A flow can be triggered:
-
-   1. manually from a Power Apps app,
-   1. manually from a flow button,
-   1. on a fixed schedule, or
-   1. when an event occurs, such as a new item being added to a table, a new email arriving in a user’s inbox, a
-new tweet being posted that meets certain conditions, etc.
-
-In this scenario, we will configure the flow to trigger when a **new item is added** to the **Device Order Table** table in the
-**Microsoft Dataverse**
-
 1. Select **Flows** and click on **Automated – cloud flow**.
 
 1. Enter the below name for your flow.
