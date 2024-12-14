@@ -203,8 +203,6 @@ or a Microsoft Dataverse table.
 
       ![](images/pp50-1.png)
 
-      > **Note:** The name of the device can differ.
-
 9. Rename the **Gallery1** to **Device Gallery**.
 
       ![](images/pp51.png)
