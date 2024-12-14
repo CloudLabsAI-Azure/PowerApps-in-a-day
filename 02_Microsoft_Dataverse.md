@@ -400,7 +400,7 @@ table and add a form to submit device approval requests.
 
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.
 
-      ![](images/pp105.png)
+      ![](images/pp105-1.png)
 
 3. Select the **Compare Screen**. You should now have the selected devices.
 
@@ -444,7 +444,7 @@ selecting the correct control. To move it make sure you select the Form and not 
 
 13. Select the **OnVisible** property of the screen, enter: **NewForm(Form1)**
 
-    ![](./images/Module2/image69.png)
+    ![](./images/pp909.png)
 
 ### Task 3: Configure the title column
 
@@ -595,7 +595,7 @@ Let’s set the Request Date to be today’s date.
 8. The button should be enabled only if a device is selected. To do this, change the button’s **DisplayMode** property
     to: If(!IsBlank('Compare List Gallery'.Selected), DisplayMode.Edit, DisplayMode.Disabled)
    
-   ![](./images/Module2/image97-1.png)
+   ![](./images/image97-1.png)
    
    > Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
 check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.
@@ -603,7 +603,7 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property
     to SubmitForm(Form1).
 
-   ![](./images/Module2/image98-1.png)
+   ![](./images/image98-1.png)
 
     > Info: When the button is pressed, the form data will be submitted to the Microsoft Dataverse.
 
