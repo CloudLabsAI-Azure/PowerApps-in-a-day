@@ -87,7 +87,7 @@ In this task, you will rename Screen1 to Main Screen.
 5. Select **Text** from the property drop-down list and enter **"Device Ordering App"** in the formula bar. You can also
    type directly in the label.
 
-   ![](images/Module1/powerAppsCanvasApp14-1.png)  
+   ![](images/powerAppsCanvasApp14-1.png)  
    
 6. Resize the label such that the width is the width of the screen and the height is a reasonable size for a header. You
    can resize the label by either dragging the corners of the label or adjusting the size in the Right Pane.
