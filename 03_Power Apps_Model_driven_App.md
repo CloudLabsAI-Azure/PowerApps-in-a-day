@@ -160,7 +160,7 @@ Table you created in the Microsoft Dataverse in Lab 2.
 
 1. Click on the **small +** under Data Step #1.
 
-   ![](images/Module3/BusinessProcessFlow8-1.png)  
+   ![](images/BusinessProcessFlow8-1.png)  
 
 1. Select **Approval Status** for Data Field and click **Apply**.
 
@@ -327,30 +327,57 @@ In this exercise, we are going to test the application you just built.
 
 ### Task 1: Test the application
 
-1. Select **Apps** , select the Device Procurement application and click **Play**.
+1. Select **Apps** , select the Device Ordering application you created in module 2, and click on **Play**. 
+
+1. Select the device which is priced above $1K and click on **Compare**.
+
+     ![](images/pp905.png)  
+
+1. Ensure the Approver mail is set to the ODL User Email and click on **Submit the request**.
+
+1. Navigate back to **Apps** , select the Device Procurement application and click on **Play**.
 
       ![](images/pp230.png) 
 
-1. The application should start. The **Active Device Orders** view should load.
+1. Click on **Acer-Acer-Aspire U** and you will observe the **Captial Approved** option is present.
 
-     > **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
+    ![](images/pp2001.png)  
 
-      ![](images/pp1001.png)  
+1. Click on the icon to extend the screen and choose **Yes** from the dropdown.
 
-1. Start a new web browser instance and navigate Power Apps. Do not close the Model-driven application.
+    ![](images/pp2004.png)  
 
-1. Select **Apps** , select the Device Ordering application you created in module 2, and click on **Play**. 
+1. Click on the **Price (1)**, add the **Estimated Ship Date and the Supplier Order ID (2)** of your choice and click on **Save & close (3)**.
 
-1. Select the first device and click on **Compare**.
+    ![](images/pp2005.png)  
 
-   ![](images/pp905.png)  
+1. Open the order again and you will observe the option to go to **Next Stage** is visible. Click on it and click on it again when prompted.
 
-1. Click on **Submit**.
-     
-1. Go back to the Model-driven application you created and refresh the view. Sort the orders by **Created On** column,
-    and you should see the two devices you ordered using the Power Apps Canvas App.
-    
-   ![](images/Module3/apptest9.png)      
+    ![](images/pp2007.png) 
+
+1. Click on **Finish**. The order is placed when the process is finished!
+
+    ![](images/pp2009.png) 
+
+      > **Note:** You will receive an e-mail to the odl user mail after few minutes once the order has been placed.
+
+      ![](images/pp2010.png) 
+
+1. Navigate back to **Device Ordering application** and select the second application and click on **Compare**.
+
+    ![](images/pp2000.png) 
+
+1. Ensure the Approver mail is set to the ODL User Email and click on **Submit the request**.
+
+1. Navigate back to **Apps** , select the Device Procurement application and click on **Play**.
+
+1. Click on **Asus-Asus-K55VD** and you will observe the **Captial Approved** option is present.
+
+    ![](images/pp2002.png) 
+
+      > **Note:** This is due to the condition we set earlier in our flow.
+
+1. Repeat the same steps if you would like to place an order again.  
 
 ## Summary
 
