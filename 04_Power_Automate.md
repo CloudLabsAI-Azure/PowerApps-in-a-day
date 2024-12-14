@@ -1,5 +1,7 @@
 # Module 4 : Power Automate
 
+### Estimated Duration: 110 minutes
+
 ## Overview
 
 This lab provides an in-depth exploration of how Microsoft Business Application Platform technologies empower citizen developers to design and implement a customized device ordering solution. Participants will leverage Power Apps to build intuitive and responsive interfaces, use Power Automate to streamline and automate workflows, and integrate Microsoft Dataverse to manage and centralize data effectively. Through hands-on exercises, the lab emphasizes practical application and collaboration, showcasing how these tools enable rapid and efficient solution development without requiring extensive coding expertise.
@@ -405,5 +407,9 @@ sent from any app or flow._
 
 1. You can also use the Approvals Center to view all requests that you have sent and are **Awaiting response** from
     the approver. Select the **Sent requests** tab at the top to view all requests that you have sent.
+
+## Summary
+
+In this exercise, you have create an Approval Request Flow, created conditional Logic, tested the cloud flow ,updated the Flow and ran it.
    
 ### You have successfully completed the lab

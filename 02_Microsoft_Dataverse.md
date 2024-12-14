@@ -1,5 +1,7 @@
 # Module 2: Microsoft Dataverse
 
+### Estimated Duration: 120 minutes
+
 ## Overview
 
 The Microsoft Dataverse adds data storage and modeling capabilities to Power Apps that is scalable and easy to provision.
@@ -15,18 +17,6 @@ In this lab, you will complete the following tasks:
 - Exercise 1: Exploring Microsoft Dataverse
 - Exercise 2: Custom Tables and Columns
 - Exercise 3: Connect the data from the Canvas App
-
-Microsoft Dataverse
-
-### Lab Prerequisites
-
-This is the second lab in a series covering Power Apps Canvas Apps, Microsoft Dataverse, Power Apps Model-driven Apps,
-and Power Automate. The assumption is that you have successfully completed the initial part of setting up an environment
-as described in the **Lab Overview and Pre-requisites** **(Page 1 of lab guide)**.
-
-If you have not completed building the Power Apps Canvas App in Module 1, you can use the partially completed version
-of the lab package in the **C:\LabFiles\PowerApps-in-a-day\Completed for students\Module 1** folder. Follow the instructions in the document **Importing Module 1
-Completed** before proceeding with this module.
 
 ## Exercise 1: Exploring Microsoft Dataverse
 
@@ -46,11 +36,6 @@ CDM here: `https://docs.microsoft.com/powerapps/common-data-model/overview`.
 
 ### Task 1: Explore standard Tables
 
-In this task, you will explore Microsoft Dataverse standard Tables.
-
-Before beginning the exercises, navigate to Make Power Apps Portal and confirm that you are in the desired environment for the
-labs.
-
 ```
 https://make.powerapps.com/
 ```
@@ -60,10 +45,7 @@ https://make.powerapps.com/
 2. This will bring up the list of Tables in this database instance. Click on a few of the standard Tables (for example,
     **Account** ) to get familiar with some of the features of an table.
     
-    ![](./images/pp27.png)
-
-    > For detailed documentation on Microsoft Dataverse Tables, visit `https://docs.microsoft.com/en-
-us/powerapps/developer/common-data-service/reference/about-entity-reference`
+    ![](./images/pp700.png)
 
 **Columns** :
 
@@ -81,7 +63,6 @@ To have a detailed view of all the available columns for the table, select **Col
   ![](./images/Module2/m2s26.png)
 
 You can find a list of Microsoft Dataverse supported data types here: `https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/types-of-fields`
-
 
 **Relationships:**
 
@@ -248,7 +229,7 @@ Order table to provision. Begin these steps once it has finished.
 
    ![](./images/Module2/m2s22.png)
 
-5. Click on **Add Column** again.
+5. Click on **New Column** again.
 
 6. Enter **Requested By** for **Display Name** , **Single line of text** for **Data Type**, **Email** for **Format** , make the column
     **Searchable** and click on **Save**.
@@ -294,29 +275,27 @@ the formula used in the calculation.
 
 1. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
 
-   ![](./images/Module2/image34.png)
-
 1. Once the **Department Contribution** has been created, select it and click on **Edit** that is present under **Behaviour**.
 
-   ![](./images/Module2/image34.1.png)
+   ![](./images/pp900.png)
    
 1. You will be presented with a new pop-up to add actions and conditions. Now, click **Add Action**.
 
-   ![](./images/Module2/image35.png)
+   ![](./images/pp901.png)
 
 1. Type price and select the **Price** column you created.
 
-   ![](./images/Module2/image36.png)
+   ![](./images/pp902.png)
 
 1. Add `*0.1` and click the **Check Mark** button.
 
-   ![](./images/Module2/image37.png)
+   ![](./images/pp903.png)
 
-1. Click **Save and Close.**
+1. Click on **Save and Close.**
 
-   ![](./images/Module2/image38.png)
+   ![](./images/pp904.png)
 
-1. Click **Done**.
+1. Click on **Done**.
 
     ![](./images/Module2/image39.png)
 
@@ -326,7 +305,7 @@ In this task, you will create a **Business rule** that will set the Estimated De
 
 1. Select the **Business rules** tab and click **Add business rule.**
 
-   ![](./images/Module2/image40.png)
+   ![](images/pp39.png)
 
 2. Click the arrow to **Show Details**.
 
@@ -359,40 +338,40 @@ after you hit apply when you are done modifying the rule._
     ![](./images/Module2/image46.png)
 
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
-    **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
+**Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-    ![](./images/Module2/image47.png)
+      ![](images/pp100.png)
 
-9. Click **Validate**.
+9. Click on **Validate** from the top right.
 
-   ![](./images/Module2/image48.png)
+      ![](./images/pp701.png)
 
 10. Make sure validation succeeds.
 
-    ![](./images/Module2/image49.png)
+       ![](./images/Module2/image49.png)
 
-11. Click **Save**.
+11. Click on **Save**.
 
-    ![](./images/Module2/image50.png)
+      ![](images/pp702.png)
 
-12. Click **Activate**.
+12. Click on **Activate**.
 
-    ![](./images/Module2/image51.png)
+      ![](images/pp703.png)
 
 13. Confirm activation. Business rules only execute when they are activated. In the future to make changes to rules
     you deactivate them, make the change, and then re-activate the rule.
 
-    ![](./images/Module2/image52.png)
+      ![](images/pp704.png)
 
 14. Close the process editor browser window or tab.
 
 15. Click **Done**. The list should refresh showing the Business Rule you just created.
 
-    ![](./images/Module2/image53.png)
+       ![](./images/Module2/image53.png)
 
 16. Your Device Order table will have one Business Rule.
 
-    ![](./images/Module2/image54.png)
+      ![](images/pp101.png)
  
 ## Exercise 3: Connect the data from the Canvas App
 
@@ -401,20 +380,17 @@ table and add a form to submit device approval requests.
 
 ### Task 1: Add Microsoft Dataverse table as a data source to the app
 
-Open the device ordering app. Make sure you are opening the version of the app that is in the newly created environment
-that has the Microsoft Dataverse database instance.
+1. Select **Apps** , select the **Device Order App (1)** you created in Module 1, and click **Edit (2)**.
 
-1. Select **Apps** , select the **Device Order App** you created in Module 1, and click **Edit.**
+      ![](images/pp102.png)
 
-   ![](./images/Module2/image55.png)
+1. Click on Override.
 
-2. Select the **Data sources** to display the current sources. Select **Add Data.**
+      ![](images/pp103.png)
 
-   ![](./images/Module2/image56.png)
+1. Select the **Data(1)** from the left navigation pane to display the current sources. Select **Add Data (2)**. Search for **device (3)** and click on **Device Orders (4)**
 
-3. Click on **Device Orders** from the table list to include it as a data source for our app.
-
-   ![](./images/Module2/image57.png)
+      ![](images/pp104.png)
 
 ### Task 2: Create the edit form
 
@@ -424,29 +400,23 @@ that has the Microsoft Dataverse database instance.
 
 2. Select few devices. Hold the “Alt” key, and then it will allow you to check the compare on the devices.
 
-   ![](./images/Module2/image59.png)
+      ![](images/pp105-1.png)
 
 3. Select the **Compare Screen**. You should now have the selected devices.
 
-   ![](./images/Module2/image60.png)
+      ![](images/pp106.png)
 
-4. Select the **Insert** tab, click **Forms** , and select **Edit**.
+4. Select the **Insert** tab, search for **forms (1)** and select **Edit form (2)**.
 
-   ![](./images/Module2/image61.png)
+      ![](images/pp107.png)
 
 5. Click the **Data Source** drop-down in the Data pane on the right.
 
-   ![](./images/Module2/image62.png)
-
 6. Select the **Device Orders** table as the data source.
  
-   ![](./images/Module2/image63.png)
+      ![](images/pp108.png)
 
-7. Click **Edit Fields**.
-
-   ![](./images/Module2/image64.png)
-
-8. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by
+7. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by
 dragging the field to the desired placement.
     a. Device Name
     b. Price
@@ -455,14 +425,9 @@ dragging the field to the desired placement.
     e. Requested By
     f. Request Date
 
-   ![](./images/Module2/image65.png)
-
-9. Close the **Fields** pane.
 
 10. Move the form control **Form1** to the right of the screen and resize it using the drag handles such that it fits in the
     empty space. See picture on the right. Make sure there is enough space below the form to add a Submit button.
-
-    ![](./images/Module2/image66.png)
 
     > **Note** : You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are
 selecting the correct control. To move it make sure you select the Form and not a control within the form.
@@ -472,7 +437,6 @@ selecting the correct control. To move it make sure you select the Form and not 
 
     ![](./images/Module2/image67.png)
 
-    You can find more info on working with multi-column form layouts here: `https://powerapps.microsoft.com/tutorials/working-with-form-layout/`
 
 12. To create a new instance of the form when the screen is loaded. Click **Compare Screen** in left tree view pane.
 
@@ -480,31 +444,11 @@ selecting the correct control. To move it make sure you select the Form and not 
 
 13. Select the **OnVisible** property of the screen, enter: **NewForm(Form1)**
 
-    ![](./images/Module2/image69.png)
+    ![](./images/pp909.png)
 
 ### Task 3: Configure the title column
 
-In the next few steps, you will configure each of the form Fields.
-
-Let’s start by configuring the Title to display the manufacturer and device name for the selected device. For example, if the
-user selects the Surface Pro device, we want the device order to have the title: “Microsoft – Surface Pro”.
-
-1. Expand the **Device Name**.
-
-   ![](./images/Module2/image70.png)
-
-   > Notice that the default card contains a few controls:
-   
-   > **StarVisible1** : This is a label control that has an asterisk (*) which has its Visible property set to true or false depending
-on whether the Field is Required or not. Since the Title Field was marked as Required when you configured the table,
-its Required property is set to true.
-ErrorMessage1 : This is a label that is just below the main data entry Field which displays error messages.
-DataCardValue1 : This is the text input control where you can enter the Title. For this scenario, we will set the title
-based on the selected device.
-DataCardKey1 : This is the label that displays the title of the Field.
-
-    
-   ![](./images/Module2/image71.png)
+1. Expand the **Device Name_DataCard1** present in the left navigation pane under Form1.
 
 2. Select **Device Name DataCardValue** in the tree view. Then, open the **Advanced** tab in the right-hand pane.
 
@@ -512,10 +456,7 @@ DataCardKey1 : This is the label that displays the title of the Field.
 
 3. Click **Unlock** so you can customize the card
 
-   ![](./images/Module2/image73.png)
-
-_For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can
-perform the same customizations using the property drop-down and formula bar in the top left of the studio._
+   ![](./images/pp109.png)
 
 4. Go to the **Data** section and set the **Default** property to the below value:
 
@@ -532,11 +473,7 @@ perform the same customizations using the property drop-down and formula bar in 
 
 ### Task 4: Configure the price Field
 
-In this task, we are going to set the price to the price of the item and then make it read-only.
-
-1. Expand **Price** data card.
- 
-   ![](./images/Module2/image76.png)
+1. Expand **Price_DataCard1** data card.
 
 2. Select the **Data Card Value**.
   
@@ -557,18 +494,13 @@ In this task, we are going to set the price to the price of the item and then ma
 
 ### Task 5: Configure the Approval Field
 
-Let’s set the **default** value for the Approver to be the email address of the **logged in user’s manager**.
+1. Select **Data** from the left navigation pane. Click on **Add data** , then expand Connectors. Search and Select **Office 365 Users**.
 
-You will use the **Office 365 graph** to retrieve the manager’s email. You can find more about the Office 365 Users
-Connection provider here: `https://docs.microsoft.com/connectors/office365users/`
-
-1. Select **Data sources**. Click **Add data** , then expand Connectors. Select **Office 365 Users**.
-
-   ![](./images/Module2/image81.png)
+   ![](./images/pp110.png)
 
 2. When prompted, click **Connect**
    
-   ![](./images/Module2/image82.png)
+   ![](./images/pp111.png)
 
 3. Select the **Approver Data Card** from the Tree view.
    
@@ -576,22 +508,10 @@ Connection provider here: `https://docs.microsoft.com/connectors/office365users/
 
 4. Go to the **Advanced** pane and **Unlock**.
 
-   ![](./images/Module2/image84.png)
-
 5. Set the **Default** value to: User().Email This expression will use your user’s email, so you won’t accidentally e-
     mail your manager to approve your testing.
 
-In a real application or if you wanted to try the expression to use your managers email would be
-Office365Users.Manager(User().Email).Mail This would make an API call at runtime to get the manager’s
-email address of the logged-on user. If you try this and hit an error when calling the Office365Users.Manager()
-function, this may be because a manager is not set up in the system for the logged in Office 365 user. In that case,
-you can simply go back go User().Email.
-
 6. Save your work and return to the continue editing the app.
-
-
-The Office 365 User connector has access to many other valuable types of information you can learn more about
-the other actions and data available here: `https://docs.microsoft.com/en-us/connectors/office365users/`
 
 ### Task 6: Configure the Comment Field
 
@@ -599,12 +519,9 @@ the other actions and data available here: `https://docs.microsoft.com/en-us/con
 
 2. Set its **HintText** property to: “Enter justification.”
 
-   ![](./images/Module2/image85.png)
+   ![](./images/pp112.png)
 
 ### Task 7: Configure the Requested By Field
-
-Let’s set the Requested By Field to be the current logged on user’s email and disable the control so the user cannot
-change this value.
 
 1. Expand the **Requested By** card.
 
@@ -637,9 +554,7 @@ Let’s set the Request Date to be today’s date.
 
    ![](./images/Module2/image89.png)
 
-   > Notice that the date in the calendar control will change to today’s date.
-Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of
-the form the Field will get updated as part of the form submit.
+   > Notice that the date in the calendar control will change to today’s date. Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of the form the Field will get updated as part of the form submit.
 
 5. Select the **Request Date DataCard**
 
@@ -649,7 +564,7 @@ the form the Field will get updated as part of the form submit.
 
 7. Set the **Visible** toggle to **Off**.
 
-   ![](./images/Module2/image91.png)
+   ![](./images/pp113.png)
 
 ### Task 9: Add a button to submit the form
 
@@ -680,7 +595,7 @@ the form the Field will get updated as part of the form submit.
 8. The button should be enabled only if a device is selected. To do this, change the button’s **DisplayMode** property
     to: If(!IsBlank('Compare List Gallery'.Selected), DisplayMode.Edit, DisplayMode.Disabled)
    
-   ![](./images/Module2/image97.png)
+   ![](./images/image97-1.png)
    
    > Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
 check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.
@@ -688,7 +603,7 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property
     to SubmitForm(Form1).
 
-   ![](./images/Module2/image98.png)
+   ![](./images/image98-1.png)
 
     > Info: When the button is pressed, the form data will be submitted to the Microsoft Dataverse.
 
@@ -698,34 +613,30 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 
 1. Select the **Main Screen** in the left side tree navigation and click Play.
 
-   ![](./images/Module2/image99.png)
+2. Select the first device to compare. And click **Compare**.
 
-2. Select a few devices to compare. And click **Compare**.
+   ![](./images/pp905.png)
 
-   ![](./images/Module2/image100.png)
+3. Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
 
-3. Select one of the devices.
+4. Change the Approver email to your own email for test purposes. Use the Odl e-mail ID present in the Environment Tab.
 
-   ![](./images/Module2/image101.png)
-
-   > Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
-
-4. Change the Approver email to your own email for test purposes.
 5. Add some **Comments** , such as: “Current laptop does not work, need a new device.”
-6. Click **Submit device request.**
 
-   ![](./images/Module2/image102.png)
+   ![](./images/pp114.png)
+
+6. Click on **Submit device request.**
+
+   ![](./images/pp115.png)
 
    > Info: The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this
-there is likely an error. Click the X in top right to get back to the design mode.
-If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.
-
+there is likely an error. Click the X in top right to get back to the design mode. If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.
 
 7. Exit the preview mode (‘X’ in top right).
 
-8. Save the Application and Publish
+8. Save the Application and Publish.
 
-   ![](./images/Module2/image103.png)
+   ![](./images/pp96.png)
 
 ### Task 11: Verify a new item was added to the Device Order table
 
@@ -735,122 +646,16 @@ If there is an error, you will see a yellow error icon next to the Submit button
    http://make.powerapps.com/
    ```
 
-2. Click on **Dataverse** - > **Tables**.
+2. Navigate to **Tables** from the left navigation pane.
 
 3. Select the **Device Order** table.
 
-    ![](./images/Module2/image104.png)
-
 4. On the **Device Order** table overview blade, you should see a newly added row with your device order details under **Device Order columns and data**. This may take a few seconds to load.
 
-   ![](./images/Module2/image105.1.png)
+   ![](./images/pp116.png)
 
-### Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
+## Summary
 
-This step is optional, if you’re short on time you may skip it and continue to the next module.
+In this exercise, you have explored Microsoft Dataverse, created custom Tables and Columns and connected the data from the Canvas App.
 
-Once the Form has been successfully submitted, it’s a good idea to show a confirmation screen and allow the user to
-navigate back to the main screen.
-
-1. Navigate to the Canvas Studio for your powerapp.
-
-2. Select **Home** - > **New screen** - > **Blank**
-
-   ![](./images/Module2/image106.png)
-
-3. Rename the screen to **Submit Success Screen** 
-  
-   ![](./images/Module2/image107.png)
-  
-4. Expand the **Compare Screen**.
-
-5. Select the Form – you can use the tree view on the left to select **Form1**.
-
-   ![](./images/Module2/image108.png)
-
-6. Set the **OnSuccess** property to: Navigate('Submit Success Screen', ScreenTransition.None)
-
-    ![](./images/Module2/image109.png)
-
-7. Copy (Ctrl-C) the **Header** from the Compare Screen.
-
-8. Go to the to the **Submit Success Screen** , paste the header and align Top.
-
-   ![](./images/Module2/image110.png)
-
-9. **Insert** another **label** in the middle of the screen and set the **Text** to: **"Your device request has been successfully**
-    **submitted. Thank you."**
-
-10. Increase the font size, the size of the label and center the text.
-
-    ![](./images/Module2/image111.png)
-
-11. Add a **button** and set its **Text** to: **"OK”.**
-
-12. When pressed, the button should remove items from the CompareList collection and navigate to the main screen.
-
-13. Set the **OnSelect** property of the button to the below value:
-
-    ```
-    Clear(CompareList);Navigate('Main Screen',ScreenTransition.None)
-    ```
-    
-    ![](./images/Module2/image112.png)
-
-    > **Note** : ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as
-a comma-separator, then use a double ‘;’ here (without the single-quotes).
-
-14. Move the label up and add a Display Form: **Insert** - > **Form** - > **Display.**
-
-    ![](./images/Module2/image113.png)
-
-15. Configure its **data source** to point to the **‘Device Orders’** table.
-
-    ![](./images/Module2/image114.png)
-
-16. Select the Fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and
-    remove any additional Fields.
-   
-    ![](./images/Module2/image115.png)
-
-17. Change the **Snap to column** value from 3 to 1.
-
-    ![](./images/Module2/image116.png)
-
-18. Change the **Layout** from Vertical to **Horizontal**.
-
-    ![](./images/Module2/image117.png)
-
-19. Set form **Item** property to Form1.LastSubmit
-
-    ![](./images/Module2/image118.png)
-
-20. Reposition/Resize the form until it looks like the image below. The Label will be first on the screen, centered under
-    the header. Then, position the view form to be centered under the label. Finally, the “OK” button will be should be
-    centered at the bottom of the page under the view form.
-
-    ![](./images/Module2/image119.png)
-
-21. Save your changes and **Publish**.
-
-22. Select the **Main Screen** and click **Play**.
-
-23. Select few more devices and click Compare
-
-    ![](./images/Module2/image120.png)
-
-24. Select one of the new devices, provide a comment and click Submit.
-
-    ![](./images/Module2/image121.png)
-
-25. Verify that the confirmation screen shows the order details. Click **OK**.
-
-    ![](./images/Module2/image122.png)
-
-26. The application will navigate back to the main screen and the compare list will be cleared.
-
-    ![](./images/Module2/image123.png)
-
-27. Close the application.
-
-
+### You have successfully completed the lab!
