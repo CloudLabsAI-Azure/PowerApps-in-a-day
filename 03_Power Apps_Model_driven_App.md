@@ -50,7 +50,7 @@ Table you created in the Microsoft Dataverse in Lab 2.
 
 1. Click the **Switch to classic** button to switch to the classic designer of the app. 
     
-   ![](images/Module3/Model-drivenapp4.1.png)     
+   ![](images/pp1002.png)     
    
 1. Click on **Publish and Save** to save the app. The classic designer of the app will be opened in a new browser tab.   
    
@@ -335,7 +335,7 @@ In this exercise, we are going to test the application you just built.
 
      > **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
 
-      ![](imagespp1001.png)  
+      ![](images/pp1001.png)  
 
 1. Start a new web browser instance and navigate Power Apps. Do not close the Model-driven application.
 
@@ -351,8 +351,6 @@ In this exercise, we are going to test the application you just built.
     and you should see the two devices you ordered using the Power Apps Canvas App.
     
    ![](images/Module3/apptest9.png)      
-
-
 
 ## Summary
 
