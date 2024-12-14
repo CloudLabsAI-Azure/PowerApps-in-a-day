@@ -275,29 +275,27 @@ the formula used in the calculation.
 
 1. If you have not yet allowed popups from Power Apps, you will be prompted to do so now.
 
-   ![](./images/Module2/image34.png)
-
 1. Once the **Department Contribution** has been created, select it and click on **Edit** that is present under **Behaviour**.
 
-   ![](./images/Module2/image34.1.png)
+   ![](./images/pp900.png)
    
 1. You will be presented with a new pop-up to add actions and conditions. Now, click **Add Action**.
 
-   ![](./images/Module2/image35.png)
+   ![](./images/pp901.png)
 
 1. Type price and select the **Price** column you created.
 
-   ![](./images/Module2/image36.png)
+   ![](./images/pp902.png)
 
 1. Add `*0.1` and click the **Check Mark** button.
 
-   ![](./images/Module2/image37.png)
+   ![](./images/pp903.png)
 
-1. Click **Save and Close.**
+1. Click on **Save and Close.**
 
-   ![](./images/Module2/image38.png)
+   ![](./images/pp904.png)
 
-1. Click **Done**.
+1. Click on **Done**.
 
     ![](./images/Module2/image39.png)
 
@@ -340,9 +338,9 @@ after you hit apply when you are done modifying the rule._
     ![](./images/Module2/image46.png)
 
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
-    **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
+**Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-   ![](images/pp100.png)
+      ![](images/pp100.png)
 
 9. Click on **Validate** from the top right.
 
@@ -350,11 +348,11 @@ after you hit apply when you are done modifying the rule._
 
 10. Make sure validation succeeds.
 
-    ![](./images/Module2/image49.png)
+       ![](./images/Module2/image49.png)
 
 11. Click on **Save**.
 
-   ![](images/pp702.png)
+      ![](images/pp702.png)
 
 12. Click on **Activate**.
 
@@ -418,11 +416,7 @@ table and add a form to submit device approval requests.
  
       ![](images/pp108.png)
 
-7. Click **Edit Fields**.
-
-   ![](./images/Module2/image64.png)
-
-8. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by
+7. Add, remove, and order fields like the list below. The fields are added using the plus sign and can be reordered by
 dragging the field to the desired placement.
     a. Device Name
     b. Price
@@ -431,14 +425,9 @@ dragging the field to the desired placement.
     e. Requested By
     f. Request Date
 
-   ![](./images/Module2/image65.png)
-
-9. Close the **Fields** pane.
 
 10. Move the form control **Form1** to the right of the screen and resize it using the drag handles such that it fits in the
     empty space. See picture on the right. Make sure there is enough space below the form to add a Submit button.
-
-    ![](./images/Module2/image66.png)
 
     > **Note** : You can always select controls, such as the Form1 control, from the tree view on the left to make sure you are
 selecting the correct control. To move it make sure you select the Form and not a control within the form.
@@ -448,7 +437,6 @@ selecting the correct control. To move it make sure you select the Form and not 
 
     ![](./images/Module2/image67.png)
 
-    You can find more info on working with multi-column form layouts here: `https://powerapps.microsoft.com/tutorials/working-with-form-layout/`
 
 12. To create a new instance of the form when the screen is loaded. Click **Compare Screen** in left tree view pane.
 
@@ -460,27 +448,7 @@ selecting the correct control. To move it make sure you select the Form and not 
 
 ### Task 3: Configure the title column
 
-In the next few steps, you will configure each of the form Fields.
-
-Let’s start by configuring the Title to display the manufacturer and device name for the selected device. For example, if the
-user selects the Surface Pro device, we want the device order to have the title: “Microsoft – Surface Pro”.
-
-1. Expand the **Device Name**.
-
-   ![](./images/Module2/image70.png)
-
-   > Notice that the default card contains a few controls:
-   
-   > **StarVisible1** : This is a label control that has an asterisk (*) which has its Visible property set to true or false depending
-on whether the Field is Required or not. Since the Title Field was marked as Required when you configured the table,
-its Required property is set to true.
-ErrorMessage1 : This is a label that is just below the main data entry Field which displays error messages.
-DataCardValue1 : This is the text input control where you can enter the Title. For this scenario, we will set the title
-based on the selected device.
-DataCardKey1 : This is the label that displays the title of the Field.
-
-    
-   ![](./images/Module2/image71.png)
+1. Expand the **Device Name_DataCard1** present in the left navigation pane under Form1.
 
 2. Select **Device Name DataCardValue** in the tree view. Then, open the **Advanced** tab in the right-hand pane.
 
@@ -505,11 +473,7 @@ DataCardKey1 : This is the label that displays the title of the Field.
 
 ### Task 4: Configure the price Field
 
-In this task, we are going to set the price to the price of the item and then make it read-only.
-
-1. Expand **Price** data card.
- 
-   ![](./images/Module2/image76.png)
+1. Expand **Price_DataCard1** data card.
 
 2. Select the **Data Card Value**.
   
@@ -590,9 +554,7 @@ Let’s set the Request Date to be today’s date.
 
    ![](./images/Module2/image89.png)
 
-   > Notice that the date in the calendar control will change to today’s date.
-Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of
-the form the Field will get updated as part of the form submit.
+   > Notice that the date in the calendar control will change to today’s date. Now we will hide the Request Date card. We don’t need to show this Field to the user. Since we have included it as part of the form the Field will get updated as part of the form submit.
 
 5. Select the **Request Date DataCard**
 
@@ -633,7 +595,7 @@ the form the Field will get updated as part of the form submit.
 8. The button should be enabled only if a device is selected. To do this, change the button’s **DisplayMode** property
     to: If(!IsBlank('Compare List Gallery'.Selected), DisplayMode.Edit, DisplayMode.Disabled)
    
-   ![](./images/Module2/image97.png)
+   ![](./images/Module2/image97-1.png)
    
    > Note: You might notice the exclamation mark (!) in the formula !IsBlank() Normally if you just have IsBlank() the
 check is for blank. Adding the exclamation mark (!) in front of it changes it to check if it is NOT blank.
@@ -641,7 +603,7 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 9. Next, we are going to configure what we want to happen when the button is clicked. Set the **OnSelect** property
     to SubmitForm(Form1).
 
-   ![](./images/Module2/image98.png)
+   ![](./images/Module2/image98-1.png)
 
     > Info: When the button is pressed, the form data will be submitted to the Microsoft Dataverse.
 
@@ -653,15 +615,12 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 
 2. Select the first device to compare. And click **Compare**.
 
-   ![](./images/Module2/image100.png)
+   ![](./images/pp905.png)
 
-3. Select one of the devices.
+3. Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
 
-   ![](./images/Module2/image101.png)
+4. Change the Approver email to your own email for test purposes. Use the Odl e-mail ID present in the Environment Tab.
 
-   > Notice that the Title, Price, Approver, and Requested By Fields are already filled in.
-
-4. Change the Approver email to your own email for test purposes.
 5. Add some **Comments** , such as: “Current laptop does not work, need a new device.”
 
    ![](./images/pp114.png)
