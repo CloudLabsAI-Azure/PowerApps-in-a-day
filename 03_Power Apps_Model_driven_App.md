@@ -160,7 +160,7 @@ Table you created in the Microsoft Dataverse in Lab 2.
 
 1. Click on the **small +** under Data Step #1.
 
-   ![](images/Module3/BusinessProcessFlow8-1.png)  
+   ![](images/BusinessProcessFlow8-1.png)  
 
 1. Select **Approval Status** for Data Field and click **Apply**.
 
