@@ -488,10 +488,7 @@ DataCardKey1 : This is the label that displays the title of the Field.
 
 3. Click **Unlock** so you can customize the card
 
-   ![](./images/Module2/image73.png)
-
-_For the next few steps, we will use the Advanced pane to customize control properties within the form, note that you can
-perform the same customizations using the property drop-down and formula bar in the top left of the studio._
+   ![](./images/pp109.png)
 
 4. Go to the **Data** section and set the **Default** property to the below value:
 
@@ -533,18 +530,13 @@ In this task, we are going to set the price to the price of the item and then ma
 
 ### Task 5: Configure the Approval Field
 
-Let’s set the **default** value for the Approver to be the email address of the **logged in user’s manager**.
+1. Select **Data** from the left navigation pane. Click on **Add data** , then expand Connectors. Search and Select **Office 365 Users**.
 
-You will use the **Office 365 graph** to retrieve the manager’s email. You can find more about the Office 365 Users
-Connection provider here: `https://docs.microsoft.com/connectors/office365users/`
-
-1. Select **Data sources**. Click **Add data** , then expand Connectors. Select **Office 365 Users**.
-
-   ![](./images/Module2/image81.png)
+   ![](./images/pp110.png)
 
 2. When prompted, click **Connect**
    
-   ![](./images/Module2/image82.png)
+   ![](./images/pp111.png)
 
 3. Select the **Approver Data Card** from the Tree view.
    
@@ -552,22 +544,10 @@ Connection provider here: `https://docs.microsoft.com/connectors/office365users/
 
 4. Go to the **Advanced** pane and **Unlock**.
 
-   ![](./images/Module2/image84.png)
-
 5. Set the **Default** value to: User().Email This expression will use your user’s email, so you won’t accidentally e-
     mail your manager to approve your testing.
 
-In a real application or if you wanted to try the expression to use your managers email would be
-Office365Users.Manager(User().Email).Mail This would make an API call at runtime to get the manager’s
-email address of the logged-on user. If you try this and hit an error when calling the Office365Users.Manager()
-function, this may be because a manager is not set up in the system for the logged in Office 365 user. In that case,
-you can simply go back go User().Email.
-
 6. Save your work and return to the continue editing the app.
-
-
-The Office 365 User connector has access to many other valuable types of information you can learn more about
-the other actions and data available here: `https://docs.microsoft.com/en-us/connectors/office365users/`
 
 ### Task 6: Configure the Comment Field
 
@@ -575,12 +555,9 @@ the other actions and data available here: `https://docs.microsoft.com/en-us/con
 
 2. Set its **HintText** property to: “Enter justification.”
 
-   ![](./images/Module2/image85.png)
+   ![](./images/pp112.png)
 
 ### Task 7: Configure the Requested By Field
-
-Let’s set the Requested By Field to be the current logged on user’s email and disable the control so the user cannot
-change this value.
 
 1. Expand the **Requested By** card.
 
@@ -625,7 +602,7 @@ the form the Field will get updated as part of the form submit.
 
 7. Set the **Visible** toggle to **Off**.
 
-   ![](./images/Module2/image91.png)
+   ![](./images/pp113.png)
 
 ### Task 9: Add a button to submit the form
 
@@ -674,9 +651,7 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 
 1. Select the **Main Screen** in the left side tree navigation and click Play.
 
-   ![](./images/Module2/image99.png)
-
-2. Select a few devices to compare. And click **Compare**.
+2. Select the first device to compare. And click **Compare**.
 
    ![](./images/Module2/image100.png)
 
@@ -688,20 +663,21 @@ check is for blank. Adding the exclamation mark (!) in front of it changes it to
 
 4. Change the Approver email to your own email for test purposes.
 5. Add some **Comments** , such as: “Current laptop does not work, need a new device.”
-6. Click **Submit device request.**
 
-   ![](./images/Module2/image102.png)
+   ![](./images/pp114.png)
+
+6. Click on **Submit device request.**
+
+   ![](./images/pp115.png)
 
    > Info: The button should turn disabled (gray) for a few seconds while it’s submitting the request. If it does not do this
-there is likely an error. Click the X in top right to get back to the design mode.
-If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.
-
+there is likely an error. Click the X in top right to get back to the design mode. If there is an error, you will see a yellow error icon next to the Submit button, hover over it to check the error.
 
 7. Exit the preview mode (‘X’ in top right).
 
-8. Save the Application and Publish
+8. Save the Application and Publish.
 
-   ![](./images/Module2/image103.png)
+   ![](./images/pp96.png)
 
 ### Task 11: Verify a new item was added to the Device Order table
 
@@ -711,123 +687,13 @@ If there is an error, you will see a yellow error icon next to the Submit button
    http://make.powerapps.com/
    ```
 
-2. Click on **Dataverse** - > **Tables**.
+2. Navigate to **Tables** from the left navigation pane.
 
 3. Select the **Device Order** table.
 
-    ![](./images/Module2/image104.png)
-
 4. On the **Device Order** table overview blade, you should see a newly added row with your device order details under **Device Order columns and data**. This may take a few seconds to load.
 
-   ![](./images/Module2/image105.1.png)
-
-### Task 12: [Optional] Navigate to confirmation screen after the Form submit is successful
-
-This step is optional, if you’re short on time you may skip it and continue to the next module.
-
-Once the Form has been successfully submitted, it’s a good idea to show a confirmation screen and allow the user to
-navigate back to the main screen.
-
-1. Navigate to the Canvas Studio for your powerapp.
-
-2. Select **Home** - > **New screen** - > **Blank**
-
-   ![](./images/Module2/image106.png)
-
-3. Rename the screen to **Submit Success Screen** 
-  
-   ![](./images/Module2/image107.png)
-  
-4. Expand the **Compare Screen**.
-
-5. Select the Form – you can use the tree view on the left to select **Form1**.
-
-   ![](./images/Module2/image108.png)
-
-6. Set the **OnSuccess** property to: Navigate('Submit Success Screen', ScreenTransition.None)
-
-    ![](./images/Module2/image109.png)
-
-7. Copy (Ctrl-C) the **Header** from the Compare Screen.
-
-8. Go to the to the **Submit Success Screen** , paste the header and align Top.
-
-   ![](./images/Module2/image110.png)
-
-9. **Insert** another **label** in the middle of the screen and set the **Text** to: **"Your device request has been successfully**
-    **submitted. Thank you."**
-
-10. Increase the font size, the size of the label and center the text.
-
-    ![](./images/Module2/image111.png)
-
-11. Add a **button** and set its **Text** to: **"OK”.**
-
-12. When pressed, the button should remove items from the CompareList collection and navigate to the main screen.
-
-13. Set the **OnSelect** property of the button to the below value:
-
-    ```
-    Clear(CompareList);Navigate('Main Screen',ScreenTransition.None)
-    ```
-    
-    ![](./images/Module2/image112.png)
-
-    > **Note** : ‘;’ is used a separator when multiple functions are called one after the other. If you are in a locale where ‘;’ is used as
-a comma-separator, then use a double ‘;’ here (without the single-quotes).
-
-14. Move the label up and add a Display Form: **Insert** - > **Form** - > **Display.**
-
-    ![](./images/Module2/image113.png)
-
-15. Configure its **data source** to point to the **‘Device Orders’** table.
-
-    ![](./images/Module2/image114.png)
-
-16. Select the Fields to display: Device Name, Price, Comments, Approver, Requested By, Request Date. Rearrange and
-    remove any additional Fields.
-   
-    ![](./images/Module2/image115.png)
-
-17. Change the **Snap to column** value from 3 to 1.
-
-    ![](./images/Module2/image116.png)
-
-18. Change the **Layout** from Vertical to **Horizontal**.
-
-    ![](./images/Module2/image117.png)
-
-19. Set form **Item** property to Form1.LastSubmit
-
-    ![](./images/Module2/image118.png)
-
-20. Reposition/Resize the form until it looks like the image below. The Label will be first on the screen, centered under
-    the header. Then, position the view form to be centered under the label. Finally, the “OK” button will be should be
-    centered at the bottom of the page under the view form.
-
-    ![](./images/Module2/image119.png)
-
-21. Save your changes and **Publish**.
-
-22. Select the **Main Screen** and click **Play**.
-
-23. Select few more devices and click Compare
-
-    ![](./images/Module2/image120.png)
-
-24. Select one of the new devices, provide a comment and click Submit.
-
-    ![](./images/Module2/image121.png)
-
-25. Verify that the confirmation screen shows the order details. Click **OK**.
-
-    ![](./images/Module2/image122.png)
-
-26. The application will navigate back to the main screen and the compare list will be cleared.
-
-    ![](./images/Module2/image123.png)
-
-27. Close the application.
+   ![](./images/pp116.png)
 
 ## Summary
 
