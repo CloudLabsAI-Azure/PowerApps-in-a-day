@@ -347,7 +347,7 @@ In this exercise, we are going to test the application you just built.
 
     ![](images/pp2004.png)  
 
-1. Click on the **Price (1)**, add the **Estimated Ship Date and the SupplierID (2)** of your choice and click on **Save and close (3)**.
+1. Click on the **Price (1)**, add the **Estimated Ship Date and the Supplier Order ID (2)** of your choice and click on **Save & close (3)**.
 
     ![](images/pp2005.png)  
 
