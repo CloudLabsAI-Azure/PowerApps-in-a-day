@@ -128,32 +128,6 @@ Table you created in the Microsoft Dataverse in Lab 2.
 
 ## Exercise 2: Business Process Flow
 
-In this exercise, we are going to add a Business Process Flow to the Device Order to help guide the back-office worker
-through the task of managing the procurement of the requested device.
-
-In discovery meetings with the back-office workers, we learned that a device request goes through the following tasks as
-they perform the magic to get the requestor their device.
-
-- **Device Requested** – Today this is an e-mail sent to them with the device request. Going forward in the new
-    Power Apps world this will be a Device Order Row in the Microsoft Dataverse.
-- **Place Order** – Once they receive the request, they will place an order with a supplier and get an order ID.
-- **Receive Device** – This occurs when the device is received, and they send it to the IT staff to be configured with
-    the standard software.
-- **Distribute Device** – Once configured it needs to get to the employee that requested it, and they need to survey
-    the employee to make sure they are happy.
-
-Each of these represents a milestone and will become our Stages in the Business Process Flow. In a more complex
-scenario, you would likely end up compressing or even possibly re-imagining the business process to make it more
-optimal than the current process the staff performs with their existing process.
-
-For this lab, the _Receive Device and Distribute Device stages are marked optional_. While these stages would need to be
-created for a full implementation of the scenario, to save time you may skip them or do them as a take home exercise.
-
-The completed Business Process Flow will look like the image below.
-
-
-   ![](images/Module3/BusinessProcessFlow.png)  
-
 ### Task 1: Create business process flow
 
 1. Select **Solutions** from the left navigation pane and click on **Default Solution**.
@@ -186,7 +160,7 @@ The completed Business Process Flow will look like the image below.
 
 1. Click on the **small +** under Data Step #1.
 
-   ![](images/Module3/BusinessProcessFlow8.png)  
+   ![](images/Module3/BusinessProcessFlow8-1.png)  
 
 1. Select **Approval Status** for Data Field and click **Apply**.
 
@@ -229,10 +203,6 @@ The completed Business Process Flow will look like the image below.
     ![](images/Module3/BusinessProcessFlow17.png)  
 
 ### Task 2: Add a branch condition
-
-In this task, we are going to add a conditional branch to our Business Process Flow. When we did the discovery, we
-learned that if the price was greater than $1K there were additional steps in place to get capital approval prior to placing
-the order. In this task, you will see how we can modify the flow we built to accommodate this.
 
 1. Select the **Components** tab, drag **Condition** and place it between **Device Requested** and **Place Order**.
 
@@ -277,8 +247,6 @@ the order. In this task, you will see how we can modify the flow we built to acc
 1. Close the process editor.
 
 1. Navigate back to the Device Procurement we created in the first task and click on **Save and Publish** button that is present at the top right corner of the window.
-
-   ![](images/Module3/BusinessProcessFlow35.1.png)  
    
 ## Exercise 3: Form and View Modification
 
@@ -306,10 +274,7 @@ example, you might provide a view to show all device requests that are waiting t
 
 1. Place the **Approver** Column above the Device Name Column.
  
-1. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the
-    Device Name and Owner Columns.
-    
-   ![](images/Module3/device_order_form4.png)  
+1. The new form designer will let you reposition Columns. Drag the **Approver** Column and place it between the Device Name and Owner Columns.
    
 1. The new form designer will let you cut and paste Columns. Select the **Approver** Column and click on the **Cut**
     button.
@@ -321,15 +286,12 @@ example, you might provide a view to show all device requests that are waiting t
    ![](images/Module3/device_order_form6.png)  
    
 1. The **Approval** Column will be moved to the bottom.
-
-   ![](images/Module3/device_order_form7.png)  
    
 1. Click on **Save and Publish**.
 
       ![](images/pp226.png) 
    
 1. Close the **Form Designer** tab.
-
 
 ### Task 2: Modify the view
 
@@ -357,9 +319,7 @@ example, you might provide a view to show all device requests that are waiting t
    
 1. Click **Save and Publish**.
 
-1. Click on the back button.
-
-   ![](images/Module3/device_order_form18.png)  
+1. Click on the back button from the top left.
 
 ### Exercise 4: Test the application
 
@@ -372,47 +332,27 @@ In this exercise, we are going to test the application you just built.
       ![](images/pp230.png) 
 
 1. The application should start. The **Active Device Orders** view should load.
-    > **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
 
-      ![](images/Module3/apptest2.png)  
-1. Start a new web browser instance and navigate to Make Power Apps. Do not close the Model-driven application.
-1. Select **Apps** , select the Device Ordering application you created in module 2, and click **Play**.
+     > **Note: If you don’t show any data in the list, run the Device Ordering canvas app you built and submit some orders.**
 
-   ![](images/Module3/apptest3.png)  
-1. Select two devices, make sure one of the devices is priced over $1,000 and click **Compare**.
-   > Note: If you are using a Chrome browser, the Manufacturer logos may not load correctly._
+      ![](imagespp1001.png)  
 
-   ![](images/Module3/apptest4.png)  
-1. Select the device with the price over $1k and click **Submit**.
+1. Start a new web browser instance and navigate Power Apps. Do not close the Model-driven application.
 
-   ![](images/Module3/apptest5.png)  
-1. Click **OK**. Note that if you did not choose to create the submission success screen in a previous module that this
-    option will not exist. You will need complete steps 3 and 4 (above) in order to continue.
-    
-   ![](images/Module3/apptest6.png)      
-1. Select two more devices and click Compare.
+1. Select **Apps** , select the Device Ordering application you created in module 2, and click on **Play**. 
 
-   ![](images/Module3/apptest7.png)  
+1. Select the first device and click on **Compare**.
 
-1. Select a device with a price under $1k, provide approver email (or leave in the auto-populated manager email)
-    and click **Submit**.
-    
-   ![](images/Module3/apptest8.png)      
+   ![](images/pp905.png)  
+
+1. Click on **Submit**.
+     
 1. Go back to the Model-driven application you created and refresh the view. Sort the orders by **Created On** column,
     and you should see the two devices you ordered using the Power Apps Canvas App.
     
    ![](images/Module3/apptest9.png)      
-1. Open the one priced over $1k.
-1. The **Business Process Flow** should now have **5** stages. This is because this order costs more than $1k and needs **Capital Approval**.
 
-   ![](images/Module3/apptest10.png)  
 
-1. Select **Device Orders**.
-1. Click on the other order you created.
-1. The **Business Process Flow** for this order should have **4** stages; this is because this order does not require **Capital**
-    **Approval**.
-
-   ![](images/Module3/apptest11.png)  
 
 ## Summary
 
