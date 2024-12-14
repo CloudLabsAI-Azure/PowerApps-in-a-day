@@ -357,7 +357,7 @@ In this exercise, we are going to test the application you just built.
 
 1. Click on **Finish**. The order is placed when the process is finished!
 
-    ![](images/pp2008.png) 
+    ![](images/pp2009.png) 
 
       > **Note:** You will receive an e-mail to the odl user mail after few minutes once the order has been placed.
 
