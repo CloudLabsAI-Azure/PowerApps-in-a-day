@@ -407,7 +407,7 @@ enter additional information and submit the request.
    
 2. Rename the screen to **Compare Screen**.
    
-3. From the Tree view pane, select the **Main Screen**, then select the **+ Insert (1)** drop-down. Expand the Popular group, and then choose **Button**. 
+3. From the Tree view pane, select the **Main Screen**, then select the **+ Insert (1)** drop-down. **Search (1)** for Button, and then **select (3)** it. 
 
       ![](images/pp76.png)
 
