@@ -322,20 +322,20 @@ change to the properties otherwise they will revert to the prior value. The Busi
 after you hit apply when you are done modifying the rule._
 
     
-    ![](./images/Module2/image44.png)
+      ![](./images/Module2/image44.png)
 
 6. Click **Add** , select **Add Set Field Value**.
 
-   ![](./images/Module2/image45.png)
+      ![](./images/Module2/image45.png)
 
 7. Select the True side of the condition.
 
-    ![](./images/Module2/image46.png)
+      ![](./images/Module2/image46.png)
 
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
 **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-      ![](images/pp3001.png)
+      ![](images/Module2/pp3001.png)
 
 9. Click on **Validate** from the top right.
 
