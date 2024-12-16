@@ -287,7 +287,7 @@ bar.
    
 ###  Task 5: Highlight the selected item in the gallery
 
-1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to matche the header label with a 75% fade:
+1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to match the header label with a 75% fade:
 
      ```
      If(ThisItem.IsSelected,ColorFade ('Header Label'.Fill,75%))
