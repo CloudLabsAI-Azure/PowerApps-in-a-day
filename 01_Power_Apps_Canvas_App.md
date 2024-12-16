@@ -23,7 +23,7 @@ In this lab, you will complete the following tasks:
 1. Navigate to Power Apps Portal using the below URL and click Sign-in. You may also directly navigate to Make Power Apps.
 
    ```
-   http://powerapps.microsoft.com/
+   http://make.powerapps.com/
    ```
       ![](images/pp6.png)     
 
@@ -101,6 +101,8 @@ In this task, you will rename Screen1 to Main Screen.
 8. From the top, select the more options icon ,change the **Color** to White and the **Background Color** to Blue.
 
       ![](images/pp15.png)
+
+      >**Note:** If the option is not visible, please reduce your browser's zoom level.
    
 9. Change the **Font Size** to 24.
 
@@ -285,21 +287,11 @@ bar.
    
 ###  Task 5: Highlight the selected item in the gallery
 
-1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to conditionally set the fill color of the selected cell to light blue:
-   
-    ```
-    If(ThisItem.IsSelected,LightBlue)
-    ```
-
-    > Alternately, you could set the TemplateFill property to:
+1. With the **Manufacturer Gallery** selected, set the **TemplateFill** property on the gallery to the following formula to match the header label with a 75% fade:
 
      ```
      If(ThisItem.IsSelected,ColorFade ('Header Label'.Fill,75%))
      ```
-      This approach is recommended so the fill color matches the header label with a 75% fade. If you change the fill
-color of header label, the fill color of the selected item in the gallery will automatically change.
-
-      ![](images/pp64.png)
 
 2. Now try using the preview mode to perform a quick test of this highlighting. You can enable preview mode by holding down the Alt key (also known as the Option key) and clicking a few different manufacturers in the gallery, notice the selected item in the manufacturer gallery is highlighted in a light blue color. The preview mode ends when you stop holding the key.
 
@@ -312,7 +304,7 @@ color of header label, the fill color of the selected item in the gallery will a
 
       ![](images/pp65.png) 
    
-1. To add the $ to the Subtitle, use the Text format expression: Text(ThisItem.Price,"$##,###.00") or for alternate/European locales: **Text(ThisItem.Price;"$##.###,00")**.
+1. To add the $ to the Subtitle, use the Text format expression: Text(ThisItem.Price,"$##,###.00") or for alternate/European locales: **Text(ThisItem.Price,"$##.###,00")**.
 
      > **Note:** After you enter the above value in the formula bar, it will automatically resolve to include your locale, e.g. [$-en-
 US]. If you see an error here, it might be because your locale is not yet supported, in which case as a workaround, manually change it to [$-en-US]:
@@ -366,7 +358,7 @@ US]. If you see an error here, it might be because your locale is not yet suppor
 
       ![](images/pp73.png)
    
-8. Click the back arrow on the top left to get back to the main view.
+8. Click on the Cancel button.
 
 9. Click **Preview** again.
 
@@ -374,9 +366,7 @@ US]. If you see an error here, it might be because your locale is not yet suppor
 
 11. Click on **Variables** from the left navigation pane, click on **CompareList** again.
    
-11. All items will be removed from the **CompareList** collection.
-
-12. Click on then back arrow.
+12. All items will be removed from the **CompareList** collection.
 
 ### Task 9: Set the default selection to the first manufacturer and test the app
 
@@ -417,7 +407,7 @@ enter additional information and submit the request.
    
 2. Rename the screen to **Compare Screen**.
    
-3. Click on the **Insert (1)** tab from the top select the **Main Screen** , **search (2)** and **select (3)** Button.
+3. From the Tree view pane, select the **Main Screen**, then select the **+ Insert (1)** drop-down. Expand the Popular group, and then choose **Button**. 
 
       ![](images/pp76.png)
 
@@ -451,7 +441,7 @@ enter additional information and submit the request.
 
       ![](images/pp80.png)
 
-13. Select the **Button1** from the left navigation pane, Change the **On Select** property to **Navigate ('Compare Screen)**.
+13. Select the **Button1** from the left navigation pane, Change the **On Select** property to **Navigate ('Compare Screen')**.
 
       ![](images/pp92.png)
 
@@ -501,7 +491,7 @@ enter additional information and submit the request.
    
 ### Task 3: Remove and add controls to the gallery
 
-1. Select the **Compare checkbox** on the left most template cell and press the **Delete** key to delete the checkbox.
+1. In the Tree view pane, under **Compare list gallery**, select the **Compare** checkbox and press the **Delete** key to remove it.
 
 2. Now let’s add a few labels to display additional attributes about the device. A good way to do this is to copy paste. Select the **first label** in the gallery that is displaying the device name. Copy it **(Ctrl-C)** and paste it **(Ctrl-V)**. Rename these labels as you go for ease of use later.
 
@@ -563,11 +553,9 @@ enter additional information and submit the request.
 
 1. Select the checkbox for the laptop that you would like to compare. Click the **Compare** button to navigate to the compare screen.
 
-      ![](images/pp93.png)
+      ![](images/pp93-1.png)
 
 1. Click the **Back** button and confirm you get back to the main screen.
-
-      ![](images/pp4.png)
    
 1. Click on **Clear Selection**. 
 

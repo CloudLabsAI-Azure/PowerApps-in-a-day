@@ -262,11 +262,6 @@ Order table to provision. Begin these steps once it has finished.
 
 ### Task 3: Create a calculated column
 
-In this task, you will add a Department Contribution column and set its value to 10% of the price. In our scenario, this is
-the amount that will come from the department manager’s budget. Calculated columns are special columns that
-automatically perform the calculation when the data is retrieved. When you create or modify a calculated column you set
-the formula used in the calculation.
-
 1. In the upper left corner of the screen, click on **Add Column** to add columns to your custom table.
 
 1. Enter **Department Contribution (1)** for **Display Name** , **Currency (2)** for **Data Type** , select **Calculated (3)** for **Behaviour** field and click on **Save (4)**.
@@ -340,7 +335,7 @@ after you hit apply when you are done modifying the rule._
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
 **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-      ![](images/pp100.png)
+      ![](images/pp3001.png)
 
 9. Click on **Validate** from the top right.
 

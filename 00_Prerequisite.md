@@ -51,17 +51,20 @@ and provision the database instance.
 
 1. Click on **Next**.
 
-1. Provide the following details and then click **Save**:
+1. Provide the following details and then click **Save (5)**:
 
    - Language: **English (1)**
    - Currency: **USD ($) (2)**
+   - Click on **+ Select (3)** under Security Group
    - Click on **Security Group** and select **None** under Open Access and click on **Done**.
-   - Check **Yes (3)** for **Deploy sample apps and data**
+   - Check **Yes (4)** for **Deploy sample apps and data**
   
-      ![](images/pp4.png)
+      ![](images/pp3005.png)
 
       ![](images/pp3.png)
-   
+
+      ![](images/pp3002.png)
+      
    > **Note:** If  **Deploy sample apps and data** option is disabled for you, this is due to unpredicted behavior of Power Apps, follow the below steps to enable the option. 
     1. In the Admin center, select **Environments** and click **+New**.
     2. Select **Sandbox/Production** , select your **Region** , make sure **Create a database** is set to **Yes** , and click **Next**.
