@@ -553,7 +553,7 @@ enter additional information and submit the request.
 
 1. Select the checkbox for the laptop that you would like to compare. Click the **Compare** button to navigate to the compare screen.
 
-      ![](images/pp93.png)
+      ![](images/pp93-1.png)
 
 1. Click the **Back** button and confirm you get back to the main screen.
    
