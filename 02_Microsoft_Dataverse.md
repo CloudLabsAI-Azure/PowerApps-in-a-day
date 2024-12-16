@@ -335,7 +335,7 @@ after you hit apply when you are done modifying the rule._
 8. Enter **Set Estimated Ship Date** for **Display Name** , select **Estimated Ship Date** for **Column** , **Formula** for **Type** ,
 **Approved Date** for **Column** , **+** for **Operator** , **Value** for **Type** , **14** for **Days** , and click **Apply**.
 
-      ![](images/pp3001.png)
+      ![](images/Module2/pp3001.png)
 
 9. Click on **Validate** from the top right.
 
